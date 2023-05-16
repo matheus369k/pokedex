@@ -1,15 +1,15 @@
 /*Formato do site*/
 body{
-    background-color: #6390f0;
-    background-image: url(/src/imagens/imagemclaro.jpg);
+    background-image: url("/src/imagens/imagemclaro.jpg");
     background-position: center;
     background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
+    background-color: #6390f0;
 }
 
 .modo-escuro{
-    background-image: url(/src/imagens/imagemescuro.png);
+    background-image: url("/src/imagens/imagemescuro.png");
     background-color: blue;
 }
 
