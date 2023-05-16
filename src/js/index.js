@@ -4,6 +4,7 @@ const body = document.querySelector("body")
 
 const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao");
 
+const imagemTrocaDeTema = document.querySelector(".titulo");
 
 
 botaoAlterarTema.addEventListener("click", () => {

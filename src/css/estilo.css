@@ -1,15 +1,14 @@
-/*Formato do site*/
 body{
     background-image: url("/src/imagens/imagemclaro.jpg");
-    background-position: center;
-    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     background-color: #6390f0;
 }
+body{
+    background-attachment: fixed;
+}
 
 .modo-escuro{
-    background-image: unset;
     background-image: url("/src/imagens/imagemescuro.png");
     background-color: blue;
 }
@@ -83,6 +82,10 @@ main .cartao-pokemon .informaçoes{
     border-radius: 50px;
 
 }
+.modo-escuro .cartao-pokemon:hover{
+    background-color: #4043ff;
+}
+
 main .cartao-pokemon:hover{
     background-color: #ee8130;
 }
@@ -136,7 +139,7 @@ main .cartao-pokemon .tipo{
  .voador{
     background-color: #979797;
  }
-/*scroll rolar paginas*/
+
  main .descriçao{
     width: 180px;
     max-height: 50px;
