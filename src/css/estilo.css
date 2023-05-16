@@ -9,6 +9,7 @@ body{
 }
 
 .modo-escuro{
+    background-image: unset;
     background-image: url("/src/imagens/imagemescuro.png");
     background-color: blue;
 }
