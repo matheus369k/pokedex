@@ -1,5 +1,5 @@
 body{
-    background-image: url("/src/imagens/imagemclaro.jpg");
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRs-2PlBg8mLi3zk_p0HHnCxEwJzRx5eE1afMaPeCV6VXhE3ksLltCocco8yULZAj3dyJHZ_-_zaRRexvEoOJiZULeqAnaqZpYbPZlYmmHJ0muO3phTNnjZPMLQ-H3z32SYcmdoHzOnclPmyK9I8KhvLrEpvlrJnXnO7NaKIjsZO01aahPjRtplBPk_Q/w640-h360/Pok%C3%A9mon%20Sword%20Shield%20Switch%20Gengar%20de%20Ash%20est%C3%A1%20dispon%C3%ADvel%20no%20Mistery%20Gift%20por%20tempo%20limitado.jpg");
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     background-color: #6390f0;
@@ -9,7 +9,7 @@ body{
 }
 
 .modo-escuro{
-    background-image: url("/src/imagens/imagemescuro.png");
+    background-image: url("https://wallpapers.com/images/high/gengar-s-spooky-shadow-waanvxullffx1wha.webp");
     background-color: blue;
 }
 
