@@ -12,11 +12,11 @@ botaoAlterarTema.addEventListener("click", () => {
     body.classList.toggle("modo-escuro")
 
     if(modoEscuroEstaAtivado){
-        imagemBotaoTrocaDeTema.setAttribute("src","./imagens/sol2.gif");
+        imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/sol2.gif");
 
     }else{
 
-        imagemBotaoTrocaDeTema.setAttribute("src","./imagens/Moon_rotating_full_220px.gif");
+        imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/Moon_rotating_full_220px.gif");
         body.classList.contains("modo-escuro");
         }   
 })
