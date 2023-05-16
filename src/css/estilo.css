@@ -1,11 +1,10 @@
 body{
     background-image: url("https://projectn.com.br/wp-content/uploads/2022/09/a7e65ebbfeedd378b19cbb3fc8e441b71662126551_main-1024x576.jpg");
     font-family: 'Poppins', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
     max-width: 1280px;
     background-color: #6390f0;
-}
-body{
-    background-attachment: fixed;
 }
 
 .modo-escuro{
