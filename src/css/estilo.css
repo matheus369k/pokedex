@@ -1,15 +1,15 @@
 body{
     background-image: url("https://projectn.com.br/wp-content/uploads/2022/09/a7e65ebbfeedd378b19cbb3fc8e441b71662126551_main-1024x576.jpg");
     font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+}
+body{
     background-attachment: fixed;
     background-position: center;
-    max-width: 1280px;
-    background-color: #6390f0;
 }
 
 .modo-escuro{
     background-image: url("https://wallpapers.com/images/high/gengar-s-spooky-shadow-waanvxullffx1wha.webp");
-    background-color: blue;
 }
 
 header{   
@@ -59,15 +59,15 @@ main .listagem-pokemon{
 }
 
 main .cartao-pokemon{
+    border-radius: 6px;
     background-color: #e61f1f;
-    border: 8px solid;
+    border: 2px solid;
     width: 200px;
-    padding: 30px;
     display: flex;
+    padding: 5px;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    border-radius: 50px;
     transition: 0.2s ease-in-out;
 }
 .modo-escuro .cartao-pokemon{
@@ -77,8 +77,8 @@ main .cartao-pokemon{
 main .cartao-pokemon .informaçoes{
     display: flex;
     justify-content: space-between;
-    border: 2px solid;
-    border-radius: 50px;
+    border: 1px solid;
+    border-radius: 10px;
 
 }
 .modo-escuro .cartao-pokemon:hover{
@@ -99,7 +99,7 @@ main .cartao-pokemon .informaçoes span{
 main .cartao-pokemon .gif{
     width: 200px;
     height: 160px;
-    border: 8px solid;
+    border: 3px solid;
     
 }
 
@@ -110,9 +110,9 @@ main .cartao-pokemon .tipos{
 }
 
 main .cartao-pokemon .tipo{
-    border-radius: 10px;
-    padding: 11px;
-    border: 3px solid ;
+    border-radius: 3px;
+    padding: 5px;
+    border: 2px solid ;
 }    
 
 .grama{
