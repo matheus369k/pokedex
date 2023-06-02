@@ -1,41 +1,38 @@
 body{
-    background-image: url("https://projectn.com.br/wp-content/uploads/2022/09/a7e65ebbfeedd378b19cbb3fc8e441b71662126551_main-1024x576.jpg");
-    font-family: 'Poppins', sans-serif;
-    max-width: 1280px;
-}
-body{
+    background: center;
     background-attachment: fixed;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgb(248, 3, 3), rgb(253, 69, 69), rgb(255, 129, 129));
 }
 
 .modo-escuro{
-    background-image: url("https://wallpapers.com/images/high/gengar-s-spooky-shadow-waanvxullffx1wha.webp");
+    background-image: linear-gradient(to top, rgb(5, 5, 5), rgb(39, 39, 39), rgb(88, 88, 88));
 }
 
-header{   
+
+header{
+    border-bottom-right-radius:40px ;
+    border-bottom-left-radius:40px; 
+    height: 150px;
+    box-shadow: 4px 4px 4px 5px rgba(255, 255, 255, 0.37);
+    background-color: white;    
     display: flex;
     padding: 10px;
     justify-content: space-between;
 }
 
-header .logo,
-header .imagem-botao{
-    margin: 0%;
+
+header .logo, .imagem-botao{
     display: flex;
     width: 50px;
-    transition: 0.2s ease-in-out;
 }
 
-header #botao-alterar-tema{
+header #botao-alterar-tema, .logo, .imagem-botao{
     background: none;
     border: none;
     cursor: pointer;
 }
 
-header .titulo-poke{
-    justify-content: center;
-    display: flex;
-}
 
 header .logo:hover,
 header .imagem-botao:hover,
@@ -59,16 +56,17 @@ main .listagem-pokemon{
 }
 
 main .cartao-pokemon{
+    background-color: rgb(4, 228, 172);
     border-radius: 6px;
-    background-color: #e61f1f;
-    border: 2px solid;
-    width: 200px;
+    border: 3px solid;
+    width: 220px;
     display: flex;
     padding: 5px;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     transition: 0.2s ease-in-out;
+    box-shadow: 3px 3px 3px 4px rgba(0, 0, 0, 0.267);
 }
 .modo-escuro .cartao-pokemon{
     background-color: rgb(4, 112, 112);
@@ -82,11 +80,11 @@ main .cartao-pokemon .informaçoes{
 
 }
 .modo-escuro .cartao-pokemon:hover{
-    background-color: #4043ff;
+    background-color: #00026e;
 }
 
 main .cartao-pokemon:hover{
-    background-color: #ee8130;
+    background-color: #0e46ff;
 }
 
 

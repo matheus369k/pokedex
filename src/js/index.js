@@ -13,11 +13,11 @@ botaoAlterarTema.addEventListener("click", () => {
     body.classList.toggle("modo-escuro")
 
     if(modoEscuroEstaAtivado){
-        imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/sol2.gif");
+        imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/551374-sol-icone-gratis-vetor-removebg-preview.png");
 
     }else{
 
-        imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/Moon_rotating_full_220px.gif");
+        imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/desenho-de-lua-2-removebg-preview.png");
         body.classList.contains("modo-escuro");
         }   
 })
