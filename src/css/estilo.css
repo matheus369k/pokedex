@@ -19,13 +19,15 @@ header{
     justify-content: space-between;
 }
 
-
-header .logo, .imagem-botao{
+.logo, 
+.imagem-botao{
     display: flex;
     width: 50px;
 }
 
-header #botao-alterar-tema, .logo, .imagem-botao{
+#botao-alterar-tema, 
+.logo,
+.imagem-botao{
     background: none;
     border: none;
     cursor: pointer;
@@ -56,12 +58,12 @@ main{
     color: rgb(255, 255, 255);
     background: url('../imagens/cartao-fundo.jpg') center center no-repeat;
     background-size: cover;
-    border-radius: 6px;
+    border-radius: 9px;
     border: 2px solid;
     width: 220px;
     height: 350px;
     display: flex;
-    padding:2px;
+    padding:10px;
     flex-direction: column;
     align-items: center;
     gap: 15px;
@@ -74,9 +76,7 @@ main{
 
 .cartao-pokemon .informaçoes{
     display: flex;
-    justify-content: space-between;
     border: 1px solid;
-    border-radius: 10px;
 
 }
 .modo-escuro .cartao-pokemon:hover{
@@ -88,8 +88,11 @@ main{
 }
 
 
-.cartao-pokemon .informaçoes span{
-    padding: 4px;
+.cartao-pokemon .informaçoes{
+    text-align: center;
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    padding: 2px;
     text-transform: uppercase;
     font-size: 1.1em;
 }
@@ -112,9 +115,8 @@ main{
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.364);
 }   
 
-p,span{
-    border-radius: 5px;
-    padding: 8px;
+p,
+.informaçoes{
     background-color: rgba(0, 0, 0, 0.301);
 }
 
@@ -143,9 +145,10 @@ p,span{
  }
 
 .descriçao{
-    width: 180px;
-    max-height: 50px;
+    text-align: justify;
+    width: 205px;
+    max-height: 130px;
     overflow-y: scroll;
-    font-size: 12px;
-    padding-right: 1px;
+    font-size: 14px;
+    padding-right: 8px;
  }
