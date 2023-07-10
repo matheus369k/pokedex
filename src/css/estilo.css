@@ -38,7 +38,7 @@ header .logo:hover,
 header .imagem-botao:hover,
 main .cartao-pokemon:hover,
 main .redes:hover{
-    transform: scale(1.05);
+    transform: scale(1.01);
     cursor: pointer;
 }
 
@@ -97,10 +97,16 @@ main{
     font-size: 1.1em;
 }
 
-.cartao-pokemon .img{
+.cartao-pokemon .imagens{
+
     width: 200px;
     height: 160px;
+}
+
+.cartao-pokemon .section{
     
+    width: 200px;
+    height: 10%;
 }
 
 .cartao-pokemon .tipos{  

@@ -3,7 +3,6 @@ const botaoAlterarTema = document.getElementById("botao-alterar-tema");
 const body = document.querySelector("body");
 
 const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao");
-
 const imagemTrocaDeTema = document.querySelector(".titulo");
 
 
@@ -20,4 +19,31 @@ botaoAlterarTema.addEventListener("click", () => {
         imagemBotaoTrocaDeTema.setAttribute("src","./src/imagens/desenho-de-lua-2-removebg-preview.png");
         body.classList.contains("modo-escuro");
         }   
+})
+
+const trocarImagem = document.querySelectorAll('.imagens');
+
+trocarImagem.forEach(personaGif => {
+    personaGif.addEventListener('mouseenter', () => {
+
+        personaGif.classList.add('select')
+
+        const gifselection = document.querySelector('.select');
+        const idGif = personaGif.attributes.id.value;
+
+        gifselection.src = `./src/imagens/poke-gif/${idGif}.gif`;
+    
+    })
+
+    personaGif.addEventListener('mouseleave', () => {
+
+        const gifselection = document.querySelector('.select');
+        const idGif = personaGif.attributes.id.value;
+
+        gifselection.src = `./src/imagens/poke-png/${idGif}.png`;
+
+        personaGif.classList.remove('select')
+    })
+
+    
 })
