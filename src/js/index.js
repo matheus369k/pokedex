@@ -21,7 +21,7 @@ botaoAlterarTema.addEventListener("click", () => {
         }   
 })
 
-const trocarImagem = document.querySelectorAll('.imagens');
+const trocarImagem =  document.querySelectorAll('.imagens');
 
 trocarImagem.forEach(personaGif => {
     personaGif.addEventListener('mouseenter', () => {
@@ -48,20 +48,27 @@ trocarImagem.forEach(personaGif => {
     
 })
 
-
 const card = document.querySelectorAll('.cartao-pokemon');
 
 card.forEach(activeDescripition => {
     activeDescripition.addEventListener('mouseenter', () => {
-        const description =  document.querySelector('.descriçao');
 
+        activeDescripition.classList.add('active')
+
+        const description =  document.querySelector('.descriçao');
+        
         description.classList.add('open')
-        console.log(description);
+        
+
     })
 
     activeDescripition.addEventListener('mouseleave', () => {
+
+        activeDescripition.classList.remove('active')
+
         const description =  document.querySelector('.descriçao');
 
         description.classList.remove('open')
+
     })
 })
