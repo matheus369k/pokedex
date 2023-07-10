@@ -63,7 +63,7 @@ main{
     width: 220px;
     height: 350px;
     display: flex;
-    padding:10px;
+    padding-bottom:15px;
     flex-direction: column;
     align-items: center;
     gap: 15px;
@@ -92,21 +92,20 @@ main{
     text-align: center;
     border-radius: 0px 0px 15px 15px;
     width: 100%;
-    padding: 2px;
+    padding: 8px;
     text-transform: uppercase;
     font-size: 1.1em;
 }
 
-.cartao-pokemon .imagens{
-
-    width: 200px;
-    height: 160px;
+.listagem-pokemon .cartao-pokemon .imagens{
+    width: 218px;
+    height: 250px;
 }
 
-.cartao-pokemon .section{
-    
-    width: 200px;
-    height: 10%;
+.listagem-pokemon .cartao-pokemon .select{
+    background-size: cover;
+    height: 100vw;
+    border: 1px solid rgb(255, 251, 251);
 }
 
 .cartao-pokemon .tipos{  
@@ -151,10 +150,11 @@ p,
  }
 
 .descriçao{
+    display: none;
     text-align: justify;
     width: 205px;
     max-height: 130px;
     overflow-y: scroll;
     font-size: 14px;
-    padding-right: 8px;
- }
+    padding: 8px;
+}
