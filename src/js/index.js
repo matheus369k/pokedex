@@ -47,3 +47,21 @@ trocarImagem.forEach(personaGif => {
 
     
 })
+
+
+const card = document.querySelectorAll('.cartao-pokemon');
+
+card.forEach(activeDescripition => {
+    activeDescripition.addEventListener('mouseenter', () => {
+        const description =  document.querySelector('.descriçao');
+
+        description.classList.add('open')
+        console.log(description);
+    })
+
+    activeDescripition.addEventListener('mouseleave', () => {
+        const description =  document.querySelector('.descriçao');
+
+        description.classList.remove('open')
+    })
+})
