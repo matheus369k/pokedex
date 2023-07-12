@@ -53,22 +53,22 @@ const card = document.querySelectorAll('.cartao-pokemon');
 card.forEach(activeDescripition => {
     activeDescripition.addEventListener('mouseenter', () => {
 
-        activeDescripition.classList.add('active')
 
+        activeDescripition.classList.add('active')
         const description =  document.querySelector('.descriçao');
         
-        description.classList.add('open')
+        description.classList.replace('description','open')
+
+        console.log(description);
         
 
     })
 
     activeDescripition.addEventListener('mouseleave', () => {
-
         activeDescripition.classList.remove('active')
 
-        const description =  document.querySelector('.descriçao');
-
-        description.classList.remove('open')
+        const descripitionnot = document.querySelector('.descriçao');
+        descripitionnot.classList.replace('open','description')
 
     })
 })
