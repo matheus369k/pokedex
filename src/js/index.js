@@ -21,54 +21,40 @@ botaoAlterarTema.addEventListener("click", () => {
         }   
 })
 
-const trocarImagem =  document.querySelectorAll('.imagens');
 
-trocarImagem.forEach(personaGif => {
-    personaGif.addEventListener('mouseenter', () => {
+const cards = document.querySelectorAll('.cartao-pokemon');
 
-        personaGif.classList.add('select')
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        const cardActive = card.classList.contains("active");
 
-        const gifselection = document.querySelector('.select');
-        const idGif = personaGif.attributes.id.value;
 
-        gifselection.src = `./src/imagens/poke-gif/${idGif}.gif`;
+        console.log(cardActive);
     
+        if (cardActive == false ){    
+            card.classList.add('active')
+
+            const description =  card.querySelector('p');
+            description.classList.replace('descriçao','open')
+
+            const personaGif = card.querySelector('img');
+            personaGif.classList.add('select')
+            const gifselection = card.querySelector('.select');
+            const idGif = personaGif.attributes.id.value;
+            gifselection.src = `./src/imagens/poke-gif/${idGif}.gif`;
+        } 
+        else {
+            card.classList.remove('active')
+
+            const description = card.querySelector('p');
+            description.classList.replace('open','descriçao')
+
+            const personaGif = card.querySelector('img');
+            const gifselection = card.querySelector('.select');
+            const idGif = personaGif.attributes.id.value;
+            gifselection.src = `./src/imagens/poke-png/${idGif}.png`;
+            personaGif.classList.remove('select')
+        }
     })
-
-    personaGif.addEventListener('mouseleave', () => {
-
-        const gifselection = document.querySelector('.select');
-        const idGif = personaGif.attributes.id.value;
-
-        gifselection.src = `./src/imagens/poke-png/${idGif}.png`;
-
-        personaGif.classList.remove('select')
-    })
-
-    
 })
 
-const card = document.querySelectorAll('.cartao-pokemon');
-
-card.forEach(activeDescripition => {
-    activeDescripition.addEventListener('mouseenter', () => {
-
-
-        activeDescripition.classList.add('active')
-        const description =  document.querySelector('.descriçao');
-        
-        description.classList.replace('description','open')
-
-        console.log(description);
-        
-
-    })
-
-    activeDescripition.addEventListener('mouseleave', () => {
-        activeDescripition.classList.remove('active')
-
-        const descripitionnot = document.querySelector('.descriçao');
-        descripitionnot.classList.replace('open','description')
-
-    })
-})

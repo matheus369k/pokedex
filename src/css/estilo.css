@@ -1,7 +1,9 @@
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    max-width: 1350px;
+    width: 97vw;
+    height: 100vh;
     background: url('../imagens/claro.jpg') center center no-repeat fixed;
     background-size: cover;
 }
@@ -34,23 +36,23 @@ header{
 }
 
 
-header .logo:hover,
-header .imagem-botao:hover,
-main .cartao-pokemon:hover,
-main .redes:hover{
+.logo:hover,
+.imagem-botao:hover{
     transform: scale(1.01);
     cursor: pointer;
 }
 
 
 main{
+    max-width: 1200px;
     padding: 25px;
 }
 
 .listagem-pokemon{
+    transition: 2s;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 100px;
     justify-content: center;
 }
 
@@ -58,8 +60,8 @@ main{
     color: rgb(255, 255, 255);
     background: url('../imagens/cartao-fundo.jpg') center center no-repeat;
     background-size: cover;
-    border-radius: 9px;
-    border: 2px solid;
+    border-radius: 10px;
+    border: 1px solid;
     width: 220px;
     height: 350px;
     display: flex;
@@ -67,14 +69,14 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    transition: 1.3s ease-in-out;
+    transition: .2s ease-in-out ;
     box-shadow: 4px 5px 6px 4px rgba(0, 0, 0, 0.424);
 }
 
 .listagem-pokemon  .active{
-    height: 480px;
+    width: 300px;
+    height: 490px;
     display: block;
-    transition: 1.3s ease-in-out;
     
 }
 
@@ -82,11 +84,7 @@ main{
     background-color: rgb(4, 112, 112);
 }
 
-.cartao-pokemon .informaçoes{
-    display: flex;
-    border: 1px solid;
 
-}
 .modo-escuro .cartao-pokemon:hover{
     background-color: #00026e;
 }
@@ -97,6 +95,8 @@ main{
 
 
 .cartao-pokemon .informaçoes{
+    border: 1px solid white;
+    display: inline-block;
     text-align: center;
     border-radius: 0px 0px 15px 15px;
     width: 100%;
@@ -113,7 +113,8 @@ main{
 
 .listagem-pokemon .cartao-pokemon .select{
     background-size: cover;
-    height: 200px;
+    height: 220px;
+    width: 100%;
     border: 1px solid rgb(255, 251, 251);
 }
 
@@ -126,10 +127,11 @@ main{
 .cartao-pokemon .tipo{
     border-radius: 5px;
     padding:  4px 8px;
+    margin: 5px auto;
     box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.364);
 }   
 
-
+.open,
 .informaçoes{
     background-color: rgba(0, 0, 0, 0.301);
 }
@@ -158,20 +160,19 @@ main{
     background-color: #979797;
  }
 
-.active .open{
-    transition: 1.5s ease-in-out;
+.cartao-pokemon .open{
     background-color: rgba(0, 0, 0, 0.311);
-    margin: 2px;
     text-align: justify;
-    width: 205px;
+    width: 100%;
     max-height:130px;
     overflow-y: scroll;
     font-size: 17px;
-    padding: 8px;
+    margin:5px 0px;
+    padding: 5px;
+    transition: 3.5s ease-in-out;
 }
 
-.cartao-pokemon .description{
-    opacity: -100%;
-    z-index: -100%;
+.cartao-pokemon .descriçao{
+    display: none;
     
 }
