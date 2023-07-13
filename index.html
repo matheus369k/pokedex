@@ -7,246 +7,351 @@
     <meta nome="viewport"
     content="width=device-wodth,
     initial-scale=1.0">
+
     <title>listagem pokemon - pokedex inicial</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilo.css">
-    <link rel="stylesheet" href="./src/css/scrollbar.css">
-    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" 
+    href="https://fonts.googleapis.com">
+
+    <link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" 
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" 
+    href="./src/css/reset.css">
+
+    <link rel="stylesheet" 
+    href="./src/css/estilo.css">
+
+    <link rel="stylesheet" 
+    href="./src/css/scrollbar.css">
+
+    <link rel="stylesheet" 
+    href="./src/css/mediaquery.css">
+
+    <link rel="shortcut icon" 
+    href="src/imagens/favicon.ico" 
+    type="image/x-icon">
+
 </head>
 <body> 
     <header>
+
         <a href="#">
             <img src="./src/imagens/pokeball.png"
                 alt="pokebola"
-                class="logo">      
+                class="logo"> 
         </a>
-        <img src="./src/imagens/poke-titulo.png" alt="titulo" class="titulo-poke">
+
+        <img src="./src/imagens/poke-titulo.png" 
+        alt="titulo" 
+        class="titulo-poke">
+
         <button id="botao-alterar-tema">
             <img src="./src/imagens/551374-sol-icone-gratis-vetor-removebg-preview.png" 
                 alt="imagem do sol" 
                 class="imagem-botao">
         </button>
+
     </header>
     <main>
         <ul class="listagem-pokemon">
-            <li class="cartao-pokemon" id="poke01"> 
+
+            <li class="cartao-pokemon"> 
                 <div class="informaçoes">
                     <span>Bulbasaur</span>
                     <span>#001</span>
                 </div>
-                <img class="imagens" id="001" src="./src/imagens/poke-png/001.png"
+                <img class="imagens" id="001" 
+                    src="./src/imagens/poke-png/001.png"
                     alt="Bulbasaur">
                 <ul class="tipos">
-                <li class=" tipo grama">
-                    Grama</li>
-                <li class="tipo veneno">
-                    Veneno</li>
+                    <li class=" tipo grama">
+                        Grama
+                    </li>
+                    <li class="tipo veneno">
+                        Veneno
+                    </li>
                 </ul>
-                <p class="descriçao">Há uma semente de planta em suas costas desde o dia que este pókemon nasce. A semente cresce lentamente.</p></li>
+                <p class="descriçao">
+                    Há uma semente de planta em suas costas desde o dia que este pókemon nasce. A semente cresce lentamente.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke02">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>iIvysaurr</span>
+                    <span>Ivysaurr</span>
                     <span>#002</span>
                 </div>
-                <img class="imagens" id="002" src="./src/imagens/poke-png/002.png"
+                <img class="imagens" id="002" 
+                    src="./src/imagens/poke-png/002.png"
                     alt="iIvysaurr">
                 <ul class="tipos">
-                <li class=" tipo grama">
-                    Grama</li>
-                <li class="tipo veneno">
-                    Veneno</li>
+                    <li class=" tipo grama">
+                        Grama
+                    </li>
+                    <li class="tipo veneno">
+                        Veneno
+                    </li>
                 </ul>
-                <p class="descriçao">Ha um broto nas costas desse  pokemon. Para suportar seu peso, as pernas e o tronco do ivysaur fica grossos e fortes se começar a passar mais tempo sob a luz do sol é um sinal que o broto florecerá em uma flor grande em breve.</p></li>
+                <p class="descriçao">
+                    Ha um broto nas costas desse  pokemon. Para suportar seu peso, as pernas e o tronco do ivysaur fica grossos e fortes se começar a passar mais tempo sob a luz do sol é um sinal que o broto florecerá em uma flor grande em breve.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke03">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>venusaur</span>
+                    <span>Venusaur</span>
                     <span>#003</span>
                 </div>
-                <img class="imagens" id="003" src="./src/imagens/poke-png/003.png" 
+                <img class="imagens" id="003" 
+                    src="./src/imagens/poke-png/003.png" 
                     alt="venusaur" >
                 <ul class="tipos">
                     <li class=" tipo grama">
-                    Grama</li>
+                        Grama
+                    </li>
                     <li class="tipo veneno">
-                    Veneno</li>
+                        Veneno
+                    </li>
                 </ul>
-                <p class="descriçao">Sua planta floresce quando
-                está absorvendo energia solar. Ele permanece em 
-                movimento para buscar a luz solar.</p></li>
+                <p class="descriçao">
+                    Sua planta floresce quando está absorvendo energia solar. Ele permanece em movimento para buscar a luz solar.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke04">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>charmander</span>
+                    <span>Charmander</span>
                     <span>#004</span>
                 </div>
-                <img class="imagens" id="004" src="./src/imagens/poke-png/004.png" 
-                    alt="charmander" >
+                <img class="imagens" id="004" 
+                    src="./src/imagens/poke-png/004.png" 
+                    alt="Pokémon Charmander">
                 <ul class="tipos">
                     <li class=" tipo fogo">
-                    Fogo</li>
+                        Fogo
+                    </li>
                 </ul>
-                <p class="descriçao">Tem preferéncia por coisas quentes.Quando chove, diz-se que o vapor jorra da ponta da sua cauda.</p></li>
+                <p class="descriçao">
+                    Tem preferéncia por coisas quentes.Quando chove, diz-se que o vapor jorra da ponta da sua cauda.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke05">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>charmeleon</span>
+                    <span>Charmeleon</span>
                     <span>#005</span>
                 </div>
-                <img class="imagens" id="005" src="./src/imagens/poke-png/005.png" 
-                    alt="charmeleon">
+                <img class="imagens" id="005" 
+                    src="./src/imagens/poke-png/005.png" 
+                    alt="Pokémon Charmeleon">
                 <ul class="tipos">
                     <li class=" tipo fogo">
-                    Fogo</li>
+                        Fogo
+                    </li>
                 </ul>
-                <p class="descriçao">Gosta muito de brigas,
-                por isso busca constantemente por adversários. Ele ataca com suas garras afiadas e usando sua cauda como chicote de fogo. Pode soltar chamas azuis quando muito animado.</p></li>
+                <p class="descriçao">
+                    Gosta muito de brigas,
+                    por isso busca constantemente por adversários. Ele ataca com suas garras afiadas e usando sua cauda como chicote de fogo. Pode soltar chamas azuis quando muito animado.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke05">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>charizard</span>
+                    <span>Charizard</span>
                     <span>#006</span>
                 </div>
-                <img class="imagens" id="006" src="./src/imagens/poke-png/006.png" 
-                        alt="charizard">
+                <img class="imagens" id="006" 
+                    src="./src/imagens/poke-png/006.png" 
+                        alt="Pokémon Charizard">
                 <ul class="tipos">
                     <li class=" tipo fogo">
-                    Fogo</li>
+                        Fogo
+                    </li>
                 </ul>
-                <p class="descriçao">Seu fogo é quente o suficiente para derreter rochas. Quando nervoso, a chama em sua cauda queimará intensamente. É orgulhoso e 
-                voa pelos céus em busca de adversários poderosos.</p></li>
+                <p class="descriçao">
+                    Seu fogo é quente o suficiente para derreter rochas. Quando nervoso, a chama em sua cauda queimará intensamente. É orgulhoso e voa pelos céus em busca de adversários poderosos.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke07">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>squirtle</span>
+                    <span>Squirtle</span>
                     <span>#007</span>
                 </div>
-                    <img class="imagens" id="007" src="./src/imagens/poke-png/007.png" 
-                        alt="squirtle">
+                <img class="imagens" id="007" 
+                    src="./src/imagens/poke-png/007.png" 
+                    alt="Pokémon Squirtle">
                 <ul class="tipos">
                     <li class=" tipo agua">
-                    Agua</li>
+                        Agua
+                    </li>
                 </ul>
-                <p class="descriçao">Quando nasce, seu casco é mole, mas logo endurece. Cutucando com o dedo fará os pedaços de seu casco saltar. Ele entra dentro do casco quando se sente ameaçado</p></li>
+                <p class="descriçao">
+                    Quando nasce, seu casco é mole, mas logo endurece. Cutucando com o dedo fará os pedaços de seu casco saltar. Ele entra dentro do casco quando se sente ameaçado
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke08">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>wartortle</span>
+                    <span>Wartortle</span>
                     <span>#008</span>
                 </div>
-                    <img class="imagens" id="008" src="./src/imagens/poke-png/008.png" 
-                        alt="wartortle">
+                <img class="imagens" id="008" 
+                    src="./src/imagens/poke-png/008.png" 
+                    alt="Pokémon Wartortle">
                 <ul class="tipos">
                     <li class=" tipo agua">
-                    Agua</li>
+                        Agua
+                    </li>
                 </ul>
-                <p class="descriçao">É muito inteligente, sabe controlar as orelhas e o rabo para manter o equilíbrio na água e nadar em altas velocidades. Seu rabo felpudo é símbolo de longevidade.</p></li>
+                <p class="descriçao">
+                    É muito inteligente, sabe controlar as orelhas e o rabo para manter o equilíbrio na água e nadar em altas velocidades. Seu rabo felpudo é símbolo de longevidade.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke09">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>blastoise</span>
+                    <span>Blastoise</span>
                     <span>#009</span>
                 </div>
-                    <img class="imagens" id="009" src="./src/imagens/poke-png/009.png" 
-                        alt="blastoise">    
+                <img class="imagens" id="009" 
+                    src="./src/imagens/poke-png/009.png" 
+                    alt="Pokémon Blastoise">    
                 <ul class="tipos">
                     <li class=" tipo agua">
-                    Agua</li>
+                        Agua
+                    </li>
                 </ul>
-                <p class="descriçao">Um Pokémon brutal com jatos de água pressurizada em sua concha. Eles são usadas ​​para ataques em alta velocidade. Os bicos de água são muito precisos. </p></li>
+                <p class="descriçao">
+                    Um Pokémon brutal com jatos de água pressurizada em sua concha. Eles são usadas ​​para ataques em alta velocidade. Os bicos de água são muito precisos.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke10">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
-                    <span>caterpie</span>
+                    <span>Caterpie</span>
                     <span>#010</span>
                 </div>
-                    <img class="imagens" id="010" src="./src/imagens/poke-png/010.png" 
-                        alt="caterpie">
+                <img class="imagens" id="010"
+                    src="./src/imagens/poke-png/010.png" 
+                    alt="Pokémon Caterpie">
                 <ul class="tipos">
                     <li class=" tipo inseto">
-                    Inseto</li>
+                        Inseto
+                    </li>
                 </ul>
-                <p class="descriçao">Caterpie Como forma
-                de  proteção, Caterpie libera um cheiro horrível através de suas antenas. Suas patas pegajosas são capazes de andar em qualquer tipo de superfície.</p></li>
+                <p class="descriçao">
+                    Caterpie Como forma de  proteção, Caterpie libera um cheiro horrível através de suas antenas. Suas patas pegajosas são capazes de andar em qualquer tipo de superfície.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke11">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
                     <span>Metapod</span>
                     <span>#011</span>
                 </div>
-                <img class="imagens" id="011" src="./src/imagens/poke-png/011.png" 
-                    alt="metapod">
+                <img class="imagens" id="011" 
+                    src="./src/imagens/poke-png/011.png" 
+                    alt="Pokémon Metapod">
                 <ul class="tipos">
                     <li class=" tipo inseto">
-                        Inseto</li>
+                        Inseto
+                    </li>
                 </ul>
-                <p class="descriçao">Metapod tem a concha que cobre o corpo deste Pokémon é tão dura quanto uma laje de ferro. Metapod não se move muito. Ele fica parado porque está preparando suas entranhas suaves para a evolução dentro da casca dura.</p></li>
+                <p class="descriçao">
+                    Metapod tem a concha que cobre o corpo deste Pokémon é tão dura quanto uma laje de ferro. Metapod não se move muito. Ele fica parado porque está preparando suas entranhas suaves para a evolução dentro da casca dura.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke12">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
                     <span>Butterfree</span>
                     <span>#012</span>
                 </div>
-                <img class="imagens" id="012" src="./src/imagens/poke-png/012.png" 
-                    alt="Butterfree">
+                <img class="imagens" id="012" 
+                    src="./src/imagens/poke-png/012.png" 
+                    alt="Pokémon Butterfree">
                 <ul class="tipos">
                     <li class=" tipo inseto">
-                        Inseto</li>
+                        Inseto
+                    </li>
                     <li class=" tipo voador">
-                        Voador</li>
+                        Voador
+                    </li>
                 </ul>
-                <p class="descriçao">Butterfree tem o corpo da cor azul-púrpura escuro. Ele tem grandes asas veias, que são brancas com manchas pretas. Ele também possue olhos compostos grandes que tendem a ser uma cor avermelhada, suas pernas são cobertas de pêlos finos, o que ajuda na coleta de mel.</p></li>
+                <p class="descriçao">
+                    Butterfree tem o corpo da cor azul-púrpura escuro. Ele tem grandes asas veias, que são brancas com manchas pretas. Ele também possue olhos compostos grandes que tendem a ser uma cor avermelhada, suas pernas são cobertas de pêlos finos, o que ajuda na coleta de mel.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke13">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
                     <span>Weedle</span>
                     <span>#013</span>
                 </div>
-                <img class="imagens" id="013" src="./src/imagens/poke-png/013.png" 
-                    alt="weedle">    
+                <img class="imagens" id="013" 
+                    src="./src/imagens/poke-png/013.png" 
+                    alt="Pokémon weedle">    
                 <ul class="tipos">
                     <li class=" tipo inseto">
-                        Inseto</li>
+                        Inseto
+                    </li>
                     <li class=" tipo veneno">
-                        Veneno</li>  
+                        Veneno
+                    </li>  
                 </ul>
-                <p class="descriçao">Weedle é um pokemon larva pequeno amarelo, laranja ou marrom com um corpo segmentado. A coloração do Weedle serve como aviso contra seus. Weedle tem um ferrão cônico de duas polegadas venenoso em sua cabeça e um farpado em sua cauda, mas todas as outras partes do corpo é esférica.</p></li>
+                <p class="descriçao">
+                    Weedle é um pokemon larva pequeno amarelo, laranja ou marrom com um corpo segmentado. A coloração do Weedle serve como aviso contra seus. Weedle tem um ferrão cônico de duas polegadas venenoso em sua cabeça e um farpado em sua cauda, mas todas as outras partes do corpo é esférica.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke14">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
                     <span>Kakuna</span>
                     <span>#014</span>
                 </div>
-                <img class="imagens" id="014" src="./src/imagens/poke-png/014.png" 
-                    alt="Kakuna">
+                <img class="imagens" id="014" 
+                    src="./src/imagens/poke-png/014.png" 
+                    alt="Pokémon Kakuna">
                 <ul class="tipos">
                     <li class=" tipo inseto">
-                        Inseto</li>
+                        Inseto
+                    </li>
                     <li class=" tipo veneno">
-                        Veneno</li>
+                        Veneno
+                    </li>
                 </ul>
-                <p class="descriçao">Kakuna é um casulo de cor amarela. Tem olhos brancos enquanto seu globo ocular é preto, Kakuna praticamente não se move e fica em árvores naturalmente.</p></li>
+                <p class="descriçao">
+                    Kakuna é um casulo de cor amarela. Tem olhos brancos enquanto seu globo ocular é preto, Kakuna praticamente não se move e fica em árvores naturalmente.
+                </p>
+            </li>
 
-            <li class="cartao-pokemon" id="poke15">
+            <li class="cartao-pokemon">
                 <div class="informaçoes">
                     <span>Beedrill</span>
                     <span>#015</span>
                 </div>
-                <img class="imagens" id="015" src="./src/imagens/poke-png/015.png" 
-                    alt="Beedrill">
+                <img class="imagens" id="015" 
+                    src="./src/imagens/poke-png/015.png" 
+                    alt="Pokémon Beedrill">
                 <ul class="tipos">
                     <li class=" tipo inseto">
-                        Inseto</li>
+                        Inseto
+                    </li>
                     <li class=" tipo veneno">
-                        Veneno</li>
+                        Veneno
+                    </li>
                 </ul>
-                <p class="descriçao">Beedrill em dois pares de asas arredondadas e um ferrão em seu abdome listrado. Beedrill é altamente territorial e normalmente vive em colônias. Como visto no anime, Beedrill parece estar especialmente preocupados com o bem estar de Weedle e Kakuna, e vai responder de forma agressiva para aqueles que os perturbam. 
-                </p></li>
-            </li>  
+                <p class="descriçao">
+                    Beedrill em dois pares de asas arredondadas e um ferrão em seu abdome listrado. Beedrill é altamente territorial e normalmente vive em colônias. Como visto no anime, Beedrill parece estar especialmente preocupados com o bem estar de Weedle e Kakuna, e vai responder de forma agressiva para aqueles que os perturbam. 
+                </p>
+            </li> 
         </ul>   
     </main>
     <script src="./src/js/index.js"></script>
