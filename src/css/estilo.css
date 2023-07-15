@@ -75,7 +75,7 @@ main{
 }
 
 .listagem-pokemon  .active{
-    gap: 12px;
+    gap: 15px;
     width: 300px;
     height: 490px;
     display: block;
@@ -100,7 +100,7 @@ main{
     border: 1px solid white;
     display: inline-block;
     text-align: center;
-    border-radius: 12px 15px 15px 12px;
+    border-radius: 13px 13px 15px 15px;
     width: 100%;
     padding: 8px;
     text-transform: uppercase;
