@@ -60,7 +60,7 @@ main{
     color: rgb(255, 255, 255);
     background: url('../imagens/cartao-fundo.jpg') center center no-repeat;
     background-size: cover;
-    border-radius: 10px;
+    border-radius: 12px;
     border: 1px solid;
     width: 220px;
     height: 350px;
@@ -79,7 +79,7 @@ main{
     width: 300px;
     height: 490px;
     display: block;
-    transition: 1s ;
+    transition: .4s ;
 }
 
 .modo-escuro .cartao-pokemon{
