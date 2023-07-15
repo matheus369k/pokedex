@@ -24,14 +24,30 @@ botaoAlterarTema.addEventListener("click", () => {
 
 const cards = document.querySelectorAll('.cartao-pokemon');
 
+
 cards.forEach(card => {
     card.addEventListener('click', () => {
         const cardActive = card.classList.contains("active");
 
 
-        console.log(cardActive);
+        
+        const ativo = document.querySelector('.active');
+        if (ativo != null){
+            ativo.classList.remove('active')
+
+            const description = ativo.querySelector('p');
+            description.classList.replace('open','descriçao')
+
+            const personaGif = ativo.querySelector('img');
+            const gifselection = ativo.querySelector('.select');
+            const idGif = personaGif.attributes.id.value;
+            gifselection.src = `./src/imagens/poke-png/${idGif}.png`;
+            personaGif.classList.remove('select')}
+
+
+        console.log(ativo);
     
-        if (cardActive == false ){    
+        if (cardActive == false){    
             card.classList.add('active')
 
             const description =  card.querySelector('p');
@@ -42,18 +58,6 @@ cards.forEach(card => {
             const gifselection = card.querySelector('.select');
             const idGif = personaGif.attributes.id.value;
             gifselection.src = `./src/imagens/poke-gif/${idGif}.gif`;
-        } 
-        else {
-            card.classList.remove('active')
-
-            const description = card.querySelector('p');
-            description.classList.replace('open','descriçao')
-
-            const personaGif = card.querySelector('img');
-            const gifselection = card.querySelector('.select');
-            const idGif = personaGif.attributes.id.value;
-            gifselection.src = `./src/imagens/poke-png/${idGif}.png`;
-            personaGif.classList.remove('select')
         }
     })
 })
