@@ -19,6 +19,7 @@ __🗒️Nota__:Esse projeto foi Modificado e __*🆙'melhorado*__' da __versāo
 - [Codigos](#codigos)
     - [CSS](#css)
     - [JavaScript](#javascript)
+- [Licença](#licença)
 
 ### 🗒Descriçāo
 ***
