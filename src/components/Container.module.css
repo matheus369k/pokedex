@@ -1,0 +1,38 @@
+.Container {
+    height: 100%;
+    width: 100%;
+}
+
+.Container.Navbar_Container {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 20px;
+}
+
+.Container.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+ 
+.Container.card div {
+    width: 200px;
+    height: 500px;
+}
+
+.Container.card img {
+    width: 100%;
+    height: auto;
+} 
+
+.Container.Two_Generation,
+.Container.One_Generetion{
+    height: 100vh;
+    background: center center no-repeat fixed;
+    background-size: cover;
+}
+
+.Container.One_Generetion {
+    background-image: url(../img/background-light.jpg);
+}
