@@ -1,0 +1,212 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:220px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.card ul {
+    position: fixed;
+    bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card ul img {
+    cursor: pointer;
+    opacity: 100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.561);
+    border: 2px solid rgb(255, 255, 255);
+    transition: .5s ease-in-out;
+}
+
+.card ul img:hover {
+    transition: .5s ease-in-out;
+    transform: scale(1.05);
+}
+ 
+.card div {
+    margin-top: 175px;
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    border: 4px solid rgba(0, 0, 0, 0.767);
+    border-radius: 8px;
+    position: relative;
+    opacity: 90%;
+    background: url(../img/pokedex-closed.jpeg) center center fixed;
+    background-size: 210px 300px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.467);
+}
+
+.card div:hover {
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.118);
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.card div .gif,
+.card div h1,
+.card div ul,
+.card div p {
+    display: none;
+}
+
+.card h1 {
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(6, 6, 6);
+    font-size: 1em;
+    text-align: center;
+}
+
+.card span{
+    font-weight: bolder;
+    color: white;
+}
+
+.card img.png {
+    opacity: 90%;
+    position: relative;
+    top: 40px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    transition: 1s ease-in-out;
+}
+
+.card img.png:hover {
+    opacity: 100%;
+}
+
+section {
+    padding: 50px;
+    width: 968px;
+    height: 568px;
+    border-radius: 20px 0 20px 0;
+    border: 15px double white;
+    position: fixed;
+    background-color: rgba(41, 181, 209, 0.729);
+    box-shadow: 0 0 50px 10px rgba(41, 181, 209, 0.334);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card  div.selected{ 
+    cursor: auto;
+    padding: 40px;
+    margin-top: 50px;
+    position: fixed;
+    background: transparent;
+    width: 968px;
+    height: 568px;
+    display: grid;
+    grid-template-columns: 424px 454px;
+    grid-template-rows: 70px 180px 250px;
+    border: none;
+    box-shadow: none;
+    z-index: 1;
+}
+
+.card  div.selected:hover {
+    box-shadow: none;
+    border: none;
+}
+
+.card div.selected img.gif,
+.card  div.selected  h1,
+.card  div.selected  ul,
+.card  div.selected  p {
+    font-weight: bolder;
+    color: white;
+    display: flex;
+}
+
+.card div.selected img.png {
+    top: auto;
+    align-items: flex-end;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    opacity: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.card  div.selected  h1 {
+    margin: auto;
+    width: 100%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    border: none;
+    letter-spacing: 2px;
+    font-size: 2em;
+}
+
+.card  div.selected  ul {
+    position: relative;
+    bottom: auto;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card  div.selected li {
+    width: auto;
+    height: min-content;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
+    font-size: 1.5em;
+    border: .5px solid rgba(255, 255, 255, 0.582);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.545);
+}
+
+.card  div.selected  p {
+    text-align: justify;
+    font-size: 1em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 28px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.card div.selected img.gif{
+    height: 150px;
+    width: 50%;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.Grama {
+    background-color: green;
+}
+.Veneno {
+    background-color: purple;
+}
+.Fogo {
+    background-color: orange;
+}
+.Voador {
+    background-color: skyblue;
+}
+.Agua {
+    background-color: blue;
+}
+.Inseto {
+    background-color: greenyellow;
+}
