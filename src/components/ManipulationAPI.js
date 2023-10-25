@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
 import style  from "../pages/Cards.module.css"
+import {AiFillCloseCircle} from "react-icons/ai"
 
 function ManipulationAPI(props){
     const [cards, setCards]=useState([])
@@ -51,9 +52,11 @@ function ManipulationAPI(props){
         cards.map((card)=>(
             list.push(
             <div id={card.name} className="poke_card" key={card.name}>
+                <div onClick={()=>CloseSection()}><AiFillCloseCircle /></div>
                 <h1>{card.name} <span>{card.number}</span></h1>
                 <img className={style.png} src={handleImgPng(card.images)} />
                 <ul>{handleTypes(card.types)}</ul>
+                <h3>Description: </h3>
                 <p>{card.description}</p>
                 <img className={style.gif} src={handleImgGif(card.images)} />
             </div>)
@@ -97,29 +100,31 @@ function ManipulationAPI(props){
         
         //console.log(listFilter);
         return listFilter
-    }   
+    }
+
+    const CloseSection=()=>{
+        
+        const section = document.getElementById("pokedex_open")
+        section.parentNode.removeChild(section)
+        document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
+        props.setlisthider(false)
+    }
 
     //console.log(localStorage.getItem("pokemon"));
     
-    useEffect(()=>{
-        if (!document.querySelector("#pokedex_open"))
-        {
-            localStorage.setItem("pokemonindex", "")
-        }
-
-        if (document.querySelector(".ds_selected__3tg-E"))
-        {
-            document.querySelector(".ds_selected__3tg-E").classList.remove("ds_selected__3tg-E")
-        }
+    useEffect(()=>{    
+        
+        localStorage.setItem("pokemonindex", "")
 
         document.querySelectorAll(".poke_card").forEach((pokeCard, index) => {
             pokeCard.addEventListener("click", ()=> {
-                localStorage.setItem("pokemonindex", index)
+                
                
                 //console.log(index);
 
                 if (!document.querySelector("#pokedex_open"))
                 {
+                    localStorage.setItem("pokemonindex", index)
 
                     const section = document.createElement("section")
                     section.setAttribute("id", "pokedex_open")
@@ -131,6 +136,7 @@ function ManipulationAPI(props){
                     pokeCard.classList.add(style.selected)
                     console.log(style.selected)
                 }
+                
 
             })
         

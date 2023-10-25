@@ -52,6 +52,8 @@
     border: 4px solid rgb(255, 255, 255);
 }
 
+.card div div,
+.card div h3,
 .card div .gif,
 .card div h1,
 .card div ul,
@@ -91,10 +93,10 @@ section {
     padding: 50px;
     width: 968px;
     height: 568px;
-    border-radius: 20px 0 20px 0;
-    border: 15px double white;
+    border-radius: 20px;
     position: fixed;
-    background-color: rgba(41, 181, 209, 0.729);
+    background: url(../img/481909.png) center center no-repeat fixed;
+    background-size: cover;
     box-shadow: 0 0 50px 10px rgba(41, 181, 209, 0.334);
     top: 50%;
     left: 50%;
@@ -103,50 +105,80 @@ section {
 
 .card  div.selected{ 
     cursor: auto;
-    padding: 40px;
-    margin-top: 50px;
+    padding: 80px 40px;
+    margin-top: 43px;
     position: fixed;
     background: transparent;
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 424px 454px;
-    grid-template-rows: 70px 180px 250px;
+    grid-template-columns: 300px 300px 268px;
+    grid-template-rows: 60px 264px 80px 100px 60px;
     border: none;
+    border: 15px double white;
+    background-color: rgba(0, 0, 0, 0.696);
     box-shadow: none;
     z-index: 1;
 }
 
-.card  div.selected:hover {
-    box-shadow: none;
-    border: none;
-}
-
+.card div.selected div,
+.card div.selected h3,
 .card div.selected img.gif,
 .card  div.selected  h1,
 .card  div.selected  ul,
 .card  div.selected  p {
+    padding: 10px;
     font-weight: bolder;
-    color: white;
+    width: 100%;
+    color: rgb(255, 255, 255);
     display: flex;
 }
 
 .card div.selected img.png {
     top: auto;
-    align-items: flex-end;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
     grid-row-start: 2;
-    grid-column-start: 1;
+    grid-column-start: 2;
     opacity: 100%;
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 264px;
+}
+
+.card div.selected div{
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0);
+    width: min-content;
+    height: min-content;
+    border: none;
+    border-radius: 50%;
+    position: fixed;
+    top: -100px;
+    right: 230px;
+}
+.card div.selected svg {
+    cursor: pointer;
+    font-size: 2em;
+    fill: white;
+    stroke: rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.card div.selected svg:hover {
+    stroke: rgb(255, 255, 255);
+    fill: rgb(188, 0, 0);
+    transform: scale(1.1);
 }
 
 .card  div.selected  h1 {
-    margin: auto;
-    width: 100%;
-    grid-column-start: 1;
+    border-radius: 0 10px 0 0;
+    border-left: none;
+    border-bottom: none;  
+    margin: 0 auto;
+    text-align: center;
+    grid-column-start: 2;
     grid-row-start: 1;
-    border: none;
     letter-spacing: 2px;
     font-size: 2em;
 }
@@ -154,42 +186,58 @@ section {
 .card  div.selected  ul {
     position: relative;
     bottom: auto;
-    grid-row-start: 1;
+    border-left: none;
+    grid-row-start: 3;
     grid-column-start: 2;
     flex-direction: row;
+    border-top: none;
     gap: 40px;
 }
 
 .card  div.selected li {
     width: auto;
     height: min-content;
-    padding: 10px 30px;
+    padding: 5px 20px;
     border-radius: 8px;
-    color: white;
+    border: .5px solid white;
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
-    font-size: 1.5em;
-    border: .5px solid rgba(255, 255, 255, 0.582);
+    font-size: 1.2em;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.545);
 }
 
+
 .card  div.selected  p {
+    border-radius: 0 0 0 10px;
     text-align: justify;
+    border-top: none;
+    border-right: none;
     font-size: 1em;
     text-transform: capitalize;
     letter-spacing: 1px;
     line-height: 28px;
     grid-row-start: 2;
-    grid-column-start: 2;
-    align-items: center;
-    height: 100%;
+    grid-row-end: 4;
+    grid-column-start: 1;
     z-index: 1;
 }
 
-.card div.selected img.gif{
-    height: 150px;
-    width: 50%;
-    grid-row-start: 3;
-    grid-column-start: 2;
+.card div.selected h3 {
+    border-right: none;
+    border-bottom: none;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.375);
+}
+
+.card div.selected img.gif {
+    padding: 0;
+    margin-left: 40px;
+    height: 140px;
+    width: 210px;
+    border-radius: 20px 0 20px 0;
+    grid-row-start: 1;
+    grid-column-start: 3;
 }
 
 .Grama {
