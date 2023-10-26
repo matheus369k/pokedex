@@ -22,3 +22,10 @@
 .Navbar li:hover {
     border-top: 2px solid rgb(160, 11, 11);
 }
+
+.Navbar img {
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    cursor: pointer;
+}

@@ -4,6 +4,7 @@ import style from "./Navbar.module.css"
 import Container from "../Container";
 
 function Navbar() {
+
     return (
         <Container customClass="Navbar_Container">
             <nav className={style.Navbar}>

@@ -59,6 +59,15 @@ function ManipulationAPI(props){
                 <h3>Description: </h3>
                 <p>{card.description}</p>
                 <img className={style.gif} src={handleImgGif(card.images)} />
+                <ul className={style.stats}>
+                    <h3>Base Stats:</h3>
+                    <li>HP: <span>{card.baseStats["HP"]}</span></li>
+                    <li>Atack: <span>{card.baseStats["Atack"]}</span></li>
+                    <li>Defense: <span>{card.baseStats["Defense"]}</span></li>
+                    <li>SP.Atack: <span>{card.baseStats["Sp.atack"]}</span></li>
+                    <li>SP.Def: <span>{card.baseStats["Sp.Def"]}</span></li>
+                    <li>Speed: <span>{card.baseStats["Speed"]}</span></li>
+                </ul>
             </div>)
         ))
         return list
@@ -134,7 +143,7 @@ function ManipulationAPI(props){
                     fother.appendChild(section)
                     props.setlisthider(true)
                     pokeCard.classList.add(style.selected)
-                    console.log(style.selected)
+                    //console.log(style.selected)
                 }
                 
 
