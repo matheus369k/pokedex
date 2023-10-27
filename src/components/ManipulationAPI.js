@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react";
 import style  from "../pages/Cards.module.css"
 import {AiFillCloseCircle} from "react-icons/ai"
+import BarSeach from "./BarSeach";
 
 function ManipulationAPI(props){
     const [cards, setCards]=useState([])
@@ -51,7 +52,7 @@ function ManipulationAPI(props){
         const list = [] 
         cards.map((card)=>(
             list.push(
-            <div id={card.name} className="poke_card" key={card.name}>
+            <div id={card.name} className="poke_card" key={card.number}>
                 <div onClick={()=>CloseSection()}><AiFillCloseCircle /></div>
                 <h1>{card.name} <span>{card.number}</span></h1>
                 <img className={style.png} src={handleImgPng(card.images)} />
@@ -74,42 +75,6 @@ function ManipulationAPI(props){
     }
 
     //console.log(handlecard().props.children[0]);
-    const handlefilter=()=>{
-        const listFilter=[]
-        //console.log(props.pokeevolution);
-
-
-        if (localStorage.getItem("pokemonindex")==="") 
-        { 
-        if (props.pokeevolution===0) 
-        {
-            listFilter.push(handlecard()[0], handlecard()[1], handlecard()[2])
-        }
-         else if (props.pokeevolution===1) 
-        {
-            listFilter.push(handlecard()[3], handlecard()[4], handlecard()[5])
-        }
-         else if (props.pokeevolution===2) 
-        {
-            listFilter.push(handlecard()[6], handlecard()[7], handlecard()[8])
-        }
-         else if(props.pokeevolution===3) 
-        {
-            listFilter.push(handlecard()[9], handlecard()[10], handlecard()[11])
-        }
-         else if (props.pokeevolution===4) 
-        {
-            listFilter.push(handlecard()[12], handlecard()[13], handlecard()[14])
-        }} 
-        else 
-        { 
-            //console.log(typeof(localStorage.getItem("pokemonindex")));
-            listFilter.push(handlecard()[Number(localStorage.getItem("pokemonindex"))+props.pokeevolution*3])
-        }
-        
-        //console.log(listFilter);
-        return listFilter
-    }
 
     const CloseSection=()=>{
         
@@ -151,7 +116,7 @@ function ManipulationAPI(props){
         
         })
     })
-    return handlefilter()
+    return <BarSeach list={handlecard()} />
 }
 
 export default ManipulationAPI

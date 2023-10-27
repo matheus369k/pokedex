@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:220px;
+    /*gap:220px;*/
     flex-wrap: wrap;
+    margin: 0 auto;
     color: white;
+    max-width: 1024px;
+    padding-top: 150px;
 }
 
 .card ul {
@@ -33,15 +36,16 @@
 }
  
 .card div {
-    margin-top: 175px;
+    margin: 10px;
     cursor: pointer;
-    width: 200px;
-    height: 300px;
-    border: 8px double rgba(209, 0, 0, 0.767);
-    outline: 5px solid white;
+    width: 150px;
+    height: 230px;
+    border: 2px double rgba(209, 0, 0, 0.767);
+    outline: 2px solid white;
     border-radius: 5px;
-    background: url(../img/0135025fbfab1211013ee04d679120.jpg) center center fixed;
-    background-size: 210px 300px;
+    background-image: url("../img/0135025fbfab1211013ee04d679120.jpg");
+    background-position: center center;
+    background-size: cover;
     box-shadow: 0 0 20px 10px rgba(254, 254, 254, 0.361);
 }
 
@@ -74,8 +78,7 @@
 }
 
 .card img.png {
-    position: relative;
-    top: 40px;
+    margin-top: 40px;
     align-items: center;
     width: 100%;
     height: auto;
@@ -100,8 +103,10 @@ section {
 .card  div.selected{ 
     cursor: auto;
     padding: 80px 40px;
-    margin-top: 43px;
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 968px;
     height: 568px;
     display: grid;
@@ -141,21 +146,24 @@ section {
     grid-column-start: 2;
     opacity: 100%;
     width: 300px;
+    margin: 0;
     height: 264px;
 }
 
 .card div.selected div{
     box-shadow: none;
+    padding: 0;
     background: rgba(0, 0, 0, 0);
     width: min-content;
     height: min-content;
     border: none;
     border-radius: 50%;
     position: fixed;
-    top: -180px;
+    top: 0px;
     right: 0px;
     border: none;
     outline: none;
+    z-index: 2;
 }
 .card div.selected svg {
     cursor: pointer;

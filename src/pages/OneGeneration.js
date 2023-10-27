@@ -21,7 +21,7 @@ function OneGeneration() {
     
                 <ManipulationAPI api={API}  pokeevolution={pokeEvolution} setlisthider={setListHider} />
     
-                {!listHider &&
+                {/*!listHider &&
                     <ul>
                         <li><img onClick={()=>setPokeEvolution(0)} src={bulbasaurEvolutions} /></li>
                         <li><img onClick={()=>setPokeEvolution(1)} src={charmanderEvolutions}/></li>
@@ -29,7 +29,7 @@ function OneGeneration() {
                         <li><img onClick={()=>setPokeEvolution(3)} src={CartepieEvolutions}/></li>
                         <li><img onClick={()=>setPokeEvolution(4)} src={WeedleEvolutions}/></li>
                     </ul>
-                }
+                */}
             </div>    
         </Container>
     )
