@@ -6,7 +6,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
-    top: 20px;
+    top: 0px;
 }
 
 .Container.Two_Generation,

@@ -1,0 +1,38 @@
+.seach_Container {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    z-index: 0;
+}
+
+.seach_Container .pokeboll {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    top: 18px;
+    left: 300px;
+    border: 2px solid rgb(89, 89, 89);
+    border-radius: 50%;
+}
+
+.seach_Container label {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    padding-right: 5px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.seach_Container input{
+    border: 3px solid rgb(70, 70, 70);
+    text-shadow: 1px 1px solid rgb(248, 248, 248);
+    outline: none;
+    font-weight: bold;
+    height: 52px;
+    width: 300px;
+    padding: 0 60px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    z-index: 0;
+}

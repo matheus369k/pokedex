@@ -81,14 +81,11 @@ function ManipulationAPI(props){
         const section = document.getElementById("pokedex_open")
         section.parentNode.removeChild(section)
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
-        props.setlisthider(false)
     }
 
     //console.log(localStorage.getItem("pokemon"));
     
-    useEffect(()=>{    
-        
-        localStorage.setItem("pokemonindex", "")
+    useEffect(()=>{
 
         document.querySelectorAll(".poke_card").forEach((pokeCard, index) => {
             pokeCard.addEventListener("click", ()=> {
@@ -98,7 +95,6 @@ function ManipulationAPI(props){
 
                 if (!document.querySelector("#pokedex_open"))
                 {
-                    localStorage.setItem("pokemonindex", index)
 
                     const section = document.createElement("section")
                     section.setAttribute("id", "pokedex_open")
@@ -106,7 +102,6 @@ function ManipulationAPI(props){
                     const fother = document.getElementById("container")
                     //console.log(fother);
                     fother.appendChild(section)
-                    props.setlisthider(true)
                     pokeCard.classList.add(style.selected)
                     //console.log(style.selected)
                 }
