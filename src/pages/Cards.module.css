@@ -22,6 +22,8 @@
     background-position: center center;
     background-size: cover;
     box-shadow: 0 0 20px 10px rgba(254, 254, 254, 0.361);
+    display: flex;
+    align-items: center;
 }
 
 .card div:hover {
@@ -53,9 +55,7 @@
 }
 
 .card img.png {
-    margin-top: 40px;
-    align-items: center;
-    width: 100%;
+    width: 95%;
     height: auto;
     transition: .5s ease-in-out;
 }
@@ -76,6 +76,7 @@ section {
 }
 
 .card  div.selected{ 
+    align-items: normal;
     cursor: auto;
     padding: 60px 40px 20px 40px;
     position: fixed;
@@ -85,7 +86,7 @@ section {
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 338px 330px 200px;
+    grid-template-columns: 338px 310px 220px;
     grid-template-rows: 60px 264px 50px 70px;
     box-shadow: none;
     z-index: 2;
@@ -171,8 +172,10 @@ section {
     margin: 0 auto;
     grid-row-start: 2;
     grid-column-start: 2;
-    width: 100%;
-    height: auto;
+    grid-row-end: 4;
+    width: auto;
+    height: 100%;
+    max-width: 100%;
 }
 
 .card div.selected .h3_evolution {
@@ -206,7 +209,6 @@ section {
     grid-row-start: 4;
     grid-column-start: 2;
     flex-direction: row;
-    gap: 20px;
 }
 
 .card  div.selected .type li {
@@ -258,8 +260,8 @@ section {
 .card div.selected img.gif {
     padding: 0;
     margin-left: 10px;
-    height: 100px;
-    width: 180px;
+    height: 140px;
+    width: 200px;
     border-radius: 20px 0 20px 0;
     grid-row-start: 2;
     grid-column-start: 3;
@@ -294,4 +296,13 @@ section {
 }
 .Inseto {
     background-color: greenyellow;
+}
+.Normal {
+    background-color: rgb(197, 197, 197);
+}
+.Eletrico {
+    background-color: yellow;
+}
+.Terra {
+    background-color: rgb(108, 68, 0);
 }
