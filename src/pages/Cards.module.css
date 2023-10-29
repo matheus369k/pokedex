@@ -9,31 +9,6 @@
     max-width: 1024px;
     padding: 150px 50px 50px 50px;
 }
-
-.card ul {
-    position: fixed;
-    bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-}
-
-.card ul img {
-    cursor: pointer;
-    opacity: 100%;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: .5s ease-in-out;
-}
-
-.card ul img:hover {
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.249);
-    border: 2px solid rgb(255, 255, 255);
-    transition: .5s ease-in-out;
-    transform: scale(1.05);
-}
  
 .card div {
     margin: 10px;
@@ -102,7 +77,7 @@ section {
 
 .card  div.selected{ 
     cursor: auto;
-    padding: 80px 40px;
+    padding: 60px 40px 20px 40px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -110,8 +85,8 @@ section {
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 300px 300px 268px;
-    grid-template-rows: 60px 264px 80px 100px 60px;
+    grid-template-columns: 338px 330px 200px;
+    grid-template-rows: 60px 264px 50px 70px;
     box-shadow: none;
     z-index: 2;
     border-radius: 20px 0 20px 0;
@@ -137,19 +112,6 @@ section {
     display: flex;
 }
 
-.card div.selected img.png {
-    top: auto;
-    border-bottom: none;
-    border-left: none;
-    border-top: none;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    opacity: 100%;
-    width: 300px;
-    margin: 0;
-    height: 264px;
-}
-
 .card div.selected div{
     box-shadow: none;
     padding: 0;
@@ -165,85 +127,15 @@ section {
     outline: none;
     z-index: 2;
 }
-.card div.selected svg {
-    cursor: pointer;
-    font-size: 2em;
-    fill: white;
-    z-index: 2;
-}
 
-.card div.selected svg:hover {
-    fill: rgb(188, 0, 0);
-    transform: scale(1.1);
-}
-
-.card  div.selected  h1 {
-    text-shadow: 1px 1px black;
-    border: none;
-    align-items: center;
-    color: rgb(4, 122, 0);
-    grid-column-start: 2;
-    grid-row-start: 1;
-    font-size: 2em;
-}
-
-.card  div.selected  h1 span {
-    color: black;
-    font-weight: bolder;
-    margin-left: 10px;
-}
-
-.card  div.selected  ul {
-    position: relative;
-    bottom: auto;
-    grid-row-start: 3;
-    grid-column-start: 2;
-    flex-direction: row;
-    gap: 40px;
-}
-
-.card  div.selected li {
-    width: auto;
-    height: min-content;
-    padding: 5px 20px;
-    border-radius: 8px;
-    border: .5px solid white;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
-    font-size: 1.2em;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.545);
-}
-
-.card div.selected .stats{
-    grid-column-start: 3;
-    flex-direction: column;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    position: relative;
-    bottom: 0%;
-    gap: 0;
-}
-
-.card div.selected .stats li {
-    letter-spacing: 2px;
-    color: rgb(179, 98, 0);
-    text-transform: capitalize;
-    font-weight: bold;
-    padding-left: 10px;
-    box-shadow: none;
-    border: none;
-    border-radius: 5px;
-    border-bottom: 1px solid black;
-}
-
-.card div.selected .stats li span {
-    font-weight: bolder;
-    text-shadow: 1px 1px black;
-    color: rgb(124, 172, 75);
-}
-
-.card div.selected .stats h3{
+.card div.selected .h3_description {
     padding: 0;
+    padding-left: 10px;
+    align-items: self-end;
+    color: rgb(0, 186, 59);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.375);
 }
 
 .card  div.selected  p {
@@ -259,24 +151,130 @@ section {
     z-index: 1;
 }
 
-.card div.selected h3 {
-    padding: 0;
-    padding-left: 10px;
-    align-items: self-end;
-    color: rgb(0, 186, 59);
+.card  div.selected  h1 {
+    text-shadow: 1px 1px black;
+    border: none;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    grid-column-start: 2;
     grid-row-start: 1;
+    font-size: 2em;
+}
+
+.card  div.selected  h1 span {
+    color: rgb(226, 0, 0);
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.card div.selected img.png {
+    margin: 0 auto;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    width: 100%;
+    height: auto;
+}
+
+.card div.selected .h3_evolution {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    padding: 0;
     grid-column-start: 1;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.375);
+    grid-row-start: 4;
+    align-items: start;
+    color: rgb(0, 237, 0);
+}
+
+.card div.selected .evolution {
+    grid-column-start: 1;
+    grid-row-start: 4;
+    gap: 10px;
+    align-items: end;
+}
+
+.card div.selected .evolution li {
+    height: min-content;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.727);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.715) ;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px;
+}
+
+.card  div.selected  .type {
+    align-items: flex-end;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card  div.selected .type li {
+    margin: 0 auto;
+    width: auto;
+    height: min-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
+    font-size: 1.2em;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.545);
+}
+
+.card div.selected .stats{
+    margin-bottom: 10px;
+    height: 100%;
+    grid-column-start: 3;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 1.2em;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+.card div.selected .stats h3{
+    color: green;
+    padding: 0;
+}
+
+.card div.selected .stats li {
+    letter-spacing: 2px;
+    color: rgb(179, 98, 0);
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-left: 10px;
+    box-shadow: none;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+}
+
+.card div.selected .stats li span {
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    color: rgb(124, 172, 75);
 }
 
 .card div.selected img.gif {
     padding: 0;
     margin-left: 10px;
-    height: 140px;
-    width: 250px;
+    height: 100px;
+    width: 180px;
     border-radius: 20px 0 20px 0;
-    grid-row-start: 1;
+    grid-row-start: 2;
     grid-column-start: 3;
+}
+
+.card div.selected svg {
+    cursor: pointer;
+    font-size: 2em;
+    fill: white;
+    z-index: 2;
+}
+
+.card div.selected svg:hover {
+    fill: rgb(188, 0, 0);
+    transform: scale(1.1);
 }
 
 .Grama {

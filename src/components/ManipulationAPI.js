@@ -26,7 +26,7 @@ function ManipulationAPI(props){
         return card[1]["gif"]
     }
 
-    const handleTypes=(card)=>{
+    /*const handleTypes=(card)=>{
 
         //console.log(card[0]["type"]);
 
@@ -46,6 +46,32 @@ function ManipulationAPI(props){
                 }
             </>
             )
+    }*/
+
+    const handleRender=(render, name)=>{
+        //console.log(evolution);
+        let listRender = []
+
+        for (let i = 0; i < render.length; i++) {
+            if (name=='type')
+            {
+                localStorage.setItem("classcustom", render[0][name])
+                listRender.push(
+                <li key={`${name}${render[i][name]}`} className={style[render[i][name]]}>
+                    {render[i][name]}
+                </li>)
+            } else 
+            {
+                listRender.push(
+                <li key={`${name}${render[i][name]}`} className={style[localStorage.getItem("classcustom")]}>
+                    {render[i][name]}
+                </li>)
+            }
+            //console.log(render[i][name]);
+        }
+
+        return listRender
+
     }
 
     const handlecard=()=>{
@@ -56,8 +82,12 @@ function ManipulationAPI(props){
                 <div onClick={()=>CloseSection()}><AiFillCloseCircle /></div>
                 <h1>{card.name} <span>{card.number}</span></h1>
                 <img className={style.png} src={handleImgPng(card.images)} />
-                <ul>{handleTypes(card.types)}</ul>
-                <h3>Description: </h3>
+                <ul className={style.type} key={`${card.name}_types`}>{handleRender(card.types, 'type')}</ul>
+                <h3 className={style.h3_evolution}>Evolutions:</h3>
+                <ul className={style.evolution} key={`${card.name}_evolutions`}>
+                    {handleRender(card.evolution, 'name')}
+                </ul>
+                <h3 className={style.h3_description}>Description: </h3>
                 <p>{card.description}</p>
                 <img className={style.gif} src={handleImgGif(card.images)} />
                 <ul className={style.stats}>
