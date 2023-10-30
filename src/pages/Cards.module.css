@@ -78,7 +78,7 @@ section {
 .card  div.selected{ 
     align-items: normal;
     cursor: auto;
-    padding: 60px 40px 20px 40px;
+    padding: 60px 20px 20px 20px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -86,7 +86,7 @@ section {
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 228px 310px 330px;
+    grid-template-columns: 268px 300px 330px;
     grid-template-rows: 60px 264px 50px 70px;
     box-shadow: none;
     z-index: 2;
@@ -133,10 +133,10 @@ section {
     padding: 0;
     padding-left: 10px;
     align-items: center;
-    color: rgb(0, 186, 59);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    color: rgb(0, 237, 0);
     grid-row-start: 1;
     grid-column-start: 1;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.375);
 }
 
 .card  div.selected  p {
@@ -144,12 +144,40 @@ section {
     font-size: 1em;
     text-transform: capitalize;
     letter-spacing: 1px;
-    line-height: 28px;
-    margin-top: 25px;
+    line-height: 24px;
+    margin-top: 30px;
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     z-index: 1;
+}
+
+.card  div.selected .super_damange {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    width: 100%;
+    margin-top: 25px;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.card div.selected .h3_super_damange {
+    grid-column-start: 1;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    color: rgb(0, 237, 0);
+    grid-row-start: 3;
+}
+
+.card  div.selected .super_damange  li {
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px black;
+    width: 30%;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    height: min-content;
+    padding: 5px;
 }
 
 .card  div.selected  h1 {
@@ -181,12 +209,12 @@ section {
 
 .card div.selected .h3_evolution {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    color: rgb(0, 237, 0);
     padding: 0;
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 2;
     align-items: center;
-    color: rgb(0, 237, 0);
 }
 
 .card div.selected .evolution {
@@ -238,7 +266,7 @@ section {
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
     font-size: 1.2em;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.545);
+    box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
 .card div.selected .stats{
@@ -253,7 +281,8 @@ section {
 }
 
 .card div.selected .stats h3{
-    color: green;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    color: rgb(0, 237, 0);
     padding: 0;
 }
 
@@ -307,7 +336,7 @@ section {
     background-color: orange;
 }
 .Voador {
-    background-color: skyblue;
+    background-color: rgb(212, 212, 212);
 }
 .Agua {
     background-color: blue;
@@ -316,7 +345,7 @@ section {
     background-color: greenyellow;
 }
 .Normal {
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(112, 106, 95);
 }
 .Eletrico {
     background-color: yellow;
@@ -324,11 +353,11 @@ section {
 .Terra {
     background-color: rgb(159, 104, 9);
 }
-.Psiquico {
+.Pisquico {
     background-color: palevioletred;
 }
 .Gelo {
-    background-color: aquamarine;
+    background-color: skyblue;
 }
 .Rocha {
     background-color: rgb(97, 63, 0);

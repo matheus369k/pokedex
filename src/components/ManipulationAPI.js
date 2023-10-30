@@ -51,7 +51,7 @@ function ManipulationAPI(props){
     const handleRender=(render, name, cardnumber=0)=>{
         //console.log(evolution);
         let listRender = []
-
+        
         if (name=='type')
         {
             for (let i = 0; i < render.length; i++) {
@@ -63,18 +63,28 @@ function ManipulationAPI(props){
             //console.log(render);
             }
         } 
-        else 
+        else
         {
             listRender.push(
                     render.map((rende, index)=>(
                         <>
-                        <li key={`EvolutionNumber:${cardnumber}_${index}`} className={style[localStorage.getItem("classcustom")]}>
-                            <span>{rende.name}</span>
-                            <span>{isNaN(rende.Lv) ? (""):(<span>Level:</span>)}{rende.Lv}</span>
-                            <img src={rende.img} />
-                        </li>
-                        <span className={style.seta}>{index < render.length-1 ? "➔" : "" }</span>
-                        </>
+                        {name=='name' ? 
+                            (<>
+                                <li key={`EvolutionNumber:${cardnumber}_${index}`} className={style[localStorage.getItem("classcustom")]}>
+                                    <span>{rende.name}</span>
+                                    <span>{isNaN(rende.Lv) ? (""):(<span>Level:</span>)}{rende.Lv}</span>
+                                    <img src={rende.img} />
+                                </li>
+                                <span className={style.seta}>{index < render.length-1 ? "➔" : "" }</span>
+                            </>)
+                            :
+                            (<>
+                                <li key={`SuperDamangeNumber:${cardnumber}_${index}`} className={style[rende.type]}>
+                                    {rende.type}
+                                </li>
+                           </>)
+                        }
+                       </>
                     ))
                 )
         }
@@ -97,6 +107,8 @@ function ManipulationAPI(props){
                 </ul>
                 <h3 className={style.h3_description}>Description: </h3>
                 <p>{card.description}</p>
+                <h3 className={style.h3_super_damange}>Fraquezas:</h3>
+                <ul className={style.super_damange}>{handleRender(card.superdamange, 'superdamange', card.number)}</ul>
                 <ul className={style.stats}>
                     <h3>Base Stats:</h3>
                     <li>HP: <span>{card.baseStats["HP"]}</span></li>
