@@ -86,7 +86,7 @@ section {
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 338px 310px 220px;
+    grid-template-columns: 228px 310px 330px;
     grid-template-rows: 60px 264px 50px 70px;
     box-shadow: none;
     z-index: 2;
@@ -132,7 +132,7 @@ section {
 .card div.selected .h3_description {
     padding: 0;
     padding-left: 10px;
-    align-items: self-end;
+    align-items: center;
     color: rgb(0, 186, 59);
     grid-row-start: 1;
     grid-column-start: 1;
@@ -141,29 +141,30 @@ section {
 
 .card  div.selected  p {
     border-radius: 0 0 0 10px;
-    text-align: justify;
     font-size: 1em;
     text-transform: capitalize;
     letter-spacing: 1px;
     line-height: 28px;
-    grid-row-start: 2;
+    margin-top: 25px;
+    grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
     z-index: 1;
 }
 
 .card  div.selected  h1 {
-    text-shadow: 1px 1px black;
-    border: none;
+    padding: 0px;
     align-items: center;
-    color: rgb(255, 255, 255);
+    border: none;
+    text-shadow: 1px 1px black;
+    color: rgb(141, 141, 141);
     grid-column-start: 2;
     grid-row-start: 1;
     font-size: 2em;
 }
 
 .card  div.selected  h1 span {
-    color: rgb(226, 0, 0);
+    color: rgb(75, 75, 75);
     font-weight: bolder;
     margin-left: 10px;
 }
@@ -181,27 +182,44 @@ section {
 .card div.selected .h3_evolution {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     padding: 0;
-    grid-column-start: 1;
-    grid-row-start: 4;
-    align-items: start;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-items: center;
     color: rgb(0, 237, 0);
 }
 
 .card div.selected .evolution {
-    grid-column-start: 1;
-    grid-row-start: 4;
-    gap: 10px;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: 130px;
     align-items: end;
+    justify-content: space-between;
 }
 
 .card div.selected .evolution li {
-    height: min-content;
-    color: white;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.727);
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.715) ;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 0px;
+    font-size: .8em;
+    background-color: transparent;
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.card div.selected .evolution span.seta {
+    position: relative;
+    bottom: 50px;
+    margin: 0 5px 0 0;
+    z-index: 2;
+}
+
+.card div.selected .evolution li img {
+    padding-right: 8px;
+    width: auto;
+    height: 80px;
 }
 
 .card  div.selected  .type {
@@ -304,5 +322,17 @@ section {
     background-color: yellow;
 }
 .Terra {
-    background-color: rgb(108, 68, 0);
+    background-color: rgb(159, 104, 9);
+}
+.Psiquico {
+    background-color: palevioletred;
+}
+.Gelo {
+    background-color: aquamarine;
+}
+.Rocha {
+    background-color: rgb(97, 63, 0);
+}
+.Lutador {
+    background-color: rgb(135, 0, 0);
 }

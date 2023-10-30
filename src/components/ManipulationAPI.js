@@ -14,7 +14,7 @@ function ManipulationAPI(props){
         
     }).catch((err)=> console.log(err))
 
-    const handleImgPng=(card)=>{
+    /*const handleImgPng=(card)=>{
         //console.log(card[0]["png"])
 
         return card[0]["png"]
@@ -26,7 +26,7 @@ function ManipulationAPI(props){
         return card[1]["gif"]
     }
 
-    /*const handleTypes=(card)=>{
+    const handleTypes=(card)=>{
 
         //console.log(card[0]["type"]);
 
@@ -48,28 +48,36 @@ function ManipulationAPI(props){
             )
     }*/
 
-    const handleRender=(render, name)=>{
+    const handleRender=(render, name, cardnumber=0)=>{
         //console.log(evolution);
         let listRender = []
 
-        for (let i = 0; i < render.length; i++) {
-            if (name=='type')
-            {
+        if (name=='type')
+        {
+            for (let i = 0; i < render.length; i++) {
                 localStorage.setItem("classcustom", render[0][name])
                 listRender.push(
                 <li key={`${name}${render[i][name]}`} className={style[render[i][name]]}>
                     {render[i][name]}
                 </li>)
-            } else 
-            {
-                listRender.push(
-                <li key={`${name}${render[i][name]}`} className={style[localStorage.getItem("classcustom")]}>
-                    {render[i][name]}
-                </li>)
+            //console.log(render);
             }
-            //console.log(render[i][name]);
+        } 
+        else 
+        {
+            listRender.push(
+                    render.map((rende, index)=>(
+                        <>
+                        <li key={`EvolutionNumber:${cardnumber}_${index}`} className={style[localStorage.getItem("classcustom")]}>
+                            <span>{rende.name}</span>
+                            <span>{isNaN(rende.Lv) ? (""):(<span>Level:</span>)}{rende.Lv}</span>
+                            <img src={rende.img} />
+                        </li>
+                        <span className={style.seta}>{index < render.length-1 ? "➔" : "" }</span>
+                        </>
+                    ))
+                )
         }
-
         return listRender
 
     }
@@ -81,15 +89,14 @@ function ManipulationAPI(props){
             <div id={card.name} className="poke_card" key={card.number}>
                 <div onClick={()=>CloseSection()}><AiFillCloseCircle /></div>
                 <h1>{card.name} <span>{card.number}</span></h1>
-                <img className={style.png} src={handleImgPng(card.images)} />
+                <img className={style.png} src={card.images} />
                 <ul className={style.type} key={`${card.name}_types`}>{handleRender(card.types, 'type')}</ul>
                 <h3 className={style.h3_evolution}>Evolutions:</h3>
                 <ul className={style.evolution} key={`${card.name}_evolutions`}>
-                    {handleRender(card.evolution, 'name')}
+                    {handleRender(card.evolution, 'name', card.number)}
                 </ul>
                 <h3 className={style.h3_description}>Description: </h3>
                 <p>{card.description}</p>
-                <img className={style.gif} src={handleImgGif(card.images)} />
                 <ul className={style.stats}>
                     <h3>Base Stats:</h3>
                     <li>HP: <span>{card.baseStats["HP"]}</span></li>
