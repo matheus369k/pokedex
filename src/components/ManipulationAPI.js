@@ -14,54 +14,21 @@ function ManipulationAPI(props){
         
     }).catch((err)=> console.log(err))
 
-    /*const handleImgPng=(card)=>{
-        //console.log(card[0]["png"])
-
-        return card[0]["png"]
-    }
-
-    const handleImgGif=(card)=>{
-        //console.log(card[1]["gif"])
-
-        return card[1]["gif"]
-    }
-
-    const handleTypes=(card)=>{
-
-        //console.log(card[0]["type"]);
-
-        return (
-            <>
-                {card.length === 1 ? 
-                (
-                    <li className={style[card[0]["type"]]}>{card[0]["type"]}</li>
-
-                ) : (
-
-                    <>
-                        <li className={style[card[0]["type"]]}>{card[0]["type"]}</li>
-                        <li className={style[card[1]["type"]]}>{card[1]["type"]}</li>
-                    </>
-                )
-                }
-            </>
-            )
-    }*/
-
     const handleRender=(render, name, cardnumber=0)=>{
         //console.log(evolution);
         let listRender = []
         
         if (name=='type')
         {
-            for (let i = 0; i < render.length; i++) {
-                localStorage.setItem("classcustom", render[0][name])
-                listRender.push(
-                <li key={`${name}${render[i][name]}`} className={style[render[i][name]]}>
-                    {render[i][name]}
-                </li>)
+            localStorage.setItem("classcustom", render[0][name])
+            listRender.push(
+                render.map((rende)=>(
+                    <li className={style[rende.type]}>
+                        {rende.type}
+                    </li>
+            )))
             //console.log(render);
-            }
+            
         } 
         else
         {
@@ -70,7 +37,7 @@ function ManipulationAPI(props){
                         <>
                         {name=='name' ? 
                             (<>
-                                <li key={`EvolutionNumber:${cardnumber}_${index}`} className={style[localStorage.getItem("classcustom")]}>
+                                <li className={style[localStorage.getItem("classcustom")]}>
                                     <span>{rende.name}</span>
                                     <span>{isNaN(rende.Lv) ? (""):(<span>Level:</span>)}{rende.Lv}</span>
                                     <img src={rende.img} />
@@ -79,7 +46,7 @@ function ManipulationAPI(props){
                             </>)
                             :
                             (<>
-                                <li key={`SuperDamangeNumber:${cardnumber}_${index}`} className={style[rende.type]}>
+                                <li className={style[rende.type]}>
                                     {rende.type}
                                 </li>
                            </>)
@@ -100,9 +67,9 @@ function ManipulationAPI(props){
                 <div onClick={()=>CloseSection()}><AiFillCloseCircle /></div>
                 <h1>{card.name} <span>{card.number}</span></h1>
                 <img className={style.png} src={card.images} />
-                <ul className={style.type} key={`${card.name}_types`}>{handleRender(card.types, 'type')}</ul>
+                <ul className={style.type}>{handleRender(card.types, 'type')}</ul>
                 <h3 className={style.h3_evolution}>Evolutions:</h3>
-                <ul className={style.evolution} key={`${card.name}_evolutions`}>
+                <ul className={style.evolution}>
                     {handleRender(card.evolution, 'name', card.number)}
                 </ul>
                 <h3 className={style.h3_description}>Description: </h3>

@@ -2,14 +2,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /*gap:220px;*/
     flex-wrap: wrap;
     margin: 0 auto;
-    color: white;
     max-width: 1024px;
     padding: 150px 50px 50px 50px;
 }
- 
+
 .card div {
     margin: 10px;
     cursor: pointer;
@@ -75,7 +73,7 @@ section {
     box-shadow: 0 0 50px 10px rgba(41, 181, 209, 0);
 }
 
-.card  div.selected{ 
+.card .selected{ 
     align-items: normal;
     cursor: auto;
     padding: 60px 20px 20px 20px;
@@ -100,12 +98,11 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.card div.selected div,
-.card div.selected h3,
-.card div.selected img.gif,
-.card  div.selected  h1,
-.card  div.selected  ul,
-.card  div.selected  p {
+.card .selected div,
+.card .selected h3,
+.card  .selected  h1,
+.card  .selected  ul,
+.card  .selected  p {
     padding: 10px;
     font-weight: bolder;
     width: 100%;
@@ -113,7 +110,7 @@ section {
     display: flex;
 }
 
-.card div.selected div{
+.card .selected div{
     box-shadow: none;
     padding: 0;
     background: rgba(0, 0, 0, 0);
@@ -129,7 +126,7 @@ section {
     z-index: 2;
 }
 
-.card div.selected .h3_description {
+.card .selected .h3_description {
     padding: 0;
     padding-left: 10px;
     align-items: center;
@@ -139,7 +136,7 @@ section {
     grid-column-start: 1;
 }
 
-.card  div.selected  p {
+.card  .selected  p {
     border-radius: 0 0 0 10px;
     font-size: 1em;
     text-transform: capitalize;
@@ -152,7 +149,7 @@ section {
     z-index: 1;
 }
 
-.card  div.selected .super_damange {
+.card  .selected .super_damange {
     grid-column-start: 1;
     grid-row-start: 3;
     width: 100%;
@@ -162,14 +159,14 @@ section {
     flex-wrap: wrap;
 }
 
-.card div.selected .h3_super_damange {
+.card .selected .h3_super_damange {
     grid-column-start: 1;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     grid-row-start: 3;
 }
 
-.card  div.selected .super_damange  li {
+.card .selected .super_damange  li {
     border-radius: 5px;
     box-shadow: 5px 5px 3px black;
     width: 30%;
@@ -180,7 +177,7 @@ section {
     padding: 5px;
 }
 
-.card  div.selected  h1 {
+.card  .selected  h1 {
     padding: 0px;
     align-items: center;
     border: none;
@@ -191,23 +188,24 @@ section {
     font-size: 2em;
 }
 
-.card  div.selected  h1 span {
+.card  .selected  h1 span {
     color: rgb(75, 75, 75);
     font-weight: bolder;
     margin-left: 10px;
 }
 
-.card div.selected img.png {
+.card .selected img.png {
     margin: 0 auto;
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 4;
-    width: auto;
-    height: 100%;
+    min-height: 60%;
+    max-height: 100%;
     max-width: 100%;
+    align-self: center;
 }
 
-.card div.selected .h3_evolution {
+.card .selected .h3_evolution {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     padding: 0;
@@ -217,47 +215,45 @@ section {
     align-items: center;
 }
 
-.card div.selected .evolution {
+.card .selected .evolution {
     height: 100%;
     width: 100%;
     grid-column-start: 3;
     grid-row-start: 1;
-    margin-top: 130px;
+    margin-top: 150px;
     align-items: end;
-    justify-content: space-between;
+    gap: 10px;
 }
 
-.card div.selected .evolution li {
+.card .selected .evolution li {
     font-size: .8em;
     background-color: transparent;
-    width: max-content;
     height: auto;
     display: flex;
     align-items: center;
     flex-direction: column-reverse;
 }
 
-.card div.selected .evolution span.seta {
-    position: relative;
-    bottom: 50px;
-    margin: 0 5px 0 0;
+.card .selected .evolution .seta {
+    margin-bottom: 60px;
     z-index: 2;
 }
 
-.card div.selected .evolution li img {
-    padding-right: 8px;
-    width: auto;
-    height: 80px;
+.card .selected .evolution li img {
+    min-width: 90px;
+    max-width: 33%;
+    min-height: 80px;
+    max-height: 60%;
 }
 
-.card  div.selected  .type {
+.card  .selected  .type {
     align-items: flex-end;
     grid-row-start: 4;
     grid-column-start: 2;
     flex-direction: row;
 }
 
-.card  div.selected .type li {
+.card  .selected .type li {
     margin: 0 auto;
     width: auto;
     height: min-content;
@@ -269,7 +265,7 @@ section {
     box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
-.card div.selected .stats{
+.card .selected .stats{
     margin-bottom: 10px;
     height: 100%;
     grid-column-start: 3;
@@ -280,13 +276,13 @@ section {
     grid-row-end: 5;
 }
 
-.card div.selected .stats h3{
+.card .selected .stats h3{
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     padding: 0;
 }
 
-.card div.selected .stats li {
+.card .selected .stats li {
     letter-spacing: 2px;
     color: rgb(179, 98, 0);
     text-transform: capitalize;
@@ -298,30 +294,20 @@ section {
     padding-top: 10px;
 }
 
-.card div.selected .stats li span {
+.card .selected .stats li span {
     font-weight: bolder;
     text-shadow: 1px 1px black;
     color: rgb(124, 172, 75);
 }
 
-.card div.selected img.gif {
-    padding: 0;
-    margin-left: 10px;
-    height: 140px;
-    width: 200px;
-    border-radius: 20px 0 20px 0;
-    grid-row-start: 2;
-    grid-column-start: 3;
-}
-
-.card div.selected svg {
+.card .selected svg {
     cursor: pointer;
     font-size: 2em;
     fill: white;
     z-index: 2;
 }
 
-.card div.selected svg:hover {
+.card .selected svg:hover {
     fill: rgb(188, 0, 0);
     transform: scale(1.1);
 }
@@ -345,7 +331,7 @@ section {
     background-color: greenyellow;
 }
 .Normal {
-    background-color: rgb(112, 106, 95);
+    background-color: rgb(129, 123, 112);
 }
 .Eletrico {
     background-color: yellow;
@@ -364,4 +350,10 @@ section {
 }
 .Lutador {
     background-color: rgb(135, 0, 0);
+}
+.Fada {
+    background-color: rgb(255, 202, 211);
+}
+.Metal {
+    background-color: gray;
 }

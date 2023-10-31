@@ -36,3 +36,29 @@
     border-radius: 30px;
     z-index: 0;
 }
+
+button {
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    position: fixed;
+    top: 80px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button svg{
+    font-size: 3em;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+}
+
+.button_next {
+    right: 35px;
+}
+.button_prevent {
+    left: 25px;
+}

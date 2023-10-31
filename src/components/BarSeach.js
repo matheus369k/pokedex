@@ -2,6 +2,7 @@ import { useState } from "react";
 import style from "./BarSeach.module.css";
 import img from "../img/pokeball.png";
 import { BiSearch } from "react-icons/bi";
+import { FcNext, FcPrevious } from "react-icons/fc"
 
 function BarSeach(props){
     /*const log=()=>{
@@ -11,6 +12,7 @@ function BarSeach(props){
     }*/
 
     const [seach, setSeach]=useState('')
+    const [nextPrev, setNextPrev]=useState([0, 25])
 
     //console.log(seach);
     
@@ -58,20 +60,39 @@ function BarSeach(props){
         return
     }
 
+    const NextPrevent=(e)=>{
+        if (e=='Next') 
+        {
+            setNextPrev([Number(nextPrev[0])+25, Number(nextPrev[1])+25])
+        } 
+        else if (nextPrev[0] > 0)
+        {
+            setNextPrev([Number(nextPrev[0])-25, Number(nextPrev[1])-25])
+        }
+        
+        //console.log(Number(nextPrev);
+    }
+
+    const view=()=>{
+        if (seach=='')
+        {
+            return props.list.slice(Number(nextPrev[0]), Number(nextPrev[1]))
+        }
+        else{
+            return seach
+        }
+    }
+
     return (
         <>
-        <form className={style.seach_Container}>
-            <label><BiSearch /></label>
-            <img className={style.pokeboll} src={img} />
-            <input type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
-        </form>
-        {seach==''?
-            (
-                <>{props.list}</>
-            ):(
-                <>{seach}</>
-            )
-        }
+            <form className={style.seach_Container}>
+                <label><BiSearch /></label>
+                <img className={style.pokeboll} src={img} />
+                <input type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
+            </form>
+            {view()}
+            <button className={style.button_next} onClick={(e)=>NextPrevent('Next')}><FcNext/></button>
+            <button className={style.button_prevent} onClick={(e)=>NextPrevent('Prevent')}><FcPrevious/></button>
         </>
     )
 }
