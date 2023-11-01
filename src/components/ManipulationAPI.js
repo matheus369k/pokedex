@@ -63,19 +63,38 @@ function ManipulationAPI(props){
         const list = [] 
         cards.map((card)=>(
             list.push(
-            <div id={card.name} className="poke_card" key={card.number}>
-                <div onClick={()=>CloseSection()}><AiFillCloseCircle /></div>
-                <h1>{card.name} <span>{card.number}</span></h1>
+            <div id={card.name} className={`poke_card ${style.pokemon_Card}`} key={card.number}>
+
+                <div onClick={()=>CloseSection()}>
+                    <AiFillCloseCircle />
+                </div>
+
+                <h1>
+                    {card.name} 
+                    <span>
+                        {card.number}
+                    </span>
+                </h1>
+
                 <img className={style.png} src={card.images} />
-                <ul className={style.type}>{handleRender(card.types, 'type')}</ul>
+
+                <ul className={style.type}>
+                    {handleRender(card.types, 'type')}
+                </ul>
+
                 <h3 className={style.h3_evolution}>Evolutions:</h3>
                 <ul className={style.evolution}>
                     {handleRender(card.evolution, 'name', card.number)}
                 </ul>
+
                 <h3 className={style.h3_description}>Description: </h3>
                 <p>{card.description}</p>
+
                 <h3 className={style.h3_super_damange}>Fraquezas:</h3>
-                <ul className={style.super_damange}>{handleRender(card.superdamange, 'superdamange', card.number)}</ul>
+                <ul className={style.super_damange}>
+                    {handleRender(card.superdamange, 'superdamange', card.number)}
+                </ul>
+
                 <ul className={style.stats}>
                     <h3>Base Stats:</h3>
                     <li>HP: <span>{card.baseStats["HP"]}</span></li>
@@ -85,6 +104,7 @@ function ManipulationAPI(props){
                     <li>SP.Def: <span>{card.baseStats["Sp.Def"]}</span></li>
                     <li>Speed: <span>{card.baseStats["Speed"]}</span></li>
                 </ul>
+
             </div>)
         ))
         return list
@@ -103,7 +123,7 @@ function ManipulationAPI(props){
     
     useEffect(()=>{
 
-        document.querySelectorAll(".poke_card").forEach((pokeCard, index) => {
+        document.querySelectorAll(".poke_card").forEach((pokeCard) => {
             pokeCard.addEventListener("click", ()=> {
                 
                
@@ -121,7 +141,8 @@ function ManipulationAPI(props){
                     pokeCard.classList.add(style.selected)
                     //console.log(style.selected)
                 }
-                
+
+                document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
 
             })
         

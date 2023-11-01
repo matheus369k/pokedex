@@ -8,7 +8,7 @@
     padding: 150px 50px 50px 50px;
 }
 
-.card div {
+.pokemon_Card {
     margin: 10px;
     cursor: pointer;
     width: 150px;
@@ -24,21 +24,20 @@
     align-items: center;
 }
 
-.card div:hover {
+.pokemon_Card:hover {
     transition: .5 step-end;
     box-shadow: 0 0 20px 10px rgba(254, 254, 254, 0.519);
 }
 
-.card div div,
-.card div h3,
-.card div .gif,
-.card div h1,
-.card div ul,
-.card div p {
+.pokemon_Card div,
+.pokemon_Card h3,
+.pokemon_Card h1,
+.pokemon_Card ul,
+.pokemon_Card p {
     display: none;
 }
 
-.card h1 {
+.pokemon_Card h1 {
     text-transform: capitalize;
     color: white;
     padding-bottom: 10px;
@@ -47,18 +46,18 @@
     text-align: center;
 }
 
-.card span{
+.pokemon_Card span{
     font-weight: bolder;
     color: white;
 }
 
-.card img.png {
+.pokemon_Card .png {
     width: 95%;
     height: auto;
     transition: .5s ease-in-out;
 }
 
-section {
+.Section_Pokedex {
     padding: 50px;
     width: 968px;
     height: 568px;
@@ -73,7 +72,7 @@ section {
     box-shadow: 0 0 50px 10px rgba(41, 181, 209, 0);
 }
 
-.card .selected{ 
+.pokemon_Card.selected{ 
     align-items: normal;
     cursor: auto;
     padding: 60px 20px 20px 20px;
@@ -98,11 +97,11 @@ section {
     backdrop-filter: blur(10px);
 }
 
-.card .selected div,
-.card .selected h3,
-.card  .selected  h1,
-.card  .selected  ul,
-.card  .selected  p {
+.pokemon_Card.selected div,
+.pokemon_Card.selected h3,
+.pokemon_Card.selected  h1,
+.pokemon_Card.selected  ul,
+.pokemon_Card.selected  p {
     padding: 10px;
     font-weight: bolder;
     width: 100%;
@@ -110,7 +109,7 @@ section {
     display: flex;
 }
 
-.card .selected div{
+.pokemon_Card.selected div{
     box-shadow: none;
     padding: 0;
     background: rgba(0, 0, 0, 0);
@@ -126,7 +125,7 @@ section {
     z-index: 2;
 }
 
-.card .selected .h3_description {
+.pokemon_Card.selected .h3_description {
     padding: 0;
     padding-left: 10px;
     align-items: center;
@@ -136,7 +135,7 @@ section {
     grid-column-start: 1;
 }
 
-.card  .selected  p {
+.pokemon_Card.selected  p {
     border-radius: 0 0 0 10px;
     font-size: 1em;
     text-transform: capitalize;
@@ -149,7 +148,7 @@ section {
     z-index: 1;
 }
 
-.card  .selected .super_damange {
+.pokemon_Card.selected .super_damange {
     grid-column-start: 1;
     grid-row-start: 3;
     width: 100%;
@@ -159,14 +158,14 @@ section {
     flex-wrap: wrap;
 }
 
-.card .selected .h3_super_damange {
+.pokemon_Card.selected .h3_super_damange {
     grid-column-start: 1;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     grid-row-start: 3;
 }
 
-.card .selected .super_damange  li {
+.pokemon_Card.selected .super_damange  li {
     border-radius: 5px;
     box-shadow: 5px 5px 3px black;
     width: 30%;
@@ -177,7 +176,7 @@ section {
     padding: 5px;
 }
 
-.card  .selected  h1 {
+.pokemon_Card.selected  h1 {
     padding: 0px;
     align-items: center;
     border: none;
@@ -188,13 +187,13 @@ section {
     font-size: 2em;
 }
 
-.card  .selected  h1 span {
+.pokemon_Card.selected  h1 span {
     color: rgb(75, 75, 75);
     font-weight: bolder;
     margin-left: 10px;
 }
 
-.card .selected img.png {
+.pokemon_Card.selected .png {
     margin: 0 auto;
     grid-row-start: 2;
     grid-column-start: 2;
@@ -205,7 +204,7 @@ section {
     align-self: center;
 }
 
-.card .selected .h3_evolution {
+.pokemon_Card.selected .h3_evolution {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     padding: 0;
@@ -215,7 +214,7 @@ section {
     align-items: center;
 }
 
-.card .selected .evolution {
+.pokemon_Card.selected .evolution {
     height: 100%;
     width: 100%;
     grid-column-start: 3;
@@ -225,7 +224,7 @@ section {
     gap: 10px;
 }
 
-.card .selected .evolution li {
+.pokemon_Card.selected .evolution li {
     font-size: .8em;
     background-color: transparent;
     height: auto;
@@ -234,26 +233,26 @@ section {
     flex-direction: column-reverse;
 }
 
-.card .selected .evolution .seta {
+.pokemon_Card.selected .evolution .seta {
     margin-bottom: 60px;
     z-index: 2;
 }
 
-.card .selected .evolution li img {
+.pokemon_Card.selected .evolution li img {
     min-width: 90px;
     max-width: 33%;
     min-height: 80px;
     max-height: 60%;
 }
 
-.card  .selected  .type {
+.pokemon_Card.selected  .type {
     align-items: flex-end;
     grid-row-start: 4;
     grid-column-start: 2;
     flex-direction: row;
 }
 
-.card  .selected .type li {
+.pokemon_Card.selected .type li {
     margin: 0 auto;
     width: auto;
     height: min-content;
@@ -265,7 +264,7 @@ section {
     box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
-.card .selected .stats{
+.pokemon_Card.selected .stats{
     margin-bottom: 10px;
     height: 100%;
     grid-column-start: 3;
@@ -276,13 +275,13 @@ section {
     grid-row-end: 5;
 }
 
-.card .selected .stats h3{
+.pokemon_Card.selected .stats h3{
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     padding: 0;
 }
 
-.card .selected .stats li {
+.pokemon_Card.selected .stats li {
     letter-spacing: 2px;
     color: rgb(179, 98, 0);
     text-transform: capitalize;
@@ -294,20 +293,20 @@ section {
     padding-top: 10px;
 }
 
-.card .selected .stats li span {
+.pokemon_Card.selected .stats li span {
     font-weight: bolder;
     text-shadow: 1px 1px black;
     color: rgb(124, 172, 75);
 }
 
-.card .selected svg {
+.pokemon_Card.selected svg {
     cursor: pointer;
     font-size: 2em;
     fill: white;
     z-index: 2;
 }
 
-.card .selected svg:hover {
+.pokemon_Card.selected svg:hover {
     fill: rgb(188, 0, 0);
     transform: scale(1.1);
 }
