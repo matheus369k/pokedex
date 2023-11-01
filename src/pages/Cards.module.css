@@ -221,7 +221,6 @@
     grid-row-start: 1;
     margin-top: 150px;
     align-items: end;
-    gap: 10px;
 }
 
 .pokemon_Card.selected .evolution li {
@@ -241,7 +240,7 @@
 .pokemon_Card.selected .evolution li img {
     min-width: 90px;
     max-width: 33%;
-    min-height: 80px;
+    min-height: 90px;
     max-height: 60%;
 }
 
@@ -355,4 +354,10 @@
 }
 .Metal {
     background-color: gray;
+}
+.Fantasma {
+    background-color: rgb(86, 61, 95);
+}
+.Obscuro {
+    background-color: rgb(57, 58, 126);
 }

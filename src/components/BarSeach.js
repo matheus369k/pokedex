@@ -16,7 +16,7 @@ function BarSeach(props){
 
     //console.log(seach);
     
-    const handlefilter=(e)=>{
+    const handlefilter=(e="")=>{
         const listFilter=[]
         setSeach("")
         //console.log(isNaN(e));
@@ -36,7 +36,7 @@ function BarSeach(props){
 
             if (e === "") 
             {
-                listFilter.push(props.list)
+                listFilter.push(props.list.slice(Number(nextPrev[0]), Number(nextPrev[1])))
                 setSeach(listFilter)
                 return
             }
@@ -52,25 +52,23 @@ function BarSeach(props){
                 listFilter.push(props.list[index])
                 //console.log("props.list[Number(e-1)]")
                 setSeach(listFilter)
-                
-            }
-        
-            
+            }            
         }
         return
     }
 
     const NextPrevent=(e)=>{
-        if (e=='Next') 
+        //console.log(seach.length);  
+        if (e=='Next' && props.list.length > Number(nextPrev[1])) 
         {
             setNextPrev([Number(nextPrev[0])+25, Number(nextPrev[1])+25])
         } 
-        else if (nextPrev[0] > 0)
+        else if (e=='Prevent' && nextPrev[0] > 0)
         {
             setNextPrev([Number(nextPrev[0])-25, Number(nextPrev[1])-25])
         }
-        
-        //console.log(Number(nextPrev);
+        view()
+        return
     }
 
     const view=()=>{
@@ -79,7 +77,7 @@ function BarSeach(props){
             return props.list.slice(Number(nextPrev[0]), Number(nextPrev[1]))
         }
         else{
-            return seach
+            return seach.slice(Number(nextPrev[0]), Number(nextPrev[1]))
         }
     }
 

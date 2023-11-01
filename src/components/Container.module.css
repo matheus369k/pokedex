@@ -12,10 +12,6 @@
 .Container.Two_Generation,
 .Container.One_Generetion{
     height: 100vh;
-    background: center center no-repeat fixed;
+    background: url(../img/wp11079715-pokemon-pokeball-wallpapers.jpg) center center no-repeat fixed;
     background-size: cover;
-}
-
-.Container.One_Generetion {
-    background-image: url(../img/wp11079715-pokemon-pokeball-wallpapers.jpg);
 }

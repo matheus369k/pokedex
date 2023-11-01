@@ -9,9 +9,9 @@ function OneGeneration() {
 
     return (
         <Container customClass="One_Generetion">
-            <div key="One_Generetion" id="container" className={style.card}>
+            <section key="One_Generetion" id="container" className={style.card}>
                 <ManipulationAPI api={API} />
-            </div>    
+            </section>    
         </Container>
     )
 }
