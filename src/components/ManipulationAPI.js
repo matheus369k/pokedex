@@ -23,7 +23,7 @@ function ManipulationAPI(props){
             localStorage.setItem("classcustom", render[0][name])
             listRender.push(
                 render.map((rende)=>(
-                    <li className={style[rende.type]}>
+                    <li className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
                         {rende.type}
                     </li>
             )))
@@ -39,14 +39,14 @@ function ManipulationAPI(props){
                             (<>
                                 <li className={style[localStorage.getItem("classcustom")]}>
                                     <span>{rende.name}</span>
-                                    <span>{isNaN(rende.Lv) ? (""):(<span>Level:</span>)}{rende.Lv}</span>
+                                    <span>{isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}</span>
                                     <img src={rende.img} />
                                 </li>
-                                <span className={style.seta}>{index < render.length-1 ? "➔" : "" }</span>
+                                <span className={style.seta}>{index < render.length-1 ? `${rende.img.slice(14, 17)==134 || rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }</span>
                             </>)
                             :
                             (<>
-                                <li className={style[rende.type]}>
+                                <li className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
                                     {rende.type}
                                 </li>
                            </>)

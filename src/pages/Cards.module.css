@@ -83,7 +83,7 @@
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 268px 300px 330px;
+    grid-template-columns: 268px max-content minmax();
     grid-template-rows: 60px 264px 50px 70px;
     box-shadow: none;
     z-index: 2;
@@ -219,7 +219,7 @@
     width: 100%;
     grid-column-start: 3;
     grid-row-start: 1;
-    margin-top: 150px;
+    margin-top: 120px;
     align-items: end;
 }
 
@@ -228,7 +228,9 @@
     background-color: transparent;
     height: auto;
     display: flex;
+    margin: 0 auto;
     align-items: center;
+    text-align: center;
     flex-direction: column-reverse;
 }
 
@@ -238,10 +240,10 @@
 }
 
 .pokemon_Card.selected .evolution li img {
-    min-width: 90px;
-    max-width: 33%;
-    min-height: 90px;
-    max-height: 60%;
+    max-width: 80px;
+    width: auto;
+    max-height: 150px;
+    min-height: 60px;
 }
 
 .pokemon_Card.selected  .type {
@@ -320,7 +322,7 @@
     background-color: orange;
 }
 .Voador {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(233, 233, 233);
 }
 .Agua {
     background-color: blue;
@@ -360,4 +362,7 @@
 }
 .Obscuro {
     background-color: rgb(57, 58, 126);
+}
+.Dragon {
+    background-color: rgb(1, 2, 80);
 }

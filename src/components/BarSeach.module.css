@@ -38,27 +38,30 @@
 }
 
 button {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.309);
+    border-radius: 50%;
     border: none;
-    z-index: 1;
+    height: 50px;
+    width: 50px;
+    z-index: 0;
     position: fixed;
-    top: 80px;
+    bottom: 230px;
     cursor: pointer;
-    padding: 10px;
-}
-
-button svg{
-    font-size: 3em;
 }
 
 button:hover {
-    transform: scale(1.05);
-    transition: .5s ease-in-out;
+    transition: 1s ease-in;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.165);
+}
+
+button svg{
+    opacity: 50%;
+    font-size: 3em;
 }
 
 .button_next {
-    right: 35px;
+    right: 16vw;
 }
 .button_prevent {
-    left: 25px;
+    left: 15vw;
 }
