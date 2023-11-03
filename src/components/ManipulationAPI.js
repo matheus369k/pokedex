@@ -14,7 +14,7 @@ function ManipulationAPI(props){
         
     }).catch((err)=> console.log(err))
 
-    const handleRender=(render, name, cardnumber=0)=>{
+    const handleRender=(render, name, cardNumber=0)=>{
         //console.log(evolution);
         let listRender = []
         
@@ -23,38 +23,51 @@ function ManipulationAPI(props){
             localStorage.setItem("classcustom", render[0][name])
             listRender.push(
                 render.map((rende)=>(
-                    <li className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
+                    <li key={`${cardNumber}-Type:${rende.type}`} className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
                         {rende.type}
                     </li>
             )))
             //console.log(render);
             
         } 
-        else
+        else if (name=='name')
         {
             listRender.push(
-                    render.map((rende, index)=>(
-                        <>
-                        {name=='name' ? 
-                            (<>
-                                <li className={style[localStorage.getItem("classcustom")]}>
-                                    <span>{rende.name}</span>
-                                    <span>{isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}</span>
-                                    <img src={rende.img} />
-                                </li>
-                                <span className={style.seta}>{index < render.length-1 ? `${rende.img.slice(14, 17)==134 || rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }</span>
-                            </>)
-                            :
-                            (<>
-                                <li className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
-                                    {rende.type}
-                                </li>
-                           </>)
-                        }
-                       </>
-                    ))
-                )
-        }
+                render.map((rende, index)=>(
+                    <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul`} className={style.All_list}>
+                        <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul-ul`} className={style[localStorage.getItem("classcustom")]}>
+                            <li key={`${cardNumber}_Evolution_Poke:${rende.name}-name`} className={style.name}>
+                                {rende.name}
+                            </li>
+                            <li key={`${cardNumber}_Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
+                                {isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}
+                            </li>
+                            <li key={`${cardNumber}_Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
+                                <img src={rende.img} />
+                            </li>
+                        </ul>
+                        <li 
+                        key={`${cardNumber}_Evolution_Seta:${rende.name}-span`} 
+                        className={style.seta}>
+                            {index < render.length-1 ? `${rende.img.slice(14, 17)==134 || rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }
+                        </li>
+                    </ul>
+                ))
+            )
+        } 
+        else 
+        {
+            listRender.push( 
+                render.map((rende)=>(
+                <li 
+                key={`${cardNumber}_Sup.Damage:${rende.type}`} 
+                className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
+                    {rende.type}
+                </li>
+            ))
+            )
+        }      
+                            
         return listRender
 
     }
@@ -78,12 +91,12 @@ function ManipulationAPI(props){
 
                 <img className={style.png} src={card.images} />
 
-                <ul className={style.type}>
-                    {handleRender(card.types, 'type')}
+                <ul key={`Type:${card.number}`} className={style.type}>
+                    {handleRender(card.types, 'type', card.number)}
                 </ul>
 
                 <h3 className={style.h3_evolution}>Evolutions:</h3>
-                <ul className={style.evolution}>
+                <ul key={`Evolution:${card.number}`} className={style.evolution}>
                     {handleRender(card.evolution, 'name', card.number)}
                 </ul>
 
@@ -91,7 +104,7 @@ function ManipulationAPI(props){
                 <p>{card.description}</p>
 
                 <h3 className={style.h3_super_damange}>Fraquezas:</h3>
-                <ul className={style.super_damange}>
+                <ul key={`SuperDamege:${card.name}`} className={style.super_damange}>
                     {handleRender(card.superdamange, 'superdamange', card.number)}
                 </ul>
 
@@ -137,7 +150,7 @@ function ManipulationAPI(props){
 
                     const fother = document.getElementById("container")
                     //console.log(fother);
-                    fother.appendChild(section)
+                    fother.parentNode.appendChild(section)
                     pokeCard.classList.add(style.selected)
                     //console.log(style.selected)
                 }

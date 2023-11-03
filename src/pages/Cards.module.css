@@ -1,32 +1,32 @@
-.card {
+.card section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1024px;
-    padding: 150px 50px 50px 50px;
+    padding: 100px 80px 50px 80px;
+    gap: 30px;
 }
 
 .pokemon_Card {
-    margin: 10px;
     cursor: pointer;
-    width: 150px;
-    height: 230px;
-    border: 2px double rgba(209, 0, 0, 0.767);
+    width: 200px;
+    height: 280px;
+    border: 2px double rgba(0, 171, 209, 0.767);
     outline: 2px solid white;
     border-radius: 5px;
-    background-image: url("../img/0135025fbfab1211013ee04d679120.jpg");
-    background-position: center center;
-    background-size: cover;
-    box-shadow: 0 0 20px 10px rgba(254, 254, 254, 0.361);
+    background: rgba(0, 255, 132, 0.078);
+    backdrop-filter: blur(100px);
     display: flex;
     align-items: center;
+    z-index: 0;
 }
 
 .pokemon_Card:hover {
     transition: .5 step-end;
     box-shadow: 0 0 20px 10px rgba(254, 254, 254, 0.519);
+    background: rgba(79, 255, 252, 0.272);
 }
 
 .pokemon_Card div,
@@ -83,7 +83,7 @@
     width: 968px;
     height: 568px;
     display: grid;
-    grid-template-columns: 268px max-content minmax();
+    grid-template-columns: minmax(230px, 300px) 1fr max-content ;
     grid-template-rows: 60px 264px 50px 70px;
     box-shadow: none;
     z-index: 2;
@@ -93,8 +93,9 @@
     border: 10px ridge rgb(0, 0, 0);
     outline: 15px outset rgb(0, 150, 167);
     /*outline-offset: 5px ;*/
-    background-color: rgba(1, 136, 185, 0.097);
+    background-color: rgba(0, 0, 0, 0.307);
     backdrop-filter: blur(10px);
+    gap: 5px;
 }
 
 .pokemon_Card.selected div,
@@ -190,7 +191,7 @@
 .pokemon_Card.selected  h1 span {
     color: rgb(75, 75, 75);
     font-weight: bolder;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .pokemon_Card.selected .png {
@@ -198,7 +199,6 @@
     grid-row-start: 2;
     grid-column-start: 2;
     grid-row-end: 4;
-    min-height: 60%;
     max-height: 100%;
     max-width: 100%;
     align-self: center;
@@ -215,38 +215,55 @@
 }
 
 .pokemon_Card.selected .evolution {
+    flex-direction: row;
     height: 100%;
     width: 100%;
     grid-column-start: 3;
     grid-row-start: 1;
-    margin-top: 120px;
     align-items: end;
+    margin-top: 130px;
 }
 
-.pokemon_Card.selected .evolution li {
+.pokemon_Card.selected .evolution .All_list {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.pokemon_Card.selected .evolution .All_list ul {
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.pokemon_Card.selected .evolution .name,
+.pokemon_Card.selected .evolution .Lv {
+    color: white;
     font-size: .8em;
     background-color: transparent;
     height: auto;
     display: flex;
-    margin: 0 auto;
-    align-items: center;
     text-align: center;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    gap: 2px;
 }
 
 .pokemon_Card.selected .evolution .seta {
-    margin-bottom: 60px;
+    color: white;
     z-index: 2;
 }
 
-.pokemon_Card.selected .evolution li img {
+.pokemon_Card.selected .evolution .Ev_img img {
     max-width: 80px;
     width: auto;
     max-height: 150px;
     min-height: 60px;
 }
 
-.pokemon_Card.selected  .type {
+.pokemon_Card.selected .type {
     align-items: flex-end;
     grid-row-start: 4;
     grid-column-start: 2;

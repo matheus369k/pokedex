@@ -9,7 +9,7 @@ function OneGeneration() {
 
     return (
         <Container customClass="One_Generetion">
-            <section key="One_Generetion" id="container" className={style.card}>
+            <section id="container" className={style.card}>
                 <ManipulationAPI api={API} />
             </section>    
         </Container>

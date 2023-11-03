@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "./BarSeach.module.css";
 import img from "../img/pokeball.png";
 import { BiSearch } from "react-icons/bi";
-import { FcNext, FcPrevious } from "react-icons/fc"
+import { AiFillDownCircle } from "react-icons/ai"
 
 function BarSeach(props){
     /*const log=()=>{
@@ -12,7 +12,7 @@ function BarSeach(props){
     }*/
 
     const [seach, setSeach]=useState('')
-    const [nextPrev, setNextPrev]=useState([0, 25])
+    const [nextPrev, setNextPrev]=useState(9)
 
     //console.log(seach);
     
@@ -36,8 +36,7 @@ function BarSeach(props){
 
             if (e === "") 
             {
-                listFilter.push(props.list.slice(Number(nextPrev[0]), Number(nextPrev[1])))
-                setSeach(listFilter)
+                setSeach("")
                 return
             }
             let pokeNumber = clientSeach
@@ -59,13 +58,9 @@ function BarSeach(props){
 
     const NextPrevent=(e)=>{
         //console.log(seach.length);  
-        if (e=='Next' && props.list.length > Number(nextPrev[1])) 
+        if (e=='More' && props.list.length > Number(nextPrev)) 
         {
-            setNextPrev([Number(nextPrev[0])+25, Number(nextPrev[1])+25])
-        } 
-        else if (e=='Prevent' && nextPrev[0] > 0)
-        {
-            setNextPrev([Number(nextPrev[0])-25, Number(nextPrev[1])-25])
+            setNextPrev(Number(nextPrev)+25)
         }
         view()
         return
@@ -74,10 +69,10 @@ function BarSeach(props){
     const view=()=>{
         if (seach=='')
         {
-            return props.list.slice(Number(nextPrev[0]), Number(nextPrev[1]))
+            return props.list.slice(0, nextPrev)
         }
         else{
-            return seach.slice(Number(nextPrev[0]), Number(nextPrev[1]))
+            return seach.slice(0, nextPrev)
         }
     }
 
@@ -88,9 +83,8 @@ function BarSeach(props){
                 <img className={style.pokeboll} src={img} />
                 <input type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
             </form>
-            {view()}
-            <button className={style.button_next} onClick={(e)=>NextPrevent('Next')}><FcNext/></button>
-            <button className={style.button_prevent} onClick={(e)=>NextPrevent('Prevent')}><FcPrevious/></button>
+            <section key={`List_Cards:0-${nextPrev}`}>{view()}</section>
+            <button className={style.button_More} onClick={(e)=>NextPrevent('More')}><AiFillDownCircle/></button>
         </>
     )
 }

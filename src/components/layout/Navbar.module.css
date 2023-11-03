@@ -4,10 +4,12 @@
     gap: 20px;
     width: calc(100vw - 20px);
     height: 70px;
+    z-index: 1;
     backdrop-filter: blur(10px);
 }
 
 .Navbar a {
+    padding: 10px 2px;
     font-weight: bolder;
     letter-spacing: 1px;
     text-transform: uppercase;
