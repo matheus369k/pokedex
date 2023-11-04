@@ -29,32 +29,35 @@
     background: rgba(79, 255, 252, 0.272);
 }
 
-.pokemon_Card div,
-.pokemon_Card h3,
-.pokemon_Card h1,
-.pokemon_Card ul,
-.pokemon_Card p {
-    display: none;
-}
-
-.pokemon_Card h1 {
-    text-transform: capitalize;
-    color: white;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(6, 6, 6);
-    font-size: 1em;
-    text-align: center;
-}
-
-.pokemon_Card span{
-    font-weight: bolder;
-    color: white;
-}
-
 .pokemon_Card .png {
     width: 95%;
     height: auto;
     transition: .5s ease-in-out;
+}
+
+.pokemon_Card .closed,
+.pokemon_Card button,
+.pokemon_Card .h1_name,
+.pokemon_Card .description,
+.pokemon_Card h3,
+.pokemon_Card .type,
+.pokemon_Card .super_damange,
+.pokemon_Card .evolution,
+.pokemon_Card .stats{
+    display: none;
+}
+
+.pokemon_Card.selected .closed,
+.pokemon_Card.selected button,
+.pokemon_Card.selected .h1_name,
+.pokemon_Card.selected .description,
+.pokemon_Card.selected h3,
+.pokemon_Card.selected .type,
+.pokemon_Card.selected .super_damange,
+.pokemon_Card.selected .evolution,
+.pokemon_Card.selected .stats{
+    display: block;
+    z-index: 2;
 }
 
 .Section_Pokedex {
@@ -72,45 +75,54 @@
     box-shadow: 0 0 50px 10px rgba(41, 181, 209, 0);
 }
 
-.pokemon_Card.selected{ 
-    align-items: normal;
+.pokemon_Card.selected { 
     cursor: auto;
-    padding: 60px 20px 20px 20px;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 968px;
     height: 568px;
-    display: grid;
-    grid-template-columns: minmax(230px, 300px) 1fr max-content ;
-    grid-template-rows: 60px 264px 50px 70px;
+    transform: translate(-50%, -50%);
     box-shadow: none;
+    display: grid;
+    grid-template-columns: 500px 300px;
+    grid-template-rows: 50px min-content 300px 100px;
     z-index: 2;
     border-radius: 20px 0 20px 0;
     border: none;
     background: transparent;
     border: 10px ridge rgb(0, 0, 0);
     outline: 15px outset rgb(0, 150, 167);
-    /*outline-offset: 5px ;*/
     background-color: rgba(0, 0, 0, 0.307);
     backdrop-filter: blur(10px);
-    gap: 5px;
 }
 
-.pokemon_Card.selected div,
-.pokemon_Card.selected h3,
-.pokemon_Card.selected  h1,
-.pokemon_Card.selected  ul,
-.pokemon_Card.selected  p {
-    padding: 10px;
-    font-weight: bolder;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    display: flex;
+
+.pokemon_Card.selected button {
+    z-index: 1;
+    background-color: transparent;
+    position: fixed;
+    top: 50%;
+    width: min-content;
+    height: min-content;
+    border: none;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    opacity: 60%;
 }
 
-.pokemon_Card.selected div{
+*{
+    border: 1px solid red;
+}
+
+.pokemon_Card.selected .button_right {
+    right: -10px;
+}
+.pokemon_Card.selected .button_left {
+    left: -15px;
+}
+
+.closed{
     box-shadow: none;
     padding: 0;
     background: rgba(0, 0, 0, 0);
@@ -123,33 +135,65 @@
     right: 0px;
     border: none;
     outline: none;
+    z-index: 1;
+}
+
+.closed svg {
+    cursor: pointer;
+    font-size: 2em;
+    fill: white;
     z-index: 2;
 }
 
-.pokemon_Card.selected .h3_description {
-    padding: 0;
-    padding-left: 10px;
-    align-items: center;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
-    color: rgb(0, 237, 0);
+.closed svg:hover {
+    fill: rgb(188, 0, 0);
+    transform: scale(1.1);
+}
+
+.h1_name {
+    text-shadow: 1px 1px black;
+    color: rgb(141, 141, 141);
+    grid-column-start: 1;
     grid-row-start: 1;
+    font-size: 2em;
+}
+
+.h1_name span {
+    color: rgb(75, 75, 75);
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.pokemon_Card.selected .png {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    grid-row-start: 2;
     grid-column-start: 1;
 }
 
-.pokemon_Card.selected  p {
-    border-radius: 0 0 0 10px;
+
+.h3_description {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    color: rgb(0, 237, 0);
+    grid-row-start: 1;
+    grid-column-start: 2;
+    width: 100%;
+}
+
+.description {
+    width: 100%;
+    color: white;
     font-size: 1em;
     text-transform: capitalize;
     letter-spacing: 1px;
     line-height: 24px;
-    margin-top: 30px;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 2;
     z-index: 1;
 }
 
-.pokemon_Card.selected .super_damange {
+.super_damange {
     grid-column-start: 1;
     grid-row-start: 3;
     width: 100%;
@@ -159,14 +203,14 @@
     flex-wrap: wrap;
 }
 
-.pokemon_Card.selected .h3_super_damange {
+.h3_super_damange {
     grid-column-start: 1;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     grid-row-start: 3;
 }
 
-.pokemon_Card.selected .super_damange  li {
+.super_damange  li {
     border-radius: 5px;
     box-shadow: 5px 5px 3px black;
     width: 30%;
@@ -177,34 +221,7 @@
     padding: 5px;
 }
 
-.pokemon_Card.selected  h1 {
-    padding: 0px;
-    align-items: center;
-    border: none;
-    text-shadow: 1px 1px black;
-    color: rgb(141, 141, 141);
-    grid-column-start: 2;
-    grid-row-start: 1;
-    font-size: 2em;
-}
-
-.pokemon_Card.selected  h1 span {
-    color: rgb(75, 75, 75);
-    font-weight: bolder;
-    margin-left: 5px;
-}
-
-.pokemon_Card.selected .png {
-    margin: 0 auto;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    grid-row-end: 4;
-    max-height: 100%;
-    max-width: 100%;
-    align-self: center;
-}
-
-.pokemon_Card.selected .h3_evolution {
+.pokemon_Card.selected .Open .h3_evolution {
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     padding: 0;
@@ -214,7 +231,7 @@
     align-items: center;
 }
 
-.pokemon_Card.selected .evolution {
+.pokemon_Card.selected .Open .evolution {
     flex-direction: row;
     height: 100%;
     width: 100%;
@@ -224,14 +241,14 @@
     margin-top: 130px;
 }
 
-.pokemon_Card.selected .evolution .All_list {
+.pokemon_Card.selected .Open .evolution .All_list {
     flex-direction: row;
     align-items: center;
     padding: 0;
     margin: 0;
 }
 
-.pokemon_Card.selected .evolution .All_list ul {
+.pokemon_Card.selected .Open .evolution .All_list ul {
     flex-direction: column-reverse;
     align-items: center;
     background-color: transparent;
@@ -239,8 +256,8 @@
     margin: 0;
 }
 
-.pokemon_Card.selected .evolution .name,
-.pokemon_Card.selected .evolution .Lv {
+.pokemon_Card.selected .Open .evolution .name,
+.pokemon_Card.selected .Open .evolution .Lv {
     color: white;
     font-size: .8em;
     background-color: transparent;
@@ -251,26 +268,26 @@
     gap: 2px;
 }
 
-.pokemon_Card.selected .evolution .seta {
+.pokemon_Card.selected .Open .evolution .seta {
     color: white;
     z-index: 2;
 }
 
-.pokemon_Card.selected .evolution .Ev_img img {
+.pokemon_Card.selected .Open .evolution .Ev_img img {
     max-width: 80px;
     width: auto;
     max-height: 150px;
     min-height: 60px;
 }
 
-.pokemon_Card.selected .type {
+.pokemon_Card.selected .Open .type {
     align-items: flex-end;
     grid-row-start: 4;
     grid-column-start: 2;
     flex-direction: row;
 }
 
-.pokemon_Card.selected .type li {
+.pokemon_Card.selected .Open .type li {
     margin: 0 auto;
     width: auto;
     height: min-content;
@@ -282,7 +299,7 @@
     box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
-.pokemon_Card.selected .stats{
+.pokemon_Card.selected .Open .stats{
     margin-bottom: 10px;
     height: 100%;
     grid-column-start: 3;
@@ -293,13 +310,13 @@
     grid-row-end: 5;
 }
 
-.pokemon_Card.selected .stats h3{
+.pokemon_Card.selected .Open .stats h3{
     text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
     color: rgb(0, 237, 0);
     padding: 0;
 }
 
-.pokemon_Card.selected .stats li {
+.pokemon_Card.selected .Open .stats li {
     letter-spacing: 2px;
     color: rgb(179, 98, 0);
     text-transform: capitalize;
@@ -311,22 +328,10 @@
     padding-top: 10px;
 }
 
-.pokemon_Card.selected .stats li span {
+.pokemon_Card.selected .Open .stats li span {
     font-weight: bolder;
     text-shadow: 1px 1px black;
     color: rgb(124, 172, 75);
-}
-
-.pokemon_Card.selected svg {
-    cursor: pointer;
-    font-size: 2em;
-    fill: white;
-    z-index: 2;
-}
-
-.pokemon_Card.selected svg:hover {
-    fill: rgb(188, 0, 0);
-    transform: scale(1.1);
 }
 
 .Grama {

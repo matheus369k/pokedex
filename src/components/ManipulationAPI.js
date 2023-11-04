@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import style  from "../pages/Cards.module.css"
 import {AiFillCloseCircle} from "react-icons/ai"
 import BarSeach from "./BarSeach";
+import { BiSolidChevronRightCircle, BiSolidChevronLeftCircle } from "react-icons/bi"
 
 function ManipulationAPI(props){
     const [cards, setCards]=useState([])
+    const [nex_Pre, setNex_Pre]=useState(true)
 
     axios(props.api)
     .then((resp)=> {
@@ -77,50 +79,62 @@ function ManipulationAPI(props){
         cards.map((card)=>(
             list.push(
             <div id={card.name} className={`poke_card ${style.pokemon_Card}`} key={card.number}>
-
-                <div onClick={()=>CloseSection()}>
+                <div className={style.closed} onClick={()=>CloseSection()}>
                     <AiFillCloseCircle />
                 </div>
-
-                <h1>
-                    {card.name} 
-                    <span>
-                        {card.number}
-                    </span>
-                </h1>
-
                 <img className={style.png} src={card.images} />
-
-                <ul key={`Type:${card.number}`} className={style.type}>
-                    {handleRender(card.types, 'type', card.number)}
-                </ul>
-
-                <h3 className={style.h3_evolution}>Evolutions:</h3>
-                <ul key={`Evolution:${card.number}`} className={style.evolution}>
-                    {handleRender(card.evolution, 'name', card.number)}
-                </ul>
-
-                <h3 className={style.h3_description}>Description: </h3>
-                <p>{card.description}</p>
-
-                <h3 className={style.h3_super_damange}>Fraquezas:</h3>
-                <ul key={`SuperDamege:${card.name}`} className={style.super_damange}>
-                    {handleRender(card.superdamange, 'superdamange', card.number)}
-                </ul>
-
-                <ul className={style.stats}>
-                    <h3>Base Stats:</h3>
-                    <li>HP: <span>{card.baseStats["HP"]}</span></li>
-                    <li>Atack: <span>{card.baseStats["Atack"]}</span></li>
-                    <li>Defense: <span>{card.baseStats["Defense"]}</span></li>
-                    <li>SP.Atack: <span>{card.baseStats["Sp.atack"]}</span></li>
-                    <li>SP.Def: <span>{card.baseStats["Sp.Def"]}</span></li>
-                    <li>Speed: <span>{card.baseStats["Speed"]}</span></li>
-                </ul>
-
+                {nex_Pre ?
+                    (
+                    <>
+                    <h1 className={style.h1_name}>
+                        {card.name}
+                        <span>
+                            {card.number}
+                        </span>
+                    </h1>
+                    <ul key={`Type:${card.number}`} className={style.type}>
+                        {handleRender(card.types, 'type', card.number)}
+                    </ul>
+                    <h3 className={style.h3_description}>Description: </h3>
+                    <p className={style.description}>{card.description}</p>
+                    <h3 className={style.h3_super_damange}>Fraquezas:</h3>
+                    <ul key={`SuperDamege:${card.name}`} className={style.super_damange}>
+                        {handleRender(card.superdamange, 'superdamange', card.number)}
+                    </ul>
+                    </>
+                    ):(
+                    <>
+                    <h3 className={style.h3_evolution}>Evolutions:</h3>
+                    <ul key={`Evolution:${card.number}`} className={style.evolution}>
+                        {handleRender(card.evolution, 'name', card.number)}
+                    </ul>
+                    <ul className={style.stats}>
+                        <li><h3>Base Stats:</h3></li>
+                        <li>HP: <span>{card.baseStats["HP"]}</span></li>
+                        <li>Atack: <span>{card.baseStats["Atack"]}</span></li>
+                        <li>Defense: <span>{card.baseStats["Defense"]}</span></li>
+                        <li>SP.Atack: <span>{card.baseStats["Sp.atack"]}</span></li>
+                        <li>SP.Def: <span>{card.baseStats["Sp.Def"]}</span></li>
+                        <li>Speed: <span>{card.baseStats["Speed"]}</span></li>
+                    </ul>
+                    </>
+                    )
+                }
+                <button
+                id="right" 
+                onClick={(e)=>handleNex_Pre(nex_Pre)} 
+                className={nex_Pre ? style.button_right : style.button_left}>
+                    {nex_Pre ? <BiSolidChevronRightCircle/>:<BiSolidChevronLeftCircle />}
+                </button>
             </div>)
         ))
         return list
+    }
+
+    const handleNex_Pre=(e)=>{
+        console.log(style.btn_Hider);
+        const hidebtn = document.getElementById(e)
+        setNex_Pre(!nex_Pre)
     }
 
     //console.log(handlecard().props.children[0]);
