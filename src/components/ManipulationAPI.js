@@ -17,7 +17,6 @@ function ManipulationAPI(props){
     }).catch((err)=> console.log(err))
 
     const handleRender=(render, name, cardNumber=0)=>{
-        //console.log(evolution);
         let listRender = []
         
         if (name=='type')
@@ -29,7 +28,6 @@ function ManipulationAPI(props){
                         {rende.type}
                     </li>
             )))
-            //console.log(render);
             
         } 
         else if (name=='name')
@@ -82,16 +80,18 @@ function ManipulationAPI(props){
                 <div className={style.closed} onClick={()=>CloseSection()}>
                     <AiFillCloseCircle />
                 </div>
-                <img className={style.png} src={card.images} />
                 {nex_Pre ?
                     (
                     <>
+                    <img className={style.png} src={card.images} />
                     <h1 className={style.h1_name}>
-                        {card.name}
-                        <span>
-                            {card.number}
-                        </span>
+                        <span>Nome: </span>{card.name}
+                        
                     </h1>
+                    <h2 className={style.Pokedex_num}>
+                        <span>Pokedex: </span>{card.number}
+                    </h2>
+                    <h3 className={style.h3_Tipos}>Tipo(s): </h3>
                     <ul key={`Type:${card.number}`} className={style.type}>
                         {handleRender(card.types, 'type', card.number)}
                     </ul>
@@ -108,8 +108,8 @@ function ManipulationAPI(props){
                     <ul key={`Evolution:${card.number}`} className={style.evolution}>
                         {handleRender(card.evolution, 'name', card.number)}
                     </ul>
+                    <h3 className={style.h3_stats}>Base Stats:</h3>
                     <ul className={style.stats}>
-                        <li><h3>Base Stats:</h3></li>
                         <li>HP: <span>{card.baseStats["HP"]}</span></li>
                         <li>Atack: <span>{card.baseStats["Atack"]}</span></li>
                         <li>Defense: <span>{card.baseStats["Defense"]}</span></li>
@@ -120,9 +120,9 @@ function ManipulationAPI(props){
                     </>
                     )
                 }
-                <button
-                id="right" 
-                onClick={(e)=>handleNex_Pre(nex_Pre)} 
+                <button 
+                id="Pokedex_button"
+                onClick={()=>setNex_Pre(!nex_Pre)} 
                 className={nex_Pre ? style.button_right : style.button_left}>
                     {nex_Pre ? <BiSolidChevronRightCircle/>:<BiSolidChevronLeftCircle />}
                 </button>
@@ -131,30 +131,18 @@ function ManipulationAPI(props){
         return list
     }
 
-    const handleNex_Pre=(e)=>{
-        console.log(style.btn_Hider);
-        const hidebtn = document.getElementById(e)
-        setNex_Pre(!nex_Pre)
-    }
-
-    //console.log(handlecard().props.children[0]);
-
     const CloseSection=()=>{
         
         const section = document.getElementById("pokedex_open")
         section.parentNode.removeChild(section)
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
+        setNex_Pre(true)
     }
-
-    //console.log(localStorage.getItem("pokemon"));
     
     useEffect(()=>{
 
         document.querySelectorAll(".poke_card").forEach((pokeCard) => {
             pokeCard.addEventListener("click", ()=> {
-                
-               
-                //console.log(index);
 
                 if (!document.querySelector("#pokedex_open"))
                 {
@@ -163,10 +151,8 @@ function ManipulationAPI(props){
                     section.setAttribute("id", "pokedex_open")
 
                     const fother = document.getElementById("container")
-                    //console.log(fother);
                     fother.parentNode.appendChild(section)
                     pokeCard.classList.add(style.selected)
-                    //console.log(style.selected)
                 }
 
                 document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
@@ -175,7 +161,7 @@ function ManipulationAPI(props){
         
         })
     })
-    return <BarSeach list={handlecard()} />
+    return <BarSeach pokedexNP={nex_Pre} list={handlecard()} />
 }
 
 export default ManipulationAPI

@@ -39,6 +39,7 @@
 .pokemon_Card button,
 .pokemon_Card .h1_name,
 .pokemon_Card .description,
+.pokemon_Card .Pokedex_num,
 .pokemon_Card h3,
 .pokemon_Card .type,
 .pokemon_Card .super_damange,
@@ -51,13 +52,15 @@
 .pokemon_Card.selected button,
 .pokemon_Card.selected .h1_name,
 .pokemon_Card.selected .description,
+.pokemon_Card.selected .Pokedex_num,
 .pokemon_Card.selected h3,
 .pokemon_Card.selected .type,
 .pokemon_Card.selected .super_damange,
 .pokemon_Card.selected .evolution,
 .pokemon_Card.selected .stats{
-    display: block;
+    display: flex;
     z-index: 2;
+    margin: 0px;
 }
 
 .Section_Pokedex {
@@ -78,6 +81,7 @@
 .pokemon_Card.selected { 
     cursor: auto;
     position: fixed;
+    padding: 20px 40px;
     top: 50%;
     left: 50%;
     width: 968px;
@@ -85,8 +89,8 @@
     transform: translate(-50%, -50%);
     box-shadow: none;
     display: grid;
-    grid-template-columns: 500px 300px;
-    grid-template-rows: 50px min-content 300px 100px;
+    grid-template-columns: min-content minmax(300px, 620px);
+    grid-template-rows: 50px 50px 35px 40px minmax() 40px minmax(200px, 300px);
     z-index: 2;
     border-radius: 20px 0 20px 0;
     border: none;
@@ -99,7 +103,7 @@
 
 
 .pokemon_Card.selected button {
-    z-index: 1;
+    z-index: 2;
     background-color: transparent;
     position: fixed;
     top: 50%;
@@ -107,19 +111,23 @@
     height: min-content;
     border: none;
     transform: translateY(-50%);
-    font-size: 1.5em;
-    opacity: 60%;
+    border-radius: 5px;
 }
 
-*{
-    border: 1px solid red;
+.pokemon_Card.selected button  svg {
+    font-size: 3em;
+    fill: white;
+}
+
+.pokemon_Card.selected button  svg:hover {
+    fill: rgb(237, 133, 133);
 }
 
 .pokemon_Card.selected .button_right {
-    right: -10px;
+    right: 0px;
 }
 .pokemon_Card.selected .button_left {
-    left: -15px;
+    left: 0px;
 }
 
 .closed{
@@ -150,146 +158,61 @@
     transform: scale(1.1);
 }
 
+.pokemon_Card.selected .png {
+    width: 500px;
+    height: 500px;
+    margin: 0px;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    grid-column-start: 1;
+}
+
 .h1_name {
     text-shadow: 1px 1px black;
-    color: rgb(141, 141, 141);
-    grid-column-start: 1;
+    color: rgb(255, 255, 255);
+    grid-column-start: 2;
     grid-row-start: 1;
     font-size: 2em;
 }
 
-.h1_name span {
-    color: rgb(75, 75, 75);
-    font-weight: bolder;
-    margin-left: 5px;
-}
-
-.pokemon_Card.selected .png {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    grid-row-start: 2;
-    grid-column-start: 1;
-}
-
-
-.h3_description {
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
-    color: rgb(0, 237, 0);
-    grid-row-start: 1;
-    grid-column-start: 2;
-    width: 100%;
-}
-
-.description {
-    width: 100%;
-    color: white;
-    font-size: 1em;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    line-height: 24px;
-    grid-row-start: 2;
-    grid-column-start: 2;
-    z-index: 1;
-}
-
-.super_damange {
-    grid-column-start: 1;
-    grid-row-start: 3;
-    width: 100%;
-    margin-top: 25px;
-    flex-direction: row;
-    gap: 5px;
-    flex-wrap: wrap;
-}
-
-.h3_super_damange {
-    grid-column-start: 1;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
-    color: rgb(0, 237, 0);
-    grid-row-start: 3;
-}
-
-.super_damange  li {
-    border-radius: 5px;
-    box-shadow: 5px 5px 3px black;
-    width: 30%;
-    color: white;
+.Pokedex_num {
     text-shadow: 1px 1px black;
-    text-align: center;
-    height: min-content;
-    padding: 5px;
-}
-
-.pokemon_Card.selected .Open .h3_evolution {
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
-    color: rgb(0, 237, 0);
-    padding: 0;
-    grid-column-start: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    align-items: center;
-}
-
-.pokemon_Card.selected .Open .evolution {
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    grid-column-start: 3;
-    grid-row-start: 1;
-    align-items: end;
-    margin-top: 130px;
-}
-
-.pokemon_Card.selected .Open .evolution .All_list {
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.pokemon_Card.selected .Open .evolution .All_list ul {
-    flex-direction: column-reverse;
-    align-items: center;
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-}
-
-.pokemon_Card.selected .Open .evolution .name,
-.pokemon_Card.selected .Open .evolution .Lv {
-    color: white;
-    font-size: .8em;
-    background-color: transparent;
-    height: auto;
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    gap: 2px;
-}
-
-.pokemon_Card.selected .Open .evolution .seta {
-    color: white;
-    z-index: 2;
-}
-
-.pokemon_Card.selected .Open .evolution .Ev_img img {
-    max-width: 80px;
-    width: auto;
-    max-height: 150px;
-    min-height: 60px;
-}
-
-.pokemon_Card.selected .Open .type {
-    align-items: flex-end;
-    grid-row-start: 4;
+    font-size: 2em;
     grid-column-start: 2;
-    flex-direction: row;
+    grid-row-start: 2;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
 }
 
-.pokemon_Card.selected .Open .type li {
-    margin: 0 auto;
-    width: auto;
+.h1_name  span,
+.Pokedex_num span {
+    padding-right: 5px;
+    color: rgb(0, 255, 0);
+}
+
+.h3_Tipos{
+    font-size: 1.5em;
+    position: relative;
+    left: 0%;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    color: rgb(0, 255, 0);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.956);
+}
+
+.type {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    left: 100px;
+    position: relative;
+}
+
+.type li {
+    margin: 0px 10px;
+    width: min-content;
     height: min-content;
     padding: 5px 20px;
     border-radius: 5px;
@@ -299,39 +222,159 @@
     box-shadow: 4px 4px 5px rgb(0, 0, 0);
 }
 
-.pokemon_Card.selected .Open .stats{
-    margin-bottom: 10px;
-    height: 100%;
-    grid-column-start: 3;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-size: 1.2em;
-    grid-row-start: 2;
-    grid-row-end: 5;
-}
-
-.pokemon_Card.selected .Open .stats h3{
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+.h3_super_damange {
+    font-size: 2em;
+    grid-column-start: 2;
+    font-weight: bold;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.85);
     color: rgb(0, 237, 0);
-    padding: 0;
+    grid-row-start: 4;
 }
 
-.pokemon_Card.selected .Open .stats li {
+.super_damange {
+    grid-column-start: 2;
+    grid-row-start: 5;
+    width: 100%;
+    flex-direction: row;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.super_damange  li {
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 5px 5px 3px black;
+    width: 32%;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    height: min-content;
+    padding: 10px 0px;
+}
+
+.h3_description {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    color: rgb(0, 255, 0);
+    grid-row-start: 6;
+    grid-column-start: 2;
+    width: 100%;
+}
+
+.description {
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    text-shadow: 1px 1px black;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 24px;
+    grid-row-start: 7;
+    grid-column-start: 2;
+    align-self: start;
+    z-index: 1;
+}
+
+.h3_stats{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
+    box-shadow: 5px solid rgb(0, 56, 0);
+    color: rgb(0, 237, 0);
+    font-size: 1.5em;
+}
+
+.stats{
+    width: 250px;
+    height: 100%;
+    grid-column-start: 1;
+    flex-direction: column;
+    font-size: 1.5em;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.stats li {
     letter-spacing: 2px;
     color: rgb(179, 98, 0);
     text-transform: capitalize;
     font-weight: bold;
-    padding-left: 10px;
-    box-shadow: none;
-    border-radius: 5px;
-    border-bottom: 1px solid black;
-    padding-top: 10px;
+    border-radius: 0  0 10px 0;
+    border-bottom: 5px solid rgba(0, 79, 103, 0.534);
+    padding-bottom: 5px;
+    padding-top: 30px;
 }
 
-.pokemon_Card.selected .Open .stats li span {
+.stats li span {
     font-weight: bolder;
     text-shadow: 1px 1px black;
     color: rgb(124, 172, 75);
+}
+
+.h3_evolution {
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.908);
+    color: rgb(0, 237, 0);
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 2em;
+    justify-content: center;
+    width: 100%;
+}
+
+.evolution {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 620px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.evolution .All_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.evolution .All_list ul {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.evolution .name,
+.evolution .Lv {
+    color: white;
+    font-size: 1.5em;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+.evolution .Lv span{
+    color: white;
+}
+
+.evolution .seta {
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+}
+
+.evolution .Ev_img img {
+    width: 100%;
+    min-height: 100%;
+    max-height: 300px;
 }
 
 .Grama {
