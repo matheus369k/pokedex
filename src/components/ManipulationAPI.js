@@ -16,6 +16,15 @@ function ManipulationAPI(props){
         
     }).catch((err)=> console.log(err))
 
+    const CloseSection=()=>{
+        
+        setNex_Pre(true)
+        const section = document.getElementById("pokedex_open")
+        section.parentNode.removeChild(section)
+        document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
+        return
+    }
+
     const handleRender=(render, name, cardNumber=0)=>{
         let listRender = []
         
@@ -120,23 +129,14 @@ function ManipulationAPI(props){
                     </>
                     )
                 }
-                <button 
-                id="Pokedex_button"
+                <button
                 onClick={()=>setNex_Pre(!nex_Pre)} 
-                className={nex_Pre ? style.button_right : style.button_left}>
+                className={`Pokedex_button ${nex_Pre ? style.button_right : style.button_left}`}>
                     {nex_Pre ? <BiSolidChevronRightCircle/>:<BiSolidChevronLeftCircle />}
                 </button>
             </div>)
         ))
         return list
-    }
-
-    const CloseSection=()=>{
-        
-        const section = document.getElementById("pokedex_open")
-        section.parentNode.removeChild(section)
-        document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
-        setNex_Pre(true)
     }
     
     useEffect(()=>{
@@ -156,6 +156,7 @@ function ManipulationAPI(props){
                 }
 
                 document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
+                return
 
             })
         

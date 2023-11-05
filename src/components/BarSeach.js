@@ -5,14 +5,10 @@ import { BiSearch } from "react-icons/bi";
 import { AiFillDownCircle } from "react-icons/ai"
 
 function BarSeach(props){
-    /*const log=()=>{
-        console.log(props.list[0]["key"]);
-        console.log(props.list[0]["props"]["id"]);
-        console.log(props.list[0]["props"]["children"][1]["props"]["children"][2]["props"]["children"]);
-    }*/
 
     const [seach, setSeach]=useState("")
     const [nextPrev, setNextPrev]=useState(9)
+    const [validation, setValidation]=useState(true)
     
     const handlefilter=(e="")=>{
         const listFilter = []
@@ -29,7 +25,7 @@ function BarSeach(props){
 
             if (e === "") 
             {
-                setSeach("")
+                setSeach(props.list)
                 return 
             }
             let pokeNumber = clientSeach
@@ -54,14 +50,17 @@ function BarSeach(props){
     }
 
     useEffect(()=>{
-        if(document.querySelector("#Pokedex_button") && localStorage.getItem("inputpokemon").length>0) 
+        if(validation!==props.pokedexNP) 
         {
-            document.querySelectorAll("#Pokedex_button").forEach(pk => {
-                pk.addEventListener("click", ()=>{
-                    handlefilter()
-                    document.querySelector("#input").value=""
-            })})
+            document.querySelectorAll(".Pokedex_button").forEach(pk => {
+                pk.addEventListener("mouseleave", ()=>{
+                    handlefilter(document.querySelector("#input").value)
+                    setValidation(props.pokedexNP)
+                    console.log(2, document.querySelector("#input").value);                    
+                })
+            })
         }
+        return
     })
     
 
