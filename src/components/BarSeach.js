@@ -52,13 +52,9 @@ function BarSeach(props){
     useEffect(()=>{
         if(validation!==props.pokedexNP) 
         {
-            document.querySelectorAll(".Pokedex_button").forEach(pk => {
-                pk.addEventListener("mouseleave", ()=>{
-                    handlefilter(document.querySelector("#input").value)
-                    setValidation(props.pokedexNP)
-                    console.log(2, document.querySelector("#input").value);                    
-                })
-            })
+            handlefilter(document.querySelector("#input").value)
+            setValidation(props.pokedexNP)
+            console.log(2, document.querySelector("#input").value);
         }
         return
     })
