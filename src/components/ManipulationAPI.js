@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import style  from "../pages/Cards.module.css"
 import {AiFillCloseCircle} from "react-icons/ai"
 import BarSeach from "./BarSeach";
-import { BiSolidChevronRightCircle, BiSolidChevronLeftCircle } from "react-icons/bi"
+import { FcNext, FcPrevious } from "react-icons/fc"
 
 function ManipulationAPI(props){
     const [cards, setCards]=useState([])
@@ -20,17 +20,20 @@ function ManipulationAPI(props){
         
         setNex_Pre(true)
         const section = document.getElementById("pokedex_open")
+        const div = document.querySelector("#div_backede")
+
         section.parentNode.removeChild(section)
+        div.parentNode.removeChild(div)
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
         return
     }
 
     const handleRender=(render, name, cardNumber=0)=>{
         let listRender = []
+        localStorage.setItem("classcustom", render[0][name])
         
         if (name=='type')
         {
-            localStorage.setItem("classcustom", render[0][name])
             listRender.push(
                 render.map((rende)=>(
                     <li key={`${cardNumber}-Type:${rende.type}`} className={rende.type=="Dragão" ? style.Dragon : style[rende.type]}>
@@ -44,22 +47,43 @@ function ManipulationAPI(props){
             listRender.push(
                 render.map((rende, index)=>(
                     <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul`} className={style.All_list}>
-                        <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul-ul`} className={style[localStorage.getItem("classcustom")]}>
-                            <li key={`${cardNumber}_Evolution_Poke:${rende.name}-name`} className={style.name}>
-                                {rende.name}
-                            </li>
-                            <li key={`${cardNumber}_Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
-                                {isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}
-                            </li>
-                            <li key={`${cardNumber}_Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
-                                <img src={rende.img} />
-                            </li>
-                        </ul>
+                        <li>
+                            <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul-ul`} className={style.poke_infor}>
+                                <li key={`${cardNumber}_Evolution_Poke:${rende.name}-name`} className={style.name}>
+                                    {rende.name}
+                                </li>
+                                <li key={`${cardNumber}_Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
+                                    {isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}
+                                </li>
+                                <li key={`${cardNumber}_Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
+                                    <img src={rende.img} />
+                                </li>
+                            </ul>
+                        </li>
                         <li 
                         key={`${cardNumber}_Evolution_Seta:${rende.name}-span`} 
                         className={style.seta}>
-                            {index < render.length-1 ? `${rende.img.slice(14, 17)==134 || rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }
+                            {index < render.length-1 ? `${
+                                rende.img.slice(14, 17)==134 || 
+                                rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }
                         </li>
+                        {render.length-1 === index && rende.moreOneEvolution &&
+                            <li className={`${style.M_o_Evolution} ${localStorage.getItem("classcustom") == "Eevee" ? style.eevee : style.EvoDubleorMore }`}>
+                                {rende.moreOneEvolution.map((M_O_Evolution)=>(
+                                    <ul  key={`${cardNumber}_M_o_Evolution_Poke:${rende.name}-ul-ul`}>
+                                        <li key={`${cardNumber}_Evolution_Poke:${rende.name}-name`} className={style.name}>
+                                            {M_O_Evolution.name}
+                                        </li>
+                                        <li key={`${cardNumber}_Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
+                                            {isNaN(M_O_Evolution.Lv) ? (""):(<span>Level: </span>)}{M_O_Evolution.Lv}
+                                        </li>
+                                        <li key={`${cardNumber}_Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
+                                            <img src={M_O_Evolution.img} />
+                                        </li>
+                                    </ul>
+                                ))}
+                            </li>
+                        }
                     </ul>
                 ))
             )
@@ -132,7 +156,7 @@ function ManipulationAPI(props){
                 <button
                 onClick={()=>setNex_Pre(!nex_Pre)} 
                 className={`Pokedex_button ${nex_Pre ? style.button_right : style.button_left}`}>
-                    {nex_Pre ? <BiSolidChevronRightCircle/>:<BiSolidChevronLeftCircle />}
+                    {nex_Pre ? <FcNext/>:<FcPrevious />}
                 </button>
             </div>)
         ))
@@ -146,16 +170,21 @@ function ManipulationAPI(props){
 
                 if (!document.querySelector("#pokedex_open"))
                 {
+                    const fother = document.getElementById("container")
 
                     const section = document.createElement("section")
                     section.setAttribute("id", "pokedex_open")
-
-                    const fother = document.getElementById("container")
                     fother.parentNode.appendChild(section)
+
                     pokeCard.classList.add(style.selected)
+
+                    const div = document.createElement("div")
+                    div.setAttribute("id", "div_backede")
+                    fother.parentNode.append(div)
                 }
 
                 document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
+                document.querySelector("#div_backede").classList.add(style.container_blockade)
                 return
 
             })

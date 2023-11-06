@@ -1,3 +1,13 @@
+.container_blockade {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(50px);
+    z-index: 1;
+}
+
 .card section {
     display: flex;
     flex-direction: row;
@@ -69,13 +79,13 @@
     height: 568px;
     border-radius: 20px 0 20px 0;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: url(../img/pokedex-open-dark.jpg) center center no-repeat fixed;
     background-size: cover;
-    box-shadow: 0 0 50px 10px rgba(41, 181, 209, 0);
+    box-shadow: 0 0 100px 200px rgba(0, 0, 0, 0.492);
 }
 
 .pokemon_Card.selected { 
@@ -91,7 +101,7 @@
     display: grid;
     grid-template-columns: min-content minmax(300px, 620px);
     grid-template-rows: 50px 50px 35px 40px minmax() 40px minmax(200px, 300px);
-    z-index: 2;
+    z-index: 3;
     border-radius: 20px 0 20px 0;
     border: none;
     background: transparent;
@@ -104,23 +114,21 @@
 
 .pokemon_Card.selected button {
     z-index: 2;
-    background-color: transparent;
     position: fixed;
-    top: 50%;
+    background-color: transparent;
+    bottom: 0%;
+    border: none;
     width: min-content;
     height: min-content;
-    border: none;
-    transform: translateY(-50%);
-    border-radius: 5px;
 }
 
 .pokemon_Card.selected button  svg {
-    font-size: 3em;
-    fill: white;
+    font-size: 3.5em;
 }
 
 .pokemon_Card.selected button  svg:hover {
-    fill: rgb(237, 133, 133);
+    transition: .5s ease;
+    transform: scale(1.1);
 }
 
 .pokemon_Card.selected .button_right {
@@ -216,6 +224,7 @@
     height: min-content;
     padding: 5px 20px;
     border-radius: 5px;
+    font-weight: bolder;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
     font-size: 1.2em;
@@ -243,7 +252,7 @@
 .super_damange  li {
     text-transform: uppercase;
     border-radius: 5px;
-    font-weight: bold;
+    font-weight: bolder;
     box-shadow: 5px 5px 3px black;
     width: 32%;
     color: white;
@@ -326,7 +335,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 450px;
+    height: 480px;
     width: 620px;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -334,23 +343,26 @@
 }
 
 .evolution .All_list {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-.evolution .All_list ul {
+.evolution .poke_infor {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
     background-color: transparent;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .evolution .name,
 .evolution .Lv {
-    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.713);
     font-size: 1.5em;
     background-color: transparent;
     height: auto;
@@ -360,9 +372,18 @@
     gap: 5px;
 }
 
+.evolution .Lv {
+    color: rgb(165, 147, 10);
+}
 
-.evolution .Lv span{
-    color: white;
+.evolution .Lv span {
+    font-weight: bolder;
+    color: rgb(0, 48, 62);
+}
+
+.evolution .name {
+    font-weight: bolder;
+    color: rgb(0, 169, 82);
 }
 
 .evolution .seta {
@@ -375,6 +396,63 @@
     width: 100%;
     min-height: 100%;
     max-height: 300px;
+}
+
+.evolution .M_o_Evolution {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.evolution .M_o_Evolution .name,
+.evolution .M_o_Evolution .Lv {
+    font-size: 1em;
+}
+
+.evolution .M_o_Evolution  ul{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: transparent;
+}
+
+.evolution .M_o_Evolution.EvoDubleorMore {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.evolution .M_o_Evolution.EvoDubleorMore ul {
+    width: 150px;
+    max-width: 310px;
+    max-height: 240px;
+    height: 160px;
+}
+
+.evolution .M_o_Evolution.EvoDubleorMore .Ev_img{
+    display: flex;
+    align-self: center;
+}
+
+.evolution .M_o_Evolution.EvoDubleorMore .Ev_img img {
+    width: 90%;
+    max-width: 100%;
+}
+
+.evolution .M_o_Evolution.EvoDubleorMore .name,
+.evolution .M_o_Evolution.EvoDubleorMore .Lv {
+    font-size: .8em;
+}
+
+.evolution .M_o_Evolution.eevee{
+    flex-direction: row;
+}
+
+.evolution .M_o_Evolution.eevee ul{
+    max-width: 25%;
+    max-height: 25%;
 }
 
 .Grama {

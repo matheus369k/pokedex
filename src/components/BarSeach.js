@@ -54,7 +54,6 @@ function BarSeach(props){
         {
             handlefilter(document.querySelector("#input").value)
             setValidation(props.pokedexNP)
-            console.log(2, document.querySelector("#input").value);
         }
         return
     })
@@ -65,7 +64,7 @@ function BarSeach(props){
             <form className={style.seach_Container}>
                 <label><BiSearch /></label>
                 <img className={style.pokeboll} src={img} />
-                <input id="input" type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
+                <input autoComplete="off" id="input" type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
             </form>
             <section key={`List_Cards:0-${nextPrev}`}>{seach === "" ? props.list.slice(0, nextPrev) : seach.slice(0, nextPrev) }</section>
             <button className={style.button_More} onClick={(e)=>NextPrevent('More')}><AiFillDownCircle/></button>

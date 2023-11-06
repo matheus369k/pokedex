@@ -11,7 +11,7 @@ function OneGeneration() {
         <Container customClass="One_Generetion">
             <section id="container" className={style.card}>
                 <ManipulationAPI api={API} />
-            </section>    
+            </section> 
         </Container>
     )
 }
