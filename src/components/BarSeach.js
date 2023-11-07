@@ -9,7 +9,10 @@ function BarSeach(props){
     const [seach, setSeach]=useState("")
     const [nextPrev, setNextPrev]=useState(9)
     const [validation, setValidation]=useState(true)
+
+    //console.log(props.cardSelected);
     
+    // Function ( handlefilter ) responsavel por filtrar os cartões com base no none e numero da pokedex
     const handlefilter=(e="")=>{
         const listFilter = []
         
@@ -35,12 +38,13 @@ function BarSeach(props){
             if (e.toLowerCase()==cardNumber.toLowerCase())
             {
                 listFilter.push(props.list[index])
-            }            
+            }
         }
         setSeach(listFilter)
         return
     }
 
+    // Function ( NextPrevent ) responsavel por almentar a quantidade de cards que aparecem na tela
     const NextPrevent=(e)=>{
         if (e=='More' && props.list.length > Number(nextPrev)) 
         {
@@ -49,8 +53,9 @@ function BarSeach(props){
         return
     }
 
+    // Objetivo de re-chamar a function ( handlefilter ) ao entra na pokedex e troca de aba
     useEffect(()=>{
-        if(validation!==props.pokedexNP) 
+        if(validation!==props.pokedexNP ) 
         {
             handlefilter(document.querySelector("#input").value)
             setValidation(props.pokedexNP)
@@ -66,7 +71,8 @@ function BarSeach(props){
                 <img className={style.pokeboll} src={img} />
                 <input autoComplete="off" id="input" type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
             </form>
-            <section key={`List_Cards:0-${nextPrev}`}>{seach === "" ? props.list.slice(0, nextPrev) : seach.slice(0, nextPrev) }</section>
+            <section key={`List_Cards:0-${nextPrev}`}>{seach === "" ? props.list.slice(0, nextPrev) : seach.slice(0, nextPrev) }
+            </section>
             <button className={style.button_More} onClick={(e)=>NextPrevent('More')}><AiFillDownCircle/></button>
         </>
     )

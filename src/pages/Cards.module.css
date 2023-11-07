@@ -1,3 +1,6 @@
+/*
+Estilos da div responsavel por o fundo ao clicar e um card
+*/
 .container_blockade {
     position: fixed;
     top: 0%;
@@ -8,6 +11,9 @@
     z-index: 1;
 }
 
+/*
+Estilos da section que contem todos o cards
+*/
 .card section {
     display: flex;
     flex-direction: row;
@@ -19,6 +25,9 @@
     gap: 30px;
 }
 
+/*
+estilos dos Cards
+*/
 .pokemon_Card {
     cursor: pointer;
     width: 200px;
@@ -45,6 +54,9 @@
     transition: .5s ease-in-out;
 }
 
+/*
+Esconder os conteudos para criar o modo cartão 
+*/
 .pokemon_Card .closed,
 .pokemon_Card button,
 .pokemon_Card .h1_name,
@@ -58,6 +70,9 @@
     display: none;
 }
 
+/*
+Mostrar os conteudos para criar o modo Pokedex
+*/
 .pokemon_Card.selected .closed,
 .pokemon_Card.selected button,
 .pokemon_Card.selected .h1_name,
@@ -73,6 +88,9 @@
     margin: 0px;
 }
 
+/*
+section que fica atras do Container da pokedex
+*/
 .Section_Pokedex {
     padding: 50px;
     width: 968px;
@@ -88,6 +106,9 @@
     box-shadow: 0 0 100px 200px rgba(0, 0, 0, 0.492);
 }
 
+/*
+Card convertido em uma Pokedex 
+*/
 .pokemon_Card.selected { 
     cursor: auto;
     position: fixed;
@@ -111,7 +132,9 @@
     backdrop-filter: blur(10px);
 }
 
-
+/*
+Botões de fechar a passa as Abas da pokedex 
+*/
 .pokemon_Card.selected button {
     z-index: 2;
     position: fixed;
@@ -166,6 +189,10 @@
     transform: scale(1.1);
 }
 
+
+/*
+1 Aba da pokedex 
+*/
 .pokemon_Card.selected .png {
     width: 500px;
     height: 500px;
@@ -285,6 +312,10 @@
     z-index: 1;
 }
 
+
+/*
+2 Aba da pokedex 
+*/
 .h3_stats{
     grid-column-start: 1;
     grid-row-start: 1;
@@ -455,6 +486,9 @@
     max-height: 25%;
 }
 
+/*
+Cores dos tipos de pokemons 
+*/
 .Grama {
     background-color: green;
 }
@@ -508,4 +542,86 @@
 }
 .Dragon {
     background-color: rgb(1, 2, 80);
+}
+
+@media (max-width: 1024px) {
+    .container_blockade {
+        width: calc(100vw - 15px);
+        height: 860px;
+    }
+
+    .Section_Pokedex {
+        padding: 0px;
+        position: absolute;
+        top: 0px;
+        left: auto;
+        transform: translate(0%,0%);
+        width: 724px;
+        height: 860px;
+    }
+
+    .pokemon_Card.selected {
+        padding: 0px;
+        position: absolute;
+        top: 0%;
+        left: auto;
+        transform: translate(0%,0%);
+        width: 724px;
+        height: max-content;
+        grid-template-columns: min-content;
+        grid-template-rows: 50px 50px  35px 40px minmax() 40px minmax(200px, 300px);
+    }
+
+    .h1_name {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .Pokedex_num {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+    
+    .pokemon_Card.selected .png {
+        display: flex;
+        grid-row-end: 4;
+        align-items: center;
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    .h3_Tipos{
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    .type {
+        grid-row-start: 4;
+        grid-column-start: 1;
+    }
+
+    .h3_super_damange {
+        grid-row-start: 5;
+        grid-column-start: 1;
+    }
+
+    .super_damange {
+        grid-row-start: 6;
+        grid-column-start: 1;
+    }
+
+    .super_damange  li {
+        grid-row-start: 7;
+        grid-column-start: 1;
+    }
+
+    .h3_description {
+        grid-row-start: 8;
+        grid-column-start: 1;
+    }
+
+    .description {
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
 }

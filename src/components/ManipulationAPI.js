@@ -8,14 +8,17 @@ import { FcNext, FcPrevious } from "react-icons/fc"
 function ManipulationAPI(props){
     const [cards, setCards]=useState([])
     const [nex_Pre, setNex_Pre]=useState(true)
+    const [cardSelected, setCardSelected]=useState('')
 
+
+    // axios reponsavel por buscar os arquivos no repositoria do github.
     axios(props.api)
     .then((resp)=> {
-        //console.log(resp.data["land_orange"]);
         setCards(resp.data["land_orange"])
         
     }).catch((err)=> console.log(err))
 
+    // Function ( CloseSection ) respomsavel por fecha a ( section ) e a ( div ) da pokedex e remover todos os atributos refentes a ela.
     const CloseSection=()=>{
         
         setNex_Pre(true)
@@ -28,10 +31,12 @@ function ManipulationAPI(props){
         return
     }
 
+    // Function ( handleRender ) reponsavel por Adicionar as informações referentes aos seus Typos, evolutções e typos de pokemons que tem vantagens sobre ele.
     const handleRender=(render, name, cardNumber=0)=>{
         let listRender = []
         localStorage.setItem("classcustom", render[0][name])
         
+        // Typos
         if (name=='type')
         {
             listRender.push(
@@ -41,7 +46,7 @@ function ManipulationAPI(props){
                     </li>
             )))
             
-        } 
+        }// Linha Evolutiva
         else if (name=='name')
         {
             listRender.push(
@@ -87,7 +92,7 @@ function ManipulationAPI(props){
                     </ul>
                 ))
             )
-        } 
+        }// Fraquezas
         else 
         {
             listRender.push( 
@@ -105,6 +110,7 @@ function ManipulationAPI(props){
 
     }
 
+    // A function ( handlecard ) tem como objetiov montar os cartões de cada pokemon
     const handlecard=()=>{
         const list = [] 
         cards.map((card)=>(
@@ -163,6 +169,7 @@ function ManipulationAPI(props){
         return list
     }
     
+    // function responsavel por criar a section e a div 
     useEffect(()=>{
 
         document.querySelectorAll(".poke_card").forEach((pokeCard) => {
@@ -172,12 +179,14 @@ function ManipulationAPI(props){
                 {
                     const fother = document.getElementById("container")
 
+                    // Section fundo da pokedex
                     const section = document.createElement("section")
                     section.setAttribute("id", "pokedex_open")
                     fother.parentNode.appendChild(section)
 
                     pokeCard.classList.add(style.selected)
 
+                    // Div se sobresair sobre o fundo ao clicar no cartõa 
                     const div = document.createElement("div")
                     div.setAttribute("id", "div_backede")
                     fother.parentNode.append(div)

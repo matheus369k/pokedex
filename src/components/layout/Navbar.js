@@ -8,33 +8,34 @@ import { useEffect } from "react";
 
 function Navbar() {
 
+    // function ( selectBar ) responsavel por adicionar a bordaTop em cima do local atual na barra de navegação e salvar o local
     const selectBar=()=>{
-        document.getElementById("nav_bar").childNodes.forEach(selectBar => {
+        document.getElementById("nav_bar").childNodes.forEach((selectBar, index) => {
             selectBar.addEventListener('click', ()=>{
-                //console.log(selectBar);
 
-                //console.log(style.selected);
                 const selected = document.querySelector(".Navbar_selected__P9wgn")
                 if (selected) 
                 {
                     selected.classList.remove(style.selected)
                 }
                 selectBar.classList.add(style.selected)
-                localStorage.setItem("selectOld", selectBar)
+                localStorage.setItem("selectOld", index)
                 
             })
         })
     }
 
+    // objetivo de re-adicionar o estilo a atualizar a pagina ou carregar pela primeira vez
     useEffect(()=>{
         const url = window.location.href.split("#")[1]
 
-        if (url === "/" || url === "" )
+        if (url == "/" || url == "" )
         {
             document.getElementById("nav_bar").childNodes[1].classList.add(style.selected)
-        } else 
+        } 
+        else 
         {
-            localStorage.getItem("selectOld").classList.add(style.selected)
+            document.getElementById("nav_bar").childNodes[localStorage.getItem("selectOld")].classList.add(style.selected)
         }
 
     })
