@@ -1,22 +1,11 @@
-import axios from "axios"
 import { useEffect, useState } from "react";
 import style  from "../pages/Cards.module.css"
 import {AiFillCloseCircle} from "react-icons/ai"
-import BarSeach from "./BarSeach";
 import { FcNext, FcPrevious } from "react-icons/fc"
 
 function ManipulationAPI(props){
-    const [cards, setCards]=useState([])
     const [nex_Pre, setNex_Pre]=useState(true)
-    const [cardSelected, setCardSelected]=useState('')
-
-
-    // axios reponsavel por buscar os arquivos no repositoria do github.
-    axios(props.api)
-    .then((resp)=> {
-        setCards(resp.data["land_orange"])
-        
-    }).catch((err)=> console.log(err))
+    const [cardSelected, setCardSelected]=useState([])
 
     // Function ( CloseSection ) respomsavel por fecha a ( section ) e a ( div ) da pokedex e remover todos os atributos refentes a ela.
     const CloseSection=()=>{
@@ -27,6 +16,7 @@ function ManipulationAPI(props){
 
         section.parentNode.removeChild(section)
         div.parentNode.removeChild(div)
+        document.querySelector('#btnSelected').removeAttribute("id", "btnSelected")
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
         return
     }
@@ -52,15 +42,15 @@ function ManipulationAPI(props){
             listRender.push(
                 render.map((rende, index)=>(
                     <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul`} className={style.All_list}>
-                        <li>
-                            <ul key={`${cardNumber}_Evolution_Poke:${rende.name}-ul-ul`} className={style.poke_infor}>
+                        <li  key={`${cardNumber}-Evolution_Poke:${rende.name}-ul-li`}>
+                            <ul key={`${cardNumber}-Evolution_Poke:${rende.name}-ul-li-ul`} className={style.poke_infor}>
                                 <li key={`${cardNumber}_Evolution_Poke:${rende.name}-name`} className={style.name}>
                                     {rende.name}
                                 </li>
-                                <li key={`${cardNumber}_Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
+                                <li key={`${cardNumber}-Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
                                     {isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}
                                 </li>
-                                <li key={`${cardNumber}_Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
+                                <li key={`${cardNumber}-Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
                                     <img src={rende.img} />
                                 </li>
                             </ul>
@@ -73,16 +63,16 @@ function ManipulationAPI(props){
                                 rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }
                         </li>
                         {render.length-1 === index && rende.moreOneEvolution &&
-                            <li className={`${style.M_o_Evolution} ${localStorage.getItem("classcustom") == "Eevee" ? style.eevee : style.EvoDubleorMore }`}>
+                            <li key={`${cardNumber}M_o_Evolution_Poke:${rende.name}-ul-li`} className={`${style.M_o_Evolution} ${localStorage.getItem("classcustom") == "Eevee" ? style.eevee : style.EvoDubleorMore }`}>
                                 {rende.moreOneEvolution.map((M_O_Evolution)=>(
-                                    <ul  key={`${cardNumber}_M_o_Evolution_Poke:${rende.name}-ul-ul`}>
-                                        <li key={`${cardNumber}_Evolution_Poke:${rende.name}-name`} className={style.name}>
+                                    <ul  key={`${cardNumber}M_o_Evolution_Poke:${M_O_Evolution.name}-ul-li-ul`}>
+                                        <li key={`${cardNumber}M_o_Evolution_Poke:${M_O_Evolution.name}-name`} className={style.name}>
                                             {M_O_Evolution.name}
                                         </li>
-                                        <li key={`${cardNumber}_Evolution_Poke:${rende.name}-lv`} className={style.Lv}>
+                                        <li key={`${cardNumber}M_o_Evolution_Poke:${M_O_Evolution.name}-lv`} className={style.Lv}>
                                             {isNaN(M_O_Evolution.Lv) ? (""):(<span>Level: </span>)}{M_O_Evolution.Lv}
                                         </li>
-                                        <li key={`${cardNumber}_Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
+                                        <li key={`${cardNumber}M_o_Evolution_Poke:${M_O_Evolution.name}-img`} className={style.Ev_img}>
                                             <img src={M_O_Evolution.img} />
                                         </li>
                                     </ul>
@@ -111,11 +101,11 @@ function ManipulationAPI(props){
     }
 
     // A function ( handlecard ) tem como objetiov montar os cartões de cada pokemon
-    const handlecard=()=>{
+    useEffect(()=>{
         const list = [] 
-        cards.map((card)=>(
+        props.cards.map((card)=>(
             list.push(
-            <div id={card.name} className={`poke_card ${style.pokemon_Card}`} key={card.number}>
+            <div onMouseEnter={()=>handleClickCard()} id={card.name} className={`poke_card ${style.pokemon_Card}`} key={card.number}>
                 <div className={style.closed} onClick={()=>CloseSection()}>
                     <AiFillCloseCircle />
                 </div>
@@ -159,22 +149,21 @@ function ManipulationAPI(props){
                     </>
                     )
                 }
-                <button
-                onClick={()=>setNex_Pre(!nex_Pre)} 
+                <button 
+                onClick={()=>setNex_Pre((nex_Pre)=>!nex_Pre)} 
                 className={`Pokedex_button ${nex_Pre ? style.button_right : style.button_left}`}>
                     {nex_Pre ? <FcNext/>:<FcPrevious />}
                 </button>
-            </div>)
-        ))
-        return list
-    }
+            </div>)))
+            setCardSelected(list)
+    }, [props.cards, nex_Pre])
     
     // function responsavel por criar a section e a div 
-    useEffect(()=>{
+    const handleClickCard=()=>{
 
         document.querySelectorAll(".poke_card").forEach((pokeCard) => {
             pokeCard.addEventListener("click", ()=> {
-
+                
                 if (!document.querySelector("#pokedex_open"))
                 {
                     const fother = document.getElementById("container")
@@ -190,17 +179,19 @@ function ManipulationAPI(props){
                     const div = document.createElement("div")
                     div.setAttribute("id", "div_backede")
                     fother.parentNode.append(div)
+
+                    //console.log(pokeCard.childNodes[pokeCard.childNodes.length-1]);
+                    pokeCard.childNodes[pokeCard.childNodes.length-1].setAttribute("id", "btnSelected")
+
+                    document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
+                    document.querySelector("#div_backede").classList.add(style.container_blockade)
+                    document.getElementById("input").value=(`${pokeCard.id}`)
+                    return
                 }
-
-                document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
-                document.querySelector("#div_backede").classList.add(style.container_blockade)
-                return
-
             })
-        
         })
-    })
-    return <BarSeach pokedexNP={nex_Pre} list={handlecard()} />
+    }
+    return cardSelected
 }
 
 export default ManipulationAPI

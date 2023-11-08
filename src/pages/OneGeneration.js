@@ -1,7 +1,7 @@
 import Container from "../components/Container"
 
 import style from "./Cards.module.css"
-import ManipulationAPI from "../components/ManipulationAPI";
+import BarSeach from "../components/BarSeach";
 
 
 function OneGeneration() {
@@ -10,7 +10,7 @@ function OneGeneration() {
     return (
         <Container customClass="One_Generetion">
             <section id="container" className={style.card}>
-                <ManipulationAPI api={API} />
+                <BarSeach api={API} generation="land_orange" />
             </section> 
         </Container>
     )
