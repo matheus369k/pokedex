@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pokedex/static/css/main.1275e8b1.css",
-    "main.js": "/pokedex/static/js/main.2af7fea7.js",
+    "main.js": "/pokedex/static/js/main.643a2153.js",
     "static/media/Kanto-img.png": "/pokedex/static/media/Kanto-img.e9d90d38bc6212f89bd4.png",
     "static/media/Kalos-img.png": "/pokedex/static/media/Kalos-img.1a04db8b6123b1eb4d62.png",
     "static/media/Unova-img.png": "/pokedex/static/media/Unova-img.f924d94a56af89264d45.png",
@@ -17,10 +17,10 @@
     "static/media/pokeball.png": "/pokedex/static/media/pokeball.a5002c7f0459fd4ee803.png",
     "index.html": "/pokedex/index.html",
     "main.1275e8b1.css.map": "/pokedex/static/css/main.1275e8b1.css.map",
-    "main.2af7fea7.js.map": "/pokedex/static/js/main.2af7fea7.js.map"
+    "main.643a2153.js.map": "/pokedex/static/js/main.643a2153.js.map"
   },
   "entrypoints": [
     "static/css/main.1275e8b1.css",
-    "static/js/main.2af7fea7.js"
+    "static/js/main.643a2153.js"
   ]
 }
