@@ -64,7 +64,7 @@ function BarSeach(props){
     // Objetivo de re-chamar a function ( handlefilter ) e atualiza-la ao ter modificações
     useEffect(()=>{
         handlefilter(document.getElementById("input").value)
-    }, [])
+    }, [nextPrev])
     
     return (
         <section>
@@ -73,7 +73,7 @@ function BarSeach(props){
                 <img className={style.pokeboll} src={img} />
                 <input autoComplete="off" id="input" type="text" onLoadedMetadata={(e)=>handlefilter(e.target.value)} onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
             </form>
-            <ManipulationAPI cards={cards.length > 9 ? cards.slice(0, nextPrev) : cards} />
+            <ManipulationAPI handlefilter={handlefilter} cards={cards.length > 9 ? cards.slice(0, nextPrev) : cards} />
             {verifivationInput==="" && 
                 <button className={style.button_More} onClick={()=>NextPrevent()}><AiFillDownCircle/></button>
             }

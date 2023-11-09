@@ -1,21 +1,63 @@
-.Container {
-    overflow-x: hidden;
-}
-
 .Container.Navbar_Container {
     position: absolute;
     display: flex;
-    justify-content: center;
     top: 0px;
+    width: calc(100vw - 15px);
+    height: 70px;
+    z-index: 2;
+    backdrop-filter: blur(10px);
 }
 
+.Container.Navbar_Container div {
+    display: none;
+}
+
+.Container.Navbar_Container svg {
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+    font-size: 2.8em;
+    stroke: white;
+    fill: white;
+}
+
+.Container.Navbar_Container svg:hover {
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+
+.Container.Navbar_Container img {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    margin-right: 20px;
+    width: auto;
+    height: 60px;
+}
+
+.Container.Nine_Generation,
+.Container.Eight_Generation,
+.Container.Seven_Generation,
+.Container.Six_Generation,
+.Container.Five_Generation,
+.Container.Four_Generation,
+.Container.Three_Generation,
 .Container.Two_Generation,
 .Container.One_Generetion{
+    overflow-x: hidden;
     height: 100vh;
     background: url(../img/wp11079715-pokemon-pokeball-wallpapers.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
+.Container.Nine_Generation,
+.Container.Eight_Generation,
+.Container.Seven_Generation,
+.Container.Six_Generation,
+.Container.Five_Generation,
+.Container.Four_Generation,
+.Container.Three_Generation,
 .Container.Two_Generation {
     display: flex;
     align-items: center;
@@ -23,6 +65,13 @@
     padding: 0 50px;
 }
 
+.Container.Nine_Generation h1,
+.Container.Eight_Generation h1,
+.Container.Seven_Generation h1,
+.Container.Six_Generation h1,
+.Container.Five_Generation h1,
+.Container.Four_Generation h1,
+.Container.Three_Generation h1,
 .Container.Two_Generation h1 {
     text-shadow: 2px 2px black;
     border-bottom: 5px solid white;
@@ -30,5 +79,67 @@
     color: white;
     font-weight: bolder;
     text-align: center;
-    z-index: 2;
+}
+
+@media (max-width: 993px) {
+    .Container.Navbar_Container img {
+        height: 55px;
+    }
+}
+
+@media (max-width: 893px) {
+    .Container.Navbar_Container img {
+        margin-right: 20px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 824px) {
+    .Container.Navbar_Container {
+        height: 90px;
+    }
+
+    .Container.Navbar_Container img {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 65px;
+        z-index: 2;
+    }
+
+    .Container.Navbar_Container div {
+        display: block;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 693px) {
+    .Container.Navbar_Container {
+        height: 120px;
+    }
+
+    .Container.Navbar_Container img {
+        top: 5px;
+        left: 0%;
+        transform: translateX(0%);
+        height: 55px;
+    }
+    
+    .Container.Navbar_Container svg {
+        right: 20px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 593px) {
+    .Container.Navbar_Container {
+        height: 100px;
+    }
+    .Container.Navbar_Container img {
+        height: 45px;
+    }
+    .Container.Navbar_Container svg {
+        right: 10px;
+        top: 10px;
+    }
 }

@@ -1,11 +1,7 @@
 .Navbar {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    width: calc(100vw - 20px);
-    height: 70px;
-    z-index: 1;
-    backdrop-filter: blur(10px);
+    gap: 10px;
 }
 
 .Navbar a {
@@ -15,13 +11,7 @@
     text-transform: uppercase;
     font-size: .8em;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
-    color: rgb(155, 155, 155);
-}
-
-.Navbar a span  {
-    font-weight: bolder;
-    padding-right: 2px;
-    color: white;
+    color: rgb(87, 87, 87)
 }
 
 .Navbar li {
@@ -30,23 +20,82 @@
     width: auto;
     border-radius: 8px;
     padding: 10px 2px;
+    font-size: 1em;
 }
 
 .Navbar li:hover {
     padding: 5px 2px;
-    border-top: 5px solid rgba(160, 11, 11, 0.576);
+    border-top: 3px solid rgba(160, 11, 11, 0.576);
 }
 
 .Navbar .selected:hover,
 .Navbar .selected {
     padding: 5px 2px;
-    border-top: 5px solid rgb(160, 11, 11);
+    border-top: 3px solid rgb(160, 11, 11);
 }
 
-.Navbar img {
-    position: relative;
-    top: 20px;
-    left: 10px;
-    width: auto;
-    height: 40px;
+.Navbar .selected a {
+    color: white;
+}
+
+.menu {
+    backdrop-filter: blur(80px);
+    width: 40vw;
+    height: 100vh;
+    position: fixed;
+    right: -15px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.844);
+    border-left: 2px solid white;
+    z-index: 3;
+}
+
+@media (max-width: 1124px) {
+    .Navbar {
+        gap: 5px;
+    }
+    .Navbar li {
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 993px) {
+    .Navbar {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 824px) {
+    .Navbar {
+        flex-direction: column;
+        gap: 5px;
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        z-index: 3;
+    }
+
+    .Navbar.Navbar_Moba{
+        display: none;
+    }
+
+    .Navbar li {
+        border-radius: 8px;
+        padding: 5px;
+        font-size: 1.5em;
+    }
+    
+    .Navbar li:hover {
+        padding: 5px;
+        border-top: none;
+        border-left: 5px solid rgba(160, 11, 11, 0.576);
+    }
+    
+    .Navbar .selected:hover,
+    .Navbar .selected {
+        padding: 10px;
+        border-top: none;
+        border-left: 5px solid rgb(160, 11, 11);
+    }
 }

@@ -18,6 +18,8 @@ function ManipulationAPI(props){
         div.parentNode.removeChild(div)
         document.querySelector('#btnSelected').removeAttribute("id", "btnSelected")
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
+                    
+        props.handlefilter(document.getElementById("input").value)
         return
     }
 
@@ -58,9 +60,7 @@ function ManipulationAPI(props){
                         <li 
                         key={`${cardNumber}_Evolution_Seta:${rende.name}-span`} 
                         className={style.seta}>
-                            {index < render.length-1 ? `${
-                                rende.img.slice(14, 17)==134 || 
-                                rende.img.slice(14, 17)==135 ? "Or"  : "➔"}` : "" }
+                            {index < render.length-1 ? `${window.innerWidth < 694 ? "↓"  : "➔"}` : "" }
                         </li>
                         {render.length-1 === index && rende.moreOneEvolution &&
                             <li key={`${cardNumber}M_o_Evolution_Poke:${rende.name}-ul-li`} className={`${style.M_o_Evolution} ${localStorage.getItem("classcustom") == "Eevee" ? style.eevee : style.EvoDubleorMore }`}>
@@ -185,7 +185,8 @@ function ManipulationAPI(props){
 
                     document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
                     document.querySelector("#div_backede").classList.add(style.container_blockade)
-                    document.getElementById("input").value=(`${pokeCard.id}`)
+
+                    props.handlefilter(pokeCard.id)
                     return
                 }
             })

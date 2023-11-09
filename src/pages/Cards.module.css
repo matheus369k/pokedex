@@ -8,7 +8,7 @@ Estilos da div responsavel por o fundo ao clicar e um card
     height: 100vh;
     width: 100vw;
     backdrop-filter: blur(50px);
-    z-index: 1;
+    z-index: 2;
 }
 
 /*
@@ -547,29 +547,24 @@ Cores dos tipos de pokemons
 @media (max-width: 1024px) {
     .container_blockade {
         width: calc(100vw - 15px);
-        height: 860px;
     }
 
     .Section_Pokedex {
-        padding: 0px;
-        position: absolute;
-        top: 0px;
-        left: auto;
-        transform: translate(0%,0%);
-        width: 724px;
-        height: 860px;
+        display: none;
     }
 
     .pokemon_Card.selected {
-        padding: 0px;
-        position: absolute;
-        top: 0%;
+        padding: 40px 20px;
+        position: relative;
+        top: 0vh;
         left: auto;
         transform: translate(0%,0%);
-        width: 724px;
+        width: 768px;
         height: max-content;
-        grid-template-columns: min-content;
-        grid-template-rows: 50px 50px  35px 40px minmax() 40px minmax(200px, 300px);
+        grid-template-columns: 700px;
+        background-color: rgba(0, 149, 159, 0.144);
+        grid-template-rows: 40px minmax(50px max-content) 40px  minmax(75px max-content) 60px minmax(100px, 150px) 80px minmax(200px max-content);
+        gap: 10px;
     }
 
     .h1_name {
@@ -583,9 +578,8 @@ Cores dos tipos de pokemons
     }
     
     .pokemon_Card.selected .png {
-        display: flex;
+        margin: 0 auto;
         grid-row-end: 4;
-        align-items: center;
         grid-row-start: 3;
         grid-column-start: 1;
     }
@@ -623,5 +617,188 @@ Cores dos tipos de pokemons
     .description {
         grid-row-start: 9;
         grid-column-start: 1;
+    }
+    
+    .h3_stats{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    .stats{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 700px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        gap: 50px;
+    }
+    
+    .stats li {
+        width: 48%;
+    }
+    
+    .h3_evolution {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+    
+    .evolution {
+        margin: 0 auto;
+        height: 480px;
+        width: 700px;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    
+}
+
+@media (max-width: 864px) {    
+    .card section {
+        padding: 100px 60px 50px 60px;
+    }
+}
+
+@media (max-width: 824px) {
+    .pokemon_Card {
+        width: 150px;
+        height: 230px;
+    }
+
+    .pokemon_Card.selected {
+        width: 768px;
+        grid-template-columns: 700px;
+    }
+
+    .description,
+    .super_damange,    
+    .stats{
+        width: 100%;
+    }
+
+    .stats {
+        gap: 20px;
+    }
+    
+    .stats li {
+        padding: 0px;
+        width: 46%;
+    }
+    
+    .evolution {
+        height: 380px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 793px) {
+    .pokemon_Card.selected {
+        width: 668px;
+        grid-template-columns: 600px;
+    }
+
+    .pokemon_Card.selected .png {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 693px) {
+    .card section {
+        padding: 130px 20px 50px 20px;
+        gap: 20px;
+    }
+
+    .pokemon_Card.selected {
+        width: max-content;
+        grid-template-columns: 82vw;
+    }
+
+    .evolution {
+        height: 100%;
+        gap: 5px;
+        flex-direction: column;
+    }
+
+    
+    .evolution .All_list {
+        flex-direction: column;
+    }
+
+    .evolution .M_o_Evolution.EvoDubleorMore {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 593px) {
+    .card section {
+        padding: 130px 18px 50px 18px;
+        gap: 20px;
+    }
+    
+    .pokemon_Card {
+        width: 130px;
+        height: 180px;
+    }
+
+    .pokemon_Card.selected {
+        grid-template-columns: 78vw;
+    }
+    
+    .stats li {
+        width: 45%;
+    }
+}
+
+@media (max-width: 593px) { 
+    .card section {
+        padding: 110px 0px 50px 0px;
+    }   
+
+    .stats li {
+        letter-spacing: 1px;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 493px) { 
+    .pokemon_Card {
+        width: 110px;
+        height: 160px;
+    }
+
+    .pokemon_Card.selected .png {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 393px) {
+    .card section {
+        padding: 130px 0px 50px 0px;
+        gap: 10px;
+    }
+    
+    .pokemon_Card {
+        width: 95px;
+        height: 140px;
+    }
+    
+    .pokemon_Card.selected {
+        grid-template-columns: 75vw;
+    }  
+
+    .stats li {
+        font-size: .6em;
+    }
+
+    .super_damange li{
+        font-size: .9em;
+    }
+    
+    .type li {
+        padding: 5px 10px;
+        font-size: 1em;
     }
 }
