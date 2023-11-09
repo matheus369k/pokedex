@@ -2,7 +2,7 @@
     position: absolute;
     display: flex;
     top: 0px;
-    width: calc(100vw - 15px);
+    width: calc(100vw - 20px);
     height: 70px;
     z-index: 2;
     backdrop-filter: blur(10px);
@@ -221,6 +221,10 @@
     .Container.Navbar_Container svg {
         right: 20px;
         top: 20px;
+    }
+    
+    .Container.Home h3 {
+        font-size: 1em;
     }
 }
 

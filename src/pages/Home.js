@@ -14,6 +14,7 @@ import logo from "../img/poke-titulo.png"
 
 function Home() {
 
+    // ( handlebar ) responsavel por adicionar o estilo de selecionado ao cliclar e um cartão de uma regiao
     const handlebar=()=>{
         document.querySelector("#homeswitch").childNodes.forEach((gene, index)=> {
             gene.addEventListener("click", () => {

@@ -526,7 +526,7 @@
 /* Estilo responsavel pela adaptação dos cards */
 @media (max-width: 1024px) {
     .container_blockade {
-        width: calc(100vw - 15px);
+        width: 100vw;
     }
 
     .Section_Pokedex {
@@ -783,5 +783,11 @@
     .type li {
         padding: 5px 10px;
         font-size: 1em;
+    }
+}
+
+@media (max-height: 993px) {
+    .container_blockade {
+        width: calc(100vw - 20px);
     }
 }

@@ -12,7 +12,7 @@ function MountCards(props){
         
         setNex_Pre(true)
         const section = document.getElementById("pokedex_open")
-        const div = document.querySelector("#div_backede")
+        const div = document.getElementById("div_backede")
 
         section.parentNode.removeChild(section)
         div.parentNode.removeChild(div)
@@ -22,6 +22,12 @@ function MountCards(props){
         props.handlefilter(document.getElementById("input").value)
         return
     }
+    useEffect(()=> {
+        const div = document.getElementById("div_backede")
+        if (div) {
+            div.parentNode.removeChild(div)
+        }
+    }, [])
 
     // Function ( handleRender ) reponsavel por Adicionar as informações referentes aos seus Typos, evolutções e typos de pokemons que tem vantagens sobre ele.
     const handleRender=(render, name, cardNumber=0)=>{
@@ -53,7 +59,7 @@ function MountCards(props){
                                     {isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}
                                 </li>
                                 <li key={`${cardNumber}-Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
-                                    <img src={rende.img} alt={`Pokemon:${rende.nane}`} />
+                                    <img src={rende.img}/>
                                 </li>
                             </ul>
                         </li>
@@ -73,7 +79,7 @@ function MountCards(props){
                                             {isNaN(M_O_Evolution.Lv) ? (""):(<span>Level: </span>)}{M_O_Evolution.Lv}
                                         </li>
                                         <li key={`${cardNumber}M_o_Evolution_Poke:${M_O_Evolution.name}-img`} className={style.Ev_img}>
-                                            <img src={M_O_Evolution.img} alt={`Pokemon:${M_O_Evolution.nane}`} />
+                                            <img src={M_O_Evolution.img}/>
                                         </li>
                                     </ul>
                                 ))}

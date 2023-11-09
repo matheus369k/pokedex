@@ -37,7 +37,10 @@ function Navbar() {
                 {
                     selected.classList.remove(style.selected)
                 }
-                selectBar.classList.add(style.selected)                
+                if (document.querySelector(".Navbar_menu__U5aLo")) {
+                    handleMenu() 
+                }
+                selectBar.classList.add(style.selected)            
             })
         })
     }
