@@ -11,7 +11,7 @@ import { TfiClose } from "react-icons/tfi"
 function Navbar() {
     const [menu, setMenu]=useState(true)
 
-    // fucntion responsavel por controlar o menu
+    // ( handleMenu ) tem como obtjetivo lidar com com as mudanças do menu dependendo do tamanho da tela
     const handleMenu=()=>{
         const menubtn = document.getElementById("menu")
         const nav = document.getElementById("nav_bar")
@@ -24,13 +24,12 @@ function Navbar() {
             menubtn.classList.add(style.menu)
             nav.classList.remove("Navbar_Navbar_Moba__4PYSz")
         }
-        console.log(style.Navbar_Moba);
         return
     }
 
-    // function ( selectBar ) responsavel por adicionar a bordaTop em cima do local atual na barra de navegação e salvar o local
+    // function ( selectBar ) responsavel por adicionar a marcar a posição atual na barra de navegação
     const selectBar=()=>{
-        document.getElementById("nav_bar").childNodes.forEach((selectBar, index) => {
+        document.getElementById("nav_bar").childNodes.forEach((selectBar) => {
             selectBar.addEventListener('click', ()=>{
 
                 const selected = document.querySelector(".Navbar_selected__P9wgn")
@@ -38,33 +37,35 @@ function Navbar() {
                 {
                     selected.classList.remove(style.selected)
                 }
-                selectBar.classList.add(style.selected)
-                localStorage.setItem("selectOld", index)
-                
+                selectBar.classList.add(style.selected)                
             })
         })
     }
 
-    // objetivo de re-adicionar o estilo a atualizar a pagina ou carregar pela primeira vez
+    // objetivo de re-adicionar o estilo a atualizar ou resetar a pagina ou carregar pela primeira vez
     useEffect(()=>{
         const url = window.location.href.split("#")[1]
-            if (url == "/" || url == "" )
-            {
-                document.getElementById("nav_bar").childNodes[0].classList.add(style.selected)
-            } 
-            else 
-            {
-                document.getElementById("nav_bar").childNodes[localStorage.getItem("selectOld")].classList.add(style.selected)
-            }
+        const navbar =document.getElementById("nav_bar")
+        if (url === "/" || url === "" )
+        {
+            navbar.childNodes[0].classList.add(style.selected)
+        }
+        else 
+        {
+            navbar.childNodes[localStorage.getItem("home")].classList.add(style.selected)
+            navbar.childNodes[0].classList.remove(style.selected)
+        }
     }, [menu])
-
 
     return (
         <Container customClass="Navbar_Container">
-            <img src={img} />
+            <img src={img}  alt="logo"/>
             <nav onMouseEnter={()=>selectBar()} id="nav_bar" className={`${style.Navbar_Moba} ${style.Navbar}`}>
                 <li>
-                    <Link to="/">Kanto</Link>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/onegeneration">Kanto</Link>
                 </li>
                 <li>
                     <Link to="/twogeneration">Johto</Link>

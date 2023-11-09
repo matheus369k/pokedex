@@ -68,27 +68,6 @@
     font-size: 3em;
 }
 
-@media (max-width: 993px) {
-    .seach_Container .pokeboll {
-        height: 40px;
-        width: 40px;
-        position:absolute;
-        top: 0px;
-        left: 160px;
-        border: 2px solid rgb(89, 89, 89);
-    }
-
-    .seach_Container label {
-        font-size: 1.5em;
-    }
-
-    .seach_Container input{
-        height: 42px;
-        width: 200px;
-        padding: 0 35px;
-        font-size: 1em;
-    }
-}
 
 @media (max-width: 824px) {
     .seach_Container {
@@ -143,7 +122,7 @@
 
     .seach_Container input{
         height: 42px;
-        width: 60vw;
+        width: 40vw;
         padding: 0 45px;
         font-size: 1em;
     }
@@ -152,5 +131,17 @@
 @media (max-width: 693px) {
     .seach_Container {
         top: 60px;
+    }
+}
+
+@media (max-width: 593px) {
+    .seach_Container input{
+        width: 50vw;
+    }
+}
+
+@media (max-width: 493px) {
+    .seach_Container input{
+        width: 60vw;
     }
 }

@@ -3,7 +3,7 @@ import style  from "../pages/Cards.module.css"
 import {AiFillCloseCircle} from "react-icons/ai"
 import { FcNext, FcPrevious } from "react-icons/fc"
 
-function ManipulationAPI(props){
+function MountCards(props){
     const [nex_Pre, setNex_Pre]=useState(true)
     const [cardSelected, setCardSelected]=useState([])
 
@@ -53,7 +53,7 @@ function ManipulationAPI(props){
                                     {isNaN(rende.Lv) ? (""):(<span>Level: </span>)}{rende.Lv}
                                 </li>
                                 <li key={`${cardNumber}-Evolution_Poke:${rende.name}-img`} className={style.Ev_img}>
-                                    <img src={rende.img} />
+                                    <img src={rende.img} alt={`Pokemon:${rende.nane}`} />
                                 </li>
                             </ul>
                         </li>
@@ -73,7 +73,7 @@ function ManipulationAPI(props){
                                             {isNaN(M_O_Evolution.Lv) ? (""):(<span>Level: </span>)}{M_O_Evolution.Lv}
                                         </li>
                                         <li key={`${cardNumber}M_o_Evolution_Poke:${M_O_Evolution.name}-img`} className={style.Ev_img}>
-                                            <img src={M_O_Evolution.img} />
+                                            <img src={M_O_Evolution.img} alt={`Pokemon:${M_O_Evolution.nane}`} />
                                         </li>
                                     </ul>
                                 ))}
@@ -112,7 +112,7 @@ function ManipulationAPI(props){
                 {nex_Pre ?
                     (
                     <>
-                    <img className={style.png} src={card.images} />
+                    <img className={style.png} src={card.images}  alt={`Pokemon:${card.name}`} />
                     <h1 className={style.h1_name}>
                         <span>Nome: </span>{card.name}
                         
@@ -195,4 +195,4 @@ function ManipulationAPI(props){
     return cardSelected
 }
 
-export default ManipulationAPI
+export default MountCards

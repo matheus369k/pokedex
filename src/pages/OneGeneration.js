@@ -5,6 +5,7 @@ import BarSeach from "../components/BarSeach";
 
 
 function OneGeneration() {
+    /* Link da API */
     const API = "https://matheus369k.github.io/Data/pokedex.json"
 
     return (

@@ -1,19 +1,15 @@
-/*
-Estilos da div responsavel por o fundo ao clicar e um card
-*/
+/* Estilos responsavel por estilar a div criada ao clicar e um do cards*/
 .container_blockade {
     position: fixed;
     top: 0%;
     left: 0%;
     height: 100vh;
     width: 100vw;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(30px);
     z-index: 2;
 }
 
-/*
-Estilos da section que contem todos o cards
-*/
+/* Estilos da section que envolve os cards*/
 .card section {
     display: flex;
     flex-direction: row;
@@ -25,9 +21,7 @@ Estilos da section que contem todos o cards
     gap: 30px;
 }
 
-/*
-estilos dos Cards
-*/
+/* Estilos dos Cards */
 .pokemon_Card {
     cursor: pointer;
     width: 200px;
@@ -36,7 +30,7 @@ estilos dos Cards
     outline: 2px solid white;
     border-radius: 5px;
     background: rgba(0, 255, 132, 0.078);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(90px);
     display: flex;
     align-items: center;
     z-index: 0;
@@ -54,9 +48,7 @@ estilos dos Cards
     transition: .5s ease-in-out;
 }
 
-/*
-Esconder os conteudos para criar o modo cartão 
-*/
+/* Estilo responsavel por ecorder as infor dos cards */
 .pokemon_Card .closed,
 .pokemon_Card button,
 .pokemon_Card .h1_name,
@@ -70,9 +62,7 @@ Esconder os conteudos para criar o modo cartão
     display: none;
 }
 
-/*
-Mostrar os conteudos para criar o modo Pokedex
-*/
+/* Estilo responsavel por  exibir as infor do card selecionado */
 .pokemon_Card.selected .closed,
 .pokemon_Card.selected button,
 .pokemon_Card.selected .h1_name,
@@ -88,9 +78,7 @@ Mostrar os conteudos para criar o modo Pokedex
     margin: 0px;
 }
 
-/*
-section que fica atras do Container da pokedex
-*/
+/* Estilo da section que foi utilizada como quandro de fundo */
 .Section_Pokedex {
     padding: 50px;
     width: 968px;
@@ -104,11 +92,10 @@ section que fica atras do Container da pokedex
     background: url(../img/pokedex-open-dark.jpg) center center no-repeat fixed;
     background-size: cover;
     box-shadow: 0 0 100px 200px rgba(0, 0, 0, 0.492);
+    z-index: 3;
 }
 
-/*
-Card convertido em uma Pokedex 
-*/
+/* Estilo do card ao ser selecionado */
 .pokemon_Card.selected { 
     cursor: auto;
     position: fixed;
@@ -122,7 +109,7 @@ Card convertido em uma Pokedex
     display: grid;
     grid-template-columns: min-content minmax(300px, 620px);
     grid-template-rows: 50px 50px 35px 40px minmax() 40px minmax(200px, 300px);
-    z-index: 3;
+    z-index: 4;
     border-radius: 20px 0 20px 0;
     border: none;
     background: transparent;
@@ -132,9 +119,6 @@ Card convertido em uma Pokedex
     backdrop-filter: blur(10px);
 }
 
-/*
-Botões de fechar a passa as Abas da pokedex 
-*/
 .pokemon_Card.selected button {
     z-index: 2;
     position: fixed;
@@ -190,9 +174,7 @@ Botões de fechar a passa as Abas da pokedex
 }
 
 
-/*
-1 Aba da pokedex 
-*/
+/* Estilo da primeira Aba do card */
 .pokemon_Card.selected .png {
     width: 500px;
     height: 500px;
@@ -313,9 +295,7 @@ Botões de fechar a passa as Abas da pokedex
 }
 
 
-/*
-2 Aba da pokedex 
-*/
+/* Estilod da segunda Aba do card */
 .h3_stats{
     grid-column-start: 1;
     grid-row-start: 1;
@@ -463,6 +443,7 @@ Botões de fechar a passa as Abas da pokedex
 }
 
 .evolution .M_o_Evolution.EvoDubleorMore .Ev_img{
+    width: 100%;
     display: flex;
     align-self: center;
 }
@@ -486,9 +467,7 @@ Botões de fechar a passa as Abas da pokedex
     max-height: 25%;
 }
 
-/*
-Cores dos tipos de pokemons 
-*/
+/* Estilos das cores referentes aos tipos do pokemon */
 .Grama {
     background-color: green;
 }
@@ -544,6 +523,7 @@ Cores dos tipos de pokemons
     background-color: rgb(1, 2, 80);
 }
 
+/* Estilo responsavel pela adaptação dos cards */
 @media (max-width: 1024px) {
     .container_blockade {
         width: calc(100vw - 15px);
@@ -720,9 +700,12 @@ Cores dos tipos de pokemons
         flex-direction: column;
     }
 
-    
     .evolution .All_list {
         flex-direction: column;
+    }
+
+    .evolution .All_list .Ev_img {
+        width: 60%;
     }
 
     .evolution .M_o_Evolution.EvoDubleorMore {
