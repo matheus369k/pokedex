@@ -6,6 +6,7 @@
   text-decoration: none;
   color: black;
   transition: step-end;
+  scrollbar-width: 20px;
 }
 
 html,

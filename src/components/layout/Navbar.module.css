@@ -112,3 +112,25 @@
         border-left: 5px solid rgb(160, 11, 11);
     }
 }
+
+@media (max-width: 693px) {
+    .Navbar {
+        gap: 25px;
+    }
+
+    .Navbar li {
+        padding: 0px;
+        padding-left: 5px;
+    }
+    
+    .Navbar li:hover {
+        padding: 0px;
+        border-left: 5px solid rgba(160, 11, 11, 0.576);
+    }
+    
+    .Navbar .selected:hover,
+    .Navbar .selected {
+        padding: 0px;
+        border-left: 5px solid rgb(160, 11, 11);
+    }
+}

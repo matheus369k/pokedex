@@ -529,27 +529,28 @@
         padding: 120px 60px 50px 60px;
     }
 
+    .Section_Pokedex,
     .container_blockade {
-        width: 100vw;
-    }
-
-    .Section_Pokedex {
+        border-radius: 0px;
+        margin-left: -20px;
+        width: 100%;
         height: 100vh;
-        width: 100vw;
     }
 
     .pokemon_Card.selected {
-        margin: -110px -60px -40px -60px;
+        margin: -120px -60px -50px -60px;
         padding: 50px 100px;
         position: relative;
         top: 0vh;
         border-radius: 0px;
-        left: auto;
+        left: 0px;
+        right: 0px;
         transform: translate(0%,0%);
+        min-height: 100vh;
         height: 100%;
         width: 100vw;
         grid-template-columns: 100%;
-        background-color: rgba(0, 149, 159, 0.144);
+        background-color: rgba(0, 0, 0, 0.144);
         grid-template-rows: 40px minmax(50px max-content) 40px  minmax(75px max-content) 60px minmax(100px, 150px) 80px minmax(200px max-content);
         gap: 10px;
     }
@@ -603,6 +604,11 @@
     .type {
         grid-row-start: 4;
         grid-column-start: 1;
+    }
+
+    .type li {
+        padding: 8px 20px;
+        font-size: 1.5em;
     }
 
     .h3_super_damange {
@@ -677,7 +683,7 @@
 
     .pokemon_Card.selected {
         padding: 50px 25px 80px 25px;
-        margin: -120px -20px -40px -20px;
+        margin: -130px -20px -50px -20px;
     }
 
     .pokemon_Card.selected .png {
@@ -716,7 +722,7 @@
     }
 
     .pokemon_Card.selected {
-        margin: -110px -18px -40px -18px;
+        margin: -120px -18px -50px -18px;
     }
 }
 
@@ -731,8 +737,8 @@
 
 @media (max-width: 493px) { 
     .pokemon_Card {
-        width: 110px;
-        height: 140px;
+        width: 105px;
+        height: 130px;
     }
     
     .pokemon_Card.selected button  svg {
@@ -771,25 +777,22 @@
 
 @media (max-width: 393px) {    
     .pokemon_Card {
-        width: 90px;
-        height: 120px;
+        width: 85px;
+        height: 110px;
     }
     
     .pokemon_Card.selected {
-        padding: 30px 15px 50px 10px;
+        padding: 30px 5px 50px 5px;
     }
 }
 
-@media (max-height: 993px) and (max-width: 1024px) {
-    .container_blockade {
-        width: calc(100vw - 30px);
+@media (max-width: 348px) {    
+    .pokemon_Card {
+        width: 75px;
+        height: 90px;
     }
+    
     .pokemon_Card.selected {
-        width: calc(100vw - 50px);
-        grid-template-columns: 100%;
-    }
-
-    .Section_Pokedex {
-        width: calc(100vw - 30px);
+        padding: 30px 0px 50px 0px;
     }
 }

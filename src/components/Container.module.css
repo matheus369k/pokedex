@@ -233,8 +233,20 @@
         top: 20px;
     }
     
+    .Container.Home img {
+        padding-bottom: 15px;
+    }
+    
     .Container.Home h3 {
         font-size: 1em;
+    }
+    
+    .Container.Home a {
+        border: 1px double rgb(0, 208, 255);
+    }
+
+    .Container.Home a:hover {
+        border: 1px double rgb(0, 208, 255);
     }
 }
 

@@ -44,7 +44,7 @@ function MountCards(props){
                         <li 
                         key={`${cardNumber}_Evolution_Seta:${rende.name}-span`} 
                         className={style.seta}>
-                            {index < render.length-1 ? `${window.innerWidth < 793 ? "↓"  : "➔"}` : "" }
+                            {index < render.length-1 ? `${window.innerWidth.valueOf() < 793 ? "↓"  : "➔"}` : "" }
                         </li>
                         {render.length-1 === index && rende.moreOneEvolution &&
                             <li key={`${cardNumber}M_o_Evolution_Poke:${rende.name}-ul-li`} className={`${style.M_o_Evolution} ${localStorage.getItem("classcustom") == "Eevee" ? style.eevee : style.EvoDubleorMore }`}>
@@ -140,7 +140,7 @@ function MountCards(props){
                 </button>
             </div>)))
             setCardSelected(list)
-    }, [props.cards, nex_Pre])
+    }, [props.cards, nex_Pre,])
     
     // function responsavel por criar a section e a div 
     const handleClickCard=()=>{
@@ -157,22 +157,22 @@ function MountCards(props){
                     section.setAttribute("id", "pokedex_open")
                     fother.parentNode.appendChild(section)
 
-                    pokeCard.classList.add(style.selected)
 
                     // Div se sobresair sobre o fundo ao clicar no cartõa 
                     const div = document.createElement("div")
                     div.setAttribute("id", "div_backede")
                     fother.parentNode.appendChild(div)
 
-                    //console.log(pokeCard.childNodes[pokeCard.childNodes.length-1]);
-                    pokeCard.childNodes[pokeCard.childNodes.length-1].setAttribute("id", "btnSelected")
-
                     document.querySelector("#pokedex_open").classList.add(style.Section_Pokedex)
                     document.querySelector("#div_backede").classList.add(style.container_blockade)
 
-                    props.handlefilter(pokeCard.id)
-                    return
+
+                    pokeCard.childNodes[pokeCard.childNodes.length-1].setAttribute("id", "btnSelected")
+
+                    props.handlefilter(pokeCard.childNodes[3].childNodes[1].nodeValue.slice(1, 5))
+                    pokeCard.classList.add(style.selected)
                 }
+                return
             })
         })
     }
@@ -180,16 +180,19 @@ function MountCards(props){
     // Function ( CloseSection ) respomsavel por fecha a ( section ) e a ( div ) da pokedex e remover todos os atributos refentes a ela.
     const CloseSection=()=>{
         
-        setNex_Pre(true)
         const section = document.getElementById("pokedex_open")
         const div = document.getElementById("div_backede")
-
+        setNex_Pre(true)
+        
         section.parentNode.removeChild(section)
         div.parentNode.removeChild(div)
+        
+
         document.querySelector('#btnSelected').removeAttribute("id", "btnSelected")
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
                     
         props.handlefilter(document.getElementById("input").value)
+        props.setNextPrev(9)
         return
     }
 
