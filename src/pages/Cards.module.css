@@ -539,7 +539,7 @@
     }
 
     .pokemon_Card.selected {
-        margin: -110px -60px -50px -60px;
+        margin: -110px -60px -40px -60px;
         padding: 50px 100px;
         position: relative;
         top: 0vh;
@@ -547,7 +547,7 @@
         left: auto;
         transform: translate(0%,0%);
         height: 100%;
-        width: 100%;
+        width: 100vw;
         grid-template-columns: 100%;
         background-color: rgba(0, 149, 159, 0.144);
         grid-template-rows: 40px minmax(50px max-content) 40px  minmax(75px max-content) 60px minmax(100px, 150px) 80px minmax(200px max-content);
@@ -677,7 +677,7 @@
 
     .pokemon_Card.selected {
         padding: 50px 25px 80px 25px;
-        margin-top: -120px;
+        margin: -120px -20px -40px -20px;
     }
 
     .pokemon_Card.selected .png {
@@ -713,6 +713,10 @@
     .pokemon_Card {
         width: 130px;
         height: 170px;
+    }
+
+    .pokemon_Card.selected {
+        margin: -110px -18px -40px -18px;
     }
 }
 

@@ -7,7 +7,8 @@ function Container(props) {
     useEffect(()=>{
         const url = window.location.hash
         const selected = document.querySelector(".Navbar_selected__P9wgn")
-        const menubtn = document.getElementById("menu")
+        const section = document.getElementById("pokedex_open")
+        const div = document.getElementById("div_backede")
         
         if (selected) 
         {
@@ -43,6 +44,11 @@ function Container(props) {
                 break
             default:
                 localStorage.setItem("home", 0)
+        }
+        
+        if (div && section){
+            section.parentNode.removeChild(section)
+            div.parentNode.removeChild(div)
         }
         
         document.getElementById("nav_bar").childNodes[localStorage.getItem("home")].classList.add("Navbar_selected__P9wgn")
