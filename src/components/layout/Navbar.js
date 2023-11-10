@@ -29,7 +29,7 @@ function Navbar() {
 
     // function ( selectBar ) responsavel por adicionar a marcar a posição atual na barra de navegação
     const selectBar=()=>{
-        document.getElementById("nav_bar").childNodes.forEach((selectBar) => {
+        document.getElementById("nav_bar").childNodes.forEach((selectBar, index) => {
             selectBar.addEventListener('click', ()=>{
 
                 const selected = document.querySelector(".Navbar_selected__P9wgn")
@@ -37,10 +37,11 @@ function Navbar() {
                 {
                     selected.classList.remove(style.selected)
                 }
-                if (document.querySelector(".Navbar_menu__U5aLo")) {
-                    handleMenu() 
+                if (document.querySelector(".Navbar_menu__U5aLo")){
+                    handleMenu()
                 }
-                selectBar.classList.add(style.selected)            
+                selectBar.classList.add(style.selected)
+                localStorage.setItem("home", index)         
             })
         })
     }
@@ -48,15 +49,14 @@ function Navbar() {
     // objetivo de re-adicionar o estilo a atualizar ou resetar a pagina ou carregar pela primeira vez
     useEffect(()=>{
         const url = window.location.href.split("#")[1]
-        const navbar =document.getElementById("nav_bar")
-        if (url === "/" || url === "" )
+        const navbar = document.getElementById("nav_bar")
+        if (url == "/" || url == "" )
         {
             navbar.childNodes[0].classList.add(style.selected)
         }
         else 
         {
             navbar.childNodes[localStorage.getItem("home")].classList.add(style.selected)
-            navbar.childNodes[0].classList.remove(style.selected)
         }
     }, [menu])
 

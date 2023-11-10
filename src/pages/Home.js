@@ -11,8 +11,27 @@ import Alola from "../img/Alola-img.png";
 import Galar from "../img/Galar-img.png";
 import Paldea from "../img/Paldea-img.png";
 import logo from "../img/poke-titulo.png"
+import { useEffect } from "react";
 
 function Home() {
+
+    useEffect(()=>{
+        const section = document.getElementById("pokedex_open")
+        const div = document.getElementById("div_backede")
+        if (div && section) 
+        {
+            section.parentNode.removeChild(section)
+            div.parentNode.removeChild(div)
+        }
+
+        if (document.querySelector(".Navbar_selected__P9wgn")) 
+        {
+            document.querySelector(".Navbar_selected__P9wgn").classList.remove("Navbar_selected__P9wgn") 
+        }
+
+        document.getElementById("nav_bar").childNodes[0].classList.add("Navbar_selected__P9wgn")
+
+    }, [])
 
     // ( handlebar ) responsavel por adicionar o estilo de selecionado ao cliclar e um cartão de uma regiao
     const handlebar=()=>{
@@ -23,8 +42,19 @@ function Home() {
 
                 localStorage.setItem("home", index+1)
 
+                if (document.querySelector(".Navbar_selected__P9wgn")) 
+                {
+                    document.querySelector(".Navbar_selected__P9wgn").classList.remove("Navbar_selected__P9wgn") 
+                }
                 navbar.childNodes[index+1].classList.add("Navbar_selected__P9wgn")
-                navbar.childNodes[0].classList.remove("Navbar_selected__P9wgn")  
+                
+                const menubtn = document.getElementById("menu")
+                const nav = document.getElementById("nav_bar")
+                
+                if (menubtn.classList.contains("Navbar_menu__U5aLo")){
+                    menubtn.classList.remove("Navbar_menu__U5aLo")
+                    nav.classList.add("Navbar_Navbar_Moba__4PYSz")
+                }
             })
         })
     }

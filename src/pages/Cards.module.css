@@ -10,14 +10,14 @@
 }
 
 /* Estilos da section que envolve os cards*/
-.card section {
+.card section{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 1024px;
-    padding: 100px 80px 50px 80px;
+    padding: 120px 80px 50px 80px;
     gap: 30px;
 }
 
@@ -633,9 +633,9 @@
     
 }
 
-@media (max-width: 864px) {    
+@media (max-width: 1024px) {    
     .card section {
-        padding: 100px 60px 50px 60px;
+        padding: 120px 60px 50px 60px;
     }
 }
 
@@ -786,8 +786,8 @@
     }
 }
 
-@media (max-height: 993px) {
+@media (max-height: 993px) and (max-width: 1024px) {
     .container_blockade {
-        width: calc(100vw - 20px);
+        width: calc(100vw - 15px);
     }
 }

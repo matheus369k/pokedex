@@ -2,7 +2,7 @@
     position: absolute;
     display: flex;
     top: 0px;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 15px);
     height: 70px;
     z-index: 2;
     backdrop-filter: blur(10px);
@@ -16,6 +16,7 @@
     cursor: pointer;
     position: fixed;
     right: 40px;
+    padding: 5px;
     top: 20px;
     font-size: 2.8em;
     stroke: white;
@@ -83,6 +84,11 @@
     padding-bottom: 30px;
     width: 100%;
     height: auto;
+}
+
+.Container.Home .container_blockade,
+.Container.Home .selected{
+    display: none;
 }
 
 .Container.Navbar_Container svg:hover {

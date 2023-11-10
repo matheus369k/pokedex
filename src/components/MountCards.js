@@ -7,28 +7,6 @@ function MountCards(props){
     const [nex_Pre, setNex_Pre]=useState(true)
     const [cardSelected, setCardSelected]=useState([])
 
-    // Function ( CloseSection ) respomsavel por fecha a ( section ) e a ( div ) da pokedex e remover todos os atributos refentes a ela.
-    const CloseSection=()=>{
-        
-        setNex_Pre(true)
-        const section = document.getElementById("pokedex_open")
-        const div = document.getElementById("div_backede")
-
-        section.parentNode.removeChild(section)
-        div.parentNode.removeChild(div)
-        document.querySelector('#btnSelected').removeAttribute("id", "btnSelected")
-        document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
-                    
-        props.handlefilter(document.getElementById("input").value)
-        return
-    }
-    useEffect(()=> {
-        const div = document.getElementById("div_backede")
-        if (div) {
-            div.parentNode.removeChild(div)
-        }
-    }, [])
-
     // Function ( handleRender ) reponsavel por Adicionar as informações referentes aos seus Typos, evolutções e typos de pokemons que tem vantagens sobre ele.
     const handleRender=(render, name, cardNumber=0)=>{
         let listRender = []
@@ -170,7 +148,7 @@ function MountCards(props){
         document.querySelectorAll(".poke_card").forEach((pokeCard) => {
             pokeCard.addEventListener("click", ()=> {
                 
-                if (!document.querySelector("#pokedex_open"))
+                if (!document.getElementById("pokedex_open"))
                 {
                     const fother = document.getElementById("container")
 
@@ -184,7 +162,7 @@ function MountCards(props){
                     // Div se sobresair sobre o fundo ao clicar no cartõa 
                     const div = document.createElement("div")
                     div.setAttribute("id", "div_backede")
-                    fother.parentNode.append(div)
+                    fother.parentNode.appendChild(div)
 
                     //console.log(pokeCard.childNodes[pokeCard.childNodes.length-1]);
                     pokeCard.childNodes[pokeCard.childNodes.length-1].setAttribute("id", "btnSelected")
@@ -198,6 +176,23 @@ function MountCards(props){
             })
         })
     }
+    
+    // Function ( CloseSection ) respomsavel por fecha a ( section ) e a ( div ) da pokedex e remover todos os atributos refentes a ela.
+    const CloseSection=()=>{
+        
+        setNex_Pre(true)
+        const section = document.getElementById("pokedex_open")
+        const div = document.getElementById("div_backede")
+
+        section.parentNode.removeChild(section)
+        div.parentNode.removeChild(div)
+        document.querySelector('#btnSelected').removeAttribute("id", "btnSelected")
+        document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
+                    
+        props.handlefilter(document.getElementById("input").value)
+        return
+    }
+
     return cardSelected
 }
 

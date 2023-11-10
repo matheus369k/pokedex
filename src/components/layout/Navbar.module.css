@@ -79,6 +79,7 @@
 
 @media (max-width: 824px) {
     .Navbar {
+        margin-top: 50px;
         flex-direction: column;
         gap: 5px;
         width: 50%;
