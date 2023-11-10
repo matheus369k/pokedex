@@ -17,7 +17,7 @@ function Home() {
     // ( handlebar ) responsavel por adicionar o estilo de selecionado ao cliclar e um cartão de uma regiao
     const handlebar=()=>{
         document.querySelector("#homeswitch").childNodes.forEach((gene, index)=> {
-            gene.addEventListener("mouseup", () => {
+            gene.addEventListener("click", () => {
                 
                 const navbar = document.getElementById("nav_bar")  
                 
@@ -32,7 +32,7 @@ function Home() {
     return (
         <Container customClass="Home">
             <h1>Selecione a Região</h1>
-            <ul id="homeswitch" onClick={()=>handlebar()}>
+            <ul id="homeswitch" onMouseEnter={()=>handlebar()} onTouchStart={()=>handlebar()}>
                 <Link to="/onegeneration">
                     <li>
                         <div><img src={logo} alt="Nome Pokemon" /></div>
