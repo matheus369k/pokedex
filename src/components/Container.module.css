@@ -86,6 +86,10 @@
     height: auto;
 }
 
+.Container.Home div img {
+    padding-bottom: 0px;
+}
+
 .Container.Home .container_blockade,
 .Container.Home .selected{
     display: none;

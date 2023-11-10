@@ -44,7 +44,7 @@ function MountCards(props){
                         <li 
                         key={`${cardNumber}_Evolution_Seta:${rende.name}-span`} 
                         className={style.seta}>
-                            {index < render.length-1 ? `${window.innerWidth < 694 ? "↓"  : "➔"}` : "" }
+                            {index < render.length-1 ? `${window.innerWidth < 793 ? "↓"  : "➔"}` : "" }
                         </li>
                         {render.length-1 === index && rende.moreOneEvolution &&
                             <li key={`${cardNumber}M_o_Evolution_Poke:${rende.name}-ul-li`} className={`${style.M_o_Evolution} ${localStorage.getItem("classcustom") == "Eevee" ? style.eevee : style.EvoDubleorMore }`}>

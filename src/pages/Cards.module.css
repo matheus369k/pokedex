@@ -525,26 +525,57 @@
 
 /* Estilo responsavel pela adaptação dos cards */
 @media (max-width: 1024px) {
+    .card section {
+        padding: 120px 60px 50px 60px;
+    }
+
     .container_blockade {
         width: 100vw;
     }
 
     .Section_Pokedex {
-        display: none;
+        height: 100vh;
+        width: 100vw;
     }
 
     .pokemon_Card.selected {
-        padding: 40px 20px;
+        margin: -110px -60px -50px -60px;
+        padding: 50px 100px;
         position: relative;
         top: 0vh;
+        border-radius: 0px;
         left: auto;
         transform: translate(0%,0%);
-        width: 768px;
-        height: max-content;
-        grid-template-columns: 700px;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 100%;
         background-color: rgba(0, 149, 159, 0.144);
         grid-template-rows: 40px minmax(50px max-content) 40px  minmax(75px max-content) 60px minmax(100px, 150px) 80px minmax(200px max-content);
         gap: 10px;
+    }
+
+    .pokemon_Card.selected button {
+        bottom: 2%;
+    }
+    
+    .pokemon_Card.selected button  svg {
+        font-size: 4em;
+    }
+    
+    .pokemon_Card.selected .button_right {
+        right: 10px;
+    }
+    .pokemon_Card.selected .button_left {
+        left: 10px;
+    }
+    
+    .closed{
+        top: 10px;
+        right: 10px;
+    }
+    
+    .closed svg {
+        font-size: 3em;
     }
 
     .h1_name {
@@ -587,6 +618,7 @@
     .super_damange  li {
         grid-row-start: 7;
         grid-column-start: 1;
+        max-width: 150px;
     }
 
     .h3_description {
@@ -597,6 +629,7 @@
     .description {
         grid-row-start: 9;
         grid-column-start: 1;
+        width: 100%;
     }
     
     .h3_stats{
@@ -608,10 +641,10 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 700px;
+        width: 100%;
         grid-row-start: 2;
         grid-row-end: 3;
-        gap: 50px;
+        gap: 10px;
     }
     
     .stats li {
@@ -625,75 +658,33 @@
     
     .evolution {
         margin: 0 auto;
-        height: 480px;
-        width: 700px;
+        height: auto;
+        width: 100%;
         grid-column-start: 1;
         grid-row-start: 4;
     }
     
 }
-
-@media (max-width: 1024px) {    
-    .card section {
-        padding: 120px 60px 50px 60px;
-    }
-}
-
-@media (max-width: 824px) {
+@media (max-width: 793px) {
     .pokemon_Card {
-        width: 150px;
+        width: 160px;
         height: 230px;
     }
 
+    .card section {
+        padding: 130px 20px 50px 20px;
+    }
+
     .pokemon_Card.selected {
-        width: 768px;
-        grid-template-columns: 700px;
-    }
-
-    .description,
-    .super_damange,    
-    .stats{
-        width: 100%;
-    }
-
-    .stats {
-        gap: 20px;
-    }
-    
-    .stats li {
-        padding: 0px;
-        width: 46%;
-    }
-    
-    .evolution {
-        height: 380px;
-        width: 100%;
-    }
-}
-
-@media (max-width: 793px) {
-    .pokemon_Card.selected {
-        width: 668px;
-        grid-template-columns: 600px;
+        padding: 50px 25px 80px 25px;
+        margin-top: -120px;
     }
 
     .pokemon_Card.selected .png {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: auto;
     }
-}
-
-@media (max-width: 693px) {
-    .card section {
-        padding: 130px 20px 50px 20px;
-        gap: 20px;
-    }
-
-    .pokemon_Card.selected {
-        width: max-content;
-        grid-template-columns: 82vw;
-    }
-
+    
     .evolution {
         height: 100%;
         gap: 5px;
@@ -715,30 +706,20 @@
 
 @media (max-width: 593px) {
     .card section {
-        padding: 130px 18px 50px 18px;
+        padding: 120px 18px 50px 18px;
         gap: 20px;
     }
     
     .pokemon_Card {
         width: 130px;
-        height: 180px;
-    }
-
-    .pokemon_Card.selected {
-        grid-template-columns: 78vw;
-    }
-    
-    .stats li {
-        width: 45%;
+        height: 170px;
     }
 }
 
-@media (max-width: 593px) { 
-    .card section {
-        padding: 110px 0px 50px 0px;
-    }   
-
+@media (max-width: 593px) {
     .stats li {
+        padding-top: 0px;
+        margin-bottom: 10px;
         letter-spacing: 1px;
         font-size: .8em;
     }
@@ -747,47 +728,64 @@
 @media (max-width: 493px) { 
     .pokemon_Card {
         width: 110px;
-        height: 160px;
-    }
-
-    .pokemon_Card.selected .png {
-        width: 300px;
-        height: 300px;
-    }
-}
-
-
-@media (max-width: 393px) {
-    .card section {
-        padding: 130px 0px 50px 0px;
-        gap: 10px;
-    }
-    
-    .pokemon_Card {
-        width: 95px;
         height: 140px;
     }
     
-    .pokemon_Card.selected {
-        grid-template-columns: 75vw;
-    }  
+    .pokemon_Card.selected button  svg {
+        font-size: 3em;
+    }
+    
+    .closed svg {
+        font-size: 2em;
+    }
 
     .stats li {
         font-size: .6em;
     }
 
     .super_damange li{
-        font-size: .9em;
+        padding: 10px 0px;
+        font-size: .8em;
     }
     
     .type li {
         padding: 5px 10px;
         font-size: 1em;
     }
+    
+    .h1_name,
+    .Pokedex_num,
+    .h3_Tipos,
+    .h3_super_damange,
+    .h3_description,
+    .h3_stats,
+    .h3_evolution {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 393px) {    
+    .pokemon_Card {
+        width: 90px;
+        height: 120px;
+    }
+    
+    .pokemon_Card.selected {
+        padding: 30px 15px 50px 10px;
+    }
 }
 
 @media (max-height: 993px) and (max-width: 1024px) {
     .container_blockade {
-        width: calc(100vw - 15px);
+        width: calc(100vw - 30px);
+    }
+    .pokemon_Card.selected {
+        width: calc(100vw - 50px);
+        grid-template-columns: 100%;
+    }
+
+    .Section_Pokedex {
+        width: calc(100vw - 30px);
     }
 }

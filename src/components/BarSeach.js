@@ -73,32 +73,19 @@ function BarSeach(props){
     return (
         <section>
             <form className={style.seach_Container}>
-                <label>
-                    <BiSearch />
-                </label>
+                <label><BiSearch /></label>
 
                 <img className={style.pokeboll} src={img} />
 
-                <input 
-                autoComplete="off" 
-                id="input" 
-                type="text" 
-                onLoadedMetadata={(e)=>handlefilter(e.target.value)} 
-                onChange={(e)=>handlefilter(e.target.value)} 
-                placeholder="Search..." 
+                <input autoComplete="off" id="input" type="text" onLoadedMetadata={(e)=>handlefilter(e.target.value)} onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." 
                 />
             </form>
 
-            <MountCards 
-            handlefilter={handlefilter} 
-            cards={cards.length > 9 ? cards.slice(0, nextPrev) : cards} 
+            <MountCards handlefilter={handlefilter} cards={cards.length > 9 ? cards.slice(0, nextPrev) : cards} 
             />
 
             {verifivationInput==="" && 
-                <button 
-                className={style.button_More} 
-                onClick={()=>NextPrevent()}>
-                    <AiFillDownCircle/>
+                <button className={style.button_More} onClick={()=>NextPrevent()}> <AiFillDownCircle/>
                 </button>
             }
         </section>
