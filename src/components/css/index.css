@@ -1,17 +1,27 @@
 *{
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
+
   list-style: none;
+
   text-decoration: none;
+
   color: black;
+
   transition: step-end;
+
   scrollbar-width: 20px;
+
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   overflow: hidden;
-  height: 100vh;
+
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
 }

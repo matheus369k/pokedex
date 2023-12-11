@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import style  from "../pages/Cards.module.css"
+import style  from "./css/Cards.module.css"
 import {AiFillCloseCircle} from "react-icons/ai"
 import { FcNext, FcPrevious } from "react-icons/fc"
 
@@ -192,7 +192,6 @@ function MountCards(props){
         document.querySelector(".Cards_selected__3tg-E").classList.remove("Cards_selected__3tg-E")
                     
         props.handlefilter(document.getElementById("input").value)
-        props.setNextPrev(9)
         return
     }
 

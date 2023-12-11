@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-import style from "./BarSeach.module.css";
+import style from "./css/BarSeach.module.css";
 
 import img from "../img/pokeball.png";
 
@@ -11,15 +11,14 @@ import { AiFillDownCircle } from "react-icons/ai"
 import MountCards from "./MountCards";
 
 function BarSeach(props){
-    const [nextPrev, setNextPrev]=useState(9);
+    const [nextPrev, setNextPrev]=useState([0 ,9]);
     const [verifivationInput, setVerifivationInput]=useState("");
     const [cards, setCards]=useState([]);
 
-    // Function ( handlefilter ) responsavel por filtrar os cards com base no nome ou numero digita no input abaixo.
+
     const handlefilter=(e="")=>{
         setVerifivationInput(e)
 
-        // axios reponsavel por Coletar as informações dos card em um arquivos que esta no repositoria do github, link da APi:https://github.com/matheus369k/matheus369k.github.io/blob/main/Data/pokedex.json.
         axios(props.api)
             .then((resp)=> {
 
@@ -37,7 +36,8 @@ function BarSeach(props){
 
                     if (e === "" ) 
                     {
-                        setCards(resp.data[props.generation].slice(0, nextPrev))
+                        setCards(resp.data[props.generation].slice(nextPrev[0], nextPrev[1]))
+
                         return 
                     };
                     let pokeNumber = clientSeach
@@ -49,24 +49,49 @@ function BarSeach(props){
                         listFilter.push(resp.data[props.generation][index])
                     };
                 }
-                setCards(listFilter.slice(0, nextPrev))
+                setCards(listFilter.slice(nextPrev[0], nextPrev[1]))
+
             }).catch((err)=> console.log(err))
         return
     };
 
-    // Function ( NextPrevent ) responsavel por almentar a quantidade de cards que são exibidos na tela
-    const NextPrevent=()=>{
-        if (151 > Number(nextPrev)) 
-        {
-            setNextPrev(Number(nextPrev)+25)
+    document.querySelectorAll('.btn_nextprev').forEach((btn_np, index) => {
+
+        btn_np.addEventListener('click', ()=>{
+
+            NextPrevent(index)
+
+            console.log(index);
+        
+        })
+
+        return
+
+    })
+
+    const NextPrevent=(index)=>{
+
+        if (index === 1) {
+
+            setNextPrev([parseInt(nextPrev[0]) + 9, parseInt(nextPrev[1]) + 9 ])
+
+        }else if (nextPrev[0] > 0 && index === 0) {
+
+            setNextPrev([nextPrev[0] - 9, nextPrev[1] - 9 ])
+
         }
-        handlefilter()
+
+        console.log(nextPrev)
+
         return
     }
 
-    // Objetivo de re-chamar a function ( handlefilter ) e atualiza-la ao ter modificações
     useEffect(()=>{
+
         handlefilter(document.getElementById("input").value)
+
+        return
+
     }, [nextPrev])
     
     return (
@@ -76,17 +101,10 @@ function BarSeach(props){
 
                 <img className={style.pokeboll} src={img} />
 
-                <input autoComplete="off" id="input" type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." 
-                />
+                <input autoComplete="off" id="input" type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
             </form>
 
-            <MountCards setNextPrev={setNextPrev} handlefilter={handlefilter} cards={cards.length > 9 ? cards.slice(0, nextPrev) : cards} 
-            />
-
-            {verifivationInput==="" && 
-                <button className={style.button_More} onClick={()=>NextPrevent()}> <AiFillDownCircle/>
-                </button>
-            }
+            <MountCards handlefilter={handlefilter} cards={cards.length > 9 ? cards.slice(nextPrev[0], nextPrev[1]) : cards} />
         </section>
     )
 };

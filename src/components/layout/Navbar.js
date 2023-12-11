@@ -1,37 +1,48 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import style from "./Navbar.module.css"
+import img from "../../img/poke-titulo.png";
 import Container from "../Container";
-import img from "../../img/poke-titulo.png"
-import { useState } from "react";
-import { FiMenu } from "react-icons/fi"
-import { TfiClose } from "react-icons/tfi"
+import "../css/Navbar.css";
+
+
+import { FiMenu } from "react-icons/fi";
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+import { TfiClose } from "react-icons/tfi";
 
 
 function Navbar(props) {
+
     const [menu, setMenu]=useState(true)
 
-    // ( handleMenu ) tem como obtjetivo lidar com com as mudanças do menu dependendo do tamanho da tela
     const handleMenu=()=>{
-        const menubtn = document.getElementById("menu")
+
         const nav = document.getElementById("nav_bar")
-        setMenu(!menu)
         
-        if (menubtn.classList.contains("Navbar_menu__U5aLo")){
-            menubtn.classList.remove("Navbar_menu__U5aLo")
-            nav.classList.add("Navbar_Navbar_Moba__4PYSz")
-        }else {
-            menubtn.classList.add("Navbar_menu__U5aLo")
-            nav.classList.remove("Navbar_Navbar_Moba__4PYSz")
-        }
+        nav.childNodes.forEach(aba => {
+
+            aba.addEventListener('click', ()=>{
+
+                document.querySelector('.selected').classList.remove('selected')
+
+                aba.classList.add('selected')
+
+            })
+        })
+
+
         return
     }
 
     return (
         <Container customClass="Navbar_Container">
-            <img src={img}  alt="logo"/>
-            <nav id="nav_bar" className={`${style.Navbar_Moba} ${style.Navbar}`}>
-                <li>
+            <nav className="container_next_prev">
+                <li className="btn_nextprev"><GrLinkPrevious/></li>
+                <li className="btn_nextprev"><GrLinkNext/></li>
+            </nav>
+            <img className="logo" src={img}  alt="logo"/>
+            <nav onMouseEnter={()=>handleMenu()} id="nav_bar" className="Navbar_Moba Navbar">
+                <li className="selected">
                     <Link to="/">Home</Link>
                 </li>
                 <li>

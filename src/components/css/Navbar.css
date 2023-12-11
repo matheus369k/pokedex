@@ -1,54 +1,125 @@
 .Navbar {
-    position: relative;
-    top: 40px;
+    width: 100%;
+
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: space-around;
+
+    position: relative;
+    top: 20px;
+
+    gap: 20px;
 }
 
-.Navbar a {
-    padding: 20px 5px;
-    font-weight: bolder;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-size: .8em;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.65);
-    color: rgb(87, 87, 87)
+.Navbar div {
+    display: none;
 }
+
+.logo {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    
+    margin-right: 20px;
+
+    width: auto;
+    height: 60px;
+}
+
+.container_next_prev {
+    min-width: 100vw;
+    height: 45px;
+
+    position: absolute;
+    left: 0;
+    top: 65px;
+
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_next_prev svg{
+    background-color: var(--bg-next-prev);
+
+    padding: 5px;
+
+    position: relative;
+
+    border-radius: 50%;
+
+    font-size: 2em;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.container_next_prev svg:hover {
+    background-color: var(--bg-next-prev-hover);
+}
+
 
 .Navbar li {
     height: max-content;
     width: auto;
-    border-radius: 8px;
+
     font-size: 1em;
 }
 
 .Navbar li:hover {
-    margin-top: -3px;
-    border-top: 3px solid rgba(160, 11, 11, 0.576);
+    margin-bottom: -3px;
+    border-bottom: 3px solid var(--color-text-border-hover);
+}
+
+.Navbar a {
+    padding: 20px 0;
+
+    font-weight: bolder;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    font-size: .8em;
+
+    text-shadow: 1px 1px var(--color-box-shadow);
+
+    color: var(--color-text);
 }
 
 .Navbar a:hover {
-    color: rgb(153, 153, 153);
+    color: var(--color-text-border-hover);
 }
 
 .Navbar .selected:hover,
 .Navbar .selected {
-    margin-top: -3px;
-    border-top: 3px solid rgb(160, 11, 11);
+    margin-bottom: -3px;
+
+    border-bottom: 3px solid var(--color-text-border-hover);
 }
 
 .Navbar .selected a {
-    color: white;
+    color: var(--color-text-border);
 }
+
+
+
 
 .menu {
     backdrop-filter: blur(80px);
+
     width: 40vw;
     height: 100vh;
+
     position: fixed;
     right: -15px;
     top: 0px;
+
     background-color: rgba(0, 0, 0, 0.844);
     border-left: 2px solid white;
     z-index: 3;

@@ -1,0 +1,48 @@
+:root {
+    --max-width: 1424px;
+
+
+
+    --color-header-bg: rgb(0, 0, 0);
+
+    --color-text: white;
+
+    --color-text-border: rgb(0, 0, 162);
+
+    --color-text-border-hover: rgba(0, 0, 200, 0.718);
+
+    --bg-next-prev: gray;
+
+    --bg-next-prev-hover: white;
+
+    --border-barseach:  rgb(89, 89, 89);
+    
+
+
+
+    --bg-home-card: rgba(0,0,0,.5);
+
+    --color-border: rgb(0, 221, 255);
+
+    --color-border-hover: rgb(0, 76, 255);
+
+    --color-title-home: white;
+
+    --color-title-card-home: white;
+
+
+
+    --bg-cards: linear-gradient(180deg, rgba(0, 108, 138, 0) 50%,rgba(0, 136, 174, 0.239) ,rgba(0, 136, 174, 0.634) , rgb(0, 136, 174));
+
+    --bg-cards-hover: linear-gradient(180deg, rgba(0, 138, 64, 0) 50%,rgba(0, 174, 72, 0.239) ,rgba(0, 174, 81, 0.634) , rgb(0, 174, 55));
+
+    --color-border-cards: rgb(25, 0, 255);
+
+    --color-border-cards-hover: rgb(0, 255, 68);
+
+    --color-box-shadow: rgba(0, 0, 0, .4);
+
+    --img-container-main-bg: url(../../img/bg.jpg);
+
+    --img-card-select-bg: url(../../img/bg-selected.jpeg)
+}
