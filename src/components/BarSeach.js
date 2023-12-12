@@ -1,99 +1,85 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
 import style from "./css/BarSeach.module.css";
 
 import img from "../img/pokeball.png";
 
 import { BiSearch } from "react-icons/bi";
-import { AiFillDownCircle } from "react-icons/ai"
+import API from "./API";
 
-import MountCards from "./MountCards";
+function BarSeach(props) {
+    const [nextPrev, setNextPrev] = useState([0, 9]);
+    const [listAllCards, setListAllCards] = useState([]);
 
-function BarSeach(props){
-    const [nextPrev, setNextPrev]=useState([0 ,9]);
-    const [verifivationInput, setVerifivationInput]=useState("");
-    const [cards, setCards]=useState([]);
+    const handlefilter = (e = "") => {
 
+        const listFilter = []
 
-    const handlefilter=(e="")=>{
-        setVerifivationInput(e)
+        for (let index = 0; index < listAllCards.length; index++) {
 
-        axios(props.api)
-            .then((resp)=> {
+            if (isNaN(e)) {
+                var clientSeach = listAllCards[index]["name"]
+                var sliceStart = 0
+            } else {
+                var clientSeach = listAllCards[index]["number"]
+                var sliceStart = 1
+            };
 
-                const listFilter = []
-                
-                for (let index = 0; index < resp.data[props.generation].length; index++) {
+            if (e === "") {
 
-                    if (isNaN(e)) {
-                        var clientSeach = resp.data[props.generation][index]["name"]
-                        var sliceStart = 0
-                    } else {
-                        var clientSeach = resp.data[props.generation][index]["number"]
-                        var sliceStart = 1 
-                    };
+                props.setCardSelected(listAllCards.slice(nextPrev[0], nextPrev[1]))
 
-                    if (e === "" ) 
-                    {
-                        setCards(resp.data[props.generation].slice(nextPrev[0], nextPrev[1]))
+                return
+            };
+            let pokeNumber = clientSeach
 
-                        return 
-                    };
-                    let pokeNumber = clientSeach
+            let cardNumber = (pokeNumber.slice(sliceStart, e.length + sliceStart))
 
-                    let cardNumber=(pokeNumber.slice(sliceStart, e.length+sliceStart))
+            if (e.toLowerCase() == cardNumber.toLowerCase()) {
 
-                    if (e.toLowerCase()==cardNumber.toLowerCase())
-                    {
-                        listFilter.push(resp.data[props.generation][index])
-                    };
-                }
-                setCards(listFilter.slice(nextPrev[0], nextPrev[1]))
+                listFilter.push(listAllCards[index])
+            };
+        }
 
-            }).catch((err)=> console.log(err))
+        props.setCardSelected(listFilter.slice(nextPrev[0], nextPrev[1]))
+
         return
     };
 
     document.querySelectorAll('.btn_nextprev').forEach((btn_np, index) => {
 
-        btn_np.addEventListener('click', ()=>{
+        btn_np.addEventListener('click', () => {
 
             NextPrevent(index)
 
-            console.log(index);
-        
+            return
         })
-
-        return
 
     })
 
-    const NextPrevent=(index)=>{
+    const NextPrevent = (index) => {
 
-        if (index === 1) {
+        if (index === 1 && nextPrev[1] < listAllCards.length) {
 
-            setNextPrev([parseInt(nextPrev[0]) + 9, parseInt(nextPrev[1]) + 9 ])
+            setNextPrev([parseInt(nextPrev[0]) + 9, parseInt(nextPrev[1]) + 9])
 
-        }else if (nextPrev[0] > 0 && index === 0) {
+        } else if (nextPrev[0] > 0 && index === 0) {
 
-            setNextPrev([nextPrev[0] - 9, nextPrev[1] - 9 ])
+            setNextPrev(parseInt(nextPrev[0]) - 9, parseInt(nextPrev[1]) - 9)
 
         }
-
-        console.log(nextPrev)
 
         return
     }
 
-    useEffect(()=>{
+    useEffect(() => {
 
         handlefilter(document.getElementById("input").value)
 
-        return
+        console.log('repeat');
 
-    }, [nextPrev])
-    
+    }, [listAllCards, nextPrev])
+
     return (
         <section>
             <form className={style.seach_Container}>
@@ -101,10 +87,12 @@ function BarSeach(props){
 
                 <img className={style.pokeboll} src={img} />
 
-                <input autoComplete="off" id="input" type="text" onChange={(e)=>handlefilter(e.target.value)} placeholder="Search..." />
+                <input autoComplete="off" id="input" type="text" onChange={(e) => handlefilter(e.target.value)} placeholder="Search..." />
+
             </form>
 
-            <MountCards handlefilter={handlefilter} cards={cards.length > 9 ? cards.slice(nextPrev[0], nextPrev[1]) : cards} />
+            <API generation={props.generation} setListAllCards={setListAllCards} />
+
         </section>
     )
 };

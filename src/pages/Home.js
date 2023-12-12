@@ -31,7 +31,7 @@ function Home() {
 
     return (
         <Container customClass="Home">
-            <h1>Selecione a Região</h1>
+            <h1>Selecione uma região</h1>
             <ul id="homeswitch" onMouseEnter={()=>handlebar()} onTouchStart={()=>handlebar()}>
                 <Link to="/onegeneration">
                     <li>

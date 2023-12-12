@@ -38,7 +38,7 @@
     z-index: 2;
 }
 
-.card section{
+.card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

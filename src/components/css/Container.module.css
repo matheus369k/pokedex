@@ -31,7 +31,7 @@
     width: max-content;
 
     position: relative;
-    top: 120px;
+    top: 200px;
 
     padding: 0px 10px;
     padding-bottom: 10px;
@@ -50,7 +50,7 @@
 }
 
 .Container.Home ul {
-    top: 150px;
+    top: 250px;
     position: relative;
 
     margin: 0 auto;
@@ -60,6 +60,7 @@
 
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     gap: 50px;
@@ -72,7 +73,7 @@
 
     padding: 0px 10px;
 
-    width: 30%;
+    width: 25%;
     height: auto;
 
     background-color: var(--bg-home-card);

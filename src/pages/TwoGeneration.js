@@ -1,9 +1,14 @@
 import Container from "../components/Container"
 
+import style from "../components/css/Cards.module.css"
+import MountCards from "../components/MountCards";
+
 function TwoGeneration() {
     return (
-        <Container customClass="bg_main" classCustomCard="card">
-            <h1>A Segunda Geração sera Adicionada em um futuro upgrade...</h1>
+        <Container customClass="bg_main">
+            <section id="container" className={style.card}>
+                <MountCards generation="johto" />
+            </section> 
         </Container>
     )
 }
