@@ -27,7 +27,7 @@ function BarSeach(props) {
 
             if (e === "") {
 
-                props.setCardSelected(listAllCards.slice(nextPrev[0], nextPrev[1]))
+                props.setCardSelected(listAllCards.slice(parseInt(nextPrev[0]), parseInt(nextPrev[1])))
 
                 return
             };
@@ -41,44 +41,42 @@ function BarSeach(props) {
             };
         }
 
-        props.setCardSelected(listFilter.slice(nextPrev[0], nextPrev[1]))
+        props.setCardSelected(listFilter.slice(parseInt(nextPrev[0]), parseInt(nextPrev[1])))
 
         return
     };
 
-    document.querySelectorAll('.btn_nextprev').forEach((btn_np, index) => {
-
-        btn_np.addEventListener('click', () => {
-
-            NextPrevent(index)
-
-            return
-        })
-
-    })
-
-    const NextPrevent = (index) => {
-
-        if (index === 1 && nextPrev[1] < listAllCards.length) {
-
-            setNextPrev([parseInt(nextPrev[0]) + 9, parseInt(nextPrev[1]) + 9])
-
-        } else if (nextPrev[0] > 0 && index === 0) {
-
-            setNextPrev(parseInt(nextPrev[0]) - 9, parseInt(nextPrev[1]) - 9)
-
-        }
-
-        return
-    }
 
     useEffect(() => {
 
-        handlefilter(document.getElementById("input").value)
+        handlefilter()
+        
+    }, [nextPrev, listAllCards])
 
-        console.log('repeat');
 
-    }, [listAllCards, nextPrev])
+    document.querySelectorAll('.btn_nextprev').forEach((btn, index) => {
+
+        btn.addEventListener('click', () => { NextPrevent(index)})
+
+    })
+
+    const NextPrevent = (i) => {
+
+        if (i === 1 && parseInt(nextPrev[1]) < listAllCards.length) {
+
+            setNextPrev([nextPrev[0] = parseInt(nextPrev[0]) + 9, nextPrev[1] = parseInt(nextPrev[1]) + 9])
+
+        } else if (i === 0 && parseInt(nextPrev[0]) > 0) {
+
+            setNextPrev([nextPrev[0] = parseInt(nextPrev[0]) - 9, nextPrev[1] = parseInt(nextPrev[1]) - 9])
+
+        }
+
+        console.log('enter', i, Number(i));
+
+        return
+
+    }
 
     return (
         <section>

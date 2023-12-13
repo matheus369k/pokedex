@@ -87,7 +87,7 @@ function MountCards(props) {
     // A function ( handlecard ) tem como objetiov montar os cartões de cada pokemon
     useEffect(() => {
         setCreaterCards(Mountcard())
-    }, [cardSelected])
+    }, [cardSelected, props.generation, nex_Pre])
 
 
     const Mountcard = () => {

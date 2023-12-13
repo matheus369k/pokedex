@@ -1,7 +1,6 @@
 import axios from "axios";
 
-import { Fragment, useEffect, useState } from "react";
-import BarSeach from "./BarSeach";
+import { useEffect } from "react";
 
 function API(props){
 
