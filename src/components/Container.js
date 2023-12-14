@@ -4,7 +4,7 @@ import style from "./css/Container.module.css";
 function Container(props) {
 
     // objetivo de re-adicionar o estilo a atualizar ou resetar a pagina ou carregar pela primeira vez
-    useEffect(()=>{
+    /*useEffect(()=>{
         const url = window.location.hash
         const selected = document.querySelector(".Navbar_selected__P9wgn")
         const section = document.getElementById("pokedex_open")
@@ -52,7 +52,7 @@ function Container(props) {
         }
         
         document.getElementById("nav_bar").childNodes[localStorage.getItem("home")].classList.add("Navbar_selected__P9wgn")
-    }, [props.children])
+    }, [props.children])*/
 
     return (
         <div id="container" className={`${style.Container} ${style[props.customClass]} ${style.dark}`}>

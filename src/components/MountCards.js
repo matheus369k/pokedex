@@ -86,7 +86,9 @@ function MountCards(props) {
 
     // A function ( handlecard ) tem como objetiov montar os cartões de cada pokemon
     useEffect(() => {
+
         setCreaterCards(Mountcard())
+
     }, [cardSelected, props.generation, nex_Pre])
 
 
@@ -94,8 +96,8 @@ function MountCards(props) {
         const list = []
         cardSelected.map((card) => (
             list.push(
-                <div onMouseEnter={() => handleClickCard()} id={card.name} className={`poke_card ${style.pokemon_Card}`} key={card.number}>
-                    <div id="close" className={style.closed} onClick={() => CloseSection()}>
+                <div /*onMouseEnter={() => handleClickCard()}*/ id={card.name} className={`poke_card ${style.pokemon_Card}`} key={card.number}>
+                    <div id="close" className={style.closed} /*onClick={() => CloseSection()}*/>
                         <AiFillCloseCircle />
                     </div>
                     {nex_Pre ?
@@ -205,8 +207,8 @@ function MountCards(props) {
 
     return (
         <Fragment>
-            {createrCards}
             <BarSeach setCardSelected={setCardSelected} generation={props.generation} />
+            {createrCards}
         </Fragment>
     )
 }

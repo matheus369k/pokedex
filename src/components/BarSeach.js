@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 
-import style from "./css/BarSeach.module.css";
+import "./css/BarSeach.css";
 
 import img from "../img/pokeball.png";
 
 import { BiSearch } from "react-icons/bi";
+import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+
 import API from "./API";
 
 function BarSeach(props) {
@@ -46,48 +48,39 @@ function BarSeach(props) {
         return
     };
 
+    const NextPrevent = (index) => {
 
-    useEffect(() => {
-
-        handlefilter()
-        
-    }, [nextPrev, listAllCards])
-
-
-    document.querySelectorAll('.btn_nextprev').forEach((btn, index) => {
-
-        btn.addEventListener('click', () => { NextPrevent(index)})
-
-    })
-
-    const NextPrevent = (i) => {
-
-        if (i === 1 && parseInt(nextPrev[1]) < listAllCards.length) {
+        if (index === 1 && parseInt(nextPrev[1]) < listAllCards.length) {
 
             setNextPrev([nextPrev[0] = parseInt(nextPrev[0]) + 9, nextPrev[1] = parseInt(nextPrev[1]) + 9])
 
-        } else if (i === 0 && parseInt(nextPrev[0]) > 0) {
+        } else if (index === 0 && parseInt(nextPrev[0]) > 0) {
 
             setNextPrev([nextPrev[0] = parseInt(nextPrev[0]) - 9, nextPrev[1] = parseInt(nextPrev[1]) - 9])
 
         }
 
-        console.log('enter', i, Number(i));
-
         return
 
     }
 
+    useEffect(() => {
+
+        handlefilter()
+
+    }, [listAllCards, nextPrev])
+
     return (
-        <section>
-            <form className={style.seach_Container}>
+        <section className="section_seach_container">
+            <form className="form_seach_Container">
                 <label><BiSearch /></label>
-
-                <img className={style.pokeboll} src={img} />
-
+                <img className="pokeboll" src={img} />
                 <input autoComplete="off" id="input" type="text" onChange={(e) => handlefilter(e.target.value)} placeholder="Search..." />
-
             </form>
+            <nav className="container_next_prev">
+                <li onClick={(e) => NextPrevent(0)}><GrLinkPrevious /></li>
+                <li onClick={(e) => NextPrevent(1)}><GrLinkNext /></li>
+            </nav>
 
             <API generation={props.generation} setListAllCards={setListAllCards} />
 

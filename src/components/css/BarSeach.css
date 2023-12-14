@@ -1,16 +1,25 @@
-.seach_Container {
-    position: fixed;
-    top: 50px;
+.section_seach_container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 0px;
+    width: 100%;
+
+    z-index: 2;
+
+}
+
+.form_seach_Container {
+    position: absolute;
+    top: 65px;
     left: 50%;
     transform: translateX(-50%);
 
     z-index: 2;
-
-    height: min-content;
-    width: min-content;
 }
 
-.seach_Container .pokeboll {
+.form_seach_Container .pokeboll {
     height: 50px;
     width: 50px;
 
@@ -22,7 +31,7 @@
     border-radius: 50%;
 }
 
-.seach_Container label {
+.form_seach_Container label {
     font-size: 2em;
 
     padding-right: 5px;
@@ -32,7 +41,7 @@
     top: 10px;
 }
 
-.seach_Container input{
+.form_seach_Container input{
     border-radius: 30px;
     border: 3px solid var(--border-barseach);
 
@@ -46,11 +55,45 @@
 
     padding: 0 60px;
     
-    z-index: 0;
+    z-index: 5;
 }
 
+.container_next_prev {
+    min-width: 100vw;
+    height: 45px;
 
+    position: absolute;
+    left: 0;
+    top: 80px;
 
+    padding: 0 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_next_prev svg{
+    background-color: var(--bg-next-prev);
+
+    padding: 5px;
+
+    position: relative;
+
+    border-radius: 50%;
+
+    font-size: 2em;
+
+    z-index: 2;
+
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.container_next_prev svg:hover {
+    background-color: var(--bg-next-prev-hover);
+}
 
 
 .button_More {

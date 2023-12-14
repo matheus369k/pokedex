@@ -15,7 +15,7 @@ import logo from "../img/poke-titulo.png";
 function Home() {
 
     // ( handlebar ) responsavel por adicionar o estilo de selecionado ao cliclar e um cartão de uma regiao
-    const handlebar=()=>{
+    /*const handlebar=()=>{
         document.querySelector("#homeswitch").childNodes.forEach((gene, index)=> {
             gene.addEventListener("click", () => {
                 
@@ -27,12 +27,12 @@ function Home() {
                 localStorage.setItem("home", index+1)
             })
         })
-    }
+    }*/
 
     return (
         <Container customClass="Home">
             <h1>Selecione uma região</h1>
-            <ul id="homeswitch" onMouseEnter={()=>handlebar()} onTouchStart={()=>handlebar()}>
+            <ul id="homeswitch" /*onMouseEnter={()=>handlebar()} onTouchStart={()=>handlebar()}*/>
                 <Link to="/onegeneration">
                     <li>
                         <div><img src={logo} alt="Nome Pokemon" /></div>

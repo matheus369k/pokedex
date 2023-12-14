@@ -7,13 +7,12 @@ import "../css/Navbar.css";
 
 
 import { FiMenu } from "react-icons/fi";
-import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 import { TfiClose } from "react-icons/tfi";
 
 
 function Navbar(props) {
 
-    const [menu, setMenu]=useState(true)
+    //const [menu, setMenu]=useState(true)
 
     const handleMenu=()=>{
 
@@ -36,10 +35,6 @@ function Navbar(props) {
 
     return (
         <Container customClass="Navbar_Container">
-            <nav className="container_next_prev">
-                <li className="btn_nextprev"><GrLinkPrevious/></li>
-                <li className="btn_nextprev"><GrLinkNext/></li>
-            </nav>
             <img className="logo" src={img}  alt="logo"/>
             <nav onMouseEnter={()=>handleMenu()} id="nav_bar" className="Navbar_Moba Navbar">
                 <li className="selected">
@@ -74,7 +69,7 @@ function Navbar(props) {
                 </li>
             </nav>
             <div id="menu">
-                {menu ? <FiMenu  onClick={()=>handleMenu()} /> : <TfiClose  onClick={()=>handleMenu()} />}
+                {/*menu ? <FiMenu  onClick={()=>handleMenu()} /> : <TfiClose  onClick={()=>handleMenu()} />*/}
             </div>
         </Container>
     )

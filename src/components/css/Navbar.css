@@ -26,43 +26,6 @@
     height: 60px;
 }
 
-.container_next_prev {
-    min-width: 100vw;
-    height: 45px;
-
-    position: absolute;
-    left: 0;
-    top: 65px;
-
-    padding: 0 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.container_next_prev svg{
-    background-color: var(--bg-next-prev);
-
-    padding: 5px;
-
-    position: relative;
-
-    border-radius: 50%;
-
-    font-size: 2em;
-
-    z-index: 2;
-
-    cursor: pointer;
-
-    transition: .5s;
-}
-
-.container_next_prev svg:hover {
-    background-color: var(--bg-next-prev-hover);
-}
-
 
 .Navbar li {
     height: max-content;
