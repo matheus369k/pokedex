@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import img from "../../img/poke-titulo.png";
@@ -8,25 +8,28 @@ import "../css/Navbar.css";
 
 import { FiMenu } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
+import { wait } from "@testing-library/user-event/dist/utils";
 
 
 function Navbar(props) {
 
     //const [menu, setMenu]=useState(true)
 
-    const handleMenu=()=>{
+
+    const handleMenu = () => {
 
         const nav = document.getElementById("nav_bar")
-        
+
         nav.childNodes.forEach(aba => {
 
-            aba.addEventListener('click', ()=>{
+            aba.addEventListener('click', () => {
 
                 document.querySelector('.selected').classList.remove('selected')
 
                 aba.classList.add('selected')
 
             })
+
         })
 
 
@@ -35,8 +38,8 @@ function Navbar(props) {
 
     return (
         <Container customClass="Navbar_Container">
-            <img className="logo" src={img}  alt="logo"/>
-            <nav onMouseEnter={()=>handleMenu()} id="nav_bar" className="Navbar_Moba Navbar">
+            <img className="logo" src={img} alt="logo" />
+            <nav onMouseEnter={() => handleMenu()} id="nav_bar" className="Navbar_Moba Navbar">
                 <li className="selected">
                     <Link to="/">Home</Link>
                 </li>

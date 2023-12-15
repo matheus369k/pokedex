@@ -83,301 +83,383 @@
     animation: card-img 2s ease-in-out alternate infinite;
 }
 
-.pokemon_Card .closed,
-.pokemon_Card button,
-.pokemon_Card .h1_name,
-.pokemon_Card .description,
-.pokemon_Card .Pokedex_num,
-.pokemon_Card h3,
-.pokemon_Card .type,
-.pokemon_Card .super_damange,
-.pokemon_Card .evolution,
-.pokemon_Card .stats{
+.pokemon_Card > .closed,
+.pokemon_Card > button,
+.pokemon_Card > .h1_name,
+.pokemon_Card > .description,
+.pokemon_Card > .Pokedex_num,
+.pokemon_Card > h3,
+.pokemon_Card > .type,
+.pokemon_Card > .super_damange,
+.pokemon_Card > .evolution,
+.pokemon_Card > .stats{
     display: none;
 }
 
-/* Estilo responsavel por  exibir as infor do card selecionado */
-.pokemon_Card.selected .closed,
-.pokemon_Card.selected button,
-.pokemon_Card.selected .h1_name,
-.pokemon_Card.selected .description,
-.pokemon_Card.selected .Pokedex_num,
-.pokemon_Card.selected h3,
-.pokemon_Card.selected .type,
-.pokemon_Card.selected .super_damange,
-.pokemon_Card.selected .evolution,
-.pokemon_Card.selected .stats{
+
+.pokemon_Card.selected > .closed,
+.pokemon_Card.selected > button,
+.pokemon_Card.selected > .h1_name,
+.pokemon_Card.selected > .description,
+.pokemon_Card.selected > .Pokedex_num,
+.pokemon_Card.selected > h3,
+.pokemon_Card.selected > .type,
+.pokemon_Card.selected > .super_damange,
+.pokemon_Card.selected > .evolution,
+.pokemon_Card.selected > .stats{
     display: flex;
     z-index: 2;
     margin: 0px;
 }
 
-/* Estilo da section que foi utilizada como quandro de fundo */
-.Section_Pokedex {
+.hider_cards .pokemon_Card:not(.selected){
+    display: none;
+}
+
+.pokemon_Card.selected .png {
+    animation: card-img none;
+}
+
+.pokemon_Card.selected { 
+    cursor: auto;
+    box-shadow: none;
+    border: 1px solid var(--border-card-select);
+
+    background-image: var(--gradient-bg-card-click), var(--img-card-select-bg);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     padding: 50px;
 
     width: 968px;
-    height: 568px;
+    height: 600px;
+    
 
-    border-radius: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: min-content minmax(350px, 620px);
+    grid-template-rows: 50px 50px 35px 40px minmax() 40px minmax(200px, 300px);
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 4;
 
-    background: var(--img-card-select-bg) center center no-repeat fixed;
-    background-size: cover;
+    border-radius: 50px 0 50px 0;
 
-    box-shadow: 0 0 100px 200px rgba(0, 0, 0, 0.492);
-
-    z-index: 3;
+    column-gap: 25px;
 }
 
-/* Estilo do card ao ser selecionado */
-.pokemon_Card.selected { 
-    cursor: auto;
-    position: fixed;
-    padding: 20px 40px;
-    top: 50%;
-    left: 50%;
-    width: 968px;
-    height: 568px;
-    transform: translate(-50%, -50%);
-    box-shadow: none;
-    display: grid;
-    grid-template-columns: min-content minmax(300px, 620px);
-    grid-template-rows: 50px 50px 35px 40px minmax() 40px minmax(200px, 300px);
-    z-index: 4;
-    border-radius: 20px 0 20px 0;
-    border: none;
-    background: transparent;
-    border: 10px ridge rgb(0, 0, 0);
-    outline: 15px outset rgb(0, 150, 167);
-    background-color: rgba(0, 0, 0, 0.307);
-    backdrop-filter: blur(10px);
+.pokemon_Card.selected:hover {
+    animation: card-hover none;
 }
 
 .pokemon_Card.selected button {
-    z-index: 2;
-    position: fixed;
     background-color: transparent;
-    bottom: 0%;
     border: none;
+
+    position: fixed;
+    bottom: 10px;
+    
     width: min-content;
     height: min-content;
+
+    z-index: 2;
+
+    cursor: pointer;
 }
 
-.pokemon_Card.selected button  svg {
+.pokemon_Card.selected button svg {
     font-size: 3.5em;
 }
 
-.pokemon_Card.selected button  svg:hover {
+.pokemon_Card.selected button svg:hover {
     transition: .5s ease;
     transform: scale(1.1);
 }
 
 .pokemon_Card.selected .button_right {
-    right: 0px;
+    right: 20px;
 }
 .pokemon_Card.selected .button_left {
-    left: 0px;
+    left: 20px;
 }
 
 .closed{
     box-shadow: none;
-    padding: 0;
-    background: rgba(0, 0, 0, 0);
-    width: min-content;
-    height: min-content;
     border: none;
-    border-radius: 50%;
-    position: fixed;
-    top: 0px;
-    right: 0px;
+    background: transparent;
     border: none;
     outline: none;
+
+    padding: 0;
+
+
+    width: min-content;
+    height: min-content;
+    
+    border-radius: 50%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
     z-index: 1;
 }
 
 .closed svg {
-    cursor: pointer;
     font-size: 2em;
+
     fill: white;
+
     z-index: 2;
+
+    cursor: pointer;
+
+    transition: .4s ease-in-out;
 }
 
 .closed svg:hover {
     fill: rgb(188, 0, 0);
-    transform: scale(1.1);
+
+    transform: scale(1.05);
 }
 
-
-/* Estilo da primeira Aba do card */
 .pokemon_Card.selected .png {
     width: 500px;
     height: 500px;
+
     margin: 0px;
+    
     grid-row-start: 1;
     grid-row-end: 8;
     grid-column-start: 1;
 }
 
 .h1_name {
-    text-shadow: 1px 1px black;
-    color: rgb(255, 255, 255);
+    color: var(--color-white-text);
+    
+    text-shadow: 2px 2px var(--color-box-shadow);
+
     grid-column-start: 2;
     grid-row-start: 1;
+
     font-size: 2em;
 }
 
 .Pokedex_num {
-    text-shadow: 1px 1px black;
     font-size: 2em;
+
     grid-column-start: 2;
     grid-row-start: 2;
-    color: rgb(255, 255, 255);
+
+    color: var(--color-white-text);
+    
+    text-shadow: 2px 2px var(--color-box-shadow);
+
     font-weight: bolder;
 }
 
 .h1_name  span,
 .Pokedex_num span {
-    padding-right: 5px;
-    color: rgb(0, 255, 0);
+    padding-right: 20px;
+
+    color: var(--color-green-text);
+
+    text-shadow: 2px 2px var(--color-box-shadow);
 }
 
 .h3_Tipos{
     font-size: 1.5em;
+    font-weight: bolder;
+
+    text-transform: uppercase;
+
     position: relative;
     left: 0%;
+
     grid-row-start: 3;
     grid-column-start: 2;
-    color: rgb(0, 255, 0);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.956);
+
+    color: var(--color-green-text);
+    
+    text-shadow: 2px 2px var(--color-box-shadow);
 }
 
 .type {
     grid-row-start: 3;
     grid-column-start: 2;
+
     width: min-content;
+
     display: flex;
     flex-direction: row;
-    left: 100px;
+
     position: relative;
+    left: 100px;
 }
 
 .type li {
     margin: 0px 10px;
+    padding: 5px 10px;
+    
+    font-size: 1em;
+
+    text-transform: uppercase;
+
     width: min-content;
     height: min-content;
-    padding: 5px 20px;
+    
     border-radius: 5px;
+
     font-weight: bolder;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.76);
-    font-size: 1.2em;
-    box-shadow: 4px 4px 5px rgb(0, 0, 0);
+    
+    color: var(--color-white-text);
+
+    text-shadow: 2px 2px var(--color-box-shadow);
+    box-shadow: 2px 2px 5px var(--color-box-shadow);
 }
 
 .h3_super_damange {
-    font-size: 2em;
+    font-size: 1.5em;
+    font-weight: bolder;
+
+    text-transform: uppercase;
+
     grid-column-start: 2;
-    font-weight: bold;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.85);
-    color: rgb(0, 237, 0);
     grid-row-start: 4;
+
+    text-shadow: 2px 2px var(--color-box-shadow);
+
+    color: var(--color-green-text);
 }
 
 .super_damange {
     grid-column-start: 2;
     grid-row-start: 5;
+
     width: 100%;
+
     flex-direction: row;
-    gap: 5px;
     flex-wrap: wrap;
+
+    gap: 5px;
 }
 
 .super_damange  li {
     text-transform: uppercase;
-    border-radius: 5px;
-    font-weight: bolder;
-    box-shadow: 5px 5px 3px black;
-    width: 32%;
-    color: white;
-    text-shadow: 1px 1px black;
     text-align: center;
+
+    border-radius: 5px;
+
+    font-size: 1.1em;
+    font-weight: bolder;
+
+    width: 32%;
     height: min-content;
+
     padding: 10px 0px;
+    
+    color: var(--color-white-text);
+
+    text-shadow: 2px 2px var(--color-box-shadow);
+    box-shadow: 2px 2px 5px var(--color-box-shadow);
 }
 
 .h3_description {
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
-    color: rgb(0, 255, 0);
+    text-shadow: 2px 2px var(--color-box-shadow);
+
+    color: var(--color-green-text);
+
     grid-row-start: 6;
     grid-column-start: 2;
+
     width: 100%;
 }
 
 .description {
     font-weight: bold;
+
     width: 100%;
-    color: white;
+    
+    color: var(--color-white-text);
+
     font-size: 1em;
-    text-shadow: 1px 1px black;
-    text-transform: capitalize;
-    letter-spacing: 1px;
+    
+    text-shadow: 2px 2px var(--color-box-shadow);
+
+    letter-spacing: .5px;
     line-height: 24px;
+
     grid-row-start: 7;
     grid-column-start: 2;
+
     align-self: start;
+
     z-index: 1;
 }
 
 
-/* Estilod da segunda Aba do card */
 .h3_stats{
     grid-column-start: 1;
     grid-row-start: 1;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.575);
-    box-shadow: 5px solid rgb(0, 56, 0);
-    color: rgb(0, 237, 0);
+    
+    text-shadow: 2px 2px var(--color-box-shadow);
+    
+    color: var(--color-green-text);
+
     font-size: 1.5em;
 }
 
 .stats{
     width: 250px;
     height: 100%;
+
     grid-column-start: 1;
-    flex-direction: column;
-    font-size: 1.5em;
     grid-row-start: 2;
     grid-row-end: 7;
+
+    flex-direction: column;
+
+    font-size: 1.5em;
+
+    text-transform: uppercase;
 }
 
 .stats li {
     letter-spacing: 2px;
-    color: rgb(179, 98, 0);
-    text-transform: capitalize;
+    text-transform: uppercase;
+
+    color: var(--color-name-status);
+
     font-weight: bold;
+
     border-radius: 0  0 10px 0;
-    border-bottom: 5px solid rgba(0, 79, 103, 0.534);
+
+    border-bottom: 5px solid var(--color-boder-bottom-status);
+
     padding-bottom: 5px;
     padding-top: 30px;
 }
 
 .stats li span {
     font-weight: bolder;
-    text-shadow: 1px 1px black;
-    color: rgb(124, 172, 75);
+    
+    text-shadow: 2px 2px var(--color-box-shadow);
+
+    color: var(--color-green-text);
 }
 
 .h3_evolution {
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.908);
-    color: rgb(0, 237, 0);
+    text-shadow: 2px 2px var(--color-box-shadow);
+    
+    color: var(--color-green-text);
+
     grid-column-start: 2;
     grid-row-start: 1;
+
     font-size: 2em;
+
     justify-content: center;
+
     width: 100%;
 }
 
@@ -385,8 +467,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     height: 480px;
     width: 620px;
+
     grid-column-start: 2;
     grid-row-start: 2;
     grid-row-end: 7;
@@ -395,6 +479,7 @@
 .evolution .All_list {
     height: 100%;
     width: 100%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -404,41 +489,53 @@
 .evolution .poke_infor {
     display: flex;
     flex-direction: column-reverse;
-    background-color: transparent;
     align-items: center;
+
+    background-color: transparent;
+
     width: 100%;
     height: auto;
 }
 
 .evolution .name,
 .evolution .Lv {
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.713);
+    text-shadow: 2px 2px var(--color-box-shadow);
+
     font-size: 1.5em;
+
     background-color: transparent;
+
     height: auto;
+
     display: flex;
-    text-align: center;
     flex-direction: row;
+
+    text-align: center;
+
     gap: 5px;
 }
 
 .evolution .Lv {
-    color: rgb(165, 147, 10);
+    color: var(--color-lv);
 }
 
 .evolution .Lv span {
     font-weight: bolder;
-    color: rgb(0, 48, 62);
+
+    color: var(--color-lv-value);
 }
 
 .evolution .name {
     font-weight: bolder;
-    color: rgb(0, 169, 82);
+
+    color: var(--color-name);
 }
 
 .evolution .seta {
     font-size: 2em;
-    color: white;
+
+    color: var(--color-white-text);
+
     z-index: 2;
 }
 
@@ -452,6 +549,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
     width: 100%;
     height: 100%;
 }
@@ -465,6 +563,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+
     background-color: transparent;
 }
 
@@ -483,6 +582,7 @@
 
 .evolution .M_o_Evolution.EvoDubleorMore .Ev_img{
     width: 100%;
+
     display: flex;
     align-self: center;
 }
@@ -506,60 +606,59 @@
     max-height: 25%;
 }
 
-/* Estilos das cores referentes aos tipos do pokemon */
 .Grama {
-    background-color: green;
+    background-color: var(--color-type-Grama);
 }
 .Veneno {
-    background-color: purple;
+    background-color: var(--color-type-Veneno);
 }
 .Fogo {
-    background-color: orange;
+    background-color: var(--color-type-Fogo);
 }
 .Voador {
-    background-color: rgb(233, 233, 233);
+    background-color: var(--color-type-Voador);
 }
 .Agua {
-    background-color: blue;
+    background-color: var(--color-type-Agua);
 }
 .Inseto {
-    background-color: greenyellow;
+    background-color: var(--color-type-Inseto);
 }
 .Normal {
-    background-color: rgb(129, 123, 112);
+    background-color: var(--color-type-Normal);
 }
 .Eletrico {
-    background-color: yellow;
+    background-color: var(--color-type-Eletrico);
 }
 .Terra {
-    background-color: rgb(159, 104, 9);
+    background-color: var(--color-type-Terra);
 }
 .Pisquico {
-    background-color: palevioletred;
+    background-color: var(--color-type-Pisquico);
 }
 .Gelo {
-    background-color: skyblue;
+    background-color: var(--color-type-Gelo);
 }
 .Rocha {
-    background-color: rgb(97, 63, 0);
+    background-color: var(--color-type-Rocha);
 }
 .Lutador {
-    background-color: rgb(135, 0, 0);
+    background-color: var(--color-type-Lutador);
 }
 .Fada {
-    background-color: rgb(255, 202, 211);
+    background-color: var(--color-type-Fada);
 }
 .Metal {
-    background-color: gray;
+    background-color: var(--color-type-Metal);
 }
 .Fantasma {
-    background-color: rgb(86, 61, 95);
+    background-color: var(--color-type-Fantasma);
 }
 .Obscuro {
-    background-color: rgb(57, 58, 126);
+    background-color:var(--color-type-Obscuro);
 }
 .Dragon {
-    background-color: rgb(1, 2, 80);
+    background-color: var(--color-type-Dragon);
 }
 
 /* Estilo responsavel pela adaptação dos cards */

@@ -8,7 +8,7 @@ function OneGeneration() {
 
     return (
         <Container customClass="bg_main">
-            <section id="container" className={style.card}>
+            <section className={style.card}>
                 <MountCards generation="land_orange" />
             </section> 
         </Container>

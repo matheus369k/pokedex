@@ -15,12 +15,12 @@
 
     --bg-next-prev-hover: white;
 
-    --border-barseach:  rgb(89, 89, 89);
-    
+    --border-barseach: rgb(89, 89, 89);
 
 
 
-    --bg-home-card: rgba(0,0,0,.5);
+
+    --bg-home-card: rgba(0, 0, 0, .5);
 
     --color-border: rgb(0, 221, 255);
 
@@ -32,9 +32,9 @@
 
 
 
-    --bg-cards: linear-gradient(180deg, rgba(0, 108, 138, 0) 50%,rgba(0, 136, 174, 0.239) ,rgba(0, 136, 174, 0.634) , rgb(0, 136, 174));
+    --bg-cards: linear-gradient(180deg, rgba(0, 108, 138, 0) 70%, rgba(0, 136, 174, 0.148), rgba(0, 136, 174, 0.378), rgba(0, 136, 174, 0.698));
 
-    --bg-cards-hover: linear-gradient(180deg, rgba(0, 138, 64, 0) 50%,rgba(0, 174, 72, 0.239) ,rgba(0, 174, 81, 0.634) , rgb(0, 174, 55));
+    --bg-cards-hover: linear-gradient(180deg, rgba(0, 138, 64, 0) 70%, rgba(0, 174, 72, 0.152), rgba(0, 174, 81, 0.291), rgba(0, 174, 55, 0.579));
 
     --color-border-cards: rgb(25, 0, 255);
 
@@ -44,5 +44,63 @@
 
     --img-container-main-bg: url(../../img/bg.jpg);
 
-    --img-card-select-bg: url(../../img/bg-selected.jpeg)
+
+
+    --border-card-select: gray;
+
+    --img-card-select-bg: url(../../img/bg-selected.jpeg);
+
+    --gradient-bg-card-click: linear-gradient(-90deg, rgba(0, 0, 0, 0.183), rgba(36, 36, 36, 0.233), rgba(52, 52, 52, 0.165));
+
+    --color-white-text: white;
+
+    --color-green-text: green;
+
+    --color-boder-bottom-status: rgba(0, 79, 103, 0.534);
+
+    --color-name-status: rgb(179, 98, 0);
+
+    --color-lv: rgb(165, 147, 10);
+
+    --color-lv-value: rgb(0, 48, 62);
+
+    --color-name: rgb(0, 169, 82);
+
+
+
+    --color-type-Grama: green;
+
+    --color-type-Veneno: purple;
+
+    --color-type-Fogo: orange;
+
+    --color-type-Voador: rgb(233, 233, 233);
+
+    --color-type-Agua: blue;
+
+    --color-type-Inseto: greenyellow;
+
+    --color-type-Normal: rgb(129, 123, 112);
+
+    --color-type-Eletrico: yellow;
+
+    --color-type-Terra: rgb(159, 104, 9);
+
+    --color-type-Pisquico: palevioletred;
+
+    --color-type-Gelo: skyblue;
+
+    --color-type-Rocha: rgb(97, 63, 0);
+
+    --color-type-Lutador: rgb(135, 0, 0);
+
+    --color-type-Fada: rgb(255, 202, 211);
+
+    --color-type-Metal: gray;
+
+    --color-type-Fantasma: rgb(86, 61, 95);
+
+    --color-type-Obscuro: rgb(57, 58, 126);
+
+    --color-type-Dragon: rgb(1, 2, 80);
 }

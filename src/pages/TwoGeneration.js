@@ -8,7 +8,7 @@ function TwoGeneration() {
     
     return (
         <Container customClass="bg_main">
-            <section id="container" className={style.card}>
+            <section className={style.card}>
                 <MountCards generation="johto" />
             </section> 
         </Container>
