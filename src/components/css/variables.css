@@ -1,9 +1,21 @@
 :root {
     --max-width: 1424px;
 
+    --bg-scroll-bar: linear-gradient(180deg, rgba(0, 136, 174, 0.683), rgba(0, 136, 174, 0.822), rgba(0, 136, 174, 0.429), rgba(0, 108, 138, 0.156), rgba(0, 136, 174, 0.296), rgba(0, 136, 174, 0.683), rgba(0, 136, 174, 0.822));
+
+    --color-border-scroll-bar: black;
+
+    --bg-scroll: rgb(0, 4, 73);
+
+    --bg-body: black;
 
 
-    --color-header-bg: rgb(0, 0, 0);
+    --bg-menu: rgba(0, 0, 0, 0.844);
+
+    --border-left-menu: gray;
+
+
+    --color-header-bg: linear-gradient(180deg, rgb(8, 0, 53), rgba(0, 12, 77, 0.67), rgba(0, 3, 69, 0.316), rgba(7, 0, 75, 0.398));
 
     --color-text: white;
 
@@ -42,7 +54,7 @@
 
     --color-box-shadow: rgba(0, 0, 0, .4);
 
-    --img-container-main-bg: url(../../img/bg.jpg);
+    --img-container-main-bg:  linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../../img/wp11079715-pokemon-pokeball-wallpapers.jpg);
 
 
 
@@ -50,7 +62,7 @@
 
     --img-card-select-bg: url(../../img/bg-selected.jpeg);
 
-    --gradient-bg-card-click: linear-gradient(-90deg, rgba(0, 0, 0, 0.183), rgba(36, 36, 36, 0.233), rgba(52, 52, 52, 0.165));
+    --gradient-bg-card-click: linear-gradient(-90deg, rgba(0, 0, 0, 0.387), rgba(21, 21, 21, 0.379), rgba(42, 42, 42, 0.412));
 
     --color-white-text: white;
 

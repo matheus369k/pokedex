@@ -8,12 +8,26 @@ import "../css/Navbar.css";
 
 import { FiMenu } from "react-icons/fi";
 import { TfiClose } from "react-icons/tfi";
-import { wait } from "@testing-library/user-event/dist/utils";
 
 
 function Navbar(props) {
 
-    //const [menu, setMenu]=useState(true)
+    const [menu, setMenu]=useState(false)
+
+    useEffect(()=>{
+
+        const nav = document.getElementById("nav_bar")
+
+        if (menu) {
+
+            nav.classList.add('active')
+
+        } else if (nav.classList.contains('active')) {
+
+            nav.classList.remove('active')
+        }
+
+    },[menu])
 
 
     const handleMenu = () => {
@@ -71,8 +85,8 @@ function Navbar(props) {
                     <Link to="/ninegeneration">Paldea</Link>
                 </li>
             </nav>
-            <div id="menu">
-                {/*menu ? <FiMenu  onClick={()=>handleMenu()} /> : <TfiClose  onClick={()=>handleMenu()} />*/}
+            <div id="menu" className={`menu ${menu && 'active' }`}>
+                <i  onClick={()=>setMenu(!menu)}>{!menu ? <FiMenu /> : <TfiClose />}</i>
             </div>
         </Container>
     )

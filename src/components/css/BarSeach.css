@@ -1,10 +1,10 @@
-.section_seach_container{
-    position: absolute;
-    top: 0px;
+.section_seach_container {
+    position: relative;
+    top: -70px;
     left: 0px;
 
     height: 0px;
-    width: 100%;
+    min-width: 100vw;
 
     z-index: 2;
 
@@ -41,7 +41,7 @@
     top: 10px;
 }
 
-.form_seach_Container input{
+.form_seach_Container input {
     border-radius: 30px;
     border: 3px solid var(--border-barseach);
 
@@ -54,8 +54,6 @@
     width: 500px;
 
     padding: 0 60px;
-    
-    z-index: 5;
 }
 
 .container_next_prev {
@@ -73,7 +71,7 @@
     justify-content: space-between;
 }
 
-.container_next_prev svg{
+.container_next_prev svg {
     background-color: var(--bg-next-prev);
 
     padding: 5px;
@@ -84,8 +82,6 @@
 
     font-size: 2em;
 
-    z-index: 2;
-
     cursor: pointer;
 
     transition: .5s;
@@ -95,110 +91,50 @@
     background-color: var(--bg-next-prev-hover);
 }
 
-
-.button_More {
-    background-color: rgba(0, 0, 0, 0.286);
-    border-radius: 50%;
-    border: none;
-    height: 70px;
-    width: 70px;
-    z-index: 0;
-    cursor: pointer;
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.button_More:hover {
-    bottom: -10px;
-    transition: .5s ease;
-    background-color: rgba(158, 208, 255, 0.83);
-    box-shadow: 0 0 10px 10px rgba(158, 198, 255, 0.518);
-}
-
-.button_More svg{
-    border-radius: 50%;
-    background-color: white;
-    fill: blue;
-    opacity: 50%;
-    font-size: 3em;
-}
-
-
-@media (max-width: 824px) {
-    .seach_Container {
-        top: 30px;
-        left: 0px;
+@media (max-width: 893px) {
+    .form_seach_Container {
+        top: 70px;
     }
 
-    .seach_Container .pokeboll {
-        height: 50px;
-        width: 50px;
-        position:absolute;
-        top: 0px;
-        left: 0px;
-        border: 2px solid rgb(89, 89, 89);
+    .form_seach_Container input {
+        width: 300px;
     }
 
-    .seach_Container label {
-        top: 12px;
-        left: 205px;
-        font-size: 1.8em;
-    }
+    .form_seach_Container .pokeboll {
+        width: auto;
 
-    .seach_Container input{
-        height: 52px;
-        width: 250px;
-        padding: 0 65px;
-        font-size: 1.1em;
+        left: 250px;
     }
 }
 
-@media (max-width: 693px) {
-    .seach_Container {
+@media (max-width: 500px) {
+    .section_seach_container {
+        top: -80px;
+
+    }
+
+    .form_seach_Container {
         top: 80px;
-        left: 0px;
     }
 
-    .seach_Container .pokeboll {
+    .form_seach_Container input {
+        width: 200px;
         height: 40px;
-        width: 40px;
-        position:absolute;
-        top: 0px;
-        left: 0px;
-        border: 2px solid rgb(89, 89, 89);
+
+        padding: 0 35px;
     }
 
-    .seach_Container label {
+    .form_seach_Container .pokeboll {
+        width: auto;
+        height: 40px;
+
+        left: 160px;
+    }
+
+    .form_seach_Container label {
+        font-size: 1.6em;
+
         top: 8px;
-        left: auto;
-        right: 6px;
-        font-size: 1.8em;
     }
 
-    .seach_Container input{
-        height: 42px;
-        width: 40vw;
-        padding: 0 45px;
-        font-size: 1em;
-    }
-}
-
-@media (max-width: 693px) {
-    .seach_Container {
-        top: 60px;
-    }
-}
-
-@media (max-width: 593px) {
-    .seach_Container input{
-        width: 50vw;
-    }
-}
-
-@media (max-width: 493px) {
-    .seach_Container input{
-        width: 60vw;
-    }
 }

@@ -72,10 +72,9 @@ function MountCards(props) {
 
                         </li>
 
-                        <li key={`${cardNumber}_Evolution_Seta:${rende.name}-span`} className={style.seta} >
-
-                            {index < render.length - 1 ? `${window.innerWidth.valueOf() < 793 ? "↓" : "➔"}` : ""}
-
+                        <li
+                            key={`${cardNumber}_Evolution_Seta:${rende.name}-span`}
+                            className={`${style.seta} ${index < render.length - 1 ? style.set_next_poke : ""}`} >
                         </li>
 
                         {render.length - 1 === index && rende.moreOneEvolution &&
@@ -176,78 +175,74 @@ function MountCards(props) {
 
                     {nex_Pre ?
 
-                        (
+                        <>
 
-                            <>
+                            <img className={style.png} src={card.images} alt={`Pokemon:${card.name}`} />
 
-                                <img className={style.png} src={card.images} alt={`Pokemon:${card.name}`} />
+                            <h1 className={style.h1_name}>
 
-                                <h1 className={style.h1_name}>
+                                <span>Nome: </span>{card.name}
 
-                                    <span>Nome: </span>{card.name}
+                            </h1>
 
-                                </h1>
+                            <h2 className={style.Pokedex_num}>
 
-                                <h2 className={style.Pokedex_num}>
+                                <span>Pokedex: </span>{card.number}
 
-                                    <span>Pokedex: </span>{card.number}
+                            </h2>
 
-                                </h2>
+                            <h3 className={style.h3_Tipos}>Tipo(s): </h3>
 
-                                <h3 className={style.h3_Tipos}>Tipo(s): </h3>
+                            <ul key={`Type:${card.number}`} className={style.type}>
 
-                                <ul key={`Type:${card.number}`} className={style.type}>
+                                {handleRender(card.types, 'type', card.number)}
+                            </ul>
 
-                                    {handleRender(card.types, 'type', card.number)}
-                                </ul>
+                            <h3 className={style.h3_description}>Description: </h3>
 
-                                <h3 className={style.h3_description}>Description: </h3>
+                            <p className={style.description}>{card.description}</p>
 
-                                <p className={style.description}>{card.description}</p>
+                            <h3 className={style.h3_super_damange}>Fraquezas:</h3>
 
-                                <h3 className={style.h3_super_damange}>Fraquezas:</h3>
+                            <ul key={`SuperDamege:${card.name}`} className={style.super_damange}>
 
-                                <ul key={`SuperDamege:${card.name}`} className={style.super_damange}>
+                                {handleRender(card.superdamange, 'superdamange', card.number)}
 
-                                    {handleRender(card.superdamange, 'superdamange', card.number)}
+                            </ul>
 
-                                </ul>
+                        </>
 
-                            </>
+                        :
 
-                        ) : (
+                        <>
 
-                            <>
+                            <h3 className={style.h3_evolution}>Evolutions:</h3>
 
-                                <h3 className={style.h3_evolution}>Evolutions:</h3>
+                            <ul key={`Evolution:${card.number}`} className={style.evolution}>
 
-                                <ul key={`Evolution:${card.number}`} className={style.evolution}>
+                                {handleRender(card.evolution, 'name', card.number)}
 
-                                    {handleRender(card.evolution, 'name', card.number)}
+                            </ul>
 
-                                </ul>
+                            <h3 className={style.h3_stats}>Base Stats:</h3>
 
-                                <h3 className={style.h3_stats}>Base Stats:</h3>
+                            <ul className={style.stats}>
 
-                                <ul className={style.stats}>
+                                <li>HP: <span>{card.baseStats["HP"]}</span></li>
 
-                                    <li>HP: <span>{card.baseStats["HP"]}</span></li>
+                                <li>Atack: <span>{card.baseStats["Atack"]}</span></li>
 
-                                    <li>Atack: <span>{card.baseStats["Atack"]}</span></li>
+                                <li>Defense: <span>{card.baseStats["Defense"]}</span></li>
 
-                                    <li>Defense: <span>{card.baseStats["Defense"]}</span></li>
+                                <li>SP.Atack: <span>{card.baseStats["Sp.atack"]}</span></li>
 
-                                    <li>SP.Atack: <span>{card.baseStats["Sp.atack"]}</span></li>
+                                <li>SP.Def: <span>{card.baseStats["Sp.Def"]}</span></li>
 
-                                    <li>SP.Def: <span>{card.baseStats["Sp.Def"]}</span></li>
+                                <li>Speed: <span>{card.baseStats["Speed"]}</span></li>
 
-                                    <li>Speed: <span>{card.baseStats["Speed"]}</span></li>
+                            </ul>
 
-                                </ul>
-
-                            </>
-
-                        )
+                        </>
 
                     }
 
@@ -272,11 +267,19 @@ function MountCards(props) {
 
         const cardselect = document.getElementById(card)
 
-        if (!cardselect.classList.contains('Cards_selected__DEBgR')) {
+        cardselect.classList.add(style.selected)
 
-            cardselect.classList.add(style.selected)
+        document.querySelector('.Cards_card__yiAy8').classList.add(style.hider_cards)
 
-            document.querySelector('.Cards_card__yiAy8').classList.add(style.hider_cards)
+
+
+        if (!document.querySelector('.Cards_container_blockade__FZC9n')) {
+
+            const div = document.createElement('div')
+
+            div.setAttribute('class', `${style.container_blockade}`)
+
+            document.querySelector('.Cards_card__yiAy8').appendChild(div)
         }
 
         return
@@ -287,17 +290,21 @@ function MountCards(props) {
 
         e.stopPropagation();
 
-        setNex_Pre(true)
+        document.querySelector('.Cards_card__yiAy8').removeChild(document.querySelector('.Cards_container_blockade__FZC9n'))
 
         document.querySelector('.Cards_selected__DEBgR').classList.remove('Cards_selected__DEBgR')
 
         document.querySelector('.Cards_hider_cards__EHYQ8').classList.remove('Cards_hider_cards__EHYQ8')
+
+        setNex_Pre(true)
+
+        return
     }
 
     return (
         <Fragment>
             <BarSeach setCardSelected={setCardSelected} generation={props.generation} />
-            {createrCards}
+            <section>{createrCards}</section>
         </Fragment>
     )
 }

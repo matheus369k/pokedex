@@ -19,27 +19,38 @@ function BarSeach(props) {
 
         for (let index = 0; index < listAllCards.length; index++) {
 
-            if (isNaN(e)) {
-                var clientSeach = listAllCards[index]["name"]
-                var sliceStart = 0
-            } else {
-                var clientSeach = listAllCards[index]["number"]
-                var sliceStart = 1
-            };
-
             if (e === "") {
 
                 props.setCardSelected(listAllCards.slice(parseInt(nextPrev[0]), parseInt(nextPrev[1])))
 
                 return
             };
-            let pokeNumber = clientSeach
 
-            let cardNumber = (pokeNumber.slice(sliceStart, e.length + sliceStart))
+            if (nextPrev[1] > 9){
 
-            if (e.toLowerCase() == cardNumber.toLowerCase()) {
+                setNextPrev([0, 9])
 
-                listFilter.push(listAllCards[index])
+            }
+
+
+            if (isNaN(e)) {
+                var clientSeach = listAllCards[index]["name"]
+    
+                let cardNumber = (clientSeach.slice(0, e.length))
+    
+                if (e.toLowerCase() === cardNumber.toLowerCase()) {
+    
+                    listFilter.push(listAllCards[index])
+                };
+                
+            } else {
+    
+                let cardNumber = listAllCards[index]["number"]
+    
+                if (parseInt(e) <= parseInt(cardNumber.split('#')[1])) {
+    
+                    listFilter.push(listAllCards[index])
+                };
             };
         }
 
@@ -75,7 +86,7 @@ function BarSeach(props) {
             <form className="form_seach_Container">
                 <label><BiSearch /></label>
                 <img className="pokeboll" src={img} />
-                <input autoComplete="off" id="input" type="text" onChange={(e) => handlefilter(e.target.value)} placeholder="Search..." />
+                <input maxLength={16} autoComplete="off" id="input" type="text" onChange={(e) => handlefilter(e.target.value)} placeholder="Search..." />
             </form>
             <nav className="container_next_prev">
                 <li onClick={(e) => NextPrevent(0)}><GrLinkPrevious /></li>
