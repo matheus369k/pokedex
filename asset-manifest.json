@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.8bda7b8b.css",
-    "main.js": "/pokedex/static/js/main.4eee20a3.js",
+    "main.css": "/pokedex/static/css/main.e53c65a5.css",
+    "main.js": "/pokedex/static/js/main.e796d631.js",
     "static/media/Kanto-img.png": "/pokedex/static/media/Kanto-img.e9d90d38bc6212f89bd4.png",
     "static/media/Kalos-img.png": "/pokedex/static/media/Kalos-img.1a04db8b6123b1eb4d62.png",
     "static/media/Unova-img.png": "/pokedex/static/media/Unova-img.f924d94a56af89264d45.png",
@@ -9,18 +9,18 @@
     "static/media/Hoenn-img.png": "/pokedex/static/media/Hoenn-img.d1f2f2c18ed45b324ba5.png",
     "static/media/Paldea-img.png": "/pokedex/static/media/Paldea-img.265bba25003ef921177b.png",
     "static/media/Galar-img.png": "/pokedex/static/media/Galar-img.ad20bbe89d9e9f3ef813.png",
+    "static/media/bg-selected.jpeg": "/pokedex/static/media/bg-selected.846fd5e8afd565441847.jpeg",
     "static/media/Johto-img.png": "/pokedex/static/media/Johto-img.77021ce1863a46c8c6d7.png",
     "static/media/Sinnoh-img.png": "/pokedex/static/media/Sinnoh-img.e987ba0a6bb6c9a97960.png",
     "static/media/wp11079715-pokemon-pokeball-wallpapers.jpg": "/pokedex/static/media/wp11079715-pokemon-pokeball-wallpapers.d571fb79d52b443e0a2c.jpg",
     "static/media/poke-titulo.png": "/pokedex/static/media/poke-titulo.93389c761f353f0db018.png",
-    "static/media/pokedex-open-dark.jpg": "/pokedex/static/media/pokedex-open-dark.4212ab783d41f6a67299.jpg",
     "static/media/pokeball.png": "/pokedex/static/media/pokeball.a5002c7f0459fd4ee803.png",
     "index.html": "/pokedex/index.html",
-    "main.8bda7b8b.css.map": "/pokedex/static/css/main.8bda7b8b.css.map",
-    "main.4eee20a3.js.map": "/pokedex/static/js/main.4eee20a3.js.map"
+    "main.e53c65a5.css.map": "/pokedex/static/css/main.e53c65a5.css.map",
+    "main.e796d631.js.map": "/pokedex/static/js/main.e796d631.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bda7b8b.css",
-    "static/js/main.4eee20a3.js"
+    "static/css/main.e53c65a5.css",
+    "static/js/main.e796d631.js"
   ]
 }
