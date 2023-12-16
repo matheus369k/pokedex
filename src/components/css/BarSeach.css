@@ -1,6 +1,6 @@
 .section_seach_container {
     position: relative;
-    top: -70px;
+    top: -60px;
     left: 0px;
 
     height: 0px;
@@ -20,11 +20,11 @@
 }
 
 .form_seach_Container .pokeboll {
-    height: 50px;
-    width: 50px;
+    height: auto;
+    width: 60px;
 
     position: absolute;
-    top: 0px;
+    top: -5px;
     left: 450px;
 
     border: 2px solid var(--border-barseach);
@@ -101,15 +101,13 @@
     }
 
     .form_seach_Container .pokeboll {
-        width: auto;
-
         left: 250px;
     }
 }
 
 @media (max-width: 500px) {
     .section_seach_container {
-        top: -80px;
+        top: -70px;
 
     }
 
@@ -126,7 +124,7 @@
 
     .form_seach_Container .pokeboll {
         width: auto;
-        height: 40px;
+        height: 50px;
 
         left: 160px;
     }

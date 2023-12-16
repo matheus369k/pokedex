@@ -273,7 +273,7 @@ function MountCards(props) {
 
 
 
-        if (!document.querySelector('.Cards_container_blockade__FZC9n')) {
+        if (!document.querySelector('.Cards_container_blockade__FZC9n') && window.innerWidth > 624) {
 
             const div = document.createElement('div')
 
@@ -290,7 +290,13 @@ function MountCards(props) {
 
         e.stopPropagation();
 
-        document.querySelector('.Cards_card__yiAy8').removeChild(document.querySelector('.Cards_container_blockade__FZC9n'))
+        const blockdiv = document.querySelector('.Cards_container_blockade__FZC9n')
+
+        if (blockdiv) {
+
+            document.querySelector('.Cards_card__yiAy8').removeChild(blockdiv)
+
+        }
 
         document.querySelector('.Cards_selected__DEBgR').classList.remove('Cards_selected__DEBgR')
 

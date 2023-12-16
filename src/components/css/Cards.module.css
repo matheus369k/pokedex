@@ -67,7 +67,7 @@
 
     max-width: var(--max-width);
 
-    padding: 0px 0px 50px 0px;
+    padding: 50px 0px;
 
     gap: 100px 10%;
 }
@@ -695,7 +695,7 @@
     background-color: var(--color-type-Dragon);
 }
 @media (max-width: 993px) {
-    .card {
+    .card section {
         width: 100%;
 
         gap: 50px 20px;
@@ -783,14 +783,17 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
         width: 100%;
+
         grid-row-start: 2;
         grid-row-end: 3;
+
         gap: 10px;
     }
 
     .stats li {
-        width: 48%;
+        width: 45%;
     }
 
     .h3_evolution {
@@ -800,8 +803,10 @@
 
     .evolution {
         margin: 0 auto;
+        
         height: auto;
         width: 100%;
+
         grid-column-start: 1;
         grid-row-start: 4;
     }
@@ -809,9 +814,13 @@
 }
 
 @media (max-width: 624px) {
-
     .card section {    
-        width: 100%;
+        width: 100vw;
+        height: 100%;
+
+        padding-top: 50px;
+        padding-bottom: 0px;
+
         gap: 25px;
     }
 
@@ -824,9 +833,13 @@
         position: relative;
         left: 0;
         top: 0;
-        transform: translateX( 0);
+        transform: translateX(0);
 
-        padding: 80px 10px;
+        margin-top: -180px;
+
+        border-radius: 0px;
+
+        padding: 100px 10px;
 
         min-height: 100vh;
         height: 100%;
@@ -835,7 +848,8 @@
 
         grid-template-columns: 100%;
         grid-template-rows: 40px minmax(50px max-content) 40px minmax(75px max-content) 60px minmax(100px, 150px) 80px minmax(200px max-content);
-        gap: 10px;
+
+        gap: 20px;
     }
 
     .pokemon_Card.selected .png {
@@ -848,13 +862,25 @@
         font-size: 1em;
     }
 
-    .evolution,
+    .evolution {
+        flex-direction: column;
+
+        margin-top: 25px;
+
+        row-gap: 10px;
+    }
+
     .evolution .All_list {
         flex-direction: column;
     }
 
     .evolution .set_next_poke::before {
+        padding: 5px;
         content:'↓';
+    }
+
+    .evolution .M_o_Evolution.EvoDubleorMore {
+        flex-direction: row;
     }
     
 }
