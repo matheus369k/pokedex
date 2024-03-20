@@ -1,0 +1,38 @@
+.form_container {
+    width: 400px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+}
+
+.form_container svg {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.form_container input {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    padding-left: 60px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.form_container input::placeholder {
+    font-size: 1.2rem;
+}
+
+.form_container img {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 100%;
+}

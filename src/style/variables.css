@@ -54,13 +54,13 @@
 
     --color-box-shadow: rgba(0, 0, 0, .4);
 
-    --img-container-main-bg:  linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../../img/wp11079715-pokemon-pokeball-wallpapers.jpg);
+    --img-container-main-bg:  linear-gradient(0deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .6)), url(../assets/bg-home.jpg);
 
 
 
     --border-card-select: gray;
 
-    --img-card-select-bg: url(../../img/bg-selected.jpeg);
+    --img-card-select-bg: url(../assets/bg-selected.jpeg);
 
     --gradient-bg-card-click: linear-gradient(-90deg, rgba(0, 0, 0, 0.387), rgba(21, 21, 21, 0.379), rgba(42, 42, 42, 0.412));
 

@@ -1,16 +1,20 @@
-import { useEffect, useState } from "react";
 
-import "./css/BarSeach.css";
-
-import img from "../img/pokeball.png";
-
+import React from 'react';
+import "./index.css";
+import img from "../../assets/pokeball.png";
 import { BiSearch } from "react-icons/bi";
-import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
+import { useForm } from "react-hook-form";
+import API from '../../service/API';
 
-import API from "./API";
+export default function Seach() {
+    const {register, handleSubmit} = useForm();
+   
+    const onSubmit = (data) =>{
+        console.log(data)
+        API()
+    };
 
-function BarSeach(props) {
-    const [nextPrev, setNextPrev] = useState([0, 9]);
+    /*const [nextPrev, setNextPrev] = useState([0, 9]);
     const [listAllCards, setListAllCards] = useState([]);
 
     const handlefilter = (e = "") => {
@@ -57,7 +61,7 @@ function BarSeach(props) {
         props.setCardSelected(listFilter.slice(parseInt(nextPrev[0]), parseInt(nextPrev[1])))
 
         return
-    };
+    };  
 
     const NextPrevent = (index) => {
 
@@ -79,24 +83,21 @@ function BarSeach(props) {
 
         handlefilter()
 
-    }, [listAllCards, nextPrev])
+    }, [listAllCards, nextPrev]) */
 
     return (
-        <section className="section_seach_container">
-            <form className="form_seach_Container">
+            <form onSubmit={handleSubmit(onSubmit)} className="form_container">
                 <label><BiSearch /></label>
                 <img className="pokeboll" src={img} />
-                <input maxLength={16} autoComplete="off" id="input" type="text" onChange={(e) => handlefilter(e.target.value)} placeholder="Search..." />
+                <input 
+                    maxLength={16} 
+                    autoComplete="off" 
+                    id="input" 
+                    name='search' 
+                    type="text" 
+                    {...register('search')} 
+                    placeholder="Search..." 
+                />
             </form>
-            <nav className="container_next_prev">
-                <li onClick={(e) => NextPrevent(0)}><GrLinkPrevious /></li>
-                <li onClick={(e) => NextPrevent(1)}><GrLinkNext /></li>
-            </nav>
-
-            <API generation={props.generation} setListAllCards={setListAllCards} />
-
-        </section>
     )
-};
-
-export default BarSeach;
+}

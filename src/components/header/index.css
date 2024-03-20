@@ -1,0 +1,39 @@
+.header-container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.header-container img {
+    height: 80px;
+}
+
+.header-container div {
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container button {
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.26);
+    border-radius: 25px;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s;
+    cursor: pointer;
+}
+
+.header-container button:hover {
+    transform: scale(1.1);
+}
+
+.header-container svg {
+    font-size: 1.8rem;
+}
