@@ -1,103 +1,69 @@
-
 import React from 'react';
 import "./index.css";
 import img from "../../assets/pokeball.png";
-import { BiSearch } from "react-icons/bi";
-import { useForm } from "react-hook-form";
-import API from '../../service/API';
+import {
+    BiSearch
+} from "react-icons/bi";
+import {
+    useForm
+} from "react-hook-form";
+import get_data from '../../service/get_data';
 
 export default function Seach() {
-    const {register, handleSubmit} = useForm();
-   
-    const onSubmit = (data) =>{
-        console.log(data)
-        API()
+    const {
+        register,
+        handleSubmit
+    } = useForm();
+
+    const onSubmit = (data) => {
+        const pokemons_all = get_data();
+
+        if (Number(data.search)) 
+            return searchOfNumber(data.search, pokemons_all);
+         
+        return searchOfName(data.search, pokemons_all);
     };
 
-    /*const [nextPrev, setNextPrev] = useState([0, 9]);
-    const [listAllCards, setListAllCards] = useState([]);
+    const searchOfName = (search, pokemons_all) => {
+        const pokemons_filter = [];
+        pokemons_all.filter(element => {
+            const search_length = search.split("").length;
+            const name_poke = element.name.slice(0, search_length).toLowerCase();
 
-    const handlefilter = (e = "") => {
+            if (pokemons_filter.length > 29) return;
+            if (name_poke == search) pokemons_filter.push(element);
+        })
+        return pokemons_filter;
+    };
 
-        const listFilter = []
-
-        for (let index = 0; index < listAllCards.length; index++) {
-
-            if (e === "") {
-
-                props.setCardSelected(listAllCards.slice(parseInt(nextPrev[0]), parseInt(nextPrev[1])))
-
-                return
-            };
-
-            if (nextPrev[1] > 9){
-
-                setNextPrev([0, 9])
-
-            }
-
-
-            if (isNaN(e)) {
-                var clientSeach = listAllCards[index]["name"]
-    
-                let cardNumber = (clientSeach.slice(0, e.length))
-    
-                if (e.toLowerCase() === cardNumber.toLowerCase()) {
-    
-                    listFilter.push(listAllCards[index])
-                };
-                
-            } else {
-    
-                let cardNumber = listAllCards[index]["number"]
-    
-                if (parseInt(e) <= parseInt(cardNumber.split('#')[1])) {
-    
-                    listFilter.push(listAllCards[index])
-                };
-            };
+    const searchOfNumber = (search, pokemons_all) => {
+        const pokemons_filter = [];
+        for (let index = 0; index < 30; index++) {
+            if (pokemons_filter.length == 30) return;
+            pokemons_filter.push(pokemons_all[parseInt(search) + index])
         }
+        return pokemons_filter;
+    };
 
-        props.setCardSelected(listFilter.slice(parseInt(nextPrev[0]), parseInt(nextPrev[1])))
-
-        return
-    };  
-
-    const NextPrevent = (index) => {
-
-        if (index === 1 && parseInt(nextPrev[1]) < listAllCards.length) {
-
-            setNextPrev([nextPrev[0] = parseInt(nextPrev[0]) + 9, nextPrev[1] = parseInt(nextPrev[1]) + 9])
-
-        } else if (index === 0 && parseInt(nextPrev[0]) > 0) {
-
-            setNextPrev([nextPrev[0] = parseInt(nextPrev[0]) - 9, nextPrev[1] = parseInt(nextPrev[1]) - 9])
-
+    return ( 
+        <form 
+        onSubmit={handleSubmit(onSubmit)}   
+        className = "form_container" 
+        >
+        <label htmlFor='input'>< BiSearch /></label> 
+        <img 
+        className="pokeboll"
+        src={img}/>
+        <input 
+        maxLength={16}
+        autoComplete = "off"
+        id = "input"
+        name = 'search'
+        type = "text" {
+            ...register('search')
         }
-
-        return
-
-    }
-
-    useEffect(() => {
-
-        handlefilter()
-
-    }, [listAllCards, nextPrev]) */
-
-    return (
-            <form onSubmit={handleSubmit(onSubmit)} className="form_container">
-                <label><BiSearch /></label>
-                <img className="pokeboll" src={img} />
-                <input 
-                    maxLength={16} 
-                    autoComplete="off" 
-                    id="input" 
-                    name='search' 
-                    type="text" 
-                    {...register('search')} 
-                    placeholder="Search..." 
-                />
-            </form>
+        placeholder = "Search..." 
+        />
+        </form>
     )
 }

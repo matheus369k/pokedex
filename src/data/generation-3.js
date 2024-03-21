@@ -1,4 +1,4 @@
-[
+export const pokemon = [
   {
     "name": "Treecko",
     "number": "#0252",

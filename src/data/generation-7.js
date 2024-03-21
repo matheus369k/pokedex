@@ -1,4 +1,4 @@
-[
+export const pokemon = [
   {
     "name": "Rowlet",
     "number": "#0722",
