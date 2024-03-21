@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "./index.css";
 import img from "../../assets/pokeball.png";
 import {
@@ -8,8 +8,10 @@ import {
     useForm
 } from "react-hook-form";
 import get_data from '../../service/get_data';
+import { ContextPoke } from '../../App';
 
 export default function Seach() {
+    const {setData} = useContext(ContextPoke);
     const {
         register,
         handleSubmit
@@ -19,9 +21,9 @@ export default function Seach() {
         const pokemons_all = get_data();
 
         if (Number(data.search)) 
-            return searchOfNumber(data.search, pokemons_all);
+            return setData(searchOfNumber(data.search, pokemons_all));
          
-        return searchOfName(data.search, pokemons_all);
+        return setData(searchOfName(data.search, pokemons_all));
     };
 
     const searchOfName = (search, pokemons_all) => {
@@ -47,22 +49,24 @@ export default function Seach() {
 
     return ( 
         <form 
-        onSubmit={handleSubmit(onSubmit)}   
-        className = "form_container" 
+            onSubmit={handleSubmit(onSubmit)}   
+            className = "form_container" 
         >
-        <label htmlFor='input'>< BiSearch /></label> 
+        <label htmlFor='input'>
+            < BiSearch />
+        </label> 
         <img 
-        className="pokeboll"
-        src={img}/>
-        <input 
-        maxLength={16}
-        autoComplete = "off"
-        id = "input"
-        name = 'search'
-        type = "text" {
-            ...register('search')
-        }
-        placeholder = "Search..." 
+            className="pokeboll"
+            src={img}/>
+            <input 
+            maxLength={16}
+            autoComplete = "off"
+            id = "input"
+            name = 'search'
+            type = "text" {
+                ...register('search')
+            }
+            placeholder = "Search..." 
         />
         </form>
     )
