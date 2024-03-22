@@ -2551,7 +2551,7 @@ export const pokemon = [
       {
         "name": "Corsola",
         "Lv": 1,
-        "img": "./GalarAlola-version/071.png"
+        "img": "./poke-png-G1/071.png"
       },
       {
         "name": "Cursola",

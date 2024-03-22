@@ -32,7 +32,7 @@ export default function Seach() {
             const search_length = search.split("").length;
             const name_poke = element.name.slice(0, search_length).toLowerCase();
 
-            if (pokemons_filter.length > 29) return;
+            if (pokemons_filter.length > 24 || element == undefined) return;
             if (name_poke == search) pokemons_filter.push(element);
         })
         return pokemons_filter;
@@ -40,8 +40,8 @@ export default function Seach() {
 
     const searchOfNumber = (search, pokemons_all) => {
         const pokemons_filter = [];
-        for (let index = 0; index < 30; index++) {
-            if (pokemons_filter.length == 30) return;
+        for (let index = 0; index < 24; index++) {
+            if (pokemons_filter.length == 24 || parseInt(search) + index > 904) return pokemons_filter;
             pokemons_filter.push(pokemons_all[parseInt(search) + index])
         }
         return pokemons_filter;

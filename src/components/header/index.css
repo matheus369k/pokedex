@@ -12,14 +12,15 @@
 }
 
 .header-container div {
-    width: 125px;
+    width: 145px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-container button {
     background-color: transparent;
-    border: 1px solid rgba(128, 128, 128, 0.26);
+    color: white;
     border-radius: 25px;
     height: 46px;
     width: 46px;
@@ -35,5 +36,12 @@
 }
 
 .header-container svg {
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+.header-container p {
+    color: rgb(1, 145, 176);
+    font-size: 1rem;
+    display: flex;
+    column-gap: 7px;
 }

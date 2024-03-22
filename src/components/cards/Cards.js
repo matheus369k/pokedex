@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { ContextPoke } from '../../App'
+import './index.css'
 
 export default function Cards() {
     const {getData} = useContext(ContextPoke);
+    console.log(getData)
     return (
-        <ul>
+        <ul className='pokemons_container'>
             {
                 getData.map(element => (
                     <li key={element.name}>
