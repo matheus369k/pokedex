@@ -564,7 +564,7 @@ export const pokemon = [
     "description": "Ao dobrar o bico, ele pode produzir uma variedade de chamadas e marcar a si mesmo como um incômodo barulhento para seus vizinhos."
   },
   {
-    "name": "Trumbeak",
+    "name": "Toucannon",
     "number": "#0733",
     "types": [
       {

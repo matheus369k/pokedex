@@ -1046,7 +1046,7 @@ export const pokemon = [
     "description": "Ele come os sonhos das pessoas e Pokémon. Quando come um sonho agradável, expele névoa cor-de-rosa. Este Pokémon aparece diante de pessoas e Pokémon que estão tendo pesadelos e come esses sonhos."
   },
   {
-    "name": "Munna",
+    "name": "Musharna",
     "number": "#0518",
     "types": [
       {
@@ -2347,60 +2347,6 @@ export const pokemon = [
       "Speed": 47
     },
     "description": "Whirlipede se protege com uma casca resistente e picos venenosos enquanto armazena a energia que precisará para a evolução."
-  },
-  {
-    "name": "Scolipede",
-    "number": "#0545",
-    "types": [
-      {
-        "type": "Inseto"
-      },
-      {
-        "type": "Veneno"
-      }
-    ],
-    "images": "./poke-png-G5/050.png",
-    "evolutinLine": 111,
-    "evolution": [
-      {
-        "name": "Venipede",
-        "Lv": 1,
-        "img": "./poke-png-G5/048.png"
-      },
-      {
-        "name": "Whirlipede",
-        "Lv": 22,
-        "img": "./poke-png-G5/049.png"
-      },
-      {
-        "name": "Scolipede",
-        "Lv": 30,
-        "img": "./poke-png-G5/050.png"
-      }
-    ],
-    "superdamange": [
-      {
-        "type": "Fogo"
-      },
-      {
-        "type": "Voador"
-      },
-      {
-        "type": "Pisquico"
-      },
-      {
-        "type": "Rocha"
-      }
-    ],
-    "baseStats": {
-      "HP": 60,
-      "Atack": 100,
-      "Defense": 89,
-      "Sp.atack": 55,
-      "Sp.Def": 69,
-      "Speed": 112
-    },
-    "description": "Scolipede agarra-se às suas presas com as garras no pescoço antes de as bater no chão e golpeá-las com os espigões tóxicos das suas garras."
   },
   {
     "name": "Scolipede",

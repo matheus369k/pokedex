@@ -4,7 +4,7 @@ import './index.css'
 
 export default function Cards() {
     const {getData} = useContext(ContextPoke);
-    console.log(getData)
+    
     return (
         <ul className='pokemons_container'>
             {

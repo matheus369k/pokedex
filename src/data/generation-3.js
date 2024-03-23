@@ -1125,60 +1125,6 @@ export const pokemon = [
     "description": "Seedot se prende a um galho de árvore usando o topo de sua cabeça. Ele suga a umidade da árvore enquanto pendura o galho. Quanto mais água beber, mais brilhante o corpo deste Pokémon se torna."
   },
   {
-    "name": "Seedot",
-    "number": "#0273",
-    "types": [
-      {
-        "type": "Grama"
-      }
-    ],
-    "images": "./poke-png-G3/022.png",
-    "evolutinLine": 111,
-    "evolution": [
-      {
-        "name": "Seedot",
-        "Lv": 1,
-        "img": "./poke-png-G3/022.png"
-      },
-      {
-        "name": "Nuzleaf",
-        "Lv": 14,
-        "img": "./poke-png-G3/023.png"
-      },
-      {
-        "name": "Shiftry",
-        "Lv": "use Leaf Stone",
-        "img": "./poke-png-G3/024.png"
-      }
-    ],
-    "superdamange": [
-      {
-        "type": "Fogo"
-      },
-      {
-        "type": "Gelo"
-      },
-      {
-        "type": "Veneno"
-      },
-      {
-        "type": "Voador"
-      },
-      {
-        "type": "Inseto"
-      }
-    ],
-    "baseStats": {
-      "HP": 40,
-      "Atack": 40,
-      "Defense": 50,
-      "Sp.atack": 30,
-      "Sp.Def": 30,
-      "Speed": 30
-    },
-    "description": "Seedot se prende a um galho de árvore usando o topo de sua cabeça. Ele suga a umidade da árvore enquanto pendura o galho. Quanto mais água beber, mais brilhante o corpo deste Pokémon se torna."
-  },
-  {
     "name": "Nuzleaf ",
     "number": "#0274",
     "types": [
@@ -3736,7 +3682,7 @@ export const pokemon = [
     "description": "Para fazer a presa desmaiar, o Vibrava gera ondas ultrassônicas fazendo vibrar vigorosamente suas duas asas. As ondas ultrassônicas deste Pokémon são tão poderosas que podem trazer dores de cabeça nas pessoas."
   },
   {
-    "name": "Vibrava",
+    "name": "Flygon",
     "number": "#0330",
     "types": [
       {
