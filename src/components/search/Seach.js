@@ -33,7 +33,7 @@ export default function Seach() {
             const search_length = search.split("").length;
             const name_poke = element.name.slice(0, search_length).toLowerCase();
 
-            if (pokemons_filter.length > 23 || element == undefined) return;
+            if (pokemons_filter.length > 29 || element == undefined) return;
             if (name_poke == search) pokemons_filter.push(element);
         })
         return pokemons_filter;

@@ -3451,7 +3451,7 @@ export const pokemon = [
       "description": "Derivas em mares pouco profundos. Os pescadores que os fisgam por acidente são muitas vezes punidos pelos seus ferrões. Seus olhos são transparentes como cristais. A partir deles, dispara misteriosos feixes de luz."
     },
     {
-      "name": "Tentacool",
+      "name": "Tentacruel",
       "number": "#0073",
       "types": [
         {

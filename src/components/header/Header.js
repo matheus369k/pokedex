@@ -8,15 +8,14 @@ import { ContextPoke } from '../../App';
 import { searchOfNumber } from '../../function/filter';
 
 export default function Header() {
-    const length_pokemons = get_data().length;
+    const length_pokemons = get_data().length - 1;
     const {getData, setData} = useContext(ContextPoke);
     const number_pokemon = getData[0].number.split('#')[1];
 
     const countPage = (pokemon_page) => {
-        const count = Math.floor(pokemon_page / 24) + 1;
+        const count = Math.floor(pokemon_page / 29) + 1;
         return count;
     }
-
 
     const nextPrevPages = (
         props_numbers, 
@@ -24,9 +23,11 @@ export default function Header() {
         props_number_pokemon, 
         props_length_poke
     ) => {
-        const poke_page = parseInt(props_number_pokemon)+props_numbers;
+        const poke_page = parseInt(props_number_pokemon - 1)+props_numbers;
         const page_current = countPage(props_number_pokemon);
         const all_pages = countPage(props_length_poke);
+        console.log(props_numbers)
+        console.log(poke_page)
 
         if (page_current == all_pages && props_numbers > 0) return;
         if (page_current == 1 && props_numbers < 0) return;
@@ -40,7 +41,7 @@ export default function Header() {
             <div>
                 <button 
                     title='Prevent' 
-                    onClick={()=>nextPrevPages(-23, get_data(), number_pokemon, length_pokemons)}
+                    onClick={()=>nextPrevPages(-30, get_data(), number_pokemon, length_pokemons)}
                 >
                     <FcPrevious />
                 </button>
@@ -49,7 +50,7 @@ export default function Header() {
                 </p>
                 <button 
                     title='Next' 
-                    onClick={()=>nextPrevPages(23, get_data(), number_pokemon, length_pokemons)}
+                    onClick={()=>nextPrevPages(30, get_data(), number_pokemon, length_pokemons)}
                 >
                     <FcNext />
                 </button>
