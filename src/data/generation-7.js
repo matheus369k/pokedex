@@ -4046,4 +4046,4 @@ export const pokemon = [
     },
     "description": "No final de sua vida útil, Melmetal vai enferrujar e desmoronar. Os pequenos cacos deixados para trás acabarão por renascer como Meltan."
   }
-]
+];

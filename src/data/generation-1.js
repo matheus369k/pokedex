@@ -7191,4 +7191,4 @@ export const pokemon = [
       },
       "description": "Um POKéMON da América do Sul que se pensava ter sido extinto. É muito inteligente e aprende qualquer movimento. Tão raro que ainda é dito ser uma miragem por muitos especialistas. Apenas algumas pessoas o viram em todo o mundo."
     }
-  ];
+];

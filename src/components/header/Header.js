@@ -1,21 +1,21 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
-import logo from "../../assets/poke-titulo.png"
-import './index.css';
-import get_data from '../../service/get_data';
-import { ContextPoke } from '../../App';
-import { searchOfNumber } from '../../function/filter';
+import logo from "../../assets/poke-titulo.png";
+import "./index.css";
+import { get_data } from "../../service/get_data";
+import { ContextPoke } from "../../App";
+import { searchOfNumber } from "../../function/filter";
 
 export default function Header() {
     const length_pokemons = get_data().length - 1;
     const {getData, setData} = useContext(ContextPoke);
-    const number_pokemon = getData[0].number.split('#')[1];
+    const number_pokemon = getData[0].number.split("#")[1];
 
     const countPage = (pokemon_page) => {
         const count = Math.floor(pokemon_page / 29) + 1;
         return count;
-    }
+    };
 
     const nextPrevPages = (
         props_numbers, 
@@ -26,14 +26,12 @@ export default function Header() {
         const poke_page = parseInt(props_number_pokemon - 1)+props_numbers;
         const page_current = countPage(props_number_pokemon);
         const all_pages = countPage(props_length_poke);
-        console.log(props_numbers)
-        console.log(poke_page)
 
         if (page_current == all_pages && props_numbers > 0) return;
         if (page_current == 1 && props_numbers < 0) return;
 
-        setData(searchOfNumber(poke_page ,all_data_pokes));
-    }
+        setData(searchOfNumber(poke_page ,all_data_pokes, 30));
+    };
 
     return (
         <header className='header-container'>
@@ -56,5 +54,5 @@ export default function Header() {
                 </button>
             </div>
         </header>
-    )
+    );
 }

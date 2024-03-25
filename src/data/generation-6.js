@@ -3417,4 +3417,4 @@ export const pokemon = [
     },
     "description": "Ele expele seu vapor interno dos braços em suas costas. Tem poder suficiente para explodir uma montanha."
   }
-]
+];

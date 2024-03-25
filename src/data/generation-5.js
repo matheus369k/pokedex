@@ -6602,4 +6602,4 @@ export const pokemon = [{
     },
     "description": "Este Pokémon existiu há 300 milhões de anos. A equipe Plasma o alterou e prendeu um canhão em suas costas."
   }
-]
+];

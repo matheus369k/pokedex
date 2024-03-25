@@ -37,11 +37,15 @@
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .pokemons_container img {
     transition: all .7s ease-in-out;
-    width: 100%;
+    width: 202;
+    height: 202px;
     opacity: 1;
 }
 

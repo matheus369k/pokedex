@@ -6270,4 +6270,4 @@ export const pokemon = [
     },
     "description": "O DNA de um vírus espacial sofreu uma mutação súbita após a exposição a um feixe de laser e resultou em Deoxys. O órgão cristalino no peito deste Pokémon parece ser o seu cérebro."
   }
-]
+];

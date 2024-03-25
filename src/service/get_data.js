@@ -7,9 +7,9 @@ import {
     generation_6,
     generation_7,
     generation_8
-} from '../data/index'
+} from "../data/index.js";
 
-export default function get_data() {
+export const get_data = () => {
     return [
         ...generation_1,
         ...generation_2,
@@ -19,5 +19,15 @@ export default function get_data() {
         ...generation_6,
         ...generation_7,
         ...generation_8
-    ]
-}
+    ];
+};
+
+export const predicted_data = () => {
+    return get_data().map(dataPoke =>{ 
+        return {
+            name: dataPoke.name, 
+            pokedex: dataPoke.number, 
+            images: dataPoke.images
+        };
+    });
+};

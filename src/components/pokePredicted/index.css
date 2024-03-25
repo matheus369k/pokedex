@@ -1,0 +1,95 @@
+@keyframes loading {
+    0% {
+        border-left-color: black;
+    }
+
+    33% {
+        border-top-color: black;
+
+    }
+
+    66% {
+        border-right-color: black;
+
+    }
+
+    100% {
+        border-bottom-color: black;
+
+    }
+}
+
+.Predicted-poke-container {
+    width: 400px;
+    height: max-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 5px 5px;
+    z-index: 5;
+}
+
+.Predicted-poke-container li {
+    height: 52px;
+    width: 100%;
+    margin-top: 25px;
+    padding: 5px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(65, 65, 65, 0.479);
+    display: grid;
+    grid-template-columns: 82px 266px 42px;
+    grid-template-rows: 42px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.Predicted-poke-container li:hover {
+    transition: all .4s;
+    background-color: rgba(25, 25, 25, 0.479);
+}
+
+.Predicted-poke-container img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    grid-row: 1;
+}
+
+.Predicted-poke-container .pokemon-image {
+    grid-column: 1;
+    margin: 0 auto;
+}
+
+.Predicted-poke-container .pokeboll-image {
+    grid-column: 3;
+}
+
+.Predicted-poke-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.Predicted-poke-container .Predicted_loading img {
+    opacity: 0;
+}
+
+.Predicted-poke-container .Predicted_loading div {
+    opacity: 0;
+}
+
+.Predicted-poke-container .Predicted_loading::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(1, 145, 176);
+    animation: loading .5s ease infinite;
+}

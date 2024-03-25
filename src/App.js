@@ -1,8 +1,8 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState } from "react";
 import Header from "./components/header/Header";
-import Search from './components/search/Seach';
-import {generation_1} from './data/index'
-import Cards from './components/cards/Cards';
+import Search from "./components/search/Seach";
+import {generation_1} from "./data/index";
+import Cards from "./components/cards/Cards";
 
 export const ContextPoke = createContext(null);
 
@@ -20,7 +20,7 @@ function App() {
       </main>
     </ContextPoke.Provider>
   </>
-  )
+  );
 }
 
 export default App;

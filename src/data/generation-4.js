@@ -4977,4 +4977,4 @@ export const pokemon = [
     },
     "description": "Quando ele compartilha a energia infinita que cria, todo o corpo desse ser estará transbordando de poder."
   }
-]
+];

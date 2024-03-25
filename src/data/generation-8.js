@@ -4400,4 +4400,4 @@ export const pokemon = [
     },
     "description": "Quando voa para esta terra do outro lado do mar, o inverno amargo chega ao fim. De acordo com a lenda, o amor deste Pokémon dá origem ao surgimento de vida nova em Hisui."
   }
-]
+];
