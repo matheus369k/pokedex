@@ -19,7 +19,7 @@
     }
 }
 
-.Predicted-poke-container {
+.Predicted_poke_container {
     width: 400px;
     height: max-content;
     position: absolute;
@@ -29,7 +29,7 @@
     z-index: 5;
 }
 
-.Predicted-poke-container li {
+.Predicted_poke_container li {
     height: 52px;
     width: 100%;
     margin-top: 25px;
@@ -44,28 +44,28 @@
     cursor: pointer;
 }
 
-.Predicted-poke-container li:hover {
+.Predicted_poke_container li:hover {
     transition: all .4s;
     background-color: rgba(25, 25, 25, 0.479);
 }
 
-.Predicted-poke-container img {
+.Predicted_poke_container img {
     height: 100%;
     width: auto;
     object-fit: cover;
     grid-row: 1;
 }
 
-.Predicted-poke-container .pokemon-image {
+.Predicted_poke_container .pokemon-image {
     grid-column: 1;
     margin: 0 auto;
 }
 
-.Predicted-poke-container .pokeboll-image {
+.Predicted_poke_container .pokeboll-image {
     grid-column: 3;
 }
 
-.Predicted-poke-container div {
+.Predicted_poke_container div {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -73,15 +73,15 @@
     font-size: 1rem;
 }
 
-.Predicted-poke-container .Predicted_loading img {
+.Predicted_poke_container .Predicted_loading img {
     opacity: 0;
 }
 
-.Predicted-poke-container .Predicted_loading div {
+.Predicted_poke_container .Predicted_loading div {
     opacity: 0;
 }
 
-.Predicted-poke-container .Predicted_loading::before {
+.Predicted_poke_container .Predicted_loading::before {
     content: '';
     width: 20px;
     height: 20px;

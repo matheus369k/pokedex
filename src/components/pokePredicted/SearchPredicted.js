@@ -3,11 +3,28 @@ import "./index.css";
 import pokeboll from "../../assets/pokeball.png";
 import { finnishLoadCard } from "../../function/finnishLoad";
 
-export default function SearchPredicted(propsDataPoke) {
+export default function SearchPredicted(propsPredictedData) {
+    const predictedData = propsPredictedData.data.getPredictedData;
+    if (predictedData.length == 0) return;
+
+    document.addEventListener("click", (e) => {
+        const ElementClicked = e.composedPath()[0];
+        const fotherElementClicked = ElementClicked.parentNode;
+
+        if (ElementClicked.classList?.contains("Predicted_poke_container")) return;
+        if (ElementClicked.classList?.contains("form_container")) return;
+        if (fotherElementClicked?.classList.contains("form_container")) return;
+        if (fotherElementClicked?.parentNode?.classList.contains("form_container")) return;
+        if (fotherElementClicked?.parentNode?.parentNode?.classList.contains("form_container")) return;
+        
+        propsPredictedData.data.setPredictedData([]);
+        e.stopImmediatePropagation();
+    });
+
     return (
-        <ul className="Predicted-poke-container">
+        <ul className="Predicted_poke_container">
             {
-                propsDataPoke.DataPoke.map((element, index) => (
+                predictedData.map((element, index) => (
                     <li 
                         className={`predictedPoke-${index} Predicted_loading`} 
                         key={`Predicted:${element.name}${element.pokedex}`}

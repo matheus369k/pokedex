@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import Search from "./components/search/Seach";
 import {generation_1} from "./data/index";
 import Cards from "./components/cards/Cards";
+import Pokedex from "./components/pokedex/Pokedex";
 
 export const ContextPoke = createContext(null);
 
@@ -11,13 +12,18 @@ function App() {
   return (
   <>
     <ContextPoke.Provider value={{getData, setData}}>
-      <header>
-        <Header />
-        <Search />
-      </header>
-      <main>
-        <Cards />
-      </main>
+      {false &&
+      <>
+        <header>
+          <Header />
+          <Search />
+        </header>
+        <main>
+          <Cards />
+        </main>
+      </>
+      }
+      <Pokedex />
     </ContextPoke.Provider>
   </>
   );

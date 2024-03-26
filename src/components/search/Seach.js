@@ -14,7 +14,7 @@ import SearchPredicted from "../pokePredicted/SearchPredicted";
 
 export default function Seach() {
     const {setData} = useContext(ContextPoke);
-    const [getPredicted, setPredicted] = useState([]);    
+    const [getPredictedData, setPredictedData] = useState([]);    
     const {
         register,
         handleSubmit,
@@ -25,14 +25,14 @@ export default function Seach() {
         const pokemons_all_predicted = predicted_data();
 
         if (Number(data.search)) 
-            return setPredicted(searchOfNumber(data.search, pokemons_all_predicted, 3));
+            return setPredictedData(searchOfNumber(data.search, pokemons_all_predicted, 3));
             
-        return setPredicted(searchOfName(data.search, pokemons_all_predicted, 2));
+        return setPredictedData(searchOfName(data.search, pokemons_all_predicted, 2));
     });
 
     const onSubmit = (data) => {
         const pokemons_all = get_data();
-        setPredicted([]);
+        setPredictedData([]);
 
         if (Number(data.search)) 
             return setData(searchOfNumber(data.search, pokemons_all, 30));
@@ -58,24 +58,26 @@ export default function Seach() {
                 onSubmit={handleSubmit(onSubmit)}   
                 className = "form_container" 
             >
-            <label htmlFor='input'>
+            <label htmlFor='search'>
                 < BiSearch />
             </label> 
             <img 
                 className="pokeboll"
-                src={img}/>
-                <input 
+                src={img}
+            />
+            <input 
                 maxLength={16}
                 autoComplete = "off"
-                id = "input"
-                name = 'search'
+                className="search"
+                id = "search"
+                name = "search"
                 type = "text" {
                     ...register("search")
                 }
                 placeholder = "Search..." 
             />
             </form>
-            <SearchPredicted DataPoke={getPredicted} />
+            <SearchPredicted data={{getPredictedData, setPredictedData}}/>
         </>
     );
 }
