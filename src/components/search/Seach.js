@@ -8,12 +8,13 @@ import {
     useForm
 } from "react-hook-form";
 import { get_data, predicted_data } from "../../service/get_data";
-import { ContextPoke } from "../../App";
-import { searchOfNumber } from "../../function/filter";
+import { ContextPokemons } from "../../App";
+import { searchOfNumber } from "../../function/filterOfNumber";
 import SearchPredicted from "../pokePredicted/SearchPredicted";
+import { searchOfName } from "../../function/filterOfName";
 
 export default function Seach() {
-    const {setData} = useContext(ContextPoke);
+    const {setData} = useContext(ContextPokemons);
     const [getPredictedData, setPredictedData] = useState([]);    
     const {
         register,
@@ -22,34 +23,22 @@ export default function Seach() {
     } = useForm();
 
     watch((data)=>{
-        const pokemons_all_predicted = predicted_data();
+        const pokemonsAllPredicted = predicted_data();
 
         if (Number(data.search)) 
-            return setPredictedData(searchOfNumber(data.search, pokemons_all_predicted, 3));
+            return setPredictedData(searchOfNumber(data.search, pokemonsAllPredicted, 3));
             
-        return setPredictedData(searchOfName(data.search, pokemons_all_predicted, 2));
+        return setPredictedData(searchOfName(data.search, pokemonsAllPredicted, 2));
     });
 
     const onSubmit = (data) => {
-        const pokemons_all = get_data();
+        const pokemonsAll = get_data();
         setPredictedData([]);
 
         if (Number(data.search)) 
-            return setData(searchOfNumber(data.search, pokemons_all, 30));
+            return setData(searchOfNumber(data.search, pokemonsAll, 30));
          
-        return setData(searchOfName(data.search, pokemons_all, 29));
-    };
-
-    const searchOfName = (search, pokemons_all, numberAllGet) => {
-        const pokemons_filter = [];
-        pokemons_all.filter(element => {
-            const search_length = search.split("").length;
-            const name_poke = element.name.slice(0, search_length).toLowerCase();
-
-            if (pokemons_filter.length > numberAllGet || element == undefined) return;
-            if (name_poke == search) pokemons_filter.push(element);
-        });
-        return pokemons_filter;
+        return setData(searchOfName(data.search, pokemonsAll, 29));
     };
 
     return (

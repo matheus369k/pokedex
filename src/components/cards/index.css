@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: repeat(5, max-content);
     margin: auto;
+    z-index: 0;
 }
 
 .pokemons_container::-webkit-scrollbar {

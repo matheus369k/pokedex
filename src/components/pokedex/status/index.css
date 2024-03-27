@@ -1,0 +1,37 @@
+.status_basic {
+    grid-row: 2;
+    grid-column: 1;
+    width: 337px;
+    height: 503px;
+}
+
+.status_basic h1 {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 100px;
+}
+
+.status_basic ul {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    width: 100%;
+    height: max-content;
+    row-gap: 25px;
+}
+
+.status_basic li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    padding-right: 15px;
+    border-bottom: 4px solid #003482;
+    border-bottom-right-radius: 25px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}

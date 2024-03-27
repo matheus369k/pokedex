@@ -1,16 +1,30 @@
 import React, { useContext } from "react";
-import { ContextPoke } from "../../App";
+import { ContextPokemons, ContextPokedex } from "../../App";
 import "./index.css";
 import { finnishLoadCard } from "../../function/finnishLoad";
+import { searchOfName } from "../../function/filterOfName";
+import { get_data } from "../../service/get_data";
 
 export default function Cards() {
-    const {getData} = useContext(ContextPoke);
+    const {getData} = useContext(ContextPokemons);
+    const {setPokedex} = useContext(ContextPokedex);
+    const allDataPoke = get_data();
     
     return (
         <ul className='pokemons_container'>
             {
                 getData.map((element, index) => (
-                    <li className={`pokemon-${index} card_loading`} key={element.name}>
+                    <li
+                        onClick={()=> setPokedex(
+                                {
+                                    status: true,
+                                    data: searchOfName(element.name, allDataPoke, 1)
+                                }
+                            )
+                        }
+                        className={`pokemon-${index} card_loading`}
+                        key={element.name}
+                    >
                         <img 
                             onLoad={()=>finnishLoadCard(
                                 `.pokemon-${index}`, 

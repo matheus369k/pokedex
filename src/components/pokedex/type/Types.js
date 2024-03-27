@@ -3,7 +3,7 @@ import "./index.css";
 
 export default function Types(getData) {
     return (
-        <ul>
+        <ul className="types-container">
             {
                 getData.data.map(element => (
                     <li 

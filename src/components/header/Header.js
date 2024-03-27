@@ -4,12 +4,12 @@ import { FcPrevious } from "react-icons/fc";
 import logo from "../../assets/poke-titulo.png";
 import "./index.css";
 import { get_data } from "../../service/get_data";
-import { ContextPoke } from "../../App";
-import { searchOfNumber } from "../../function/filter";
+import { ContextPokemons } from "../../App";
+import { searchOfNumber } from "../../function/filterOfNumber";
 
 export default function Header() {
     const length_pokemons = get_data().length - 1;
-    const {getData, setData} = useContext(ContextPoke);
+    const {getData, setData} = useContext(ContextPokemons);
     const number_pokemon = getData[0].number.split("#")[1];
 
     const countPage = (pokemon_page) => {

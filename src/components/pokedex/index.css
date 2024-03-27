@@ -1,12 +1,24 @@
 .pokedex_container{
-    width: 100%;
     min-height: 100vh;
     height: 100%;
-    background-image: url(../../assets/bg-selected.jpeg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 100px 50px;
+    padding: 50px;
     color: #fff;
+    display: grid;
+    grid-template-columns: 340px calc(588px - 340px) 1fr;
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 100px;
+    position: relative;
+}
+
+.pokedex_container i {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: min-content;
+    height: min-content;
+    cursor: pointer;
+}
+
+.pokedex_container svg {
+    font-size: 3rem;
 }

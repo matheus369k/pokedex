@@ -1,92 +1,109 @@
-:root {
-    --color-type-Grama: green;
+@import './variables.css';
 
-    --color-type-Veneno: purple;
+.types-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
 
-    --color-type-Fogo: orange;
+.types-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 45px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.445);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.645);
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 25px 0 25px 0;
+    font-size: 15px;
+    overflow: hidden;
+    position: relative;
+}
 
-    --color-type-Voador: rgb(233, 233, 233);
-
-    --color-type-Agua: blue;
-
-    --color-type-Inseto: greenyellow;
-
-    --color-type-Normal: rgb(129, 123, 112);
-
-    --color-type-Eletrico: yellow;
-
-    --color-type-Terra: rgb(159, 104, 9);
-
-    --color-type-Pisquico: palevioletred;
-
-    --color-type-Gelo: skyblue;
-
-    --color-type-Rocha: rgb(97, 63, 0);
-
-    --color-type-Lutador: rgb(135, 0, 0);
-
-    --color-type-Fada: rgb(255, 202, 211);
-
-    --color-type-Metal: gray;
-
-    --color-type-Fantasma: rgb(86, 61, 95);
-
-    --color-type-Obscuro: rgb(57, 58, 126);
-
-    --color-type-Dragon: rgb(1, 2, 80);
+.types-container li::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 25px 0 25px 0;
+    box-shadow: -8px -8px 20px rgba(0, 0, 0, 0.447);
+    position: absolute;
+    left: 5px;
+    top: 5px;
 }
 
 .Grama {
     background-color: var(--color-type-Grama);
 }
+
 .Veneno {
     background-color: var(--color-type-Veneno);
 }
+
 .Fogo {
     background-color: var(--color-type-Fogo);
 }
+
 .Voador {
     background-color: var(--color-type-Voador);
 }
+
 .Agua {
     background-color: var(--color-type-Agua);
 }
+
 .Inseto {
     background-color: var(--color-type-Inseto);
 }
+
 .Normal {
     background-color: var(--color-type-Normal);
 }
+
 .Eletrico {
     background-color: var(--color-type-Eletrico);
 }
+
 .Terra {
     background-color: var(--color-type-Terra);
 }
+
 .Pisquico {
     background-color: var(--color-type-Pisquico);
 }
+
 .Gelo {
     background-color: var(--color-type-Gelo);
 }
+
 .Rocha {
     background-color: var(--color-type-Rocha);
 }
+
 .Lutador {
     background-color: var(--color-type-Lutador);
 }
+
 .Fada {
     background-color: var(--color-type-Fada);
 }
+
 .Metal {
     background-color: var(--color-type-Metal);
 }
+
 .Fantasma {
     background-color: var(--color-type-Fantasma);
 }
+
 .Obscuro {
-    background-color:var(--color-type-Obscuro);
+    background-color: var(--color-type-Obscuro);
 }
+
 .Dragon {
     background-color: var(--color-type-Dragon);
 }
