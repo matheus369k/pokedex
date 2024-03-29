@@ -1,3 +1,7 @@
+.pokedex_loading .evolutions_container {
+    display: none;
+}
+
 .evolutions_container {
     grid-row: 2;
     grid-column: 2/4;
@@ -15,13 +19,225 @@
 .evolutions_container ul {
     height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    justify-content: space-between;
 }
 
-.evolutions_container li {
+.evolutions_container .evolutin-line-111 li {
     width: 30%;
     text-align: center;
+}
+
+.evolutions_container .evolutin-line-11 li {
+    width: 40%;
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-1 li {
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+}
+
+.evolutions_container .evolutin-line-112 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, max-content);
+}
+
+.evolutions_container .evolutin-line-112 li {
+    grid-row: 1/4;
+    align-self: center;
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-112 li.number-evo-1 {
+    grid-column: 1;
+}
+
+.evolutions_container .evolutin-line-112 li.number-evo-2 {
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-112 li.number-evo-3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.evolutions_container .evolutin-line-112 li.number-evo-4 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.evolutions_container .evolutin-line-121 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, max-content);
+}
+
+.evolutions_container .evolutin-line-121 li {
+    align-self: center;
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-121 li.number-evo-1 {
+    grid-row: 1/3;
+    grid-column: 1;
+}
+
+.evolutions_container .evolutin-line-121 li.number-evo-2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-121 li.number-evo-3 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-121 li.number-evo-4 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.evolutions_container .evolutin-line-122 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, max-content);
+}
+
+.evolutions_container .evolutin-line-122 li {
+    align-self: center;
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-122 li.number-evo-1 {
+    grid-row: 1/4;
+    grid-column: 1;
+}
+
+.evolutions_container .evolutin-line-122 li.number-evo-2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-122 li.number-evo-3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.evolutions_container .evolutin-line-122 li.number-evo-4 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-122 li.number-evo-5 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.evolutions_container .evolutin-line-12 {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, max-content);
+    justify-content: space-evenly;
+}
+
+.evolutions_container .evolutin-line-12 li {
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-12 li.number-evo-1 {
+    grid-column: 1;
+    grid-row: 1/4;
+    align-self: center;
+}
+
+.evolutions_container .evolutin-line-12 li.number-evo-2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-12 li.number-evo-3 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-13 {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-evenly;
+}
+
+.evolutions_container .evolutin-line-13 li {
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-13 li.number-evo-1 {
+    grid-column: 1;
+    grid-row: 1/5;
+    align-self: center;
+}
+
+.evolutions_container .evolutin-line-13 li.number-evo-2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-13 li.number-evo-3 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-13 li.number-evo-4 {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.evolutions_container .evolutin-line-13 p {
+    font-size: 12px;
+    margin: auto;
+    width: max-content;
+}
+
+.evolutions_container .evolutin-line-18 {
+    display: grid;
+    grid-template-columns: 20% repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+}
+
+.evolutions_container .evolutin-line-18 li {
+    text-align: center;
+}
+
+.evolutions_container .evolutin-line-18 li.number-evo-1 {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: center;
+}
+
+.evolutions_container .evolutin-line-18 li.number-evo-2,
+.evolutions_container .evolutin-line-18 li.number-evo-3,
+.evolutions_container .evolutin-line-18 li.number-evo-4,
+.evolutions_container .evolutin-line-18 li.number-evo-5 {
+    grid-row: 1;
+
+}
+.evolutions_container .evolutin-line-18 li.number-evo-6,
+.evolutions_container .evolutin-line-18 li.number-evo-7,
+.evolutions_container .evolutin-line-18 li.number-evo-8,
+.evolutions_container .evolutin-line-18 li.number-evo-9 {
+    grid-row: 2;
+}
+
+.evolutions_container .evolutin-line-18 p {
+    font-size: 12px;
+    margin: auto;
+    width: max-content;
 }
 
 .evolutions_container p {
