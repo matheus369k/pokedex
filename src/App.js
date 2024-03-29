@@ -16,19 +16,13 @@ function App() {
   <>
     <ContextPokemons.Provider value={{getData, setData}}>
       <ContextPokedex.Provider value={{getPokedex, setPokedex}}>
-        {getPokedex.status ? 
-          <Pokedex infor={getPokedex} /> 
-          :
-          <>
-            <header>
-              <Header />
-              <Search />
-            </header>
-            <main>
-              <Cards />
-            </main>
-          </> 
-          }
+        <header>
+          <Header />
+          <Search />
+        </header>
+        <main>
+          {getPokedex.status ? <Pokedex infor={getPokedex} />:<Cards />}
+        </main>
       </ContextPokedex.Provider>
     </ContextPokemons.Provider>
   </>

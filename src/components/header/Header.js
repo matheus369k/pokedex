@@ -4,12 +4,13 @@ import { FcPrevious } from "react-icons/fc";
 import logo from "../../assets/poke-titulo.png";
 import "./index.css";
 import { get_data } from "../../service/get_data";
-import { ContextPokemons } from "../../App";
+import { ContextPokedex, ContextPokemons } from "../../App";
 import { searchOfNumber } from "../../function/filterOfNumber";
 
 export default function Header() {
     const length_pokemons = get_data().length - 1;
     const {getData, setData} = useContext(ContextPokemons);
+    const {getPokedex} = useContext(ContextPokedex);
     const number_pokemon = getData[0].number.split("#")[1];
 
     const countPage = (pokemon_page) => {
@@ -27,6 +28,7 @@ export default function Header() {
         const page_current = countPage(props_number_pokemon);
         const all_pages = countPage(props_length_poke);
 
+        if (getPokedex.status) return;
         if (page_current == all_pages && props_numbers > 0) return;
         if (page_current == 1 && props_numbers < 0) return;
 
@@ -44,7 +46,9 @@ export default function Header() {
                     <FcPrevious />
                 </button>
                 <p>
-                    <span>{countPage(number_pokemon)}</span>/<span>{countPage(length_pokemons)}</span>
+                    <span>{getPokedex.status ? 1 : countPage(number_pokemon)}</span>
+                    /
+                    <span>{getPokedex.status ? 1 : countPage(length_pokemons)}</span>
                 </p>
                 <button 
                     title='Next' 

@@ -3,29 +3,31 @@ import Evoluitons from "./evolution/Evoluitons";
 import Status from "./status/Status";
 import BasicInfor from "./basicInfor/BasicInfor";
 import PokeImg from "./imgPoke/PokeImg";
-import { IoClose } from "react-icons/io5";
+import { FcPrevious } from "react-icons/fc";
 import "./index.css";
 import { ContextPokedex } from "../../App";
 
 export default function Pokedex(propsPoke) {
     const {setPokedex} = useContext(ContextPokedex);
+    const closePokedex = () => {
+        setPokedex({
+            status: false,
+            data: []
+        });
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    };
     return (
         <>
             {
                 propsPoke.infor.data.map(element => (
                     <div
-                        className="pokedex_container"
+                        className="pokedex_container pokedex_loading"
                         key={"pokedex:"+element.name}
                     >
-                        <i 
-                            onClick={()=>setPokedex(
-                                {
-                                    status: false,
-                                    data: []
-                                }
-                            )
-                        }
-                        ><IoClose /></i>
                         <BasicInfor 
                             dataName={element.name}
                             dataPokedex={element.number}
@@ -37,8 +39,11 @@ export default function Pokedex(propsPoke) {
                             dataImages={element.images} 
                             dataName={element.name} 
                         />
-                        <Status data={element.baseStats} /> 
-                        <Evoluitons data={element.evolution} />
+                        <Status data={element.baseStats}/> 
+                        <Evoluitons data={element.evolution} evolutinLine={element.evolutinLine}/>
+                        <i 
+                            onClick={()=>closePokedex()}
+                        ><FcPrevious /></i>
                     </div>
                 ))
             }; 

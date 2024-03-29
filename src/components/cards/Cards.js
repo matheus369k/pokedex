@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ContextPokemons, ContextPokedex } from "../../App";
+import { ContextPokedex, ContextPokemons } from "../../App";
 import "./index.css";
 import { finnishLoadCard } from "../../function/finnishLoad";
-import { searchOfName } from "../../function/filterOfName";
+import { openPokedex } from "../../function/openPokedex";
 import { get_data } from "../../service/get_data";
 
 export default function Cards() {
@@ -15,13 +15,11 @@ export default function Cards() {
             {
                 getData.map((element, index) => (
                     <li
-                        onClick={()=> setPokedex(
-                                {
-                                    status: true,
-                                    data: searchOfName(element.name, allDataPoke, 1)
-                                }
-                            )
-                        }
+                        onClick={()=> openPokedex(
+                            element.name,
+                            allDataPoke,
+                            setPokedex
+                        )}
                         className={`pokemon-${index} card_loading`}
                         key={element.name}
                     >
