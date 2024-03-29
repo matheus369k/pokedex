@@ -1,3 +1,7 @@
+.pokedex_loading .basic_infor {
+    display: none;
+}
+
 .basic_infor {
     grid-row: 1;
     grid-column: 1/3;
