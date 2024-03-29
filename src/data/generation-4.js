@@ -928,7 +928,7 @@ export const pokemon = [
       {
         "name": "Roselia",
         "Lv": "high Friendship, Daytime",
-        "img": "./poke-png-G3/063.png"
+        "img": "./poke-png-G3/064.png"
       },
       {
         "name": "Roserade",
@@ -982,7 +982,7 @@ export const pokemon = [
       {
         "name": "Roselia",
         "Lv": "high Friendship, Daytime",
-        "img": "./poke-png-G3/063.png"
+        "img": "./poke-png-G3/064.png"
       },
       {
         "name": "Roserade",
@@ -3892,17 +3892,17 @@ export const pokemon = [
       },
       {
         "name": "Leafeon",
-        "Lv": "use Leaf Stone, or level up near a Mossy Rock",
+        "Lv": "use Leaf Stone",
         "img": "./poke-png-G4/084.png"
       },
       {
         "name": "Glaceon",
-        "Lv": "use Ice Stone, or level up near an Icy Rock",
+        "Lv": "use Ice Stone",
         "img": "./poke-png-G4/085.png"
       },
       {
         "name": "Sylveon",
-        "Lv": "after Fairy-type move learned, and either ♥♥ Affection in Gen 6-7 or high friendship in Gen 8+",
+        "Lv": "high friendship in Gen 8+",
         "img": "./poke-png-G6/051.png"
       }
     ],
@@ -3976,17 +3976,17 @@ export const pokemon = [
       },
       {
         "name": "Leafeon",
-        "Lv": "use Leaf Stone, or level up near a Mossy Rock",
+        "Lv": "use Leaf Stone",
         "img": "./poke-png-G4/084.png"
       },
       {
         "name": "Glaceon",
-        "Lv": "use Ice Stone, or level up near an Icy Rock",
+        "Lv": "use Ice Stone",
         "img": "./poke-png-G4/085.png"
       },
       {
         "name": "Sylveon",
-        "Lv": "after Fairy-type move learned, and either ♥♥ Affection in Gen 6-7 or high friendship in Gen 8+",
+        "Lv": "high friendship in Gen 8+",
         "img": "./poke-png-G6/051.png"
       }
     ],
@@ -4272,12 +4272,12 @@ export const pokemon = [
       {
         "name": "Duskull",
         "Lv": 1,
-        "img": "./poke-png-G3/103.png"
+        "img": "./poke-png-G3/104.png"
       },
       {
         "name": "Dusclops",
         "Lv": 37,
-        "img": "./poke-png-G3/104.png"
+        "img": "./poke-png-G3/105.png"
       },
       {
         "name": "Dusknoir",

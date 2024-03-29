@@ -2010,12 +2010,12 @@ export const pokemon = [
       {
         "name": "Ninjask",
         "Lv": "Level 20, empty spot in party, Pokéball in bag",
-        "img": "./poke-png-G3/041.png"
+        "img": "./poke-png-G3/040.png"
       },
       {
         "name": "Shedinja",
         "Lv": "+",
-        "img": "./poke-png-G3/042.png"
+        "img": "./poke-png-G3/041.png"
       }
     ],
     "superdamange": [
@@ -3039,7 +3039,7 @@ export const pokemon = [
       {
         "name": "Budew",
         "Lv": 1,
-        "img": "./poke-png-G4/019.png"
+        "img": "./poke-png-G4/020.png"
       },
       {
         "name": "Roselia",
@@ -3049,7 +3049,7 @@ export const pokemon = [
       {
         "name": "Roserade",
         "Lv": "use Shiny Stone",
-        "img": "./poke-png-G4/020.png"
+        "img": "./poke-png-G4/021.png"
       }
     ],
     "superdamange": [

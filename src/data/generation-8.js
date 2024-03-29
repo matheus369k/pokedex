@@ -2647,7 +2647,7 @@ export const pokemon = [
       {
         "name": "Mr. Rime",
         "Lv": 42,
-        "img": "./poke-png-G8/57.png"
+        "img": "./poke-png-G8/057.png"
       }
     ],
     "superdamange": [

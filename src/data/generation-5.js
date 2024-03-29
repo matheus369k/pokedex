@@ -1202,22 +1202,22 @@ export const pokemon = [{
     "types": [{
       "type": "Rocha"
     }],
-    "images": "./poke-png-G5/029.png",
+    "images": "./poke-png-G5/030.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Roggenrola",
         "Lv": 1,
-        "img": "./poke-png-G5/029.png"
+        "img": "./poke-png-G5/030.png"
       },
       {
         "name": "Boldore",
         "Lv": 25,
-        "img": "./poke-png-G5/030.png"
+        "img": "./poke-png-G5/031.png"
       },
       {
         "name": "Gigalith",
         "Lv": "Trade",
-        "img": "./poke-png-G5/031.png"
+        "img": "./poke-png-G5/032.png"
       }
     ],
     "superdamange": [{
@@ -1252,22 +1252,22 @@ export const pokemon = [{
     "types": [{
       "type": "Rocha"
     }],
-    "images": "./poke-png-G5/030.png",
+    "images": "./poke-png-G5/031.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Roggenrola",
         "Lv": 1,
-        "img": "./poke-png-G5/029.png"
+        "img": "./poke-png-G5/030.png"
       },
       {
         "name": "Boldore",
         "Lv": 25,
-        "img": "./poke-png-G5/030.png"
+        "img": "./poke-png-G5/031.png"
       },
       {
         "name": "Gigalith",
         "Lv": "Trade",
-        "img": "./poke-png-G5/031.png"
+        "img": "./poke-png-G5/032.png"
       }
     ],
     "superdamange": [{
@@ -1302,22 +1302,22 @@ export const pokemon = [{
     "types": [{
       "type": "Rocha"
     }],
-    "images": "./poke-png-G5/031.png",
+    "images": "./poke-png-G5/032.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Roggenrola",
         "Lv": 1,
-        "img": "./poke-png-G5/029.png"
+        "img": "./poke-png-G5/030.png"
       },
       {
         "name": "Boldore",
         "Lv": 25,
-        "img": "./poke-png-G5/030.png"
+        "img": "./poke-png-G5/031.png"
       },
       {
         "name": "Gigalith",
         "Lv": "Trade",
-        "img": "./poke-png-G5/031.png"
+        "img": "./poke-png-G5/032.png"
       }
     ],
     "superdamange": [{
@@ -1356,17 +1356,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/032.png",
+    "images": "./poke-png-G5/033.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Woobat",
         "Lv": 1,
-        "img": "./poke-png-G5/032.png"
+        "img": "./poke-png-G5/033.png"
       },
       {
         "name": "Swoobat",
         "Lv": "high Friendship",
-        "img": "./poke-png-G5/033.png"
+        "img": "./poke-png-G5/034.png"
       }
     ],
     "superdamange": [{
@@ -1405,17 +1405,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/033.png",
+    "images": "./poke-png-G5/034.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Woobat",
         "Lv": 1,
-        "img": "./poke-png-G5/032.png"
+        "img": "./poke-png-G5/033.png"
       },
       {
         "name": "Swoobat",
         "Lv": "high Friendship",
-        "img": "./poke-png-G5/033.png"
+        "img": "./poke-png-G5/034.png"
       }
     ],
     "superdamange": [{
@@ -1450,17 +1450,17 @@ export const pokemon = [{
     "types": [{
       "type": "Terra"
     }],
-    "images": "./poke-png-G5/034.png",
+    "images": "./poke-png-G5/035.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Drilbur",
         "Lv": 1,
-        "img": "./poke-png-G5/034.png"
+        "img": "./poke-png-G5/035.png"
       },
       {
         "name": "Excadrill",
         "Lv": 31,
-        "img": "./poke-png-G5/035.png"
+        "img": "./poke-png-G5/036.png"
       }
     ],
     "superdamange": [{
@@ -1493,17 +1493,17 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/035.png",
+    "images": "./poke-png-G5/036.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Drilbur",
         "Lv": 1,
-        "img": "./poke-png-G5/034.png"
+        "img": "./poke-png-G5/035.png"
       },
       {
         "name": "Excadrill",
         "Lv": 31,
-        "img": "./poke-png-G5/035.png"
+        "img": "./poke-png-G5/036.png"
       }
     ],
     "superdamange": [{
@@ -1535,12 +1535,12 @@ export const pokemon = [{
     "types": [{
       "type": "Normal"
     }],
-    "images": "./poke-png-G5/036.png",
+    "images": "./poke-png-G5/037.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Audino",
       "Lv": 1,
-      "img": "./poke-png-G5/036.png"
+      "img": "./poke-png-G5/037.png"
     }],
     "superdamange": [{
       "type": "Lutador"
@@ -1561,22 +1561,22 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/037.png",
+    "images": "./poke-png-G5/038.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Timburr",
         "Lv": 1,
-        "img": "./poke-png-G5/037.png"
+        "img": "./poke-png-G5/038.png"
       },
       {
         "name": "Gurdurr",
         "Lv": 25,
-        "img": "./poke-png-G5/038.png"
+        "img": "./poke-png-G5/039.png"
       },
       {
         "name": "Conkeldurr",
         "Lv": "Trade",
-        "img": "./poke-png-G5/039.png"
+        "img": "./poke-png-G5/040.png"
       }
     ],
     "superdamange": [{
@@ -1605,22 +1605,22 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/038.png",
+    "images": "./poke-png-G5/039.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Timburr",
         "Lv": 1,
-        "img": "./poke-png-G5/037.png"
+        "img": "./poke-png-G5/038.png"
       },
       {
         "name": "Gurdurr",
         "Lv": 25,
-        "img": "./poke-png-G5/038.png"
+        "img": "./poke-png-G5/039.png"
       },
       {
         "name": "Conkeldurr",
         "Lv": "Trade",
-        "img": "./poke-png-G5/039.png"
+        "img": "./poke-png-G5/040.png"
       }
     ],
     "superdamange": [{
@@ -1649,22 +1649,22 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/039.png",
+    "images": "./poke-png-G5/040.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Timburr",
         "Lv": 1,
-        "img": "./poke-png-G5/037.png"
+        "img": "./poke-png-G5/038.png"
       },
       {
         "name": "Gurdurr",
         "Lv": 25,
-        "img": "./poke-png-G5/038.png"
+        "img": "./poke-png-G5/039.png"
       },
       {
         "name": "Conkeldurr",
         "Lv": "Trade",
-        "img": "./poke-png-G5/039.png"
+        "img": "./poke-png-G5/040.png"
       }
     ],
     "superdamange": [{
@@ -1693,22 +1693,22 @@ export const pokemon = [{
     "types": [{
       "type": "Agua"
     }],
-    "images": "./poke-png-G5/040.png",
+    "images": "./poke-png-G5/041.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Tympole",
         "Lv": 1,
-        "img": "./poke-png-G5/040.png"
+        "img": "./poke-png-G5/041.png"
       },
       {
         "name": "Palpitoad",
         "Lv": 25,
-        "img": "./poke-png-G5/041.png"
+        "img": "./poke-png-G5/042.png"
       },
       {
         "name": "Seismitoad",
         "Lv": 36,
-        "img": "./poke-png-G5/042.png"
+        "img": "./poke-png-G5/043.png"
       }
     ],
     "superdamange": [{
@@ -1738,22 +1738,22 @@ export const pokemon = [{
         "type": "Terra"
       }
     ],
-    "images": "./poke-png-G5/041.png",
+    "images": "./poke-png-G5/042.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Tympole",
         "Lv": 1,
-        "img": "./poke-png-G5/040.png"
+        "img": "./poke-png-G5/041.png"
       },
       {
         "name": "Palpitoad",
         "Lv": 25,
-        "img": "./poke-png-G5/041.png"
+        "img": "./poke-png-G5/042.png"
       },
       {
         "name": "Seismitoad",
         "Lv": 36,
-        "img": "./poke-png-G5/042.png"
+        "img": "./poke-png-G5/043.png"
       }
     ],
     "superdamange": [{
@@ -1779,22 +1779,22 @@ export const pokemon = [{
         "type": "Terra"
       }
     ],
-    "images": "./poke-png-G5/042.png",
+    "images": "./poke-png-G5/043.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Tympole",
         "Lv": 1,
-        "img": "./poke-png-G5/040.png"
+        "img": "./poke-png-G5/041.png"
       },
       {
         "name": "Palpitoad",
         "Lv": 25,
-        "img": "./poke-png-G5/041.png"
+        "img": "./poke-png-G5/042.png"
       },
       {
         "name": "Seismitoad",
         "Lv": 36,
-        "img": "./poke-png-G5/042.png"
+        "img": "./poke-png-G5/043.png"
       }
     ],
     "superdamange": [{
@@ -1816,12 +1816,12 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/043.png",
+    "images": "./poke-png-G5/044.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Throh",
       "Lv": 1,
-      "img": "./poke-png-G5/043.png"
+      "img": "./poke-png-G5/044.png"
     }],
     "superdamange": [{
         "type": "Voador"
@@ -1849,12 +1849,12 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/044.png",
+    "images": "./poke-png-G5/045.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Sawk",
       "Lv": 1,
-      "img": "./poke-png-G5/044.png"
+      "img": "./poke-png-G5/045.png"
     }],
     "superdamange": [{
         "type": "Voador"
@@ -1886,22 +1886,22 @@ export const pokemon = [{
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G5/045.png",
+    "images": "./poke-png-G5/046.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Sewaddle",
         "Lv": 1,
-        "img": "./poke-png-G5/045.png"
+        "img": "./poke-png-G5/046.png"
       },
       {
         "name": "Swadloon",
         "Lv": 20,
-        "img": "./poke-png-G5/046.png"
+        "img": "./poke-png-G5/047.png"
       },
       {
         "name": "Leavanny",
         "Lv": "high Friendship",
-        "img": "./poke-png-G5/047.png"
+        "img": "./poke-png-G5/048.png"
       }
     ],
     "superdamange": [{
@@ -1943,22 +1943,22 @@ export const pokemon = [{
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G5/046.png",
+    "images": "./poke-png-G5/047.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Sewaddle",
         "Lv": 1,
-        "img": "./poke-png-G5/045.png"
+        "img": "./poke-png-G5/046.png"
       },
       {
         "name": "Swadloon",
         "Lv": 20,
-        "img": "./poke-png-G5/046.png"
+        "img": "./poke-png-G5/047.png"
       },
       {
         "name": "Leavanny",
         "Lv": "high Friendship",
-        "img": "./poke-png-G5/047.png"
+        "img": "./poke-png-G5/048.png"
       }
     ],
     "superdamange": [{
@@ -2000,22 +2000,22 @@ export const pokemon = [{
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G5/047.png",
+    "images": "./poke-png-G5/048.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Sewaddle",
         "Lv": 1,
-        "img": "./poke-png-G5/045.png"
+        "img": "./poke-png-G5/046.png"
       },
       {
         "name": "Swadloon",
         "Lv": 20,
-        "img": "./poke-png-G5/046.png"
+        "img": "./poke-png-G5/047.png"
       },
       {
         "name": "Leavanny",
         "Lv": "high Friendship",
-        "img": "./poke-png-G5/047.png"
+        "img": "./poke-png-G5/048.png"
       }
     ],
     "superdamange": [{
@@ -2057,22 +2057,22 @@ export const pokemon = [{
         "type": "Veneno"
       }
     ],
-    "images": "./poke-png-G5/048.png",
+    "images": "./poke-png-G5/049.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Venipede",
         "Lv": 1,
-        "img": "./poke-png-G5/048.png"
+        "img": "./poke-png-G5/049.png"
       },
       {
         "name": "Whirlipede",
         "Lv": 22,
-        "img": "./poke-png-G5/049.png"
+        "img": "./poke-png-G5/050.png"
       },
       {
         "name": "Scolipede",
         "Lv": 30,
-        "img": "./poke-png-G5/050.png"
+        "img": "./poke-png-G5/051.png"
       }
     ],
     "superdamange": [{
@@ -2108,22 +2108,22 @@ export const pokemon = [{
         "type": "Veneno"
       }
     ],
-    "images": "./poke-png-G5/049.png",
+    "images": "./poke-png-G5/050.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Venipede",
         "Lv": 1,
-        "img": "./poke-png-G5/048.png"
+        "img": "./poke-png-G5/049.png"
       },
       {
         "name": "Whirlipede",
         "Lv": 22,
-        "img": "./poke-png-G5/049.png"
+        "img": "./poke-png-G5/050.png"
       },
       {
         "name": "Scolipede",
         "Lv": 30,
-        "img": "./poke-png-G5/050.png"
+        "img": "./poke-png-G5/051.png"
       }
     ],
     "superdamange": [{
@@ -2159,22 +2159,22 @@ export const pokemon = [{
         "type": "Veneno"
       }
     ],
-    "images": "./poke-png-G5/050.png",
+    "images": "./poke-png-G5/051.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Venipede",
         "Lv": 1,
-        "img": "./poke-png-G5/048.png"
+        "img": "./poke-png-G5/049.png"
       },
       {
         "name": "Whirlipede",
         "Lv": 22,
-        "img": "./poke-png-G5/049.png"
+        "img": "./poke-png-G5/050.png"
       },
       {
         "name": "Scolipede",
         "Lv": 30,
-        "img": "./poke-png-G5/050.png"
+        "img": "./poke-png-G5/051.png"
       }
     ],
     "superdamange": [{
@@ -2210,17 +2210,17 @@ export const pokemon = [{
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G5/051.png",
+    "images": "./poke-png-G5/052.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Cottonee",
         "Lv": 1,
-        "img": "./poke-png-G5/051.png"
+        "img": "./poke-png-G5/052.png"
       },
       {
         "name": "Whimsicott",
         "Lv": "use Sun Stone",
-        "img": "./poke-png-G5/052.png"
+        "img": "./poke-png-G5/053.png"
       }
     ],
     "superdamange": [{
@@ -2259,17 +2259,17 @@ export const pokemon = [{
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G5/052.png",
+    "images": "./poke-png-G5/053.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Cottonee",
         "Lv": 1,
-        "img": "./poke-png-G5/051.png"
+        "img": "./poke-png-G5/052.png"
       },
       {
         "name": "Whimsicott",
         "Lv": "use Sun Stone",
-        "img": "./poke-png-G5/052.png"
+        "img": "./poke-png-G5/053.png"
       }
     ],
     "superdamange": [{
@@ -2304,17 +2304,17 @@ export const pokemon = [{
     "types": [{
       "type": "Grama"
     }],
-    "images": "./poke-png-G5/053.png",
+    "images": "./poke-png-G5/054.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Petilil",
         "Lv": 1,
-        "img": "./poke-png-G5/053.png"
+        "img": "./poke-png-G5/054.png"
       },
       {
         "name": "Lilligant",
         "Lv": "use Sun Stone",
-        "img": "./poke-png-G5/054.png"
+        "img": "./poke-png-G5/055.png"
       }
     ],
     "superdamange": [{
@@ -2349,17 +2349,17 @@ export const pokemon = [{
     "types": [{
       "type": "Grama"
     }],
-    "images": "./poke-png-G5/054.png",
+    "images": "./poke-png-G5/055.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Petilil",
         "Lv": 1,
-        "img": "./poke-png-G5/053.png"
+        "img": "./poke-png-G5/054.png"
       },
       {
         "name": "Lilligant",
         "Lv": "use Sun Stone",
-        "img": "./poke-png-G5/054.png"
+        "img": "./poke-png-G5/055.png"
       }
     ],
     "superdamange": [{
@@ -2394,12 +2394,12 @@ export const pokemon = [{
     "types": [{
       "type": "Agua"
     }],
-    "images": "./poke-png-G5/055.png",
+    "images": "./poke-png-G5/056.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Basculin",
         "Lv": 1,
-        "img": "./poke-png-G5/055.png"
+        "img": "./poke-png-G5/056.png"
       },
       {
         "name": "Basculegion",
@@ -2434,22 +2434,22 @@ export const pokemon = [{
         "type": "Obscuro"
       }
     ],
-    "images": "./poke-png-G5/056.png",
+    "images": "./poke-png-G5/057.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Sandile",
         "Lv": 1,
-        "img": "./poke-png-G5/056.png"
+        "img": "./poke-png-G5/057.png"
       },
       {
         "name": "Krokorok",
         "Lv": 29,
-        "img": "./poke-png-G5/057.png"
+        "img": "./poke-png-G5/058.png"
       },
       {
         "name": "Krookodile",
         "Lv": 40,
-        "img": "./poke-png-G5/058.png"
+        "img": "./poke-png-G5/059.png"
       }
     ],
     "superdamange": [{
@@ -2491,22 +2491,22 @@ export const pokemon = [{
         "type": "Obscuro"
       }
     ],
-    "images": "./poke-png-G5/057.png",
+    "images": "./poke-png-G5/058.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Sandile",
         "Lv": 1,
-        "img": "./poke-png-G5/056.png"
+        "img": "./poke-png-G5/057.png"
       },
       {
         "name": "Krokorok",
         "Lv": 29,
-        "img": "./poke-png-G5/057.png"
+        "img": "./poke-png-G5/058.png"
       },
       {
         "name": "Krookodile",
         "Lv": 40,
-        "img": "./poke-png-G5/058.png"
+        "img": "./poke-png-G5/059.png"
       }
     ],
     "superdamange": [{
@@ -2548,22 +2548,22 @@ export const pokemon = [{
         "type": "Obscuro"
       }
     ],
-    "images": "./poke-png-G5/058.png",
+    "images": "./poke-png-G5/059.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Sandile",
         "Lv": 1,
-        "img": "./poke-png-G5/056.png"
+        "img": "./poke-png-G5/057.png"
       },
       {
         "name": "Krokorok",
         "Lv": 29,
-        "img": "./poke-png-G5/057.png"
+        "img": "./poke-png-G5/058.png"
       },
       {
         "name": "Krookodile",
         "Lv": 40,
-        "img": "./poke-png-G5/058.png"
+        "img": "./poke-png-G5/059.png"
       }
     ],
     "superdamange": [{
@@ -2601,17 +2601,17 @@ export const pokemon = [{
     "types": [{
       "type": "Fogo"
     }],
-    "images": "./poke-png-G5/059.png",
+    "images": "./poke-png-G5/060.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Darumaka",
         "Lv": 1,
-        "img": "./poke-png-G5/059.png"
+        "img": "./poke-png-G5/060.png"
       },
       {
         "name": "Darmanitan",
         "Lv": 35,
-        "img": "./poke-png-G5/060.png"
+        "img": "./poke-png-G5/061.png"
       }
     ],
     "superdamange": [{
@@ -2640,17 +2640,17 @@ export const pokemon = [{
     "types": [{
       "type": "Fogo"
     }],
-    "images": "./poke-png-G5/060.png",
+    "images": "./poke-png-G5/061.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Darumaka",
         "Lv": 1,
-        "img": "./poke-png-G5/059.png"
+        "img": "./poke-png-G5/060.png"
       },
       {
         "name": "Darmanitan",
         "Lv": 35,
-        "img": "./poke-png-G5/060.png"
+        "img": "./poke-png-G5/061.png"
       }
     ],
     "superdamange": [{
@@ -2679,12 +2679,12 @@ export const pokemon = [{
     "types": [{
       "type": "Grama"
     }],
-    "images": "./poke-png-G5/061.png",
+    "images": "./poke-png-G5/062.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Maractus",
       "Lv": 1,
-      "img": "./poke-png-G5/061.png"
+      "img": "./poke-png-G5/062.png"
     }],
     "superdamange": [{
         "type": "Fogo"
@@ -2722,17 +2722,17 @@ export const pokemon = [{
         "type": "Rocha"
       }
     ],
-    "images": "./poke-png-G5/062.png",
+    "images": "./poke-png-G5/063.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Dwebble",
         "Lv": 1,
-        "img": "./poke-png-G5/062.png"
+        "img": "./poke-png-G5/063.png"
       },
       {
         "name": "Crustle",
         "Lv": 34,
-        "img": "./poke-png-G5/063.png"
+        "img": "./poke-png-G5/064.png"
       }
     ],
     "superdamange": [{
@@ -2770,12 +2770,12 @@ export const pokemon = [{
     "evolution": [{
         "name": "Dwebble",
         "Lv": 1,
-        "img": "./poke-png-G5/062.png"
+        "img": "./poke-png-G5/063.png"
       },
       {
         "name": "Crustle",
         "Lv": 34,
-        "img": "./poke-png-G5/063.png"
+        "img": "./poke-png-G5/064.png"
       }
     ],
     "superdamange": [{
@@ -2808,17 +2808,17 @@ export const pokemon = [{
         "type": "Lutador"
       }
     ],
-    "images": "./poke-png-G5/064.png",
+    "images": "./poke-png-G5/065.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Scraggy",
         "Lv": 1,
-        "img": "./poke-png-G5/064.png"
+        "img": "./poke-png-G5/065.png"
       },
       {
         "name": "Scrafty",
         "Lv": 39,
-        "img": "./poke-png-G5/065.png"
+        "img": "./poke-png-G5/066.png"
       }
     ],
     "superdamange": [{
@@ -2851,17 +2851,17 @@ export const pokemon = [{
         "type": "Lutador"
       }
     ],
-    "images": "./poke-png-G5/065.png",
+    "images": "./poke-png-G5/066.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Scraggy",
         "Lv": 1,
-        "img": "./poke-png-G5/064.png"
+        "img": "./poke-png-G5/065.png"
       },
       {
         "name": "Scrafty",
         "Lv": 39,
-        "img": "./poke-png-G5/065.png"
+        "img": "./poke-png-G5/066.png"
       }
     ],
     "superdamange": [{
@@ -2894,12 +2894,12 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/066.png",
+    "images": "./poke-png-G5/067.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Sigilyph",
       "Lv": 1,
-      "img": "./poke-png-G5/066.png"
+      "img": "./poke-png-G5/067.png"
     }],
     "superdamange": [{
         "type": "Eletrico"
@@ -2933,17 +2933,17 @@ export const pokemon = [{
     "types": [{
       "type": "Fantasma"
     }],
-    "images": "./poke-png-G5/067.png",
+    "images": "./poke-png-G5/068.png",
     "evolutinLine": 12,
     "evolution": [{
         "name": "Sigilyph",
         "Lv": 1,
-        "img": "./poke-png-G5/067.png"
+        "img": "./poke-png-G5/068.png"
       },
       {
         "name": "Cofagrigus",
         "Lv": 34,
-        "img": "./poke-png-G5/068.png"
+        "img": "./poke-png-G5/069.png"
       },
       {
         "name": "Runerigus",
@@ -2974,17 +2974,17 @@ export const pokemon = [{
     "types": [{
       "type": "Fantasma"
     }],
-    "images": "./poke-png-G5/068.png",
+    "images": "./poke-png-G5/069.png",
     "evolutinLine": 12,
     "evolution": [{
         "name": "Sigilyph",
         "Lv": 1,
-        "img": "./poke-png-G5/067.png"
+        "img": "./poke-png-G5/068.png"
       },
       {
         "name": "Cofagrigus",
         "Lv": 34,
-        "img": "./poke-png-G5/068.png"
+        "img": "./poke-png-G5/069.png"
       },
       {
         "name": "Runerigus",
@@ -3019,17 +3019,17 @@ export const pokemon = [{
         "type": "Rocha"
       }
     ],
-    "images": "./poke-png-G5/069.png",
+    "images": "./poke-png-G5/070.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Tirtouga",
         "Lv": 1,
-        "img": "./poke-png-G5/069.png"
+        "img": "./poke-png-G5/070.png"
       },
       {
         "name": "Carracosta",
         "Lv": 37,
-        "img": "./poke-png-G5/070.png"
+        "img": "./poke-png-G5/071.png"
       }
     ],
     "superdamange": [{
@@ -3065,17 +3065,17 @@ export const pokemon = [{
         "type": "Rocha"
       }
     ],
-    "images": "./poke-png-G5/070.png",
+    "images": "./poke-png-G5/071.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Tirtouga",
         "Lv": 1,
-        "img": "./poke-png-G5/069.png"
+        "img": "./poke-png-G5/070.png"
       },
       {
         "name": "Carracosta",
         "Lv": 37,
-        "img": "./poke-png-G5/070.png"
+        "img": "./poke-png-G5/071.png"
       }
     ],
     "superdamange": [{
@@ -3111,17 +3111,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/071.png",
+    "images": "./poke-png-G5/072.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Archen",
         "Lv": 1,
-        "img": "./poke-png-G5/071.png"
+        "img": "./poke-png-G5/072.png"
       },
       {
         "name": "Archeops",
         "Lv": 37,
-        "img": "./poke-png-G5/072.png"
+        "img": "./poke-png-G5/073.png"
       }
     ],
     "superdamange": [{
@@ -3160,17 +3160,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/072.png",
+    "images": "./poke-png-G5/073.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Archen",
         "Lv": 1,
-        "img": "./poke-png-G5/071.png"
+        "img": "./poke-png-G5/072.png"
       },
       {
         "name": "Archeops",
         "Lv": 37,
-        "img": "./poke-png-G5/072.png"
+        "img": "./poke-png-G5/073.png"
       }
     ],
     "superdamange": [{
@@ -3205,17 +3205,17 @@ export const pokemon = [{
     "types": [{
       "type": "Veneno"
     }],
-    "images": "./poke-png-G5/073.png",
+    "images": "./poke-png-G5/074.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Trubbish",
         "Lv": 1,
-        "img": "./poke-png-G5/073.png"
+        "img": "./poke-png-G5/074.png"
       },
       {
         "name": "Garbodor",
         "Lv": 36,
-        "img": "./poke-png-G5/074.png"
+        "img": "./poke-png-G5/075.png"
       }
     ],
     "superdamange": [{
@@ -3241,17 +3241,17 @@ export const pokemon = [{
     "types": [{
       "type": "Veneno"
     }],
-    "images": "./poke-png-G5/074.png",
+    "images": "./poke-png-G5/075.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Trubbish",
         "Lv": 1,
-        "img": "./poke-png-G5/073.png"
+        "img": "./poke-png-G5/074.png"
       },
       {
         "name": "Garbodor",
         "Lv": 36,
-        "img": "./poke-png-G5/074.png"
+        "img": "./poke-png-G5/075.png"
       }
     ],
     "superdamange": [{
@@ -3277,17 +3277,17 @@ export const pokemon = [{
     "types": [{
       "type": "Obscuro"
     }],
-    "images": "./poke-png-G5/075.png",
+    "images": "./poke-png-G5/076.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Zorua",
         "Lv": 1,
-        "img": "./poke-png-G5/075.png"
+        "img": "./poke-png-G5/076.png"
       },
       {
         "name": "Zoroark",
         "Lv": 30,
-        "img": "./poke-png-G5/076.png"
+        "img": "./poke-png-G5/077.png"
       }
     ],
     "superdamange": [{
@@ -3316,17 +3316,17 @@ export const pokemon = [{
     "types": [{
       "type": "Obscuro"
     }],
-    "images": "./poke-png-G5/076.png",
+    "images": "./poke-png-G5/077.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Zorua",
         "Lv": 1,
-        "img": "./poke-png-G5/075.png"
+        "img": "./poke-png-G5/076.png"
       },
       {
         "name": "Zoroark",
         "Lv": 30,
-        "img": "./poke-png-G5/076.png"
+        "img": "./poke-png-G5/077.png"
       }
     ],
     "superdamange": [{
@@ -3355,17 +3355,17 @@ export const pokemon = [{
     "types": [{
       "type": "Normal"
     }],
-    "images": "./poke-png-G5/077.png",
+    "images": "./poke-png-G5/078.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Minccino",
         "Lv": 1,
-        "img": "./poke-png-G5/077.png"
+        "img": "./poke-png-G5/078.png"
       },
       {
         "name": "Cinccino",
         "Lv": "use Shiny Stone",
-        "img": "./poke-png-G5/078.png"
+        "img": "./poke-png-G5/079.png"
       }
     ],
     "superdamange": [{
@@ -3387,17 +3387,17 @@ export const pokemon = [{
     "types": [{
       "type": "Normal"
     }],
-    "images": "./poke-png-G5/078.png",
+    "images": "./poke-png-G5/079.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Minccino",
         "Lv": 1,
-        "img": "./poke-png-G5/077.png"
+        "img": "./poke-png-G5/078.png"
       },
       {
         "name": "Cinccino",
         "Lv": "use Shiny Stone",
-        "img": "./poke-png-G5/078.png"
+        "img": "./poke-png-G5/079.png"
       }
     ],
     "superdamange": [{
@@ -3419,22 +3419,22 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/079.png",
+    "images": "./poke-png-G5/080.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Gothita",
         "Lv": 1,
-        "img": "./poke-png-G5/079.png"
+        "img": "./poke-png-G5/080.png"
       },
       {
         "name": "Gothorita",
         "Lv": 32,
-        "img": "./poke-png-G5/080.png"
+        "img": "./poke-png-G5/081.png"
       },
       {
         "name": "Gothitelle",
         "Lv": 41,
-        "img": "./poke-png-G5/081.png"
+        "img": "./poke-png-G5/082.png"
       }
     ],
     "superdamange": [{
@@ -3463,22 +3463,22 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/080.png",
+    "images": "./poke-png-G5/081.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Gothita",
         "Lv": 1,
-        "img": "./poke-png-G5/079.png"
+        "img": "./poke-png-G5/080.png"
       },
       {
         "name": "Gothorita",
         "Lv": 32,
-        "img": "./poke-png-G5/080.png"
+        "img": "./poke-png-G5/081.png"
       },
       {
         "name": "Gothitelle",
         "Lv": 41,
-        "img": "./poke-png-G5/081.png"
+        "img": "./poke-png-G5/082.png"
       }
     ],
     "superdamange": [{
@@ -3507,22 +3507,22 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/081.png",
+    "images": "./poke-png-G5/082.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Gothita",
         "Lv": 1,
-        "img": "./poke-png-G5/079.png"
+        "img": "./poke-png-G5/080.png"
       },
       {
         "name": "Gothorita",
         "Lv": 32,
-        "img": "./poke-png-G5/080.png"
+        "img": "./poke-png-G5/081.png"
       },
       {
         "name": "Gothitelle",
         "Lv": 41,
-        "img": "./poke-png-G5/081.png"
+        "img": "./poke-png-G5/082.png"
       }
     ],
     "superdamange": [{
@@ -3551,22 +3551,22 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/082.png",
+    "images": "./poke-png-G5/083.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Solosis",
         "Lv": 1,
-        "img": "./poke-png-G5/082.png"
+        "img": "./poke-png-G5/083.png"
       },
       {
         "name": "Duosion",
         "Lv": 32,
-        "img": "./poke-png-G5/083.png"
+        "img": "./poke-png-G5/084.png"
       },
       {
         "name": "Reuniclus",
         "Lv": 41,
-        "img": "./poke-png-G5/084.png"
+        "img": "./poke-png-G5/085.png"
       }
     ],
     "superdamange": [{
@@ -3595,22 +3595,22 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/083.png",
+    "images": "./poke-png-G5/084.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Solosis",
         "Lv": 1,
-        "img": "./poke-png-G5/082.png"
+        "img": "./poke-png-G5/083.png"
       },
       {
         "name": "Duosion",
         "Lv": 32,
-        "img": "./poke-png-G5/083.png"
+        "img": "./poke-png-G5/084.png"
       },
       {
         "name": "Reuniclus",
         "Lv": 41,
-        "img": "./poke-png-G5/084.png"
+        "img": "./poke-png-G5/085.png"
       }
     ],
     "superdamange": [{
@@ -3639,22 +3639,22 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/084.png",
+    "images": "./poke-png-G5/085.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Solosis",
         "Lv": 1,
-        "img": "./poke-png-G5/082.png"
+        "img": "./poke-png-G5/083.png"
       },
       {
         "name": "Duosion",
         "Lv": 32,
-        "img": "./poke-png-G5/083.png"
+        "img": "./poke-png-G5/084.png"
       },
       {
         "name": "Reuniclus",
         "Lv": 41,
-        "img": "./poke-png-G5/084.png"
+        "img": "./poke-png-G5/085.png"
       }
     ],
     "superdamange": [{
@@ -3687,17 +3687,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/085.png",
+    "images": "./poke-png-G5/086.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Ducklett",
         "Lv": 1,
-        "img": "./poke-png-G5/085.png"
+        "img": "./poke-png-G5/086.png"
       },
       {
         "name": "Swanna",
         "Lv": 35,
-        "img": "./poke-png-G5/086.png"
+        "img": "./poke-png-G5/087.png"
       }
     ],
     "superdamange": [{
@@ -3727,17 +3727,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/086.png",
+    "images": "./poke-png-G5/087.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Ducklett",
         "Lv": 1,
-        "img": "./poke-png-G5/085.png"
+        "img": "./poke-png-G5/086.png"
       },
       {
         "name": "Swanna",
         "Lv": 35,
-        "img": "./poke-png-G5/086.png"
+        "img": "./poke-png-G5/087.png"
       }
     ],
     "superdamange": [{
@@ -3763,22 +3763,22 @@ export const pokemon = [{
     "types": [{
       "type": "Gelo"
     }],
-    "images": "./poke-png-G5/087.png",
+    "images": "./poke-png-G5/088.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Vanillite",
         "Lv": 1,
-        "img": "./poke-png-G5/087.png"
+        "img": "./poke-png-G5/088.png"
       },
       {
         "name": "Vanillish",
         "Lv": 35,
-        "img": "./poke-png-G5/088.png"
+        "img": "./poke-png-G5/089.png"
       },
       {
         "name": "Vanilluxe",
         "Lv": 47,
-        "img": "./poke-png-G5/089.png"
+        "img": "./poke-png-G5/090.png"
       }
     ],
     "superdamange": [{
@@ -3810,22 +3810,22 @@ export const pokemon = [{
     "types": [{
       "type": "Gelo"
     }],
-    "images": "./poke-png-G5/088.png",
+    "images": "./poke-png-G5/089.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Vanillite",
         "Lv": 1,
-        "img": "./poke-png-G5/087.png"
+        "img": "./poke-png-G5/088.png"
       },
       {
         "name": "Vanillish",
         "Lv": 35,
-        "img": "./poke-png-G5/088.png"
+        "img": "./poke-png-G5/089.png"
       },
       {
         "name": "Vanilluxe",
         "Lv": 47,
-        "img": "./poke-png-G5/089.png"
+        "img": "./poke-png-G5/090.png"
       }
     ],
     "superdamange": [{
@@ -3857,22 +3857,22 @@ export const pokemon = [{
     "types": [{
       "type": "Gelo"
     }],
-    "images": "./poke-png-G5/089.png",
+    "images": "./poke-png-G5/090.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Vanillite",
         "Lv": 1,
-        "img": "./poke-png-G5/087.png"
+        "img": "./poke-png-G5/088.png"
       },
       {
         "name": "Vanillish",
         "Lv": 35,
-        "img": "./poke-png-G5/088.png"
+        "img": "./poke-png-G5/089.png"
       },
       {
         "name": "Vanilluxe",
         "Lv": 47,
-        "img": "./poke-png-G5/089.png"
+        "img": "./poke-png-G5/090.png"
       }
     ],
     "superdamange": [{
@@ -3908,17 +3908,17 @@ export const pokemon = [{
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G5/090.png",
+    "images": "./poke-png-G5/091.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Deerling",
         "Lv": 1,
-        "img": "./poke-png-G5/090.png"
+        "img": "./poke-png-G5/091.png"
       },
       {
         "name": "Sawsbuck",
         "Lv": 34,
-        "img": "./poke-png-G5/091.png"
+        "img": "./poke-png-G5/092.png"
       }
     ],
     "superdamange": [{
@@ -3960,17 +3960,17 @@ export const pokemon = [{
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G5/091.png",
+    "images": "./poke-png-G5/092.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Deerling",
         "Lv": 1,
-        "img": "./poke-png-G5/090.png"
+        "img": "./poke-png-G5/091.png"
       },
       {
         "name": "Sawsbuck",
         "Lv": 34,
-        "img": "./poke-png-G5/091.png"
+        "img": "./poke-png-G5/092.png"
       }
     ],
     "superdamange": [{
@@ -4012,12 +4012,12 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/092.png",
+    "images": "./poke-png-G5/093.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Emolga",
       "Lv": 1,
-      "img": "./poke-png-G5/092.png"
+      "img": "./poke-png-G5/093.png"
     }],
     "superdamange": [{
         "type": "Eletrico"
@@ -4042,17 +4042,17 @@ export const pokemon = [{
     "types": [{
       "type": "Inseto"
     }],
-    "images": "./poke-png-G5/093.png",
+    "images": "./poke-png-G5/094.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Karrablast",
         "Lv": 1,
-        "img": "./poke-png-G5/093.png"
+        "img": "./poke-png-G5/094.png"
       },
       {
         "name": "Escavalier",
         "Lv": "Trade with Shelmet",
-        "img": "./poke-png-G5/094.png"
+        "img": "./poke-png-G5/095.png"
       }
     ],
     "superdamange": [{
@@ -4085,17 +4085,17 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/094.png",
+    "images": "./poke-png-G5/095.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Karrablast",
         "Lv": 1,
-        "img": "./poke-png-G5/093.png"
+        "img": "./poke-png-G5/094.png"
       },
       {
         "name": "Escavalier",
         "Lv": "Trade with Shelmet",
-        "img": "./poke-png-G5/094.png"
+        "img": "./poke-png-G5/095.png"
       }
     ],
     "superdamange": [{
@@ -4121,17 +4121,17 @@ export const pokemon = [{
         "type": "Veneno"
       }
     ],
-    "images": "./poke-png-G5/095.png",
+    "images": "./poke-png-G5/096.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Foongus",
         "Lv": 1,
-        "img": "./poke-png-G5/095.png"
+        "img": "./poke-png-G5/096.png"
       },
       {
         "name": "Amoonguss",
         "Lv": 39,
-        "img": "./poke-png-G5/096.png"
+        "img": "./poke-png-G5/097.png"
       }
     ],
     "superdamange": [{
@@ -4167,17 +4167,17 @@ export const pokemon = [{
         "type": "Veneno"
       }
     ],
-    "images": "./poke-png-G5/096.png",
+    "images": "./poke-png-G5/097.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Foongus",
         "Lv": 1,
-        "img": "./poke-png-G5/095.png"
+        "img": "./poke-png-G5/096.png"
       },
       {
         "name": "Amoonguss",
         "Lv": 39,
-        "img": "./poke-png-G5/096.png"
+        "img": "./poke-png-G5/097.png"
       }
     ],
     "superdamange": [{
@@ -4213,17 +4213,17 @@ export const pokemon = [{
         "type": "Fantasma"
       }
     ],
-    "images": "./poke-png-G5/097.png",
+    "images": "./poke-png-G5/098.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Frillish",
         "Lv": 1,
-        "img": "./poke-png-G5/097.png"
+        "img": "./poke-png-G5/098.png"
       },
       {
         "name": "Jellicent",
         "Lv": 40,
-        "img": "./poke-png-G5/098.png"
+        "img": "./poke-png-G5/099.png"
       }
     ],
     "superdamange": [{
@@ -4259,17 +4259,17 @@ export const pokemon = [{
         "type": "Fantasma"
       }
     ],
-    "images": "./poke-png-G5/098.png",
+    "images": "./poke-png-G5/099.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Frillish",
         "Lv": 1,
-        "img": "./poke-png-G5/097.png"
+        "img": "./poke-png-G5/098.png"
       },
       {
         "name": "Jellicent",
         "Lv": 40,
-        "img": "./poke-png-G5/098.png"
+        "img": "./poke-png-G5/099.png"
       }
     ],
     "superdamange": [{
@@ -4301,12 +4301,12 @@ export const pokemon = [{
     "types": [{
       "type": "Agua"
     }],
-    "images": "./poke-png-G5/099.png",
+    "images": "./poke-png-G5/100.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Alomomola",
       "Lv": 1,
-      "img": "./poke-png-G5/099.png"
+      "img": "./poke-png-G5/100.png"
     }],
     "superdamange": [{
         "type": "Eletrico"
@@ -4335,17 +4335,17 @@ export const pokemon = [{
         "type": "Eletrico"
       }
     ],
-    "images": "./poke-png-G5/100.png",
+    "images": "./poke-png-G5/101.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Joltik",
         "Lv": 1,
-        "img": "./poke-png-G5/100.png"
+        "img": "./poke-png-G5/101.png"
       },
       {
         "name": "Galvantula",
         "Lv": 36,
-        "img": "./poke-png-G5/101.png"
+        "img": "./poke-png-G5/102.png"
       }
     ],
     "superdamange": [{
@@ -4375,17 +4375,17 @@ export const pokemon = [{
         "type": "Eletrico"
       }
     ],
-    "images": "./poke-png-G5/101.png",
+    "images": "./poke-png-G5/102.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Joltik",
         "Lv": 1,
-        "img": "./poke-png-G5/100.png"
+        "img": "./poke-png-G5/101.png"
       },
       {
         "name": "Galvantula",
         "Lv": 36,
-        "img": "./poke-png-G5/101.png"
+        "img": "./poke-png-G5/102.png"
       }
     ],
     "superdamange": [{
@@ -4415,17 +4415,17 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/102.png",
+    "images": "./poke-png-G5/103.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Ferroseed",
         "Lv": 1,
-        "img": "./poke-png-G5/102.png"
+        "img": "./poke-png-G5/103.png"
       },
       {
         "name": "Ferrothorn",
         "Lv": 40,
-        "img": "./poke-png-G5/103.png"
+        "img": "./poke-png-G5/104.png"
       }
     ],
     "superdamange": [{
@@ -4455,17 +4455,17 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/103.png",
+    "images": "./poke-png-G5/104.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Ferroseed",
         "Lv": 1,
-        "img": "./poke-png-G5/102.png"
+        "img": "./poke-png-G5/103.png"
       },
       {
         "name": "Ferrothorn",
         "Lv": 40,
-        "img": "./poke-png-G5/103.png"
+        "img": "./poke-png-G5/104.png"
       }
     ],
     "superdamange": [{
@@ -4491,22 +4491,22 @@ export const pokemon = [{
     "types": [{
       "type": "Metal"
     }],
-    "images": "./poke-png-G5/104.png",
+    "images": "./poke-png-G5/105.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Klink",
         "Lv": 1,
-        "img": "./poke-png-G5/104.png"
+        "img": "./poke-png-G5/105.png"
       },
       {
         "name": "Klang",
         "Lv": 38,
-        "img": "./poke-png-G5/105.png"
+        "img": "./poke-png-G5/106.png"
       },
       {
         "name": "Klinklang",
         "Lv": 49,
-        "img": "./poke-png-G5/106.png"
+        "img": "./poke-png-G5/107.png"
       }
     ],
     "superdamange": [{
@@ -4535,22 +4535,22 @@ export const pokemon = [{
     "types": [{
       "type": "Metal"
     }],
-    "images": "./poke-png-G5/105.png",
+    "images": "./poke-png-G5/106.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Klink",
         "Lv": 1,
-        "img": "./poke-png-G5/104.png"
+        "img": "./poke-png-G5/105.png"
       },
       {
         "name": "Klang",
         "Lv": 38,
-        "img": "./poke-png-G5/105.png"
+        "img": "./poke-png-G5/106.png"
       },
       {
         "name": "Klinklang",
         "Lv": 49,
-        "img": "./poke-png-G5/106.png"
+        "img": "./poke-png-G5/107.png"
       }
     ],
     "superdamange": [{
@@ -4579,22 +4579,22 @@ export const pokemon = [{
     "types": [{
       "type": "Metal"
     }],
-    "images": "./poke-png-G5/106.png",
+    "images": "./poke-png-G5/107.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Klink",
         "Lv": 1,
-        "img": "./poke-png-G5/104.png"
+        "img": "./poke-png-G5/105.png"
       },
       {
         "name": "Klang",
         "Lv": 38,
-        "img": "./poke-png-G5/105.png"
+        "img": "./poke-png-G5/106.png"
       },
       {
         "name": "Klinklang",
         "Lv": 49,
-        "img": "./poke-png-G5/106.png"
+        "img": "./poke-png-G5/107.png"
       }
     ],
     "superdamange": [{
@@ -4623,22 +4623,22 @@ export const pokemon = [{
     "types": [{
       "type": "Eletrico"
     }],
-    "images": "./poke-png-G5/107.png",
+    "images": "./poke-png-G5/108.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Tynamo",
         "Lv": 1,
-        "img": "./poke-png-G5/107.png"
+        "img": "./poke-png-G5/108.png"
       },
       {
         "name": "Eelektrik",
         "Lv": 39,
-        "img": "./poke-png-G5/108.png"
+        "img": "./poke-png-G5/109.png"
       },
       {
         "name": "Eelektross",
         "Lv": "use Thunder Stone",
-        "img": "./poke-png-G5/109.png"
+        "img": "./poke-png-G5/110.png"
       }
     ],
     "superdamange": [],
@@ -4658,22 +4658,22 @@ export const pokemon = [{
     "types": [{
       "type": "Eletrico"
     }],
-    "images": "./poke-png-G5/108.png",
+    "images": "./poke-png-G5/109.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Tynamo",
         "Lv": 1,
-        "img": "./poke-png-G5/107.png"
+        "img": "./poke-png-G5/108.png"
       },
       {
         "name": "Eelektrik",
         "Lv": 39,
-        "img": "./poke-png-G5/108.png"
+        "img": "./poke-png-G5/109.png"
       },
       {
         "name": "Eelektross",
         "Lv": "use Thunder Stone",
-        "img": "./poke-png-G5/109.png"
+        "img": "./poke-png-G5/110.png"
       }
     ],
     "superdamange": [],
@@ -4693,22 +4693,22 @@ export const pokemon = [{
     "types": [{
       "type": "Eletrico"
     }],
-    "images": "./poke-png-G5/109.png",
+    "images": "./poke-png-G5/110.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Tynamo",
         "Lv": 1,
-        "img": "./poke-png-G5/107.png"
+        "img": "./poke-png-G5/108.png"
       },
       {
         "name": "Eelektrik",
         "Lv": 39,
-        "img": "./poke-png-G5/108.png"
+        "img": "./poke-png-G5/109.png"
       },
       {
         "name": "Eelektross",
         "Lv": "use Thunder Stone",
-        "img": "./poke-png-G5/109.png"
+        "img": "./poke-png-G5/110.png"
       }
     ],
     "superdamange": [],
@@ -4728,17 +4728,17 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/110.png",
+    "images": "./poke-png-G5/111.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Elgyem",
         "Lv": 1,
-        "img": "./poke-png-G5/110.png"
+        "img": "./poke-png-G5/111.png"
       },
       {
         "name": "Beheeyem",
         "Lv": 42,
-        "img": "./poke-png-G5/111.png"
+        "img": "./poke-png-G5/112.png"
       }
     ],
     "superdamange": [{
@@ -4767,17 +4767,17 @@ export const pokemon = [{
     "types": [{
       "type": "Pisquico"
     }],
-    "images": "./poke-png-G5/111.png",
+    "images": "./poke-png-G5/112.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Elgyem",
         "Lv": 1,
-        "img": "./poke-png-G5/110.png"
+        "img": "./poke-png-G5/111.png"
       },
       {
         "name": "Beheeyem",
         "Lv": 42,
-        "img": "./poke-png-G5/111.png"
+        "img": "./poke-png-G5/112.png"
       }
     ],
     "superdamange": [{
@@ -4810,22 +4810,22 @@ export const pokemon = [{
         "type": "Fogo"
       }
     ],
-    "images": "./poke-png-G5/112.png",
+    "images": "./poke-png-G5/113.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Litwick",
         "Lv": 1,
-        "img": "./poke-png-G5/112.png"
+        "img": "./poke-png-G5/113.png"
       },
       {
         "name": "Lampent",
         "Lv": 41,
-        "img": "./poke-png-G5/113.png"
+        "img": "./poke-png-G5/114.png"
       },
       {
         "name": "Chandelure",
         "Lv": "use Dusk Stone",
-        "img": "./poke-png-G5/114.png"
+        "img": "./poke-png-G5/115.png"
       }
     ],
     "superdamange": [{
@@ -4864,22 +4864,22 @@ export const pokemon = [{
         "type": "Fogo"
       }
     ],
-    "images": "./poke-png-G5/113.png",
+    "images": "./poke-png-G5/114.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Litwick",
         "Lv": 1,
-        "img": "./poke-png-G5/112.png"
+        "img": "./poke-png-G5/113.png"
       },
       {
         "name": "Lampent",
         "Lv": 41,
-        "img": "./poke-png-G5/113.png"
+        "img": "./poke-png-G5/114.png"
       },
       {
         "name": "Chandelure",
         "Lv": "use Dusk Stone",
-        "img": "./poke-png-G5/114.png"
+        "img": "./poke-png-G5/115.png"
       }
     ],
     "superdamange": [{
@@ -4918,22 +4918,22 @@ export const pokemon = [{
         "type": "Fogo"
       }
     ],
-    "images": "./poke-png-G5/114.png",
+    "images": "./poke-png-G5/115.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Litwick",
         "Lv": 1,
-        "img": "./poke-png-G5/112.png"
+        "img": "./poke-png-G5/113.png"
       },
       {
         "name": "Lampent",
         "Lv": 41,
-        "img": "./poke-png-G5/113.png"
+        "img": "./poke-png-G5/114.png"
       },
       {
         "name": "Chandelure",
         "Lv": "use Dusk Stone",
-        "img": "./poke-png-G5/114.png"
+        "img": "./poke-png-G5/115.png"
       }
     ],
     "superdamange": [{
@@ -4968,22 +4968,22 @@ export const pokemon = [{
     "types": [{
       "type": "Dragão"
     }],
-    "images": "./poke-png-G5/115.png",
+    "images": "./poke-png-G5/116.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Axew",
         "Lv": 1,
-        "img": "./poke-png-G5/115.png"
+        "img": "./poke-png-G5/116.png"
       },
       {
         "name": "Fraxure",
         "Lv": 38,
-        "img": "./poke-png-G5/116.png"
+        "img": "./poke-png-G5/117.png"
       },
       {
         "name": "Haxorus",
         "Lv": 48,
-        "img": "./poke-png-G5/117.png"
+        "img": "./poke-png-G5/118.png"
       }
     ],
     "superdamange": [{
@@ -5012,22 +5012,22 @@ export const pokemon = [{
     "types": [{
       "type": "Dragão"
     }],
-    "images": "./poke-png-G5/116.png",
+    "images": "./poke-png-G5/117.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Axew",
         "Lv": 1,
-        "img": "./poke-png-G5/115.png"
+        "img": "./poke-png-G5/116.png"
       },
       {
         "name": "Fraxure",
         "Lv": 38,
-        "img": "./poke-png-G5/116.png"
+        "img": "./poke-png-G5/117.png"
       },
       {
         "name": "Haxorus",
         "Lv": 48,
-        "img": "./poke-png-G5/117.png"
+        "img": "./poke-png-G5/118.png"
       }
     ],
     "superdamange": [{
@@ -5056,22 +5056,22 @@ export const pokemon = [{
     "types": [{
       "type": "Dragão"
     }],
-    "images": "./poke-png-G5/117.png",
+    "images": "./poke-png-G5/118.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Axew",
         "Lv": 1,
-        "img": "./poke-png-G5/115.png"
+        "img": "./poke-png-G5/116.png"
       },
       {
         "name": "Fraxure",
         "Lv": 38,
-        "img": "./poke-png-G5/116.png"
+        "img": "./poke-png-G5/117.png"
       },
       {
         "name": "Haxorus",
         "Lv": 48,
-        "img": "./poke-png-G5/117.png"
+        "img": "./poke-png-G5/118.png"
       }
     ],
     "superdamange": [{
@@ -5100,17 +5100,17 @@ export const pokemon = [{
     "types": [{
       "type": "Gelo"
     }],
-    "images": "./poke-png-G5/118.png",
+    "images": "./poke-png-G5/119.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Cubchoo",
         "Lv": 1,
-        "img": "./poke-png-G5/118.png"
+        "img": "./poke-png-G5/119.png"
       },
       {
         "name": "Beartic",
         "Lv": 37,
-        "img": "./poke-png-G5/119.png"
+        "img": "./poke-png-G5/120.png"
       }
     ],
     "superdamange": [{
@@ -5142,17 +5142,17 @@ export const pokemon = [{
     "types": [{
       "type": "Gelo"
     }],
-    "images": "./poke-png-G5/119.png",
+    "images": "./poke-png-G5/120.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Cubchoo",
         "Lv": 1,
-        "img": "./poke-png-G5/118.png"
+        "img": "./poke-png-G5/119.png"
       },
       {
         "name": "Beartic",
         "Lv": 37,
-        "img": "./poke-png-G5/119.png"
+        "img": "./poke-png-G5/120.png"
       }
     ],
     "superdamange": [{
@@ -5184,12 +5184,12 @@ export const pokemon = [{
     "types": [{
       "type": "Gelo"
     }],
-    "images": "./poke-png-G5/120.png",
+    "images": "./poke-png-G5/121.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Cryogonal",
       "Lv": 1,
-      "img": "./poke-png-G5/120.png"
+      "img": "./poke-png-G5/121.png"
     }],
     "superdamange": [{
         "type": "Fogo"
@@ -5220,17 +5220,17 @@ export const pokemon = [{
     "types": [{
       "type": "Inseto"
     }],
-    "images": "./poke-png-G5/121.png",
+    "images": "./poke-png-G5/122.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Shelmet",
         "Lv": 1,
-        "img": "./poke-png-G5/121.png"
+        "img": "./poke-png-G5/122.png"
       },
       {
         "name": "Accelgor",
         "Lv": "Trade with Karrablast",
-        "img": "./poke-png-G5/122.png"
+        "img": "./poke-png-G5/123.png"
       }
     ],
     "superdamange": [{
@@ -5259,17 +5259,17 @@ export const pokemon = [{
     "types": [{
       "type": "Inseto"
     }],
-    "images": "./poke-png-G5/122.png",
+    "images": "./poke-png-G5/123.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Shelmet",
         "Lv": 1,
-        "img": "./poke-png-G5/121.png"
+        "img": "./poke-png-G5/122.png"
       },
       {
         "name": "Accelgor",
         "Lv": "Trade with Karrablast",
-        "img": "./poke-png-G5/122.png"
+        "img": "./poke-png-G5/123.png"
       }
     ],
     "superdamange": [{
@@ -5302,12 +5302,12 @@ export const pokemon = [{
         "type": "Eletrico"
       }
     ],
-    "images": "./poke-png-G5/123.png",
+    "images": "./poke-png-G5/124.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Stunfisk",
       "Lv": 1,
-      "img": "./poke-png-G5/123.png"
+      "img": "./poke-png-G5/124.png"
     }],
     "superdamange": [{
         "type": "Fogo"
@@ -5338,17 +5338,17 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/124.png",
+    "images": "./poke-png-G5/125.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Mienfoo",
         "Lv": 1,
-        "img": "./poke-png-G5/124.png"
+        "img": "./poke-png-G5/125.png"
       },
       {
         "name": "Mienshao",
         "Lv": 50,
-        "img": "./poke-png-G5/125.png"
+        "img": "./poke-png-G5/126.png"
       }
     ],
     "superdamange": [{
@@ -5377,17 +5377,17 @@ export const pokemon = [{
     "types": [{
       "type": "Lutador"
     }],
-    "images": "./poke-png-G5/125.png",
+    "images": "./poke-png-G5/126.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Mienfoo",
         "Lv": 1,
-        "img": "./poke-png-G5/124.png"
+        "img": "./poke-png-G5/125.png"
       },
       {
         "name": "Mienshao",
         "Lv": 50,
-        "img": "./poke-png-G5/125.png"
+        "img": "./poke-png-G5/126.png"
       }
     ],
     "superdamange": [{
@@ -5416,12 +5416,12 @@ export const pokemon = [{
     "types": [{
       "type": "Dragão"
     }],
-    "images": "./poke-png-G5/126.png",
+    "images": "./poke-png-G5/127.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Druddigon",
       "Lv": 1,
-      "img": "./poke-png-G5/126.png"
+      "img": "./poke-png-G5/127.png"
     }],
     "superdamange": [{
         "type": "Gelo"
@@ -5453,17 +5453,17 @@ export const pokemon = [{
         "type": "Fantasma"
       }
     ],
-    "images": "./poke-png-G5/127.png",
+    "images": "./poke-png-G5/128.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Golett",
         "Lv": 1,
-        "img": "./poke-png-G5/127.png"
+        "img": "./poke-png-G5/128.png"
       },
       {
         "name": "Golurk",
         "Lv": 43,
-        "img": "./poke-png-G5/128.png"
+        "img": "./poke-png-G5/129.png"
       }
     ],
     "superdamange": [{
@@ -5502,17 +5502,17 @@ export const pokemon = [{
         "type": "Fantasma"
       }
     ],
-    "images": "./poke-png-G5/128.png",
+    "images": "./poke-png-G5/129.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Golett",
         "Lv": 1,
-        "img": "./poke-png-G5/127.png"
+        "img": "./poke-png-G5/128.png"
       },
       {
         "name": "Golurk",
         "Lv": 43,
-        "img": "./poke-png-G5/128.png"
+        "img": "./poke-png-G5/129.png"
       }
     ],
     "superdamange": [{
@@ -5551,17 +5551,17 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/129.png",
+    "images": "./poke-png-G5/130.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Pawniard",
         "Lv": 1,
-        "img": "./poke-png-G5/129.png"
+        "img": "./poke-png-G5/130.png"
       },
       {
         "name": "Bisharp",
         "Lv": 52,
-        "img": "./poke-png-G5/130.png"
+        "img": "./poke-png-G5/131.png"
       }
     ],
     "superdamange": [{
@@ -5594,17 +5594,17 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/130.png",
+    "images": "./poke-png-G5/131.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Pawniard",
         "Lv": 1,
-        "img": "./poke-png-G5/129.png"
+        "img": "./poke-png-G5/130.png"
       },
       {
         "name": "Bisharp",
         "Lv": 52,
-        "img": "./poke-png-G5/130.png"
+        "img": "./poke-png-G5/131.png"
       }
     ],
     "superdamange": [{
@@ -5633,12 +5633,12 @@ export const pokemon = [{
     "types": [{
       "type": "Normal"
     }],
-    "images": "./poke-png-G5/131.png",
+    "images": "./poke-png-G5/132.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Bouffalant",
       "Lv": 1,
-      "img": "./poke-png-G5/131.png"
+      "img": "./poke-png-G5/132.png"
     }],
     "superdamange": [{
       "type": "Lutador"
@@ -5663,17 +5663,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/132.png",
+    "images": "./poke-png-G5/133.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Rufflet",
         "Lv": 1,
-        "img": "./poke-png-G5/132.png"
+        "img": "./poke-png-G5/133.png"
       },
       {
         "name": "Braviary",
         "Lv": 54,
-        "img": "./poke-png-G5/133.png"
+        "img": "./poke-png-G5/134.png"
       }
     ],
     "superdamange": [{
@@ -5706,17 +5706,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/133.png",
+    "images": "./poke-png-G5/134.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Rufflet",
         "Lv": 1,
-        "img": "./poke-png-G5/132.png"
+        "img": "./poke-png-G5/133.png"
       },
       {
         "name": "Braviary",
         "Lv": 54,
-        "img": "./poke-png-G5/133.png"
+        "img": "./poke-png-G5/134.png"
       }
     ],
     "superdamange": [{
@@ -5749,17 +5749,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/134.png",
+    "images": "./poke-png-G5/135.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Vullaby",
         "Lv": 1,
-        "img": "./poke-png-G5/134.png"
+        "img": "./poke-png-G5/135.png"
       },
       {
         "name": "Mandibuzz",
         "Lv": 54,
-        "img": "./poke-png-G5/135.png"
+        "img": "./poke-png-G5/136.png"
       }
     ],
     "superdamange": [{
@@ -5795,17 +5795,17 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/135.png",
+    "images": "./poke-png-G5/136.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Vullaby",
         "Lv": 1,
-        "img": "./poke-png-G5/134.png"
+        "img": "./poke-png-G5/135.png"
       },
       {
         "name": "Mandibuzz",
         "Lv": 54,
-        "img": "./poke-png-G5/135.png"
+        "img": "./poke-png-G5/136.png"
       }
     ],
     "superdamange": [{
@@ -5837,12 +5837,12 @@ export const pokemon = [{
     "types": [{
       "type": "Fogo"
     }],
-    "images": "./poke-png-G5/136.png",
+    "images": "./poke-png-G5/137.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Heatmor",
       "Lv": 1,
-      "img": "./poke-png-G5/136.png"
+      "img": "./poke-png-G5/137.png"
     }],
     "superdamange": [{
         "type": "Agua"
@@ -5874,12 +5874,12 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/137.png",
+    "images": "./poke-png-G5/138.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Durant",
       "Lv": 1,
-      "img": "./poke-png-G5/137.png"
+      "img": "./poke-png-G5/138.png"
     }],
     "superdamange": [{
       "type": "Fogo"
@@ -5904,22 +5904,22 @@ export const pokemon = [{
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G5/138.png",
+    "images": "./poke-png-G5/139.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Deino",
         "Lv": 1,
-        "img": "./poke-png-G5/138.png"
+        "img": "./poke-png-G5/139.png"
       },
       {
         "name": "Zweilous",
         "Lv": 50,
-        "img": "./poke-png-G5/139.png"
+        "img": "./poke-png-G5/140.png"
       },
       {
         "name": "Hydreigon",
         "Lv": 64,
-        "img": "./poke-png-G5/140.png"
+        "img": "./poke-png-G5/141.png"
       }
     ],
     "superdamange": [{
@@ -5958,22 +5958,22 @@ export const pokemon = [{
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G5/139.png",
+    "images": "./poke-png-G5/140.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Deino",
         "Lv": 1,
-        "img": "./poke-png-G5/138.png"
+        "img": "./poke-png-G5/139.png"
       },
       {
         "name": "Zweilous",
         "Lv": 50,
-        "img": "./poke-png-G5/139.png"
+        "img": "./poke-png-G5/140.png"
       },
       {
         "name": "Hydreigon",
         "Lv": 64,
-        "img": "./poke-png-G5/140.png"
+        "img": "./poke-png-G5/141.png"
       }
     ],
     "superdamange": [{
@@ -6012,22 +6012,22 @@ export const pokemon = [{
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G5/140.png",
+    "images": "./poke-png-G5/141.png",
     "evolutinLine": 111,
     "evolution": [{
         "name": "Deino",
         "Lv": 1,
-        "img": "./poke-png-G5/138.png"
+        "img": "./poke-png-G5/139.png"
       },
       {
         "name": "Zweilous",
         "Lv": 50,
-        "img": "./poke-png-G5/139.png"
+        "img": "./poke-png-G5/140.png"
       },
       {
         "name": "Hydreigon",
         "Lv": 64,
-        "img": "./poke-png-G5/140.png"
+        "img": "./poke-png-G5/141.png"
       }
     ],
     "superdamange": [{
@@ -6066,17 +6066,17 @@ export const pokemon = [{
         "type": "Fogo"
       }
     ],
-    "images": "./poke-png-G5/141.png",
+    "images": "./poke-png-G5/142.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Larvesta",
         "Lv": 1,
-        "img": "./poke-png-G5/141.png"
+        "img": "./poke-png-G5/142.png"
       },
       {
         "name": "Volcarona",
         "Lv": 59,
-        "img": "./poke-png-G5/142.png"
+        "img": "./poke-png-G5/143.png"
       }
     ],
     "superdamange": [{
@@ -6109,17 +6109,17 @@ export const pokemon = [{
         "type": "Fogo"
       }
     ],
-    "images": "./poke-png-G5/142.png",
+    "images": "./poke-png-G5/143.png",
     "evolutinLine": 11,
     "evolution": [{
         "name": "Larvesta",
         "Lv": 1,
-        "img": "./poke-png-G5/141.png"
+        "img": "./poke-png-G5/142.png"
       },
       {
         "name": "Volcarona",
         "Lv": 59,
-        "img": "./poke-png-G5/142.png"
+        "img": "./poke-png-G5/143.png"
       }
     ],
     "superdamange": [{
@@ -6152,12 +6152,12 @@ export const pokemon = [{
         "type": "Lutador"
       }
     ],
-    "images": "./poke-png-G5/143.png",
+    "images": "./poke-png-G5/144.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Cobalion",
       "Lv": 1,
-      "img": "./poke-png-G5/143.png"
+      "img": "./poke-png-G5/144.png"
     }],
     "superdamange": [{
         "type": "Fogo"
@@ -6189,12 +6189,12 @@ export const pokemon = [{
         "type": "Lutador"
       }
     ],
-    "images": "./poke-png-G5/144.png",
+    "images": "./poke-png-G5/145.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Terrakion",
       "Lv": 1,
-      "img": "./poke-png-G5/144.png"
+      "img": "./poke-png-G5/145.png"
     }],
     "superdamange": [{
         "type": "Agua"
@@ -6238,12 +6238,12 @@ export const pokemon = [{
         "type": "Lutador"
       }
     ],
-    "images": "./poke-png-G5/145.png",
+    "images": "./poke-png-G5/146.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Virizion",
       "Lv": 1,
-      "img": "./poke-png-G5/145.png"
+      "img": "./poke-png-G5/146.png"
     }],
     "superdamange": [{
         "type": "Fogo"
@@ -6280,12 +6280,12 @@ export const pokemon = [{
     "types": [{
       "type": "Voador"
     }],
-    "images": "./poke-png-G5/146.png",
+    "images": "./poke-png-G5/147.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Tornadus",
       "Lv": 1,
-      "img": "./poke-png-G5/146.png"
+      "img": "./poke-png-G5/147.png"
     }],
     "superdamange": [{
         "type": "Eletrico"
@@ -6317,12 +6317,12 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/147.png",
+    "images": "./poke-png-G5/148.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Thundurus",
       "Lv": 1,
-      "img": "./poke-png-G5/147.png"
+      "img": "./poke-png-G5/148.png"
     }],
     "superdamange": [{
         "type": "Gelo"
@@ -6351,12 +6351,12 @@ export const pokemon = [{
         "type": "Fogo"
       }
     ],
-    "images": "./poke-png-G5/148.png",
+    "images": "./poke-png-G5/149.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Reshiram",
       "Lv": 1,
-      "img": "./poke-png-G5/148.png"
+      "img": "./poke-png-G5/149.png"
     }],
     "superdamange": [{
         "type": "Terra"
@@ -6388,12 +6388,12 @@ export const pokemon = [{
         "type": "Eletrico"
       }
     ],
-    "images": "./poke-png-G5/149.png",
+    "images": "./poke-png-G5/150.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Zekrom",
       "Lv": 1,
-      "img": "./poke-png-G5/149.png"
+      "img": "./poke-png-G5/150.png"
     }],
     "superdamange": [{
         "type": "Gelo"
@@ -6428,12 +6428,12 @@ export const pokemon = [{
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G5/150.png",
+    "images": "./poke-png-G5/151.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Landorus",
       "Lv": 1,
-      "img": "./poke-png-G5/150.png"
+      "img": "./poke-png-G5/151.png"
     }],
     "superdamange": [{
         "type": "Agua"
@@ -6462,12 +6462,12 @@ export const pokemon = [{
         "type": "Gelo"
       }
     ],
-    "images": "./poke-png-G5/151.png",
+    "images": "./poke-png-G5/152.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Kyurem",
       "Lv": 1,
-      "img": "./poke-png-G5/151.png"
+      "img": "./poke-png-G5/152.png"
     }],
     "superdamange": [{
         "type": "Lutador"
@@ -6505,12 +6505,12 @@ export const pokemon = [{
         "type": "Lutador"
       }
     ],
-    "images": "./poke-png-G5/152.png",
+    "images": "./poke-png-G5/153.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Keldeo",
       "Lv": 1,
-      "img": "./poke-png-G5/152.png"
+      "img": "./poke-png-G5/153.png"
     }],
     "superdamange": [{
         "type": "Eletrico"
@@ -6548,12 +6548,12 @@ export const pokemon = [{
         "type": "Pisquico"
       }
     ],
-    "images": "./poke-png-G5/153.png",
+    "images": "./poke-png-G5/154.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Meloetta",
       "Lv": 1,
-      "img": "./poke-png-G5/153.png"
+      "img": "./poke-png-G5/154.png"
     }],
     "superdamange": [{
         "type": "Inseto"
@@ -6582,12 +6582,12 @@ export const pokemon = [{
         "type": "Metal"
       }
     ],
-    "images": "./poke-png-G5/154.png",
+    "images": "./poke-png-G5/155.png",
     "evolutinLine": 1,
     "evolution": [{
       "name": "Genesect",
       "Lv": 1,
-      "img": "./poke-png-G5/154.png"
+      "img": "./poke-png-G5/155.png"
     }],
     "superdamange": [{
       "type": "Fogo"

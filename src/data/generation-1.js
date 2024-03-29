@@ -6486,17 +6486,17 @@ export const pokemon = [
         {
           "name": "Leafeon",
           "Lv": "Leaf Stone",
-          "img": "./poke-png-G4/083.png"
+          "img": "./poke-png-G4/084.png"
         },
         {
           "name": "Glaceon",
           "Lv": "Ice Stone",
-          "img": "./poke-png-G4/084.png"
+          "img": "./poke-png-G4/085.png"
         },
         {
           "name": "Sylveon",
           "Lv": "high friendship in Gen 8+",
-          "img": "./poke-png-G6/050.png"
+          "img": "./poke-png-G6/051.png"
         }
       ],
       "superdamange": [

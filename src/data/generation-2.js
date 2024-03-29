@@ -1107,7 +1107,7 @@ export const pokemon = [
       {
         "name": "Togekiss",
         "Lv": "use Shiny Stone",
-        "img": "./poke-png-G4/081.png"
+        "img": "./poke-png-G4/082.png"
       }
     ],
     "superdamange": [
