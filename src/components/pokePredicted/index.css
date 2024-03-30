@@ -1,20 +1,20 @@
 @keyframes loading {
     0% {
-        border-left-color: black;
+        border-left-color: rgba(0, 0, 0, 0);
     }
 
     33% {
-        border-top-color: black;
+        border-top-color: rgba(0, 0, 0, 0);
 
     }
 
     66% {
-        border-right-color: black;
+        border-right-color: rgba(0, 0, 0, 0);
 
     }
 
     100% {
-        border-bottom-color: black;
+        border-bottom-color: rgba(0, 0, 0, 0);
 
     }
 }

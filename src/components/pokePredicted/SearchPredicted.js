@@ -34,7 +34,7 @@ export default function SearchPredicted(propsPredictedData) {
                 predictedData.map((element, index) => (
                     <li
                         onClick={()=>openPokedex(
-                            element.name,
+                            element.pokedex,
                             allDataPoke,
                             setPokedex
                         )}

@@ -1,11 +1,11 @@
-import {
-    searchOfName
-} from "./filterOfName";
+import { searchOfNumber } from "./filterOfNumber";
 
-export const openPokedex = (propsName, propsAllDataPoke, propsSetPokedex) => {
+export const openPokedex = (propsPokedex, propsAllDataPoke, propsSetPokedex) => {
+    const pokedex = isNaN(propsPokedex) ?(propsPokedex.split("#")[1]):(propsPokedex);
+    console.log(pokedex);
     propsSetPokedex({
         status: true,
-        data: searchOfName(propsName, propsAllDataPoke, 1)
+        data: searchOfNumber(pokedex, propsAllDataPoke, 1)
     });
     window.scrollTo({
         top: 0,

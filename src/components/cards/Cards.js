@@ -16,7 +16,7 @@ export default function Cards() {
                 getData.map((element, index) => (
                     <li
                         onClick={()=> openPokedex(
-                            element.name,
+                            element.number,
                             allDataPoke,
                             setPokedex
                         )}

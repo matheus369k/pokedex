@@ -913,7 +913,7 @@ export const pokemon = [
     },
     {
       "name": "Rattata",
-      "number": "#019",
+      "number": "#0019",
       "types": [
         {
           "type": "Normal"

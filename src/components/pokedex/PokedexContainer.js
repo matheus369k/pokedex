@@ -20,13 +20,14 @@ export default function Pokedex(propsPoke) {
             behavior: "smooth"
         });
     };
+    console.log(propsPoke.infor.data);
     return (
         <>
             {
                 propsPoke.infor.data.map(element => (
-                    <div
+                    <div 
                         className="pokedex_container pokedex_loading"
-                        key={"pokedex:"+element.name}
+                        key={"pokedex"+element.name}
                     >
                         <BasicInfor 
                             dataName={element.name}
@@ -36,17 +37,24 @@ export default function Pokedex(propsPoke) {
                             dataDescription={element.description}
                         />
                         <PokeImg 
-                            dataImages={element.images} 
-                            dataName={element.name} 
+                            dataImages={element.images}
+                            dataName={element.name}
                         />
-                        <Status data={element.baseStats}/> 
-                        <Evoluitons data={element.evolution} evolutinLine={element.evolutinLine}/>
-                        <i 
+                        <Status 
+                            dataStatus={element.baseStats}
+                        /> 
+                        <Evoluitons 
+                            dataEvolution={element.evolution} 
+                            evolutinLine={element.evolutinLine}
+                        />
+                        <i
                             onClick={()=>closePokedex()}
-                        ><FcPrevious /></i>
+                        >
+                            <FcPrevious />
+                        </i>
                     </div>
                 ))
-            }; 
+            }
         </>
     );
 }

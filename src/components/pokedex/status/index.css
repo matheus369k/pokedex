@@ -1,12 +1,14 @@
-.pokedex_loading .status_basic {
-    display: none;
-}
-
 .status_basic {
     grid-row: 2;
     grid-column: 1;
     width: 337px;
     height: max-content;
+    opacity: 1;
+    transition: all .7s ease-in-out;
+}
+
+.pokedex_loading .status_basic {
+    opacity: 0;
 }
 
 .status_basic h1 {

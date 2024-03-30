@@ -3,13 +3,15 @@ import "./index.css";
 
 export default function Evoluitons(getData) {
     return (
-        <div className="evolutions_container">
+        <div 
+            className="evolutions_container"
+        >
             <h1>Evoluções:</h1>
             <ul
                 className={`evolutin-line-${getData.evolutinLine}`}
             >
                 {
-                    getData.data.map((element, index) => (
+                    getData.dataEvolution.map((element, index) => (
                         <li
                             className={`evolutin number-evo-${index+1}`}
                             key={"evolutin-"+index}

@@ -10,7 +10,7 @@ export default function PokeImg(getData) {
                 "pokedex_loading",
                 1,
                 ".pokedex_container"
-            )} 
+            )}
             className="img_container" 
             src={getData.dataImages} 
             alt={`Pokedex ${getData.dataName}`} 
