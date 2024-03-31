@@ -4,6 +4,7 @@ import Search from "./components/search/Seach";
 import {generation_1} from "./data/index";
 import Cards from "./components/cards/Cards";
 import Pokedex from "./components/pokedex/PokedexContainer";
+import BackScrollTop from "./components/backScrollTop/BackScrollTop";
 
 export const ContextPokemons = createContext(null);
 export const ContextPokedex = createContext(null);
@@ -22,6 +23,7 @@ function App() {
         </header>
         <main>
           {getPokedex.status ? <Pokedex infor={getPokedex} />:<Cards />}
+          <BackScrollTop />
         </main>
       </ContextPokedex.Provider>
     </ContextPokemons.Provider>

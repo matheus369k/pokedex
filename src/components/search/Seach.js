@@ -42,7 +42,7 @@ export default function Seach() {
     };
 
     return (
-        <>
+        <div className="search-container">
             <form 
                 onSubmit={handleSubmit(onSubmit)}   
                 className = "form_container" 
@@ -67,6 +67,6 @@ export default function Seach() {
             />
             </form>
             <SearchPredicted data={{getPredictedData, setPredictedData}}/>
-        </>
+        </div>
     );
 }

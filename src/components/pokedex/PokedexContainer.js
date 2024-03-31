@@ -20,7 +20,6 @@ export default function Pokedex(propsPoke) {
             behavior: "smooth"
         });
     };
-    console.log(propsPoke.infor.data);
     return (
         <>
             {

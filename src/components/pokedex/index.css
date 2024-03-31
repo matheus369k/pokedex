@@ -34,9 +34,13 @@
     grid-row: 3;
     width: max-content;
     height: max-content;
+    transition: all .7s;
     cursor: pointer;
 }
 
+.pokedex_container i:hover {
+  transform: scale(1.1);
+}
 .pokedex_container svg {
     font-size: 3rem;
 }
