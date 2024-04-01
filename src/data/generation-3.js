@@ -1951,12 +1951,12 @@ export const pokemon = [
       {
         "name": "Ninjask",
         "Lv": "Level 20, empty spot in party, Pokéball in bag",
-        "img": "./poke-png-G3/041.png"
+        "img": "./poke-png-G3/040.png"
       },
       {
         "name": "Shedinja",
         "Lv": "+",
-        "img": "./poke-png-G3/042.png"
+        "img": "./poke-png-G3/041.png"
       }
     ],
     "superdamange": [
@@ -2341,12 +2341,12 @@ export const pokemon = [
       {
         "name": "Marill",
         "Lv": "high Friendship",
-        "img": "./poke-png-G1/032.png"
+        "img": "./poke-png-G2/032.png"
       },
       {
         "name": "Azumarill",
         "Lv": 18,
-        "img": "./poke-png-G1/033.png"
+        "img": "./poke-png-G2/033.png"
       }
     ],
     "superdamange": [
@@ -4821,7 +4821,7 @@ export const pokemon = [
       {
         "name": "Dusknoir",
         "Lv": "trade holding Reaper Cloth",
-        "img": "./poke-png-G4/090.png"
+        "img": "./poke-png-G4/091.png"
       }
     ],
     "superdamange": [
@@ -4866,7 +4866,7 @@ export const pokemon = [
       {
         "name": "Dusknoir",
         "Lv": "trade holding Reaper Cloth",
-        "img": "./poke-png-G4/090.png"
+        "img": "./poke-png-G4/091.png"
       }
     ],
     "superdamange": [
@@ -4948,7 +4948,7 @@ export const pokemon = [
       {
         "name": "Chingling",
         "Lv": 1,
-        "img": "./poke-png-G4/046.png"
+        "img": "./poke-png-G4/047.png"
       },
       {
         "name": "Chimecho",
@@ -5077,12 +5077,12 @@ export const pokemon = [
       {
         "name": "Glalie",
         "Lv": 42,
-        "img": "./poke-png-G1/111.png"
+        "img": "./poke-png-G3/111.png"
       },
       {
         "name": "Froslass",
         "Lv": "use Dawn Stone, Female",
-        "img": "./poke-png-G4/091.png"
+        "img": "./poke-png-G4/092.png"
       }
     ],
     "superdamange": [
@@ -5128,12 +5128,12 @@ export const pokemon = [
       {
         "name": "Glalie",
         "Lv": 42,
-        "img": "./poke-png-G1/111.png"
+        "img": "./poke-png-G3/111.png"
       },
       {
         "name": "Froslass",
         "Lv": "use Dawn Stone, Female",
-        "img": "./poke-png-G4/091.png"
+        "img": "./poke-png-G4/092.png"
       }
     ],
     "superdamange": [

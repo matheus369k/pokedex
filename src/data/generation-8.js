@@ -2551,7 +2551,7 @@ export const pokemon = [
       {
         "name": "Corsola",
         "Lv": 1,
-        "img": "./poke-png-G1/071.png"
+        "img": "./poke-png-G2/071.png"
       },
       {
         "name": "Cursola",
@@ -2632,12 +2632,17 @@ export const pokemon = [
       }
     ],
     "images": "./poke-png-G8/057.png",
-    "evolutinLine": 111,
+    "evolutinLine": 121,
     "evolution": [
       {
         "name": "Mime Jr.",
         "Lv": 1,
         "img": "./poke-png-G4/053.png"
+      },
+      {
+        "name": "Mr. Mime",
+        "Lv": "after Mimic learned",
+        "img": "./poke-png-G1/122.png"
       },
       {
         "name": "Mr. Mime",
@@ -2692,17 +2697,21 @@ export const pokemon = [
       }
     ],
     "images": "./poke-png-G8/058.png",
-    "evolutinLine": 11,
-    "evolution": [
-      {
-        "name": "Yamask",
+    "evolutinLine": 12,
+    "evolution": [{
+        "name": "Sigilyph",
         "Lv": 1,
+        "img": "./poke-png-G5/068.png"
+      },
+      {
+        "name": "Cofagrigus",
+        "Lv": 34,
         "img": "./poke-png-G5/069.png"
       },
       {
         "name": "Runerigus",
         "Lv": "near Dusty Bowl",
-        "img": "./poke-png-G8/58.png"
+        "img": "./poke-png-G8/058.png"
       }
     ],
     "superdamange": [
@@ -4235,7 +4244,7 @@ export const pokemon = [
       {
         "name": "Basculin",
         "Lv": 1,
-        "img": "./poke-png-G5/058.png"
+        "img": "./poke-png-G5/056.png"
       },
       {
         "name": "Basculegion",

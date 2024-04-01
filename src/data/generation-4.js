@@ -2155,12 +2155,12 @@ export const pokemon = [
       {
         "name": "Chingling",
         "Lv": 1,
-        "img": "./poke-png-G3/106.png"
+        "img": "./poke-png-G4/047.png"
       },
       {
         "name": "Chimecho",
         "Lv": "high Friendship, Nighttime",
-        "img": "./poke-png-G4/047.png"
+        "img": "./poke-png-G3/107.png"
       }
     ],
     "superdamange": [
@@ -2417,7 +2417,7 @@ export const pokemon = [
       }
     ],
     "images": "./poke-png-G4/053.png",
-    "evolutinLine": 11,
+    "evolutinLine": 121,
     "evolution": [
       {
         "name": "Mime Jr.",
@@ -2428,6 +2428,16 @@ export const pokemon = [
         "name": "Mr. Mime",
         "Lv": "after Mimic learned",
         "img": "./poke-png-G1/122.png"
+      },
+      {
+        "name": "Mr. Mime",
+        "Lv": "after Mimic learned, in Galar",
+        "img": "./GalarAlola-version/122.png"
+      },
+      {
+        "name": "Mr. Rime",
+        "Lv": 42,
+        "img": "./poke-png-G8/057.png"
       }
     ],
     "superdamange": [
@@ -2741,7 +2751,7 @@ export const pokemon = [
       {
         "name": "Snorlax",
         "Lv": "high Friendship",
-        "img": "./poke-png-G1/0143.png"
+        "img": "./poke-png-G1/143.png"
       }
     ],
     "superdamange": [
@@ -3261,7 +3271,7 @@ export const pokemon = [
       {
         "name": "Mantine",
         "Lv": "with Remoraid in party",
-        "img": "./poke-png-G2/105.png"
+        "img": "./poke-png-G2/075.png"
       }
     ],
     "superdamange": [
@@ -3757,12 +3767,12 @@ export const pokemon = [
       {
         "name": "Togepi",
         "Lv": 1,
-        "img": "./poke-png-G2/014.png"
+        "img": "./poke-png-G2/024.png"
       },
       {
         "name": "Togetic",
         "Lv": "high Friendship",
-        "img": "./poke-png-G2/015.png"
+        "img": "./poke-png-G2/025.png"
       },
       {
         "name": "Togekiss",
@@ -3903,7 +3913,7 @@ export const pokemon = [
       {
         "name": "Sylveon",
         "Lv": "high friendship in Gen 8+",
-        "img": "./poke-png-G6/051.png"
+        "img": "./poke-png-G6/052.png"
       }
     ],
     "superdamange": [
@@ -3987,7 +3997,7 @@ export const pokemon = [
       {
         "name": "Sylveon",
         "Lv": "high friendship in Gen 8+",
-        "img": "./poke-png-G6/051.png"
+        "img": "./poke-png-G6/052.png"
       }
     ],
     "superdamange": [
@@ -4173,17 +4183,17 @@ export const pokemon = [
       {
         "name": "Ralts",
         "Lv": 1,
-        "img": "./poke-png-G3/028.png"
+        "img": "./poke-png-G3/029.png"
       },
       {
         "name": "Kirlia",
         "Lv": 20,
-        "img": "./poke-png-G3/029.png"
+        "img": "./poke-png-G3/030.png"
       },
       {
         "name": "Gardevoir",
         "Lv": 30,
-        "img": "./poke-png-G3/030.png"
+        "img": "./poke-png-G3/031.png"
       },
       {
         "name": "Gallade",
@@ -4229,7 +4239,7 @@ export const pokemon = [
       {
         "name": "Nosepass",
         "Lv": 1,
-        "img": "./poke-png-G3/047.png"
+        "img": "./poke-png-G3/048.png"
       },
       {
         "name": "Probopass",
@@ -4320,12 +4330,12 @@ export const pokemon = [
       {
         "name": "Snorunt",
         "Lv": 1,
-        "img": "./poke-png-G3/109.png"
+        "img": "./poke-png-G3/110.png"
       },
       {
         "name": "Glalie",
         "Lv": 42,
-        "img": "./poke-png-G3/110.png"
+        "img": "./poke-png-G3/111.png"
       },
       {
         "name": "Froslass",

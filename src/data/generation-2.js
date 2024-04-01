@@ -776,7 +776,7 @@ export const pokemon = [
       {
         "name": "Spinarak",
         "Lv": 1,
-        "img": "./poke-png-G2/017.png"
+        "img": "./poke-png-G2/016.png"
       },
       {
         "name": "Ariados",
@@ -1542,7 +1542,7 @@ export const pokemon = [
       {
         "name": "Azurill",
         "Lv": 1,
-        "img": "./poke-png-G3/046.png"
+        "img": "./poke-png-G3/047.png"
       },
       {
         "name": "Marill",
@@ -2167,7 +2167,7 @@ export const pokemon = [
       {
         "name": "Sylveon",
         "Lv": "high friendship in Gen 8+",
-        "img": "./poke-png-G6/051.png"
+        "img": "./poke-png-G6/052.png"
       }
     ],
     "superdamange": [
@@ -2245,7 +2245,7 @@ export const pokemon = [
       {
         "name": "Sylveon",
         "Lv": "high friendship in Gen 8+",
-        "img": "./poke-png-G6/051.png"
+        "img": "./poke-png-G6/052.png"
       }
     ],
     "superdamange": [
@@ -2467,7 +2467,7 @@ export const pokemon = [
       {
         "name": "Wynaut",
         "Lv": 1,
-        "img": "./poke-png-G3/108.png"
+        "img": "./poke-png-G3/109.png"
       },
       {
         "name": "Wobbuffet",
@@ -3070,7 +3070,7 @@ export const pokemon = [
       },
       {
         "name": "Ursaluna",
-        "Lv": "use Peat Block, under a full moon, in Legends: Arceus)",
+        "Lv": "use Peat Block, under a full moon",
         "img": "./poke-png-G8/092.png"
       }
     ],
@@ -3112,7 +3112,7 @@ export const pokemon = [
       },
       {
         "name": "Ursaluna",
-        "Lv": "use Peat Block, under a full moon, in Legends: Arceus)",
+        "Lv": "use Peat Block, under a full moon",
         "img": "./poke-png-G8/092.png"
       }
     ],
@@ -3307,7 +3307,7 @@ export const pokemon = [
       {
         "name": "Mamoswine",
         "Lv": "after Ancient Power learned",
-        "img": "./poke-png-G4/086.png"
+        "img": "./poke-png-G4/087.png"
       }
     ],
     "superdamange": [
@@ -3359,7 +3359,7 @@ export const pokemon = [
       {
         "name": "Cursola",
         "Lv": 38,
-        "img": "./poke-png-G8/056.png"
+        "img": "./poke-png-G8/055.png"
       }
     ],
     "superdamange": [
@@ -3847,7 +3847,7 @@ export const pokemon = [
       {
         "name": "Porygon-Z",
         "Lv": "trade holding Dubious Disc",
-        "img": "./poke-png-G4/087.png"
+        "img": "./poke-png-G4/088.png"
       }
     ],
     "superdamange": [
@@ -4231,7 +4231,7 @@ export const pokemon = [
       {
         "name": "Happiny",
         "Lv": 1,
-        "img": "./poke-png-G4/053.png"
+        "img": "./poke-png-G4/054.png"
       },
       {
         "name": "Chansey",

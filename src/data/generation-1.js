@@ -5758,7 +5758,7 @@ export const pokemon = [
         }
       ],
       "images": "./poke-png-G1/122.png",
-      "evolutinLine": 11,
+      "evolutinLine": 121,
       "evolution": [
         {
           "name": "Mime Jr.",
@@ -5769,6 +5769,16 @@ export const pokemon = [
           "name": "Mr. Mime",
           "Lv": "after Mimic learned",
           "img": "./poke-png-G1/122.png"
+        },
+        {
+          "name": "Mr. Mime",
+          "Lv": "after Mimic learned, in Galar",
+          "img": "./GalarAlola-version/122.png"
+        },
+        {
+          "name": "Mr. Rime",
+          "Lv": 42,
+          "img": "./poke-png-G8/057.png"
         }
       ],
       "superdamange": [
@@ -6277,7 +6287,7 @@ export const pokemon = [
         {
           "name": "Sylveon",
           "Lv": "high friendship in Gen 8+",
-          "img": "./poke-png-G6/051.png"
+          "img": "./poke-png-G6/052.png"
         }
       ],
       "superdamange": [
@@ -6349,7 +6359,7 @@ export const pokemon = [
         {
           "name": "Sylveon",
           "Lv": "high friendship in Gen 8+",
-          "img": "./poke-png-G6/051.png"
+          "img": "./poke-png-G6/052.png"
         }
       ],
       "superdamange": [
@@ -6424,7 +6434,7 @@ export const pokemon = [
         {
           "name": "Sylveon",
           "Lv": "high friendship in Gen 8+",
-          "img": "./poke-png-G6/051.png"
+          "img": "./poke-png-G6/052.png"
         }
       ],
       "superdamange": [
@@ -6496,7 +6506,7 @@ export const pokemon = [
         {
           "name": "Sylveon",
           "Lv": "high friendship in Gen 8+",
-          "img": "./poke-png-G6/051.png"
+          "img": "./poke-png-G6/052.png"
         }
       ],
       "superdamange": [

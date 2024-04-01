@@ -2089,18 +2089,18 @@ export const pokemon = [
         "type": "Normal"
       }
     ],
-    "images": "./poke-png-G6/045.png",
+    "images": "./poke-png-G6/046.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Helioptile",
         "Lv": 1,
-        "img": "./poke-png-G6/045.png"
+        "img": "./poke-png-G6/046.png"
       },
       {
         "name": "Heliolisk",
         "Lv": "use Sun Stone",
-        "img": "./poke-png-G6/046.png"
+        "img": "./poke-png-G6/047.png"
       }
     ],
     "superdamange": [
@@ -2135,18 +2135,18 @@ export const pokemon = [
         "type": "Normal"
       }
     ],
-    "images": "./poke-png-G6/046.png",
+    "images": "./poke-png-G6/047.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Helioptile",
         "Lv": 1,
-        "img": "./poke-png-G6/045.png"
+        "img": "./poke-png-G6/046.png"
       },
       {
         "name": "Heliolisk",
         "Lv": "use Sun Stone",
-        "img": "./poke-png-G6/046.png"
+        "img": "./poke-png-G6/047.png"
       }
     ],
     "superdamange": [
@@ -2181,18 +2181,18 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/047.png",
+    "images": "./poke-png-G6/048.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Tyrunt",
         "Lv": 1,
-        "img": "./poke-png-G6/047.png"
+        "img": "./poke-png-G6/048.png"
       },
       {
         "name": "Tyrantrum",
         "Lv": "Level 39, Daytime",
-        "img": "./poke-png-G6/048.png"
+        "img": "./poke-png-G6/049.png"
       }
     ],
     "superdamange": [
@@ -2236,18 +2236,18 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/048.png",
+    "images": "./poke-png-G6/049.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Tyrunt",
         "Lv": 1,
-        "img": "./poke-png-G6/047.png"
+        "img": "./poke-png-G6/048.png"
       },
       {
         "name": "Tyrantrum",
         "Lv": "Level 39, Daytime",
-        "img": "./poke-png-G6/048.png"
+        "img": "./poke-png-G6/049.png"
       }
     ],
     "superdamange": [
@@ -2291,18 +2291,18 @@ export const pokemon = [
         "type": "Gelo"
       }
     ],
-    "images": "./poke-png-G6/049.png",
+    "images": "./poke-png-G6/050.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Amaura",
         "Lv": 1,
-        "img": "./poke-png-G6/049.png"
+        "img": "./poke-png-G6/050.png"
       },
       {
         "name": "Aurorus",
         "Lv": "Level 39, Nighttime",
-        "img": "./poke-png-G6/050.png"
+        "img": "./poke-png-G6/051.png"
       }
     ],
     "superdamange": [
@@ -2346,18 +2346,18 @@ export const pokemon = [
         "type": "Gelo"
       }
     ],
-    "images": "./poke-png-G6/050.png",
-    "evolutinLine": 112,
+    "images": "./poke-png-G6/051.png",
+    "evolutinLine": 11,
     "evolution": [
       {
         "name": "Amaura",
         "Lv": 1,
-        "img": "./poke-png-G6/049.png"
+        "img": "./poke-png-G6/050.png"
       },
       {
         "name": "Aurorus",
         "Lv": "Level 39, Nighttime",
-        "img": "./poke-png-G6/050.png"
+        "img": "./poke-png-G6/051.png"
       }
     ],
     "superdamange": [
@@ -2398,7 +2398,7 @@ export const pokemon = [
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G6/051.png",
+    "images": "./poke-png-G6/052.png",
     "evolutinLine": 18,
     "evolution": [
       {
@@ -2444,7 +2444,7 @@ export const pokemon = [
       {
         "name": "Sylveon",
         "Lv": "high friendship in Gen 8+",
-        "img": "./poke-png-G6/051.png"
+        "img": "./poke-png-G6/052.png"
       }
     ],
     "superdamange": [
@@ -2476,13 +2476,13 @@ export const pokemon = [
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G6/052.png",
+    "images": "./poke-png-G6/053.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Hawlucha",
         "Lv": 1,
-        "img": "./poke-png-G6/052.png"
+        "img": "./poke-png-G6/053.png"
       }
     ],
     "superdamange": [
@@ -2523,13 +2523,13 @@ export const pokemon = [
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G6/053.png",
+    "images": "./poke-png-G6/054.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Dedenne",
         "Lv": 1,
-        "img": "./poke-png-G6/053.png"
+        "img": "./poke-png-G6/054.png"
       }
     ],
     "superdamange": [
@@ -2561,13 +2561,13 @@ export const pokemon = [
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G6/054.png",
+    "images": "./poke-png-G6/055.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Carbink",
         "Lv": 1,
-        "img": "./poke-png-G6/054.png"
+        "img": "./poke-png-G6/055.png"
       }
     ],
     "superdamange": [
@@ -2602,23 +2602,23 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/055.png",
+    "images": "./poke-png-G6/056.png",
     "evolutinLine": 111,
     "evolution": [
       {
         "name": "Goomy",
         "Lv": 1,
-        "img": "./poke-png-G6/055.png"
+        "img": "./poke-png-G6/056.png"
       },
       {
         "name": "Sliggoo",
         "Lv": 40,
-        "img": "./poke-png-G6/056.png"
+        "img": "./poke-png-G6/057.png"
       },
       {
         "name": "Goodra",
         "Lv": "Level 50, during rain",
-        "img": "./poke-png-G6/057.png"
+        "img": "./poke-png-G6/058.png"
       }
     ],
     "superdamange": [
@@ -2650,23 +2650,23 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/056.png",
+    "images": "./poke-png-G6/057.png",
     "evolutinLine": 111,
     "evolution": [
       {
         "name": "Goomy",
         "Lv": 1,
-        "img": "./poke-png-G6/055.png"
+        "img": "./poke-png-G6/056.png"
       },
       {
         "name": "Sliggoo",
         "Lv": 40,
-        "img": "./poke-png-G6/056.png"
+        "img": "./poke-png-G6/057.png"
       },
       {
         "name": "Goodra",
         "Lv": "Level 50, during rain",
-        "img": "./poke-png-G6/057.png"
+        "img": "./poke-png-G6/058.png"
       }
     ],
     "superdamange": [
@@ -2698,23 +2698,23 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/057.png",
+    "images": "./poke-png-G6/058.png",
     "evolutinLine": 111,
     "evolution": [
       {
         "name": "Goomy",
         "Lv": 1,
-        "img": "./poke-png-G6/055.png"
+        "img": "./poke-png-G6/056.png"
       },
       {
         "name": "Sliggoo",
         "Lv": 40,
-        "img": "./poke-png-G6/056.png"
+        "img": "./poke-png-G6/057.png"
       },
       {
         "name": "Goodra",
         "Lv": "Level 50, during rain",
-        "img": "./poke-png-G6/057.png"
+        "img": "./poke-png-G6/058.png"
       }
     ],
     "superdamange": [
@@ -2749,13 +2749,13 @@ export const pokemon = [
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G6/058.png",
+    "images": "./poke-png-G6/059.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Klefki",
         "Lv": 1,
-        "img": "./poke-png-G6/058.png"
+        "img": "./poke-png-G6/059.png"
       }
     ],
     "superdamange": [
@@ -2787,18 +2787,18 @@ export const pokemon = [
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G6/059.png",
+    "images": "./poke-png-G6/060.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Phantump",
         "Lv": 1,
-        "img": "./poke-png-G6/059.png"
+        "img": "./poke-png-G6/060.png"
       },
       {
         "name": "Trevenant",
         "Lv": "Trade",
-        "img": "./poke-png-G6/060.png"
+        "img": "./poke-png-G6/061.png"
       }
     ],
     "superdamange": [
@@ -2839,18 +2839,18 @@ export const pokemon = [
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G6/060.png",
+    "images": "./poke-png-G6/061.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Phantump",
         "Lv": 1,
-        "img": "./poke-png-G6/059.png"
+        "img": "./poke-png-G6/060.png"
       },
       {
         "name": "Trevenant",
         "Lv": "Trade",
-        "img": "./poke-png-G6/060.png"
+        "img": "./poke-png-G6/061.png"
       }
     ],
     "superdamange": [
@@ -2891,18 +2891,18 @@ export const pokemon = [
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G6/061.png",
+    "images": "./poke-png-G6/062.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Pumpkaboo",
         "Lv": 1,
-        "img": "./poke-png-G6/061.png"
+        "img": "./poke-png-G6/062.png"
       },
       {
         "name": "Gourgeist",
         "Lv": "Trade",
-        "img": "./poke-png-G6/062.png"
+        "img": "./poke-png-G6/063.png"
       }
     ],
     "superdamange": [
@@ -2943,18 +2943,18 @@ export const pokemon = [
         "type": "Grama"
       }
     ],
-    "images": "./poke-png-G6/062.png",
+    "images": "./poke-png-G6/063.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Pumpkaboo",
         "Lv": 1,
-        "img": "./poke-png-G6/061.png"
+        "img": "./poke-png-G6/062.png"
       },
       {
         "name": "Gourgeist",
         "Lv": "Trade",
-        "img": "./poke-png-G6/062.png"
+        "img": "./poke-png-G6/063.png"
       }
     ],
     "superdamange": [
@@ -2992,18 +2992,18 @@ export const pokemon = [
         "type": "Gelo"
       }
     ],
-    "images": "./poke-png-G6/063.png",
+    "images": "./poke-png-G6/064.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Bergmite",
         "Lv": 1,
-        "img": "./poke-png-G6/063.png"
+        "img": "./poke-png-G6/064.png"
       },
       {
         "name": "Avalugg",
         "Lv": 37,
-        "img": "./poke-png-G6/064.png"
+        "img": "./poke-png-G6/065.png"
       }
     ],
     "superdamange": [
@@ -3038,18 +3038,18 @@ export const pokemon = [
         "type": "Gelo"
       }
     ],
-    "images": "./poke-png-G6/064.png",
+    "images": "./poke-png-G6/065.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Bergmite",
         "Lv": 1,
-        "img": "./poke-png-G6/063.png"
+        "img": "./poke-png-G6/064.png"
       },
       {
         "name": "Avalugg",
         "Lv": 37,
-        "img": "./poke-png-G6/064.png"
+        "img": "./poke-png-G6/065.png"
       }
     ],
     "superdamange": [
@@ -3087,18 +3087,18 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/065.png",
+    "images": "./poke-png-G6/066.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Noibat",
         "Lv": 1,
-        "img": "./poke-png-G6/065.png"
+        "img": "./poke-png-G6/066.png"
       },
       {
         "name": "Noivern",
         "Lv": 48,
-        "img": "./poke-png-G6/066.png"
+        "img": "./poke-png-G6/067.png"
       }
     ],
     "superdamange": [
@@ -3136,18 +3136,18 @@ export const pokemon = [
         "type": "Dragão"
       }
     ],
-    "images": "./poke-png-G6/066.png",
+    "images": "./poke-png-G6/067.png",
     "evolutinLine": 11,
     "evolution": [
       {
         "name": "Noibat",
         "Lv": 1,
-        "img": "./poke-png-G6/065.png"
+        "img": "./poke-png-G6/066.png"
       },
       {
         "name": "Noivern",
         "Lv": 48,
-        "img": "./poke-png-G6/066.png"
+        "img": "./poke-png-G6/067.png"
       }
     ],
     "superdamange": [
@@ -3182,13 +3182,13 @@ export const pokemon = [
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G6/067.png",
+    "images": "./poke-png-G6/068.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Xerneas",
         "Lv": 1,
-        "img": "./poke-png-G6/067.png"
+        "img": "./poke-png-G6/068.png"
       }
     ],
     "superdamange": [
@@ -3220,13 +3220,13 @@ export const pokemon = [
         "type": "Voador"
       }
     ],
-    "images": "./poke-png-G6/068.png",
+    "images": "./poke-png-G6/069.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Yveltal",
         "Lv": 1,
-        "img": "./poke-png-G6/068.png"
+        "img": "./poke-png-G6/069.png"
       }
     ],
     "superdamange": [
@@ -3264,13 +3264,13 @@ export const pokemon = [
         "type": "Terra"
       }
     ],
-    "images": "./poke-png-G6/069.png",
+    "images": "./poke-png-G6/070.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Zygarde",
         "Lv": 1,
-        "img": "./poke-png-G6/069.png"
+        "img": "./poke-png-G6/070.png"
       }
     ],
     "superdamange": [
@@ -3305,13 +3305,13 @@ export const pokemon = [
         "type": "Fada"
       }
     ],
-    "images": "./poke-png-G6/070.png",
+    "images": "./poke-png-G6/071.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Diancie",
         "Lv": 1,
-        "img": "./poke-png-G6/070.png"
+        "img": "./poke-png-G6/071.png"
       }
     ],
     "superdamange": [
@@ -3349,13 +3349,13 @@ export const pokemon = [
         "type": "Fantasma"
       }
     ],
-    "images": "./poke-png-G6/071.png",
+    "images": "./poke-png-G6/072.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Hoopa",
         "Lv": 1,
-        "img": "./poke-png-G6/071.png"
+        "img": "./poke-png-G6/072.png"
       }
     ],
     "superdamange": [
@@ -3387,13 +3387,13 @@ export const pokemon = [
         "type": "Agua"
       }
     ],
-    "images": "./poke-png-G6/072.png",
+    "images": "./poke-png-G6/073.png",
     "evolutinLine": 1,
     "evolution": [
       {
         "name": "Volcanion",
         "Lv": 1,
-        "img": "./poke-png-G6/072.png"
+        "img": "./poke-png-G6/073.png"
       }
     ],
     "superdamange": [

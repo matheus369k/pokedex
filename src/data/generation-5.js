@@ -2404,7 +2404,7 @@ export const pokemon = [{
       {
         "name": "Basculegion",
         "Lv": "receive 294 recoil damage in battle",
-        "img": "./poke-png-G8/092.png"
+        "img": "./poke-png-G8/093.png"
       }
     ],
     "superdamange": [{
@@ -2948,7 +2948,7 @@ export const pokemon = [{
       {
         "name": "Runerigus",
         "Lv": "near Dusty Bowl",
-        "img": "./poke-png-G8/057.png"
+        "img": "./poke-png-G8/058.png"
       }
     ],
     "superdamange": [{
@@ -2989,7 +2989,7 @@ export const pokemon = [{
       {
         "name": "Runerigus",
         "Lv": "near Dusty Bowl",
-        "img": "./poke-png-G8/057.png"
+        "img": "./poke-png-G8/058.png"
       }
     ],
     "superdamange": [{
