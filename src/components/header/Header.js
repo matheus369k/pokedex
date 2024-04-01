@@ -37,7 +37,7 @@ export default function Header() {
             const minusPlus = props_numbers > 0 ? 1 : -1;
             const newPokedexPage = numberPokedex + minusPlus;
 
-            if (props_length_poke < newPokedexPage && props_numbers > 0) return;
+            if (props_length_poke + 1 < newPokedexPage && props_numbers > 0) return;
             if (numberPokedex === 1 && props_numbers < 0) return;
 
             openPokedex(
