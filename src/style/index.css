@@ -29,4 +29,6 @@ body {
 main {
   position: relative;
   padding: 100px 50px 0 50px;
+  display: flex;
+  flex-direction: row-reverse;
 }

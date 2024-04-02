@@ -5980,7 +5980,7 @@ export const pokemon = [
         {
           "name": "Magmortar",
           "Lv": "trade holding Magmarizer",
-          "img": "./poke-png-G4/080.png"
+          "img": "./poke-png-G4/081.png"
         }
       ],
       "superdamange": [
@@ -6583,7 +6583,7 @@ export const pokemon = [
           "type": "Agua"
         }
       ],
-      "images": "./poke-png-G1/139.png",
+      "images": "./poke-png-G1/138.png",
       "evolutinLine": 11,
       "evolution": [
         {

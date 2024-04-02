@@ -17,7 +17,7 @@ export default function SearchPredicted(propsPredictedData) {
         const ElementClicked = e.composedPath()[0];
         const fotherElementClicked = ElementClicked.parentNode;
 
-        if (ElementClicked == undefined) return;
+        if (ElementClicked === undefined || fotherElementClicked === undefined) return;
         if (ElementClicked?.classList?.contains("Predicted_poke_container")) return;
         if (ElementClicked?.classList?.contains("form_container")) return;
         if (fotherElementClicked?.classList.contains("form_container")) return;

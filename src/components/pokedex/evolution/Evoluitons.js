@@ -17,7 +17,12 @@ export default function Evoluitons(getData) {
                             key={"evolutin-"+index}
                         >
                             <img src={element.img} alt={`evolutin-${element.name}`} />
-                            {element.Lv != "+" && <p><span>level: </span>{element.Lv}</p>}
+                            {element.Lv != "+" && 
+                                <p>
+                                    {typeof element.Lv === "number" && <span>level </span>}
+                                    {element.Lv}
+                                </p>
+                                }
                             <p>{element.name}</p>
                         </li>
                     ))
