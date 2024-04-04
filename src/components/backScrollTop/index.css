@@ -1,28 +1,34 @@
 .icon-btn-top {
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.267);
-    transition: all .7s;
-    cursor: pointer;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.267);
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.icon-btn-top:hover {
+  transform: scale(1.1);
+}
+
+.icon-btn-top svg {
+  color: rgb(1, 145, 176);
+  font-size: 2rem;
+}
+
+.icon-btn-top.hidde {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .icon-btn-top {
+    top: 25px;
+    right: 25px;
   }
-  
-  .icon-btn-top:hover {
-    transform: scale(1.1);
-  }
-  
-  .icon-btn-top svg {
-    color: rgb(1, 145, 176);
-    font-size: 2rem;
-  }
-  
-  .icon-btn-top.hidde {
-    display: none;
-  }
-  
+}

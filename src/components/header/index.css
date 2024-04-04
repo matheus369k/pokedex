@@ -45,3 +45,12 @@
     display: flex;
     column-gap: 7px;
 }
+
+@media (max-width: 500px) {
+    .header-container {
+        padding: 15px 8px;
+    }
+    .header-container img {
+        height: 70px;
+    }
+}

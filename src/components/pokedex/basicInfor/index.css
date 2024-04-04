@@ -7,6 +7,7 @@
     color: white;
     opacity: 1;
     transition: all .7s ease-in-out;
+    max-width: 770px;
 }
 
 .pokedex_loading .basic_infor {
@@ -35,4 +36,10 @@
     text-transform: initial;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+    .basic_infor {
+        grid-column: 1/5;
+    }
 }

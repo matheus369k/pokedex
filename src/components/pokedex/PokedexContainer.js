@@ -5,6 +5,7 @@ import BasicInfor from "./basicInfor/BasicInfor";
 import PokeImg from "./imgPoke/PokeImg";
 import { FcPrevious } from "react-icons/fc";
 import "./index.css";
+import "./responsive.css";
 import { ContextPokedex } from "../../App";
 
 export default function Pokedex(propsPoke) {
@@ -14,7 +15,7 @@ export default function Pokedex(propsPoke) {
             status: false,
             data: []
         });
-        window.scrollTo({
+        document.body.scrollTo({
             top: 0,
             left: 0,
             behavior: "smooth"

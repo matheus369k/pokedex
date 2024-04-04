@@ -21,7 +21,7 @@
 .evolutions_container ul {
     height: 100%;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     justify-content: center;
     gap: 40px;
 }
@@ -31,7 +31,7 @@
 }
 
 .evolutions_container p {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .evolutions_container p span {
@@ -43,8 +43,6 @@
     width: 100%;
     height: auto;
 }
-
-
 
 .evolutions_container .evolutin-line-111 li {
     width: 30%;
@@ -266,8 +264,6 @@
     width: max-content;
 }
 
-
-
 .evolutions_container li::before {
     content: "";
     width: 60px;
@@ -296,7 +292,7 @@
 .evolutions_container .evolutin-line-122 li.number-evo-2::before,
 .evolutions_container .evolutin-line-112 li.number-evo-3::before,
 .evolutions_container .evolutin-line-122 li.number-evo-2::before,
-.evolutions_container .evolutin-line-13 li.number-evo-2::before{
+.evolutions_container .evolutin-line-13 li.number-evo-2::before {
     background-image: url(../../../assets/arrow-right-up-svgrepo-com.svg);
 }
 

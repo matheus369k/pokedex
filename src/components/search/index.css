@@ -15,7 +15,6 @@
     user-select: none;
     -webkit-user-select: none;
     color: gray;
-    z-index: 10;
 }
 
 .form_container svg {
@@ -24,7 +23,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
-    z-index: 5;
+    z-index: 2;
 }
 
 .form_container input {
@@ -50,5 +49,12 @@
     width: auto;
     height: 100%;
     padding: 5px;
-    z-index: 5;
+    z-index: 1;
+}
+
+@media (max-width: 500px) {
+    .form_container {
+        width: 325px;
+        height: 45px;
+    }
 }

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { ContextPokedex, ContextPokemons } from "../../App";
 import "./index.css";
+import "./responsive.css";
 import { finnishLoadCard } from "../../function/finnishLoad";
 import { openPokedex } from "../../function/openPokedex";
 import { get_data } from "../../service/get_data";

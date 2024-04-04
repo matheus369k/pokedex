@@ -68,7 +68,7 @@
 .Predicted_poke_container div {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     color: #fff;
     font-size: 1rem;
 }
@@ -92,4 +92,17 @@
     transform: translate(-50%, -50%);
     border: 2px solid rgba(1, 145, 176);
     animation: loading .5s ease infinite;
+}
+
+
+@media (max-width: 500px) {
+    .Predicted_poke_container {
+        width: 325px;
+    }
+    
+    .Predicted_poke_container li {
+        height: 47px;
+        grid-template-columns: 62px 216px 37px;
+        grid-template-rows: 37px;
+    }
 }

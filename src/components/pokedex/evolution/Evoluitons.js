@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import "./responsive.css";
 
 export default function Evoluitons(getData) {
     return (

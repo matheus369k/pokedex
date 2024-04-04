@@ -16,24 +16,24 @@
     }
 }
 
-
 .search-region-container {
     position: fixed;
-    left: 0px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     height: 100vh;
     width: 225px;
     transition: all 1.2s ease-in-out;
+    z-index: 100;
 }
 
 .search-region-container.hidde {
-    left: -201px;
+    right: -201px;
 }
 
 .search-region-list {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     width: 200px;
     height: 100vh;
@@ -41,6 +41,7 @@
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: hsl(0, 0%, 0%, 80%);
+    transform: rotateY(0.5turn);
 }
 
 .search-region-list::-webkit-scrollbar {
@@ -105,15 +106,16 @@
     text-transform: capitalize;
     font-weight: bolder;
     color: white;
+    transform: rotateY(0.5turn);
 }
 
 .btn-hidde-show-search-region {
     position: absolute;
-    right: -66px;
+    left: -66px;
     bottom: 50px;
     height: 35px;
     width: 150px;
-    border-radius: 20px 0 0 0;
+    border-radius: 0 0 0 20px;
     background-color: hsl(0, 0%, 0%);
     color: rgba(1, 145, 176);
     flex-direction: column;

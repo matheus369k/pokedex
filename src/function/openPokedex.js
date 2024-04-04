@@ -6,7 +6,7 @@ export const openPokedex = (propsPokedex, propsAllDataPoke, propsSetPokedex) => 
         status: true,
         data: searchOfNumber(pokedex, propsAllDataPoke, 1)
     });
-    window.scrollTo({
+    document.body.scrollTo({
         top: 0,
         left: 0,
         behavior: "smooth"

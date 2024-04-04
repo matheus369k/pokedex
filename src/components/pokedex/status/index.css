@@ -41,3 +41,16 @@
     font-weight: bolder;
     padding-bottom: 10px;
 }
+
+@media (max-width: 1000px) {
+    .status_basic {
+        grid-column: 4;
+    }
+}
+
+@media (max-width: 770px) {
+    .status_basic {
+        grid-row: 3;
+        grid-column: 1;
+    }
+}
