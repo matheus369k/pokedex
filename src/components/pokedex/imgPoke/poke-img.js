@@ -2,7 +2,7 @@ import { finnishLoadCard } from "../../../function/finnishLoad";
 import React from "react";
 import "./index.css";
 
-export default function PokeImg(getData) {
+export function PokeImg(getData) {
     return (
         <img 
             onLoad={()=>finnishLoadCard(

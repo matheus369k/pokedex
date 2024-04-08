@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import "./responsive.css";
 
-export default function Evoluitons(getData) {
+export function Evoluitons(getData) {
     return (
         <div 
             className="evolutions_container"

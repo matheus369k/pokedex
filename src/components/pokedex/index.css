@@ -35,6 +35,8 @@
     grid-row: 3;
     width: max-content;
     height: max-content;
+    align-self: center;
+    justify-self: flex-end;
     transition: all .7s;
     cursor: pointer;
 }

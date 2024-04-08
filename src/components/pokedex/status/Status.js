@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-export default function Status(getData) {
+export function Status(getData) {
     return (
         <div 
             className="status_basic"

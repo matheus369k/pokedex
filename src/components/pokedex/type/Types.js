@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-export default function Types(getData) {
+export function Types(getData) {
     return (
         <ul className="types-container">
             {

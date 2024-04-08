@@ -1,7 +1,7 @@
 import { searchOfNumber } from "./filterOfNumber";
 
 export const openPokedex = (propsPokedex, propsAllDataPoke, propsSetPokedex) => {
-    const pokedex = isNaN(propsPokedex) ?(propsPokedex.split("#")[1]):(propsPokedex);
+    const pokedex = isNaN(propsPokedex) ? (propsPokedex.split("#")[1]) : (propsPokedex);
     propsSetPokedex({
         status: true,
         data: searchOfNumber(pokedex, propsAllDataPoke, 1)

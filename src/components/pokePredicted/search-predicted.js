@@ -3,10 +3,10 @@ import "./index.css";
 import pokeboll from "../../assets/pokeball.png";
 import { finnishLoadCard } from "../../function/finnishLoad";
 import { openPokedex } from "../../function/openPokedex";
-import { ContextPokedex } from "../../App";
+import { ContextPokedex } from "../../context/pokedex-context";
 import { get_data } from "../../service/get_data";
 
-export default function SearchPredicted(propsPredictedData) {
+export function SearchPredicted(propsPredictedData) {
     const predictedData = propsPredictedData.data.getPredictedData;
     const {setPokedex} = useContext(ContextPokedex);
     const allDataPoke = get_data();

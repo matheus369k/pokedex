@@ -1,8 +1,8 @@
 import React from "react";
-import Types from "../type/Types";
+import { Types } from "../type/types";
 import "./index.css";
 
-export default function BasicInfor(getData) {
+export function BasicInfor(getData) {
     return (
         <div 
             className="basic_infor"
