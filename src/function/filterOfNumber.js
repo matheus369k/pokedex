@@ -1,11 +1,11 @@
-export const searchOfNumber = (search, pokemons_all, number_all_get) => {
-    const pokemons_filter = [];
-    for (let index = 0; index < number_all_get; index++) {
-        if (pokemons_all[parseInt(search) + index - 1] == undefined) {
-            return pokemons_filter;
+export const searchOfNumber = (search, pokemonAll, numberAllGet) => {
+    const pokemonFilter = [];
+    for (let index = 0; index < numberAllGet; index++) {
+        if (pokemonAll[parseInt(search) + index - 1] == undefined) {
+            return pokemonFilter;
         }
 
-        pokemons_filter.push(pokemons_all[parseInt(search) + index - 1]);
+        pokemonFilter.push(pokemonAll[parseInt(search) + index - 1]);
     }
-    return pokemons_filter;
+    return pokemonFilter;
 };

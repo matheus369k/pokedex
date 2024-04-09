@@ -27,16 +27,16 @@ export function SearchOfRegions() {
 
         searchRegion.forEach(element => {
             element.addEventListener("click", (e) => {
-                const all_data_poke = get_data();
-                const pokedex = element.dataset.pokedex;
-                setCards(searchOfNumber(pokedex, all_data_poke, 30));
+                const allDataPoke = get_data();
+                const pokedexDatas = element.dataset.pokedex;
+                setCards(searchOfNumber(pokedexDatas, allDataPoke, 30));
                 e.stopPropagation();
             });
         });
     }, []);
 
     return (
-        <div id="search-region-container" className="search-region-container hidde">
+        <div id="search-region-container" className="search-region-container hide">
             <ul id="search-region" className="search-region-list">
                 <li className="search-region-0 searchRegion_loading" data-pokedex="0001">
                     <img onLoad={() =>

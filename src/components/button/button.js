@@ -3,7 +3,7 @@ import "./index.css";
 
 export function Button(props) {
     return (
-        <button 
+        <button
           {...props}
         />
     );

@@ -11,50 +11,62 @@ import { ContextCards } from "../../context/cards-context";
 import { Button } from "../button/button";
 
 export function Header() {
-    const length_pokemons = get_data().length - 1;
+    const totalPokemon = get_data().length;
     const { getCards, setCards } = useContext(ContextCards);
     const { getPokedex, setPokedex } = useContext(ContextPokedex);
-    const number_pokemon = getCards[0].number.split("#")[1];
 
-    function countCardsPages(pokemon_page) {
-        return Math.ceil(pokemon_page / 29);
+    function countPages(page) {
+        return getPokedex.status ? page : Math.ceil(page / 30);
     }
 
-    function countPokedexPages(get_Pokedex) {
-        return get_Pokedex.data[0].number.split("#")[1];
+    function currentPokedexPage() {
+        return parseInt(getPokedex.data[0].number.split("#")[1]);
     }
 
-    function nextPrevPages(props_numbers) {
-        if (getPokedex.status) {
-            const numberPokedex = parseInt(countPokedexPages(getPokedex));
-            const minusPlus = props_numbers > 0 ? 1 : -1;
-            const newPokedexPage = numberPokedex + minusPlus;
+    function currentCardPage() {
+        return parseInt(getCards[0].number.split("#")[1]);
+    }
 
-            if (length_pokemons + 1 < newPokedexPage && props_numbers > 0) return;
-            if (numberPokedex === 1 && props_numbers < 0) return;
-
+    function gotToNextPage(pokedexOpen) {
+        if (pokedexOpen) {
             openPokedex(
-                newPokedexPage,
+                currentPokedexPage() + 1,
                 get_data(),
                 setPokedex
             );
-
             return;
         }
 
-        const poke_page = parseInt(number_pokemon - 1) + props_numbers;
-        const page_current = countCardsPages(number_pokemon);
-        const all_pages = countCardsPages(length_pokemons);
-
-        if (page_current == all_pages && props_numbers > 0) return;
-        if (page_current == 1 && props_numbers < 0) return;
-
         setCards(searchOfNumber(
-            poke_page,
+            currentCardPage() + 30,
             get_data(),
             30
         ));
+    }
 
+    function gotToPreviousPage(pokedexOpen) {
+        if (pokedexOpen) {
+            openPokedex(
+                currentPokedexPage() - 1,
+                get_data(),
+                setPokedex
+            );
+            return;
+        }
+
+        setCards(searchOfNumber(
+            currentCardPage() - 30,
+            get_data(),
+            30
+        ));
+    }
+
+    function verificationStateOfPages() {
+        if (getPokedex.status) {
+            return countPages(currentPokedexPage());
+        }
+
+        return countPages(currentCardPage());
     }
 
     return (
@@ -63,20 +75,30 @@ export function Header() {
             <div>
                 <Button
                     title="Prevent"
-                    onClick={() => nextPrevPages(-30)}
+                    disabled={verificationStateOfPages() === 1}
+                    onClick={() => gotToPreviousPage(getPokedex.status)}
                 >
                     <FcPrevious />
                 </Button>
                 <p>
                     <span>
-                        {getPokedex.status ? Math.abs(countPokedexPages(getPokedex)) : countCardsPages(number_pokemon)}
+                        {getPokedex.status
+                            ? countPages(currentPokedexPage())
+                            : countPages(currentCardPage())
+                        }
                     </span>
                     /
-                    <span>{getPokedex.status ? length_pokemons + 1 : countCardsPages(length_pokemons)}</span>
+                    <span>
+                        {getPokedex.status
+                            ? totalPokemon
+                            : countPages(totalPokemon)
+                        }
+                    </span>
                 </p>
                 <Button
                     title="Next"
-                    onClick={() => nextPrevPages(30)}
+                    disabled={verificationStateOfPages() === countPages(totalPokemon)}
+                    onClick={() => gotToNextPage(getPokedex.status)}
                 >
                     <FcNext />
                 </Button>

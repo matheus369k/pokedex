@@ -32,3 +32,31 @@
     right: 25px;
   }
 }
+
+
+
+.header-container button {
+  background-color: transparent;
+  color: white;
+  border-radius: 25px;
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .7s;
+  cursor: pointer;
+}
+
+.header-container button:disabled {
+  opacity: .2;
+  cursor: auto;
+}
+
+.header-container button:hover {
+  transform: scale(1.1);
+}
+
+.header-container svg {
+  font-size: 2rem;
+}
