@@ -3,20 +3,27 @@ import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
 import logo from "../../assets/poke-titulo.png";
 import "./index.css";
-import { get_data } from "../../service/get_data";
-import { searchOfNumber } from "../../function/filterOfNumber";
-import { openPokedex } from "../../function/openPokedex";
-import { ContextPokedex } from "../../context/pokedex-context";
-import { ContextCards } from "../../context/cards-context";
+import { get_data } from "../../service/get-data";
+import { searchOfNumber } from "../../function/filter-of-number";
+import { openPokedex } from "../../function/open-pokedex";
 import { Button } from "../button/button";
 
-export function Header() {
-    const totalPokemon = get_data().length;
-    const { getCards, setCards } = useContext(ContextCards);
-    const { getPokedex, setPokedex } = useContext(ContextPokedex);
+export function Header({
+    getCards, 
+    setCards, 
+    getPokedex, 
+    setPokedex 
+}) {
+    const totalPokemon = !getPokedex.status && getCards.search ? 1 : get_data().length;
 
     function countPages(page) {
-        return getPokedex.status ? page : Math.ceil(page / 30);
+        if (getPokedex.status) {
+            return page;
+        }
+        if (getCards.search) {
+            return 1;
+        }
+        return Math.ceil(page / 30);
     }
 
     function currentPokedexPage() {
@@ -24,7 +31,7 @@ export function Header() {
     }
 
     function currentCardPage() {
-        return parseInt(getCards[0].number.split("#")[1]);
+        return parseInt(getCards.data[0].number.split("#")[1]);
     }
 
     function gotToNextPage(pokedexOpen) {
@@ -37,11 +44,11 @@ export function Header() {
             return;
         }
 
-        setCards(searchOfNumber(
+        setCards({search: false, data: searchOfNumber(
             currentCardPage() + 30,
             get_data(),
             30
-        ));
+        )});
     }
 
     function gotToPreviousPage(pokedexOpen) {
@@ -54,11 +61,11 @@ export function Header() {
             return;
         }
 
-        setCards(searchOfNumber(
+        setCards({search: false, data: searchOfNumber(
             currentCardPage() - 30,
             get_data(),
             30
-        ));
+        )});
     }
 
     function verificationStateOfPages() {
@@ -82,17 +89,11 @@ export function Header() {
                 </Button>
                 <p>
                     <span>
-                        {getPokedex.status
-                            ? countPages(currentPokedexPage())
-                            : countPages(currentCardPage())
-                        }
+                        {verificationStateOfPages()}
                     </span>
                     /
                     <span>
-                        {getPokedex.status
-                            ? totalPokemon
-                            : countPages(totalPokemon)
-                        }
+                        {countPages(totalPokemon)}
                     </span>
                 </p>
                 <Button

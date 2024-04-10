@@ -1,23 +1,23 @@
 import React from "react";
 import "./index.css";
 import "./responsive.css";
-import { finnishLoadCard } from "../../function/finnishLoad";
-import { openPokedex } from "../../function/openPokedex";
-import { get_data } from "../../service/get_data";
+import { finnishLoadCard } from "../../function/finnish-load";
+import { openPokedex } from "../../function/open-pokedex";
+import { get_data } from "../../service/get-data";
 
-export function Cards(data) {
+export function Cards({getCards, setPokedex}) {
     const allDataPoke = get_data();
 
     return (
         <section>
             <ul className='pokemons_container'>
                 {
-                    data.getData.map((element, index) => (
+                    getCards.data.map((element, index) => (
                         <li
                             onClick={() => openPokedex(
                                 element.number,
                                 allDataPoke,
-                                data.setPokedex
+                                setPokedex
                             )}
                             id={element.name}
                             className={`pokemon-${index} card_loading`}

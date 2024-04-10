@@ -1,65 +1,59 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import "./index.css";
 import pokeboll from "../../assets/pokeball.png";
-import { finnishLoadCard } from "../../function/finnishLoad";
-import { openPokedex } from "../../function/openPokedex";
-import { ContextPokedex } from "../../context/pokedex-context";
-import { get_data } from "../../service/get_data";
+import { finnishLoadCard } from "../../function/finnish-load";
+import { openPokedex } from "../../function/open-pokedex";
+import { get_data } from "../../service/get-data";
 
-export function SearchPredicted(propsPredictedData) {
-    const predictedData = propsPredictedData.data.getPredictedData;
-    const {setPokedex} = useContext(ContextPokedex);
+export function SearchPredicted({ getPredictedData, setPredictedData, setPokedex }) {
     const allDataPoke = get_data();
-    
-    if (predictedData.length === 0) return;
 
-    document.addEventListener("click", (e) => {
-        const ElementClicked = e.composedPath()[0];
-        const fotherElementClicked = ElementClicked.parentNode;
+    document.addEventListener("click", () => {
+        const elementClicking = event.composedPath();
 
-        if (ElementClicked === undefined || fotherElementClicked === undefined) return;
-        if (ElementClicked?.classList?.contains("Predicted_poke_container")) return;
-        if (ElementClicked?.classList?.contains("form_container")) return;
-        if (fotherElementClicked?.classList.contains("form_container")) return;
-        if (fotherElementClicked?.parentNode?.classList.contains("form_container")) return;
-        if (fotherElementClicked?.parentNode?.parentNode?.classList.contains("form_container")) return;
-        
-        propsPredictedData.data.setPredictedData([]);
-        e.stopImmediatePropagation();
-    });
+        if (getPredictedData.length === 0) return;
+
+        if (elementClicking[0]?.classList.contains("form_container")) return;
+        if (elementClicking[1]?.classList.contains("form_container")) return;
+        if (elementClicking[2]?.classList.contains("form_container")) return;
+        if (elementClicking[3]?.classList.contains("form_container")) return;
+
+        setPredictedData([]);
+        event.stopImmediatePropagation()
+    })
 
     return (
         <ul className="Predicted_poke_container">
             {
-                predictedData.map((element, index) => (
+                getPredictedData.map((element, index) => (
                     <li
-                        onClick={()=>openPokedex(
+                        onClick={() => openPokedex(
                             element.pokedex,
                             allDataPoke,
                             setPokedex
                         )}
-                        className={`predictedPoke-${index} Predicted_loading`} 
+                        className={`predictedPoke-${index} Predicted_loading`}
                         key={`Predicted:${element.name}${element.pokedex}`}
                     >
-                        <img 
+                        <img
                             className="pokemon-image"
-                            onLoad={()=>finnishLoadCard(
+                            onLoad={() => finnishLoadCard(
                                 `.predictedPoke-${index}`,
                                 "Predicted_loading",
                                 index,
                                 ".Predicted-poke-container>li"
                             )}
-                            src={element.images} 
-                            alt={`Pokemon:${element.name}`} 
+                            src={element.images}
+                            alt={`Pokemon:${element.name}`}
                         />
                         <div>
                             <p>{element.name}</p>
                             <p>{element.pokedex}</p>
                         </div>
-                        <img 
+                        <img
                             className="pokeboll-image"
-                            src={pokeboll} 
-                            alt='Pokeboll Icon' 
+                            src={pokeboll}
+                            alt='Pokeboll Icon'
                         />
                     </li>
 

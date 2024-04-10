@@ -6,21 +6,9 @@ import { PokeImg } from "./imgPoke/poke-img";
 import { FcPrevious } from "react-icons/fc";
 import "./index.css";
 import "./responsive.css";
-import { ContextPokedex } from "../../context/pokedex-context";
+import { closePokedex } from "../../function/close-pokedex";
 
-export function Pokedex() {
-    const { getPokedex, setPokedex } = useContext(ContextPokedex);
-    const closePokedex = () => {
-        setPokedex({
-            status: false,
-            data: []
-        });
-        document.body.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-        });
-    };
+export function Pokedex({ getPokedex, setPokedex }) {
     return (
         <section>
             {
@@ -48,7 +36,7 @@ export function Pokedex() {
                             evolutinLine={element.evolutinLine}
                         />
                         <i
-                            onClick={() => closePokedex()}
+                            onClick={() => closePokedex(setPokedex)}
                         >
                             <FcPrevious />
                         </i>

@@ -1,4 +1,4 @@
-import { finnishLoadCard } from "../../../function/finnishLoad";
+import { finnishLoadCard } from "../../../function/finnish-load";
 import React from "react";
 import "./index.css";
 

@@ -112,11 +112,11 @@
 
 .btn-hide-show-search-region {
     position: absolute;
-    right: -66px;
-    bottom: 50px;
+    right: -67px;
+    top: 180px;
     height: 35px;
     width: 150px;
-    border-radius: 20px 0 0 0;
+    border-radius: 20px 20px 0 0;
     background-color: hsl(0, 0%, 0%);
     color: rgba(1, 145, 176);
     flex-direction: column;

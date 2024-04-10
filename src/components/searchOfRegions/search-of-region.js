@@ -8,14 +8,13 @@ import G5Img from "../../assets/Unova-img.png";
 import G6Img from "../../assets/Kalos-img.png";
 import G7Img from "../../assets/Alola-img.png";
 import G8Img from "../../assets/Galar-img.png";
-import { ContextCards } from "../../context/cards-context";
-import { searchOfNumber } from "../../function/filterOfNumber";
-import { get_data } from "../../service/get_data";
-import { finnishLoadCard } from "../../function/finnishLoad";
+import { searchOfNumber } from "../../function/filter-of-number";
+import { get_data } from "../../service/get-data";
+import { finnishLoadCard } from "../../function/finnish-load";
 import { TbWorldSearch } from "react-icons/tb";
+import { closePokedex } from "../../function/close-pokedex";
 
-export function SearchOfRegions() {
-    const { setCards } = useContext(ContextCards);
+export function SearchOfRegions({setPokedex, setCards}) {
 
     const showHideSearchRegion = () => {
         const searchRegionContainer = document.getElementById("search-region-container");
@@ -29,7 +28,10 @@ export function SearchOfRegions() {
             element.addEventListener("click", (e) => {
                 const allDataPoke = get_data();
                 const pokedexDatas = element.dataset.pokedex;
-                setCards(searchOfNumber(pokedexDatas, allDataPoke, 30));
+
+                setCards({search: false, data: searchOfNumber(pokedexDatas, allDataPoke, 30)});
+                closePokedex(setPokedex)
+
                 e.stopPropagation();
             });
         });
