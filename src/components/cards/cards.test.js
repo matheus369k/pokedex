@@ -2,78 +2,29 @@
 import {
   render
 } from "@testing-library/react";
-import Cards from ".";
+import { Cards } from "./cards";
 import React from "react";
 import {
   screen
 } from "@testing-library/dom";
 
 test("Render of cards", async () => {
-      const getData = [{
-        "name": "Bulbasaur",
-        "number": "#0001",
-        "types": [{
-            "type": "Grama"
-          },
-          {
-            "type": "Veneno"
-          }
-        ],
-        "images": "./poke-png-G1/001.png",
-        "evolutinLine": 111,
-        "evolution": [{
-            "name": "Bulbasaur",
-            "Lv": 1,
-            "img": "./poke-png-G1/001.png"
-          },
-          {
-            "name": "Ivysaur",
-            "Lv": 16,
-            "img": "./poke-png-G1/002.png"
-          },
-          {
-            "name": "Venusaur",
-            "Lv": 32,
-            "img": "./poke-png-G1/003.png"
-          }
-        ],
-        "superdamange": [{
-            "type": "Fogo"
-          },
-          {
-            "type": "Gelo"
-          },
-          {
-            "type": "Pisquico"
-          },
-          {
-            "type": "Voador"
-          }
-        ],
-        "baseStats": {
-          "HP": 45,
-          "Atack": 49,
-          "Defense": 49,
-          "Sp.atack": 65,
-          "Sp.Def": 65,
-          "Speed": 45
-        },
-        "description": "Uma estranha semente foi plantada em suas costas em seu nascimento. A planta brota e cresce com este Pokémon. Por algum tempo depois de seu nascimento, cresce ganhando nutrição da semente em suas costas."
-      }];
+  const getCards = {
+    search: false,
+    data: [{
+      "name": "Bulbasaur",
+      "number": "#0001",
+      "images": "./poke-png-G1/001.png"
+    }]
+  };
 
-      const setData = jest.fn();
+  const setCards = jest.fn();
 
-      jest
-        .spyOn(React, "useState")
-        .mockImplementationOnce(initdata => [initdata, setData]);
+  render(<Cards getCards={getCards} setCards={setCards}/>);
 
-      render( < Cards getData = {
-          getData
-        }
-        setData = {
-          setData
-        }
-        />);
+  const img = document.querySelector("img");
 
-        await screen.findByText("Bulbasaur");
-      });
+  expect(await screen.findByText("Bulbasaur"));
+  expect(await screen.findByText("#0001"));
+  expect(img.getAttribute("src")).toBe("./poke-png-G1/001.png");
+});
