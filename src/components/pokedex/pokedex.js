@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { Evoluitons } from "./evolution/evoluitons";
+import React from "react";
+import { Evolutions } from "./evolution/evolutions";
 import { Status } from "./status/status";
 import { BasicInfor } from "./basicInfor/basic-infor";
 import { PokeImg } from "./imgPoke/poke-img";
@@ -31,7 +31,7 @@ export function Pokedex({ getPokedex, setPokedex }) {
                         <Status
                             dataStatus={element.baseStats}
                         />
-                        <Evoluitons
+                        <Evolutions
                             dataEvolution={element.evolution}
                             evolutinLine={element.evolutinLine}
                         />
