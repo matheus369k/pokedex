@@ -3,7 +3,7 @@ export const finnishLoadCard = (getClass, ClassLoad, index, allElements) => {
     const allElementsCards = document.querySelectorAll(allElements);
     elementCard.classList.remove(ClassLoad);
 
-    if (allElementsCards.length == index + 1) return;
+    if (allElementsCards.length !== index + 1) return;
     const elementCardInLoading = document.querySelectorAll("." + ClassLoad);
 
     elementCardInLoading.forEach(element => {
