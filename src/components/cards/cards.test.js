@@ -1,14 +1,12 @@
 /* eslint-disable no-undef */
 import {
-  render
+  render,
+  screen
 } from "@testing-library/react";
 import { Cards } from "./cards";
 import React from "react";
-import {
-  screen
-} from "@testing-library/dom";
 
-test("Render of cards", async () => {
+test("Render cards", async () => {
   const getCards = {
     search: false,
     data: [{

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./index.css";
 import img from "../../assets/pokeball.png";
 import { BiSearch } from "react-icons/bi";
@@ -31,7 +31,7 @@ export function Search({ setCards, setPokedex }) {
         const pokemonsAll = get_data();
 
         setPredictedData([]);
-        closePokedex(setPokedex)
+        closePokedex(setPokedex);
 
         if (Number(data.search))
             return setCards({search: false, data: searchOfNumber(data.search, pokemonsAll, 30)});
@@ -45,7 +45,7 @@ export function Search({ setCards, setPokedex }) {
                 onSubmit={handleSubmit(onSubmit)}
                 className="form_container"
             >
-                <label htmlFor='search'>
+                <label htmlFor="search">
                     < BiSearch />
                 </label>
                 <img

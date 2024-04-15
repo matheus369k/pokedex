@@ -81,6 +81,7 @@ export function Header({
             <img src={logo} alt="Logo do site" />
             <div>
                 <Button
+                    id="btn-prevent"
                     title="Prevent"
                     disabled={verificationStateOfPages() === 1}
                     onClick={() => gotToPreviousPage(getPokedex.status)}
@@ -97,6 +98,7 @@ export function Header({
                     </span>
                 </p>
                 <Button
+                    id="btn-next"
                     title="Next"
                     disabled={verificationStateOfPages() === countPages(totalPokemon)}
                     onClick={() => gotToNextPage(getPokedex.status)}

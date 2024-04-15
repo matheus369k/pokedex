@@ -30,7 +30,7 @@ export function SearchOfRegions({setPokedex, setCards}) {
                 const pokedexDatas = element.dataset.pokedex;
 
                 setCards({search: false, data: searchOfNumber(pokedexDatas, allDataPoke, 30)});
-                closePokedex(setPokedex)
+                closePokedex(setPokedex);
 
                 e.stopPropagation();
             });
@@ -146,6 +146,7 @@ export function SearchOfRegions({setPokedex, setCards}) {
                 </li>
             </ul>
             <button
+                id="btn-hide-show-region"
                 onClick={() => showHideSearchRegion()}
                 className="btn-hide-show-search-region"
                 title="Selecionar por região"

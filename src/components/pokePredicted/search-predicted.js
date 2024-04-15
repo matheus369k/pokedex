@@ -13,10 +13,10 @@ export function SearchPredicted({ getPredictedData, setPredictedData, setPokedex
 
         if (getPredictedData.length === 0) return;
 
-        if (elementClicking[0]?.classList.contains("form_container")) return;
-        if (elementClicking[1]?.classList.contains("form_container")) return;
-        if (elementClicking[2]?.classList.contains("form_container")) return;
-        if (elementClicking[3]?.classList.contains("form_container")) return;
+        if (elementClicking[0]?.classList?.contains("form_container")) return;
+        if (elementClicking[1]?.classList?.contains("form_container")) return;
+        if (elementClicking[2]?.classList?.contains("form_container")) return;
+        if (elementClicking[3]?.classList?.contains("form_container")) return;
 
         setPredictedData([]);
         event.stopImmediatePropagation()

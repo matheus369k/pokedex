@@ -1,5 +1,4 @@
-import { screen } from "@testing-library/dom";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { Pokedex } from "./pokedex"
 
 test("Render Pokedex", async () => {

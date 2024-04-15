@@ -1,6 +1,5 @@
-import { render } from "@testing-library/react"
-import { Status } from "./status"
-import { screen } from "@testing-library/dom";
+import { render, screen } from "@testing-library/react";
+import { Status } from "./status";
 
 test("Render component Status", async () => {
     const statusData = {

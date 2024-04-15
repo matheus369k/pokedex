@@ -1,6 +1,5 @@
-import { render } from "@testing-library/react"
+import { render, screen } from "@testing-library/react"
 import { Evolutions } from "./evolutions"
-import { screen } from "@testing-library/dom";
 
 describe("Render component Evolution", () => {
     test("Normal Condoction", async () => {
