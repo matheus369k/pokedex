@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { PokeImg } from "./poke-img";
 
-test("Render Image of the pokemon", async() => {
+test("Render image of the pokemon component", async() => {
     const PokeData = {
         "name": "Bulbasaur",
         "images": "./poke-png-G1/001.png",

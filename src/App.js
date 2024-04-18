@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Header } from "./components/header/header";
-import { Search } from "./components/searchInput/search-input";
+import { Search } from "./components/search/search";
 import { Cards } from "./components/cards/cards";
 import { Pokedex } from "./components/pokedex/pokedex";
 import { Button } from "./components/button/button";
@@ -18,27 +18,29 @@ export function App() {
   const [getCards, setCards] = useState(() => {
     const searchPoke = getUrlState("id");
 
-    if (searchPoke === null) {
-      return {search: false, data: generation_1.slice(0, 30)};
+    if (searchPoke === null || searchPoke === "") {
+      return { search: false, data: generation_1.slice(0, 30) };
     }
 
     if (Number(searchPoke)) {
-      return {search: false, data: searchOfNumber(searchPoke, get_data(), 30)};
+      return { search: false, data: searchOfNumber(searchPoke, get_data(), 30) };
     }
 
-    return {search: true, data: searchOfName(searchPoke, get_data(), 29)};
+    return { search: true, data: searchOfName(searchPoke, get_data(), 29) };
   });
 
   const [getPokedex, setPokedex] = useState(() => {
     const searchPoke = getUrlState("id");
     const PokedexThis = getUrlState("pokedex");
 
-    if (PokedexThis === "closed") return { status: false, data: [] };
+    if (PokedexThis === "closed" || PokedexThis === null || searchPoke === "") {
+      return { status: false, data: [] };
+    }
 
     if (searchPoke) {
-      return { 
-        status: true, 
-        data: searchOfNumber(searchPoke, get_data(), 1) 
+      return {
+        status: true,
+        data: searchOfNumber(searchPoke, get_data(), 1)
       };
     }
   });
@@ -66,23 +68,25 @@ export function App() {
           getPokedex={getPokedex}
           setPokedex={setPokedex}
         />
-        <Search 
-          setCards={setCards} 
-          setPokedex={setPokedex} 
+        <Search
+          setCards={setCards}
+          setPokedex={setPokedex}
         />
-        {getPokedex.status
-          ? <Pokedex 
+        <main>
+          {getPokedex.status
+            ? <Pokedex
               getPokedex={getPokedex}
               setPokedex={setPokedex}
             />
-          : <Cards 
-              getCards={getCards} 
-              setPokedex={setPokedex} 
+            : <Cards
+              getCards={getCards}
+              setPokedex={setPokedex}
             />
-        }
-        <SearchOfRegions 
-          setCards={setCards} 
-          setPokedex={setPokedex} 
+          }
+        </main>
+        <SearchOfRegions
+          setCards={setCards}
+          setPokedex={setPokedex}
         />
         <Button
           title="Voltar para o inicio"

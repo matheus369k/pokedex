@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Types } from "./types";
 
-test("Render component Type", async () => {
+test("Render type component ", async () => {
     const typeData = {
         "types": [
           {

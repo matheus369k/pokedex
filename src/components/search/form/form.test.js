@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { Search } from "./search-input";
+import { Search } from "../search";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -8,6 +8,7 @@ jest.mock("react-hook-form");
 test("Render search-input", async () => {
     const setCards = jest.fn();
     const setPokedex = jest.fn();
+    const setPredictedData = jest.fn();
     const mockControl = {
         register: jest.fn(),
         handleSubmit: jest.fn(),
@@ -17,8 +18,9 @@ test("Render search-input", async () => {
     useForm.mockReturnValue(mockControl);
 
     render(<Search
-        setCards={setCards}
+        setPredictedData={setPredictedData}
         setPokedex={setPokedex}
+        setCards={setCards}
     />);
 
     expect(await screen.findByPlaceholderText("Search..."));

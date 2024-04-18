@@ -10,7 +10,7 @@ import { closePokedex } from "../../function/close-pokedex";
 
 export function Pokedex({ getPokedex, setPokedex }) {
     return (
-        <section>
+        <>
             {
                 getPokedex.data.map(element => (
                     <div
@@ -43,6 +43,6 @@ export function Pokedex({ getPokedex, setPokedex }) {
                     </div>
                 ))
             }
-        </section>
+        </>
     );
 }

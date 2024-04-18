@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./index.css";
-import pokeboll from "../../assets/pokeball.png";
-import { finnishLoadCard } from "../../function/finnish-load";
-import { openPokedex } from "../../function/open-pokedex";
-import { get_data } from "../../service/get-data";
+import pokeboll from "../../../assets/pokeball.png";
+import { finnishLoadCard } from "../../../function/finnish-load";
+import { openPokedex } from "../../../function/open-pokedex";
+import { get_data } from "../../../service/get-data";
 
-export function SearchPredicted({ getPredictedData, setPredictedData, setPokedex }) {
+export function Predicted({ getPredictedData, setPredictedData, setPokedex }) {
     const allDataPoke = get_data();
 
     document.addEventListener("click", () => {

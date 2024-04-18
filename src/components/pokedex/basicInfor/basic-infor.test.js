@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { BasicInfor } from "./basic-infor";
 
-test("Render component basic-infor", async () => {
+test("Render basic-infor component", async () => {
     const basicInforData = {
           "name": "Bulbasaur",
           "number": "#0001",

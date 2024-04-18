@@ -27,11 +27,13 @@ export function Header({
     }
 
     function currentPokedexPage() {
-        return parseInt(getPokedex.data[0].number.split("#")[1]);
+        const id = getPokedex.data[0].number.split("#")[1];
+        return parseInt(id);
     }
 
     function currentCardPage() {
-        return parseInt(getCards.data[0].number.split("#")[1]);
+        const id = getCards.data[0].number.split("#")[1]
+        return parseInt(id);
     }
 
     function gotToNextPage(pokedexOpen) {

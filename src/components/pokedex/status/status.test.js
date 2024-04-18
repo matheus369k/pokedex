@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Status } from "./status";
 
-test("Render component Status", async () => {
+test("Render status component", async () => {
     const statusData = {
         "baseStats": {
             "HP": 45,

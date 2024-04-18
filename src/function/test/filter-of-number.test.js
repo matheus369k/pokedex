@@ -1,6 +1,6 @@
 import { searchOfNumber } from "../filter-of-number";
 
-test("Filter of Number", () => {
+describe("Filter of Number", () => {
     const AllDataCards = [{
         "name": "Bulbasaur",
         "number": "#0001",
@@ -444,59 +444,506 @@ test("Filter of Number", () => {
             "Speed": 78
         },
         "description": "Um Pokémon brutal com jatos de água pressurizada em sua concha. Eles são usadas ​​para ataques em alta velocidade. Os bicos de água são muito precisos."
-    }];
-
-    const expectative = [{
-        "name": "Charizard",
-        "number": "#0006",
+    },
+    {
+        "name": "Caterpie",
+        "number": "#0010",
         "types": [
+            {
+                "type": "Inseto"
+            }
+        ],
+        "images": "./poke-png-G1/010.png",
+        "evolutinLine": 111,
+        "evolution": [
+            {
+                "name": "Caterpie",
+                "Lv": 1,
+                "img": "./poke-png-G1/010.png"
+            },
+            {
+                "name": "Metapod",
+                "Lv": 7,
+                "img": "./poke-png-G1/011.png"
+            },
+            {
+                "name": "Butterfree",
+                "Lv": 10,
+                "img": "./poke-png-G1/012.png"
+            }
+        ],
+        "superdamange": [
             {
                 "type": "Fogo"
             },
             {
                 "type": "Voador"
-            }
-        ],
-        "images": "./poke-png-G1/006.png",
-        "evolutinLine": 111,
-        "evolution": [
-            {
-                "name": "Charmander",
-                "Lv": 1,
-                "img": "./poke-png-G1/004.png"
-            },
-            {
-                "name": "Charmeleon",
-                "Lv": 16,
-                "img": "./poke-png-G1/005.png"
-            },
-            {
-                "name": "Charizard",
-                "Lv": 32,
-                "img": "./poke-png-G1/006.png"
-            }
-        ],
-        "superdamange": [
-            {
-                "type": "Agua"
-            },
-            {
-                "type": "Eletrico"
             },
             {
                 "type": "Rocha"
             }
         ],
         "baseStats": {
-            "HP": 78,
-            "Atack": 84,
-            "Defense": 78,
-            "Sp.atack": 109,
-            "Sp.Def": 85,
-            "Speed": 100
+            "HP": 45,
+            "Atack": 30,
+            "Defense": 35,
+            "Sp.atack": 20,
+            "Sp.Def": 20,
+            "Speed": 45
         },
-        "description": "Seu fogo é quente o suficiente para derreter rochas. Quando nervoso, a chama em sua cauda queimará intensamente. É orgulhoso e voa pelos céus em busca de adversários poderosos."
+        "description": "Caterpie Como forma de  proteção, Caterpie libera um cheiro horrível através de suas antenas. Suas patas pegajosas são capazes de andar em qualquer tipo de superfície."
+    },
+    {
+        "name": "Metapod",
+        "number": "#0011",
+        "types": [
+            {
+                "type": "Inseto"
+            }
+        ],
+        "images": "./poke-png-G1/011.png",
+        "evolutinLine": 111,
+        "evolution": [
+            {
+                "name": "Caterpie",
+                "Lv": 1,
+                "img": "./poke-png-G1/010.png"
+            },
+            {
+                "name": "Metapod",
+                "Lv": 7,
+                "img": "./poke-png-G1/011.png"
+            },
+            {
+                "name": "Butterfree",
+                "Lv": 10,
+                "img": "./poke-png-G1/012.png"
+            }
+        ],
+        "superdamange": [
+            {
+                "type": "Fogo"
+            },
+            {
+                "type": "Voador"
+            },
+            {
+                "type": "Rocha"
+            }
+        ],
+        "baseStats": {
+            "HP": 50,
+            "Atack": 20,
+            "Defense": 55,
+            "Sp.atack": 25,
+            "Sp.Def": 25,
+            "Speed": 30
+        },
+        "description": "Metapod tem a concha que cobre o corpo deste Pokémon é tão dura quanto uma laje de ferro. Metapod não se move muito. Ele fica parado porque está preparando suas entranhas suaves para a evolução dentro da casca dura."
+    },
+    {
+        "name": "Butterfree",
+        "number": "#0012",
+        "types": [
+            {
+                "type": "Inseto"
+            },
+            {
+                "type": "Voador"
+            }
+        ],
+        "images": "./poke-png-G1/012.png",
+        "evolutinLine": 111,
+        "evolution": [
+            {
+                "name": "Caterpie",
+                "Lv": 1,
+                "img": "./poke-png-G1/010.png"
+            },
+            {
+                "name": "Metapod",
+                "Lv": 7,
+                "img": "./poke-png-G1/011.png"
+            },
+            {
+                "name": "Butterfree",
+                "Lv": 10,
+                "img": "./poke-png-G1/012.png"
+            }
+        ],
+        "superdamange": [
+            {
+                "type": "Fogo"
+            },
+            {
+                "type": "Eletrico"
+            },
+            {
+                "type": "Gelo"
+            },
+            {
+                "type": "Voador"
+            },
+            {
+                "type": "Rocha"
+            }
+        ],
+        "baseStats": {
+            "HP": 60,
+            "Atack": 45,
+            "Defense": 50,
+            "Sp.atack": 90,
+            "Sp.Def": 80,
+            "Speed": 70
+        },
+        "description": "Butterfree tem o corpo da cor azul-púrpura escuro. Ele tem grandes asas veias, que são brancas com manchas pretas. Ele também possue olhos compostos grandes que tendem a ser uma cor avermelhada, suas pernas são cobertas de pêlos finos, o que ajuda na coleta de mel."
     }];
 
-    expect(searchOfNumber(6, AllDataCards, 1)).toEqual(expectative);
+    test("Of search", () => {
+        const expectativeMinusSix = [{
+            "name": "Charizard",
+            "number": "#0006",
+            "types": [
+                {
+                    "type": "Fogo"
+                },
+                {
+                    "type": "Voador"
+                }
+            ],
+            "images": "./poke-png-G1/006.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Charmander",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/004.png"
+                },
+                {
+                    "name": "Charmeleon",
+                    "Lv": 16,
+                    "img": "./poke-png-G1/005.png"
+                },
+                {
+                    "name": "Charizard",
+                    "Lv": 32,
+                    "img": "./poke-png-G1/006.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Agua"
+                },
+                {
+                    "type": "Eletrico"
+                },
+                {
+                    "type": "Rocha"
+                }
+            ],
+            "baseStats": {
+                "HP": 78,
+                "Atack": 84,
+                "Defense": 78,
+                "Sp.atack": 109,
+                "Sp.Def": 85,
+                "Speed": 100
+            },
+            "description": "Seu fogo é quente o suficiente para derreter rochas. Quando nervoso, a chama em sua cauda queimará intensamente. É orgulhoso e voa pelos céus em busca de adversários poderosos."
+        }];
+
+        expect(searchOfNumber("6", AllDataCards, 1)).toEqual(expectativeMinusSix);
+    });
+    test("Of page", () => {
+        const expectativePlusSix = [{
+            "name": "Squirtle",
+            "number": "#0007",
+            "types": [
+                {
+                    "type": "Agua"
+                }
+            ],
+            "images": "./poke-png-G1/007.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Squirtle",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/007.png"
+                },
+                {
+                    "name": "Wartortle",
+                    "Lv": 16,
+                    "img": "./poke-png-G1/008.png"
+                },
+                {
+                    "name": "Blastoise",
+                    "Lv": 32,
+                    "img": "./poke-png-G1/009.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Eletrico"
+                },
+                {
+                    "type": "Grama"
+                }
+            ],
+            "baseStats": {
+                "HP": 44,
+                "Atack": 48,
+                "Defense": 65,
+                "Sp.atack": 50,
+                "Sp.Def": 64,
+                "Speed": 43
+            },
+            "description": "Quando nasce, seu casco é mole, mas logo endurece. Cutucando com o dedo fará os pedaços de seu casco saltar. Ele entra dentro do casco quando se sente ameaçado."
+        },
+        {
+            "name": "Wartortle",
+            "number": "#0008",
+            "types": [
+                {
+                    "type": "Agua"
+                }
+            ],
+            "images": "./poke-png-G1/008.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Squirtle",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/007.png"
+                },
+                {
+                    "name": "Wartortle",
+                    "Lv": 16,
+                    "img": "./poke-png-G1/008.png"
+                },
+                {
+                    "name": "Blastoise",
+                    "Lv": 32,
+                    "img": "./poke-png-G1/009.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Eletrico"
+                },
+                {
+                    "type": "Grama"
+                }
+            ],
+            "baseStats": {
+                "HP": 59,
+                "Atack": 63,
+                "Defense": 80,
+                "Sp.atack": 65,
+                "Sp.Def": 80,
+                "Speed": 58
+            },
+            "description": "É muito inteligente, sabe controlar as orelhas e o rabo para manter o equilíbrio na água e nadar em altas velocidades. Seu rabo felpudo é símbolo de longevidade."
+        },
+        {
+            "name": "Blastoise",
+            "number": "#0009",
+            "types": [
+                {
+                    "type": "Agua"
+                }
+            ],
+            "images": "./poke-png-G1/009.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Squirtle",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/007.png"
+                },
+                {
+                    "name": "Wartortle",
+                    "Lv": 16,
+                    "img": "./poke-png-G1/008.png"
+                },
+                {
+                    "name": "Blastoise",
+                    "Lv": 32,
+                    "img": "./poke-png-G1/009.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Eletrico"
+                },
+                {
+                    "type": "Grama"
+                }
+            ],
+            "baseStats": {
+                "HP": 79,
+                "Atack": 83,
+                "Defense": 100,
+                "Sp.atack": 85,
+                "Sp.Def": 105,
+                "Speed": 78
+            },
+            "description": "Um Pokémon brutal com jatos de água pressurizada em sua concha. Eles são usadas ​​para ataques em alta velocidade. Os bicos de água são muito precisos."
+        },
+        {
+            "name": "Caterpie",
+            "number": "#0010",
+            "types": [
+                {
+                    "type": "Inseto"
+                }
+            ],
+            "images": "./poke-png-G1/010.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Caterpie",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/010.png"
+                },
+                {
+                    "name": "Metapod",
+                    "Lv": 7,
+                    "img": "./poke-png-G1/011.png"
+                },
+                {
+                    "name": "Butterfree",
+                    "Lv": 10,
+                    "img": "./poke-png-G1/012.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Fogo"
+                },
+                {
+                    "type": "Voador"
+                },
+                {
+                    "type": "Rocha"
+                }
+            ],
+            "baseStats": {
+                "HP": 45,
+                "Atack": 30,
+                "Defense": 35,
+                "Sp.atack": 20,
+                "Sp.Def": 20,
+                "Speed": 45
+            },
+            "description": "Caterpie Como forma de  proteção, Caterpie libera um cheiro horrível através de suas antenas. Suas patas pegajosas são capazes de andar em qualquer tipo de superfície."
+        },
+        {
+            "name": "Metapod",
+            "number": "#0011",
+            "types": [
+                {
+                    "type": "Inseto"
+                }
+            ],
+            "images": "./poke-png-G1/011.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Caterpie",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/010.png"
+                },
+                {
+                    "name": "Metapod",
+                    "Lv": 7,
+                    "img": "./poke-png-G1/011.png"
+                },
+                {
+                    "name": "Butterfree",
+                    "Lv": 10,
+                    "img": "./poke-png-G1/012.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Fogo"
+                },
+                {
+                    "type": "Voador"
+                },
+                {
+                    "type": "Rocha"
+                }
+            ],
+            "baseStats": {
+                "HP": 50,
+                "Atack": 20,
+                "Defense": 55,
+                "Sp.atack": 25,
+                "Sp.Def": 25,
+                "Speed": 30
+            },
+            "description": "Metapod tem a concha que cobre o corpo deste Pokémon é tão dura quanto uma laje de ferro. Metapod não se move muito. Ele fica parado porque está preparando suas entranhas suaves para a evolução dentro da casca dura."
+        },
+        {
+            "name": "Butterfree",
+            "number": "#0012",
+            "types": [
+                {
+                    "type": "Inseto"
+                },
+                {
+                    "type": "Voador"
+                }
+            ],
+            "images": "./poke-png-G1/012.png",
+            "evolutinLine": 111,
+            "evolution": [
+                {
+                    "name": "Caterpie",
+                    "Lv": 1,
+                    "img": "./poke-png-G1/010.png"
+                },
+                {
+                    "name": "Metapod",
+                    "Lv": 7,
+                    "img": "./poke-png-G1/011.png"
+                },
+                {
+                    "name": "Butterfree",
+                    "Lv": 10,
+                    "img": "./poke-png-G1/012.png"
+                }
+            ],
+            "superdamange": [
+                {
+                    "type": "Fogo"
+                },
+                {
+                    "type": "Eletrico"
+                },
+                {
+                    "type": "Gelo"
+                },
+                {
+                    "type": "Voador"
+                },
+                {
+                    "type": "Rocha"
+                }
+            ],
+            "baseStats": {
+                "HP": 60,
+                "Atack": 45,
+                "Defense": 50,
+                "Sp.atack": 90,
+                "Sp.Def": 80,
+                "Speed": 70
+            },
+            "description": "Butterfree tem o corpo da cor azul-púrpura escuro. Ele tem grandes asas veias, que são brancas com manchas pretas. Ele também possue olhos compostos grandes que tendem a ser uma cor avermelhada, suas pernas são cobertas de pêlos finos, o que ajuda na coleta de mel."
+        }];
+
+        expect(searchOfNumber(8, AllDataCards, 6)).toEqual(expectativePlusSix);
+    });
 });

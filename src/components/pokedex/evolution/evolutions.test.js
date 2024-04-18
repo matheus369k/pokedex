@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react"
 import { Evolutions } from "./evolutions"
 
-describe("Render component Evolution", () => {
+describe("Render evolution component", () => {
     test("Normal Condoction", async () => {
         const evolutionData = {
             "evolutinLine": 111,

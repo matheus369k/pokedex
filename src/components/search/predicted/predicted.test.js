@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { SearchPredicted } from "./search-predicted";
+import { Predicted } from "./predicted";
 
 const getPredictedData = [
     {
@@ -12,9 +12,8 @@ const getPredictedData = [
 const setPredictedData = jest.fn();
 const setPokedex = jest.fn();
 
-describe("Search Predicate", () => {
-
-    render(<SearchPredicted
+describe("Predicate", () => {
+    render(<Predicted
         getPredictedData={getPredictedData}
         setPredictedData={setPredictedData}
         setPokedex={setPokedex}

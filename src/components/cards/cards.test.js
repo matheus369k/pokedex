@@ -6,7 +6,7 @@ import {
 import { Cards } from "./cards";
 import React from "react";
 
-test("Render cards", async () => {
+test("Render cards component", async () => {
   const getCards = {
     search: false,
     data: [{

@@ -1,14 +1,23 @@
 import { setUrlState } from "./url-state";
 
 export const searchOfNumber = (search, pokemonAll, numberAllGet) => {
+    let page = parseInt(search) - 1;
+
+    if (typeof search === "number") {
+        page = Array.from({ length: 31 }).map((_, index) => numberAllGet * index);
+        
+        page = page.filter(page => page + numberAllGet >= parseInt(search))[0];
+    }
+
     setUrlState('id', parseInt(search));
+
     const pokemonFilter = [];
     for (let index = 0; index < numberAllGet; index++) {
-        if (pokemonAll[parseInt(search) + index - 1] == undefined) {
+        if (pokemonAll[page + index] == undefined) {
             return pokemonFilter;
         }
 
-        pokemonFilter.push(pokemonAll[parseInt(search) + index - 1]);
+        pokemonFilter.push(pokemonAll[page + index]);
     }
     return pokemonFilter;
 };

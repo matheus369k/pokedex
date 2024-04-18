@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { Pokedex } from "./pokedex"
 
-test("Render Pokedex", async () => {
+test("Render Pokedex component", async () => {
   const getdata = [
     {
       "name": "Bulbasaur",
