@@ -43,3 +43,23 @@
         grid-column: 1/5;
     }
 }
+
+@media (max-width: 500px) {
+    .basic_infor {
+        row-gap: 10px;
+    }
+
+    .basic_infor p {
+        font-size: 25px;
+    }
+
+    .basic_infor div span,
+    .basic_infor span {
+        font-size: 25px;
+
+    }
+
+    .basic_infor div span {
+        margin-bottom: 15px;
+    }
+}

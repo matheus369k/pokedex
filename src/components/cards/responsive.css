@@ -20,14 +20,14 @@
 
 @media (max-width: 500px) {
     .pokemons_container li {
-        width: 122px;
+        width: 120px;
         height: 184px;
-        padding: 5px;
+        padding: 2.5px;
     }
 
     .pokemons_container img {
-        max-width: 122px;
-        max-height: 122px;
+        max-width: 120px;
+        max-height: 120px;
     }
 
     .pokemons_container p,
