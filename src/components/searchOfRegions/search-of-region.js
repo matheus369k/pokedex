@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import "./index.css";
+import "./responsive.css";
 import G1Img from "../../assets/Kanto-img.png";
 import G2Img from "../../assets/Johto-img.png";
 import G3Img from "../../assets/Hoenn-img.png";

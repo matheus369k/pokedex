@@ -8,13 +8,17 @@ import { get_data } from "../../service/get-data";
 export function Cards({ getCards, setPokedex }) {
     const allDataPoke = get_data();
 
+    function clickToCard({number}) {
+        return parseInt(number.split("#")[1]);
+    }
+
     return (
         <ul className='pokemons_container'>
             {
                 getCards.data.map((element, index) => (
                     <li
                         onClick={() => openPokedex(
-                            element.number,
+                            clickToCard(element),
                             allDataPoke,
                             setPokedex
                         )}

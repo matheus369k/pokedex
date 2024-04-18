@@ -22,13 +22,17 @@ export function Predicted({ getPredictedData, setPredictedData, setPokedex }) {
         event.stopImmediatePropagation()
     })
 
+    function clickToPredictPoke({pokedex}) {
+        return parseInt(pokedex.split("#")[1]);
+    }
+
     return (
         <ul className="Predicted_poke_container">
             {
                 getPredictedData.map((element, index) => (
                     <li
                         onClick={() => openPokedex(
-                            element.pokedex,
+                            clickToPredictPoke(element),
                             allDataPoke,
                             setPokedex
                         )}

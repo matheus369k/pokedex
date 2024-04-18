@@ -9,10 +9,10 @@ import { openPokedex } from "../../function/open-pokedex";
 import { Button } from "../button/button";
 
 export function Header({
-    getCards, 
-    setCards, 
-    getPokedex, 
-    setPokedex 
+    getCards,
+    setCards,
+    getPokedex,
+    setPokedex
 }) {
     const totalPokemon = !getPokedex.status && getCards.search ? 1 : get_data().length;
 
@@ -26,56 +26,58 @@ export function Header({
         return Math.ceil(page / 30);
     }
 
-    function currentPokedexPage() {
-        const id = getPokedex.data[0].number.split("#")[1];
-        return parseInt(id);
+    function currentPage({ data }) {
+        return parseInt(data[0].number.split("#")[1]);
     }
 
-    function currentCardPage() {
-        const id = getCards.data[0].number.split("#")[1]
-        return parseInt(id);
-    }
+    function gotToNextPage({ status }) {
 
-    function gotToNextPage(pokedexOpen) {
-        if (pokedexOpen) {
+        if (status) {
             openPokedex(
-                currentPokedexPage() + 1,
+                currentPage(getPokedex) + 1,
                 get_data(),
                 setPokedex
             );
             return;
         }
 
-        setCards({search: false, data: searchOfNumber(
-            currentCardPage() + 30,
-            get_data(),
-            30
-        )});
+        setCards({
+            search: false, data: searchOfNumber(
+                currentPage(getCards) + 30,
+                get_data(),
+                30
+            )
+        });
     }
 
-    function gotToPreviousPage(pokedexOpen) {
-        if (pokedexOpen) {
+    function gotToPreviousPage({ status }) {
+
+        if (status) {
             openPokedex(
-                currentPokedexPage() - 1,
+                currentPage(getPokedex) - 1,
                 get_data(),
                 setPokedex
             );
             return;
         }
 
-        setCards({search: false, data: searchOfNumber(
-            currentCardPage() - 30,
-            get_data(),
-            30
-        )});
+        setCards({
+            search: false, data: searchOfNumber(
+                currentPage(getCards) - 30,
+                get_data(),
+                30
+            )
+        });
     }
 
     function verificationStateOfPages() {
-        if (getPokedex.status) {
-            return countPages(currentPokedexPage());
-        }
+        let pokedex = currentPage(getCards);
 
-        return countPages(currentCardPage());
+        if (getPokedex.status) {
+            pokedex = currentPage(getPokedex);
+        };
+
+        return countPages(pokedex);
     }
 
     return (
@@ -86,7 +88,7 @@ export function Header({
                     id="btn-prevent"
                     title="Prevent"
                     disabled={verificationStateOfPages() === 1}
-                    onClick={() => gotToPreviousPage(getPokedex.status)}
+                    onClick={()=>gotToPreviousPage(getPokedex)}
                 >
                     <FcPrevious />
                 </Button>
@@ -103,7 +105,7 @@ export function Header({
                     id="btn-next"
                     title="Next"
                     disabled={verificationStateOfPages() === countPages(totalPokemon)}
-                    onClick={() => gotToNextPage(getPokedex.status)}
+                    onClick={()=>gotToNextPage(getPokedex)}
                 >
                     <FcNext />
                 </Button>

@@ -2,12 +2,10 @@ import { searchOfNumber } from "./filter-of-number";
 import { setUrlState } from "./url-state";
 
 export const openPokedex = (pokedexNumber, allDataPoke, setPokedex) => {
-    const pokedex = Number(pokedexNumber) ? pokedexNumber : pokedexNumber.split("#")[1];
-    
     setPokedex({
         status: true,
         data: searchOfNumber(
-            pokedex, 
+            pokedexNumber, 
             allDataPoke, 
             1
         )
