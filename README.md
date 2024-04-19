@@ -4,51 +4,46 @@
 O projeto é uma página que tem como objetivo apresentar as informações referentes aos Pokémons que foram lançados da 1ª à 8ª geração, sendo ao todo 905 monstros contidos no site.
 
 
-![pokedex responsive preview](./public/readme/pokedex-responsive-preview.png)
+![pokedex responsive preview](./public/pokedex-responsive-preview.png)
 
 ## 🛠️Ferramentas
-<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 50px">
-  <div height="40" style="display: flex; align-items: center; gap: 8px">
-    <img 
-      src="./public/readme/react.svg" 
-      alt="react"
-      width="40"
-    /><span style="font-size: 2rem;">React</span>
-  </div>
-  <div height="40" style="display: flex; align-items: center; gap: 8px">
-    <img 
-      src="./public/readme/html-5.svg" 
-      alt="HTML"
-      width="40"
-    /><span style="font-size: 2rem;">HTML</span>
-  </div>
-  <div height="40" style="display: flex; align-items: center; gap: 8px">
-    <img 
-      src="./public/readme/css-3.svg" 
-      alt="CSS"
-      width="40"
-    /><span style="font-size: 2rem;">CSS</span>
-  </div>
-  <div height="40" style="display: flex; align-items: center; gap: 8px">
-    <img 
-      src="./public/readme/javascript.svg" 
-      alt="JavaScript"
-      width="40"
-    /><span style="font-size: 2rem;">JavaScript</span>
-  </div><div height="40" style="display: flex; align-items: center; gap: 8px">
-    <img 
-      src="./public/readme/jest.svg" 
-      alt="JavaScript"
-      width="40"
-    /><span style="font-size: 2rem;">Jest</span>
-  </div>
-</div>
+
+<img
+  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+  alt="HTML"
+  height="40"
+/>
+<img
+  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+  alt="CSS"
+  height="40"
+/>
+<img
+  src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+  alt="JavaScript"
+  height="40"
+/>
+<img
+  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+  alt="React"
+  height="40"
+/>
+<img
+  src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white"
+  alt="Jest"
+  height="40"
+/>
+<img
+  src="https://img.shields.io/badge/testing%20library-323330?style=for-the-badge&logo=testing-library&logoColor=red"
+  alt="Testing Library"
+  height="40"
+/>
+  
 
 ## __📽️Previa__
 
 <img
-  style="border: 1px solid gray; border-radius: 20px;"
-  src="./public/readme/pokedex-preview.gif" 
+  src="./public/pokedex-preview.gif"
 />
 
 ## __🏆Conclusão__
