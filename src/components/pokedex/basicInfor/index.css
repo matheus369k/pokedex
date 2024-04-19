@@ -14,25 +14,21 @@
     opacity: 0;
 }
 
-.basic_infor p {
+.basic_infor p,
+.basic_infor div {
     text-transform: capitalize;
     font-size: 35px;
+    gap: 25px;
 }
 
-.basic_infor div span,
 .basic_infor span {
     font-size: 35px;
-    font-weight: bold;
+    font-weight: normal;
 
-}
-
-.basic_infor div span {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
 }
 
 .basic_infor .description_container {
+    flex-direction: column;
     text-transform: initial;
     font-size: 18px;
     font-weight: 500;
@@ -49,17 +45,12 @@
         row-gap: 10px;
     }
 
-    .basic_infor p {
+    .basic_infor p,
+    .basic_infor div {
         font-size: 25px;
     }
 
-    .basic_infor div span,
     .basic_infor span {
-        font-size: 25px;
-
-    }
-
-    .basic_infor div span {
         margin-bottom: 15px;
     }
 }

@@ -498,5 +498,5 @@ test("Filter of name", () => {
         "description": "Seu fogo é quente o suficiente para derreter rochas. Quando nervoso, a chama em sua cauda queimará intensamente. É orgulhoso e voa pelos céus em busca de adversários poderosos."
     }];
 
-    expect(searchOfName("Charizar", AllDataCards, 1)).toEqual(expectative);
+    expect(searchOfName("Charizard", AllDataCards, 1)).toEqual(expectative);
 })

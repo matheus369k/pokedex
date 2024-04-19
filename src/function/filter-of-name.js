@@ -1,7 +1,7 @@
-import { setUrlState } from "./url-state";
+import { setUrlState } from "./index";
 
 export const searchOfName = (search, pokemonAll, numberAllGet) => {
-    setUrlState('id', search);
+    setUrlState("id", search);
     const pokemonFilter = [];
     pokemonAll.filter(element => {
         const searchLength = search.split("").length;

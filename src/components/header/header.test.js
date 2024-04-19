@@ -3,7 +3,7 @@ import { Header } from "./header"
 import React from "react";
 
 describe("Header", () => {
-  const dataCards = Array.from({ length: 30 }).map(() => ({
+  const dataCards = Array.from({ length: 31 }).map(() => ({
     "name": "Bulbasaur",
     "number": "#0001",
     "types": [
@@ -291,7 +291,7 @@ describe("Header", () => {
     }];
 
     const getPokedex = { status: true, data: dataNextPrevCard };
-    const getCards = { search: false, data: [] };
+    const getCards = { search: false, data: dataCards };
 
     render(<Header
       getCards={getCards}

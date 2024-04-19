@@ -6,7 +6,7 @@ import { PokeImg } from "./imgPoke/poke-img";
 import { FcPrevious } from "react-icons/fc";
 import "./index.css";
 import "./responsive.css";
-import { closePokedex } from "../../function/close-pokedex";
+import { closePokedex } from "../../function/index";
 
 export function Pokedex({ getPokedex, setPokedex }) {
     return (

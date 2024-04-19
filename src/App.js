@@ -1,18 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Header } from "./components/header/header";
-import { Search } from "./components/search/search";
-import { Cards } from "./components/cards/cards";
-import { Pokedex } from "./components/pokedex/pokedex";
-import { Button } from "./components/button/button";
-import { SearchOfRegions } from "./components/searchOfRegions/search-of-region";
+import { Header, Search, Cards, Pokedex, Button, SearchOfRegions } from "./components/index";
 import { CardsContextProvider } from "./context/cards-context";
 import { PokedexContextProvider } from "./context/pokedex-context";
 import { RxDoubleArrowUp } from "react-icons/rx";
 import { generation_1 } from "./data";
-import { getUrlState } from "./function/url-state";
-import { searchOfNumber } from "./function/filter-of-number";
+import { getUrlState, searchOfNumber, searchOfName, backScrollTop } from "./function/index";
 import { get_data } from "./service/get-data";
-import { searchOfName } from "./function/filter-of-name";
 
 export function App() {
   const [getCards, setCards] = useState(() => {
@@ -23,7 +16,7 @@ export function App() {
     }
 
     if (Number(searchPoke)) {
-      return { search: false, data: searchOfNumber(searchPoke, get_data(), 30) };
+      return { search: false, data: searchOfNumber(parseInt(searchPoke), get_data(), 30) };
     }
 
     return { search: true, data: searchOfName(searchPoke, get_data(), 29) };
@@ -54,11 +47,6 @@ export function App() {
       if (heightScroll < 100) iconArrowTop.classList.add("hide");
     });
   }, [])
-
-  const backScrollTop = () => {
-    document.body.scrollTop = 0;
-  };
-
   return (
     <CardsContextProvider value={{ getCards, setCards }}>
       <PokedexContextProvider value={{ getPokedex, setPokedex }}>

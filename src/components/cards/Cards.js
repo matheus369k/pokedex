@@ -1,8 +1,7 @@
 import React from "react";
 import "./index.css";
 import "./responsive.css";
-import { finnishLoadCard } from "../../function/finnish-load";
-import { openPokedex } from "../../function/open-pokedex";
+import { finnishLoadCard, openPokedex } from "../../function/index";
 import { get_data } from "../../service/get-data";
 
 export function Cards({ getCards, setPokedex }) {

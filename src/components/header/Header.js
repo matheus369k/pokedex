@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
 import logo from "../../assets/poke-titulo.png";
 import "./index.css";
 import { get_data } from "../../service/get-data";
-import { searchOfNumber } from "../../function/filter-of-number";
-import { openPokedex } from "../../function/open-pokedex";
-import { Button } from "../button/button";
+import { searchOfNumber, openPokedex } from "../../function/index";
+import { Button } from "../index";
 
 export function Header({
     getCards,

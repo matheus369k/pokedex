@@ -1,5 +1,4 @@
-import { searchOfNumber } from "./filter-of-number";
-import { setUrlState } from "./url-state";
+import { backScrollTop, searchOfNumber, setUrlState } from "./index";
 
 export const openPokedex = (pokedexNumber, allDataPoke, setPokedex) => {
     setPokedex({
@@ -10,11 +9,6 @@ export const openPokedex = (pokedexNumber, allDataPoke, setPokedex) => {
             1
         )
     });
-    document.body.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    });
-
-    setUrlState('pokedex', 'open')
+    backScrollTop();
+    setUrlState("pokedex", "open")
 };

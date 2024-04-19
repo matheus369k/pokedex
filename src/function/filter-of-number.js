@@ -1,4 +1,4 @@
-import { setUrlState } from "./url-state";
+import { setUrlState } from "./index";
 
 export const searchOfNumber = (search, pokemonAll, numberAllGet) => {
     let page = parseInt(search) - 1;
@@ -9,7 +9,7 @@ export const searchOfNumber = (search, pokemonAll, numberAllGet) => {
         page = page.filter(page => page + numberAllGet >= parseInt(search))[0];
     }
 
-    setUrlState('id', search);
+    setUrlState("id", search);
 
     const pokemonFilter = [];
     for (let index = 0; index < numberAllGet; index++) {

@@ -1,8 +1,6 @@
-import { searchOfNumber } from "../../../function/filter-of-number";
 import img from "../../../assets/pokeball.png";
 import { get_data, predicted_data } from "../../../service/get-data";
-import { searchOfName } from "../../../function/filter-of-name";
-import { closePokedex } from "../../../function/close-pokedex";
+import { closePokedex, searchOfNumber, searchOfName } from "../../../function/index";
 import { BiSearch } from "react-icons/bi";
 import { useForm } from "react-hook-form";
 import "./index.css";

@@ -11,7 +11,7 @@ export function BasicInfor(getData) {
             <p><span>Pokedex: </span> {getData.dataPokedex}</p>
             <div><span>Tipos: </span><Types data={getData.datatype} /></div>
             <div><span>Fraquezas: </span><Types data={getData.dataDamage} /></div>
-            <p className="description_container">{getData.dataDescription}</p>
+            <p className="description_container"><span>Descrição: </span>{getData.dataDescription}</p>
         </div>
     );
 }

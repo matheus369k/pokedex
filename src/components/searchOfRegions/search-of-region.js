@@ -9,11 +9,9 @@ import G5Img from "../../assets/Unova-img.png";
 import G6Img from "../../assets/Kalos-img.png";
 import G7Img from "../../assets/Alola-img.png";
 import G8Img from "../../assets/Galar-img.png";
-import { searchOfNumber } from "../../function/filter-of-number";
+import { searchOfNumber, finnishLoadCard, closePokedex } from "../../function/index";
 import { get_data } from "../../service/get-data";
-import { finnishLoadCard } from "../../function/finnish-load";
 import { TbWorldSearch } from "react-icons/tb";
-import { closePokedex } from "../../function/close-pokedex";
 
 export function SearchOfRegions({setPokedex, setCards}) {
 

@@ -31,12 +31,12 @@ test("Render basic-infor component", async () => {
     };
 
     render(<BasicInfor 
-        dataName={basicInforData.name}
-        dataPokedex={basicInforData.number}
-        datatype={basicInforData.types}
-        dataDamage={basicInforData.superdamange}
-        dataDescription={basicInforData.description}
-    />);
+      dataName={basicInforData.name}
+      dataPokedex={basicInforData.number}
+      datatype={basicInforData.types}
+      dataDamage={basicInforData.superdamange}
+      dataDescription={basicInforData.description}
+  />);
 
     expect(await screen.findByText(basicInforData.name));
     expect(await screen.findByText(basicInforData.number));
