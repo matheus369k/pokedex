@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.e69420a6.css",
-    "main.js": "/pokedex/static/js/main.ece2b65b.js",
+    "main.css": "/pokedex/static/css/main.2e498b1c.css",
+    "main.js": "/pokedex/static/js/main.bc40bd56.js",
     "static/media/Kanto-img.png": "/pokedex/static/media/Kanto-img.e9d90d38bc6212f89bd4.png",
     "static/media/Kalos-img.png": "/pokedex/static/media/Kalos-img.1a04db8b6123b1eb4d62.png",
     "static/media/Unova-img.png": "/pokedex/static/media/Unova-img.f924d94a56af89264d45.png",
@@ -20,11 +20,11 @@
     "static/media/arrow-right-svgrepo-com.svg": "/pokedex/static/media/arrow-right-svgrepo-com.576d3f961f678d2c94f3.svg",
     "static/media/arrow-left-down-svgrepo-com.svg": "/pokedex/static/media/arrow-left-down-svgrepo-com.37a5f833282b1c756d7b.svg",
     "static/media/arrow-right-up-svgrepo-com.svg": "/pokedex/static/media/arrow-right-up-svgrepo-com.574977f415c8b0462f00.svg",
-    "main.e69420a6.css.map": "/pokedex/static/css/main.e69420a6.css.map",
-    "main.ece2b65b.js.map": "/pokedex/static/js/main.ece2b65b.js.map"
+    "main.2e498b1c.css.map": "/pokedex/static/css/main.2e498b1c.css.map",
+    "main.bc40bd56.js.map": "/pokedex/static/js/main.bc40bd56.js.map"
   },
   "entrypoints": [
-    "static/css/main.e69420a6.css",
-    "static/js/main.ece2b65b.js"
+    "static/css/main.2e498b1c.css",
+    "static/js/main.bc40bd56.js"
   ]
 }
