@@ -22,16 +22,17 @@
     .pokemons_container li {
         width: 120px;
         height: 184px;
-        padding: 2.5px;
+        padding: 0 0 2px 2px;
     }
 
     .pokemons_container img {
         max-width: 120px;
         max-height: 120px;
+        margin-right: 2px;
     }
 
     .pokemons_container p,
     .pokemons_container span {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 }

@@ -47,6 +47,7 @@ export function Form({setPredictedData, setPokedex, setCards}) {
             <img
                 className="pokeboll"
                 src={img}
+                alt="imagem de uma pokeboll"
             />
             <input
                 maxLength={16}
