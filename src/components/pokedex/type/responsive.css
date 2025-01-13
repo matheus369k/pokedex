@@ -1,14 +1,14 @@
 @media (max-width: 500px) {
-    .types-container li {
-        width: 100px;
-        height: 35px;
-        letter-spacing: 1px;
-        border-radius: 20px 0 20px 0;
-        font-size: 12px;
-    }
-    
-    .types-container li::before {
-        border-radius: 20px 0 20px 0;
-        box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.447);
-    }    
+	.types-container li {
+		width: 100px;
+		height: 35px;
+		letter-spacing: 1px;
+		border-radius: 20px 0 20px 0;
+		font-size: 12px;
+	}
+
+	.types-container li::before {
+		border-radius: 20px 0 20px 0;
+		box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.447);
+	}
 }

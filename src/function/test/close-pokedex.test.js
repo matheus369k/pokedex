@@ -1,11 +1,11 @@
-import { closePokedex } from "../close-pokedex";
+import { closePokedex } from '../close-pokedex';
 
-test("Closed pokedex", () => {
-    const setPokedex = jest.fn();
-    
-    window.HTMLElement.prototype.scrollTo = jest.fn();
+test('Closed pokedex', () => {
+	const setPokedex = jest.fn();
 
-    closePokedex(setPokedex);
+	window.HTMLElement.prototype.scrollTo = jest.fn();
 
-    expect(setPokedex).toHaveBeenCalled();
+	closePokedex(setPokedex);
+
+	expect(setPokedex).toHaveBeenCalled();
 });

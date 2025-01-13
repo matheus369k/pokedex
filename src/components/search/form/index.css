@@ -1,54 +1,54 @@
 .form_container {
-    width: 400px;
-    height: 50px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    -webkit-user-select: none;
-    color: gray;
+	width: 400px;
+	height: 50px;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	-webkit-user-select: none;
+	color: gray;
 }
 
 .form_container svg {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    z-index: 2;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+	z-index: 2;
 }
 
 .form_container input {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    padding-left: 60px;
-    font-size: 1.2rem;
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
-    background-color: rgba(65, 65, 65, 0.479);
-    color: rgb(199, 199, 199);
-    border: 1px solid rgb(199, 199, 199);
+	width: 100%;
+	height: 100%;
+	border-radius: 25px;
+	padding-left: 60px;
+	font-size: 1.2rem;
+	backdrop-filter: blur(25px);
+	-webkit-backdrop-filter: blur(25px);
+	background-color: rgba(65, 65, 65, 0.479);
+	color: rgb(199, 199, 199);
+	border: 1px solid rgb(199, 199, 199);
 }
 
 .form_container input::placeholder {
-    font-size: 1.2rem;
+	font-size: 1.2rem;
 }
 
 .form_container img {
-    position: absolute;
-    right: 0;
-    width: auto;
-    height: 100%;
-    padding: 5px;
-    z-index: 1;
+	position: absolute;
+	right: 0;
+	width: auto;
+	height: 100%;
+	padding: 5px;
+	z-index: 1;
 }
 
 @media (max-width: 500px) {
-    .form_container {
-        width: 325px;
-        height: 45px;
-    }
+	.form_container {
+		width: 325px;
+		height: 45px;
+	}
 }

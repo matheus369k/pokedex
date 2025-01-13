@@ -1,62 +1,60 @@
 .icon-btn-top {
-  position: fixed;
-  top: 50px;
-  right: 50px;
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.267);
-  transition: all .7s;
-  cursor: pointer;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.267);
+	transition: all .7s;
+	cursor: pointer;
 }
 
 .icon-btn-top:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .icon-btn-top svg {
-  color: rgb(1, 145, 176);
-  font-size: 2rem;
+	color: rgb(1, 145, 176);
+	font-size: 2rem;
 }
 
 .icon-btn-top.hide {
-  display: none;
+	display: none;
 }
 
 @media (max-width: 500px) {
-  .icon-btn-top {
-    top: 25px;
-    right: 25px;
-  }
+	.icon-btn-top {
+		top: 25px;
+		right: 25px;
+	}
 }
 
-
-
 .header-container button {
-  background-color: transparent;
-  color: white;
-  border-radius: 25px;
-  height: 46px;
-  width: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all .7s;
-  cursor: pointer;
+	background-color: transparent;
+	color: white;
+	border-radius: 25px;
+	height: 46px;
+	width: 46px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .7s;
+	cursor: pointer;
 }
 
 .header-container button:disabled {
-  opacity: .2;
-  cursor: auto;
+	opacity: 0.2;
+	cursor: auto;
 }
 
 .header-container button:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .header-container svg {
-  font-size: 2rem;
+	font-size: 2rem;
 }

@@ -1,56 +1,56 @@
 .status_basic {
-    grid-row: 2;
-    grid-column: 1;
-    width: 337px;
-    height: max-content;
-    opacity: 1;
-    transition: all .7s ease-in-out;
+	grid-row: 2;
+	grid-column: 1;
+	width: 337px;
+	height: max-content;
+	opacity: 1;
+	transition: all .7s ease-in-out;
 }
 
 .pokedex_loading .status_basic {
-    opacity: 0;
+	opacity: 0;
 }
 
 .status_basic h1 {
-    font-size: 35px;
-    font-weight: bolder;
-    padding-bottom: 100px;
+	font-size: 35px;
+	font-weight: bolder;
+	padding-bottom: 100px;
 }
 
 .status_basic ul {
-    display: flex;
-    flex-direction: column;
-    font-weight: bolder;
-    width: 100%;
-    height: max-content;
-    row-gap: 35px;
+	display: flex;
+	flex-direction: column;
+	font-weight: bolder;
+	width: 100%;
+	height: max-content;
+	row-gap: 35px;
 }
 
 .status_basic li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 45px;
-    width: 100%;
-    padding-right: 15px;
-    border-bottom: 4px solid #003482;
-    border-bottom-right-radius: 25px;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bolder;
-    padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 45px;
+	width: 100%;
+	padding-right: 15px;
+	border-bottom: 4px solid #003482;
+	border-bottom-right-radius: 25px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	padding-bottom: 10px;
 }
 
 @media (max-width: 1000px) {
-    .status_basic {
-        grid-column: 4;
-    }
+	.status_basic {
+		grid-column: 4;
+	}
 }
 
 @media (max-width: 770px) {
-    .status_basic {
-        grid-row: 3;
-        grid-column: 1;
-    }
+	.status_basic {
+		grid-row: 3;
+		grid-column: 1;
+	}
 }

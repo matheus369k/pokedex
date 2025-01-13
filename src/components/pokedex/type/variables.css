@@ -1,37 +1,37 @@
 :root {
-    --color-type-Grama: green;
+	--color-type-Grama: green;
 
-    --color-type-Veneno: purple;
+	--color-type-Veneno: purple;
 
-    --color-type-Fogo: orange;
+	--color-type-Fogo: orange;
 
-    --color-type-Voador: rgb(233, 233, 233);
+	--color-type-Voador: rgb(233, 233, 233);
 
-    --color-type-Agua: blue;
+	--color-type-Agua: blue;
 
-    --color-type-Inseto: greenyellow;
+	--color-type-Inseto: greenyellow;
 
-    --color-type-Normal: rgb(129, 123, 112);
+	--color-type-Normal: rgb(129, 123, 112);
 
-    --color-type-Eletrico: yellow;
+	--color-type-Eletrico: yellow;
 
-    --color-type-Terra: rgb(159, 104, 9);
+	--color-type-Terra: rgb(159, 104, 9);
 
-    --color-type-Pisquico: palevioletred;
+	--color-type-Pisquico: palevioletred;
 
-    --color-type-Gelo: skyblue;
+	--color-type-Gelo: skyblue;
 
-    --color-type-Rocha: rgb(97, 63, 0);
+	--color-type-Rocha: rgb(97, 63, 0);
 
-    --color-type-Lutador: rgb(135, 0, 0);
+	--color-type-Lutador: rgb(135, 0, 0);
 
-    --color-type-Fada: rgb(255, 202, 211);
+	--color-type-Fada: rgb(255, 202, 211);
 
-    --color-type-Metal: gray;
+	--color-type-Metal: gray;
 
-    --color-type-Fantasma: rgb(86, 61, 95);
+	--color-type-Fantasma: rgb(86, 61, 95);
 
-    --color-type-Obscuro: rgb(57, 58, 126);
+	--color-type-Obscuro: rgb(57, 58, 126);
 
-    --color-type-Dragon: rgb(1, 2, 80);
+	--color-type-Dragon: rgb(1, 2, 80);
 }

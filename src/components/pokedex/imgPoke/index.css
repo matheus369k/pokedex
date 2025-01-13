@@ -1,33 +1,33 @@
 .img_container {
-    grid-row: 1;
-    grid-column: 3;
-    align-self: center;
-    justify-self: center;
-    max-width: 100%;
-    max-height: 490px;
-    object-fit: contain;
-    opacity: 1;
-    transition: all .7s ease-in-out;
+	grid-row: 1;
+	grid-column: 3;
+	align-self: center;
+	justify-self: center;
+	max-width: 100%;
+	max-height: 490px;
+	object-fit: contain;
+	opacity: 1;
+	transition: all .7s ease-in-out;
 }
 
 .pokedex_loading .img_container {
-    opacity: 0;
+	opacity: 0;
 }
 
 @media (max-width: 1000px) {
-    .img_container {
-        grid-row: 2;
-        grid-column: 1/3;
-        align-self: flex-end;
-        justify-self: flex-start;
-    }
+	.img_container {
+		grid-row: 2;
+		grid-column: 1 / 3;
+		align-self: flex-end;
+		justify-self: flex-start;
+	}
 }
 
 @media (max-width: 770px) {
-    .img_container {
-        grid-row: 2;
-        grid-column: 1;
-        align-self: flex-end;
-        justify-self: center;
-    }
+	.img_container {
+		grid-row: 2;
+		grid-column: 1;
+		align-self: flex-end;
+		justify-self: center;
+	}
 }

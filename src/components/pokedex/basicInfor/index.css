@@ -1,56 +1,55 @@
 .basic_infor {
-    grid-row: 1;
-    grid-column: 1/3;
-    display: flex;
-    flex-direction: column;
-    row-gap: 25px;
-    color: white;
-    opacity: 1;
-    transition: all .7s ease-in-out;
-    max-width: 770px;
+	grid-row: 1;
+	grid-column: 1 / 3;
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	color: white;
+	opacity: 1;
+	transition: all .7s ease-in-out;
+	max-width: 770px;
 }
 
 .pokedex_loading .basic_infor {
-    opacity: 0;
+	opacity: 0;
 }
 
 .basic_infor p,
 .basic_infor div {
-    text-transform: capitalize;
-    font-size: 35px;
-    gap: 25px;
+	text-transform: capitalize;
+	font-size: 35px;
+	gap: 25px;
 }
 
 .basic_infor span {
-    font-size: 35px;
-    font-weight: normal;
-
+	font-size: 35px;
+	font-weight: normal;
 }
 
 .basic_infor .description_container {
-    flex-direction: column;
-    text-transform: initial;
-    font-size: 18px;
-    font-weight: 500;
+	flex-direction: column;
+	text-transform: initial;
+	font-size: 18px;
+	font-weight: 500;
 }
 
 @media (max-width: 1000px) {
-    .basic_infor {
-        grid-column: 1/5;
-    }
+	.basic_infor {
+		grid-column: 1 / 5;
+	}
 }
 
 @media (max-width: 500px) {
-    .basic_infor {
-        row-gap: 10px;
-    }
+	.basic_infor {
+		row-gap: 10px;
+	}
 
-    .basic_infor p,
-    .basic_infor div {
-        font-size: 25px;
-    }
+	.basic_infor p,
+	.basic_infor div {
+		font-size: 25px;
+	}
 
-    .basic_infor span {
-        margin-bottom: 15px;
-    }
+	.basic_infor span {
+		margin-bottom: 15px;
+	}
 }

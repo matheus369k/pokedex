@@ -1,14 +1,17 @@
-import { setUrlState } from "./index";
+import { setUrlState } from './index';
 
 export const searchOfName = (search, pokemonAll, numberAllGet) => {
-    setUrlState("id", search);
-    const pokemonFilter = [];
-    pokemonAll.filter(element => {
-        const searchLength = search.split("").length;
-        const namePoke = element.name.slice(0, searchLength).toLowerCase();
+	const pokemonFilter = [];
 
-        if (pokemonFilter.length > numberAllGet || element == undefined) return;
-        if (namePoke == search.toLowerCase()) pokemonFilter.push(element);
-    });
-    return pokemonFilter;
+	setUrlState('id', search);
+	
+	pokemonAll.filter((element) => {
+		const searchLength = search.split('').length;
+		const namePoke = element.name.slice(0, searchLength).toLowerCase();
+
+		if (pokemonFilter.length > numberAllGet || element === undefined) return;
+		if (namePoke === search.toLowerCase()) pokemonFilter.push(element);
+	});
+	
+	return pokemonFilter;
 };

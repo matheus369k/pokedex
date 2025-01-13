@@ -1,9 +1,9 @@
-import { backScrollTop } from "../index";
+import { backScrollTop } from '../index';
 
-test("Back scroll top", () => {
-    window.HTMLElement.prototype.scrollTo = jest.fn();
+test('Back scroll top', () => {
+	window.HTMLElement.prototype.scrollTo = jest.fn();
 
-    backScrollTop();
+	backScrollTop();
 
-    expect(document.body.scrollTo).toHaveBeenCalled();
+	expect(document.body.scrollTo).toHaveBeenCalled();
 });
