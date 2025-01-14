@@ -37,3 +37,56 @@ main {
 	flex-direction: row-reverse;
 	margin: auto;
 }
+
+.button_back_top {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	height: 40px;
+	width: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.267);
+	transition: all .7s;
+	cursor: pointer;
+}
+
+.button_back_top:hover {
+	transform: scale(1.1);
+}
+
+.button_back_top svg {
+	color: rgb(1, 145, 176);
+	font-size: 2rem;
+}
+
+.button_back_top.hidden {
+	display: none;
+}
+
+@media (max-width: 500px) {
+	.button_back_top {
+		top: 25px;
+		right: 25px;
+	}
+}
+@media (max-width: 1000px) {
+	main {
+		padding: 100px 25px 0 25px;
+	}
+}
+
+@media (max-width: 770px) {
+	main {
+		padding: 100px 5px 0 5px;
+	}
+}
+
+@media (max-width: 500px) {
+	main {
+		padding: 100px 1px 0 1px;
+	}
+}
+
