@@ -1,12 +1,13 @@
 import styles from './index.module.css';
 
-export function Preview({ handleFinnishLoading, dataImages, dataName }) {
+export function Preview({ handleFinnishLoading, image, name }) {
 	return (
 		<img
 			onLoad={handleFinnishLoading}
 			className={styles.poke_preview}
-			src={dataImages}
-			alt={`Pokedex ${dataName}`}
+			src={image}
+			loading='lazy'
+			alt={`Pokedex ${name}`}
 		/>
 	);
 }

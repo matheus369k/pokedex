@@ -14,25 +14,25 @@ export function Pokedex() {
 
 	return (
 		<>
-			{state.selected.map((element) => (
+			{state.selected.map((data) => (
 				<div
 					className={`${styles.pokedex_container} ${loading ? styles.pokedex_loading : ''}`}
-					key={`pokedex${element.name}`}
+					key={`pokedex${data.name}`}
 				>
 					<BasicInfo
-						dataName={element.name}
-						dataPokedex={element.number}
-						datatype={element.types}
-						dataDamage={element.superdamange}
-						dataDescription={element.description}
+						name={data.name}
+						pokedex={data.number}
+						types={data.types}
+						superDamage={data.superDamage}
+						description={data.description}
 					/>
 					<Preview
 						handleFinnishLoading={handleFinnishLoading}
-						dataImages={element.images}
-						dataName={element.name}
+						image={data.images}
+						name={data.name}
 					/>
-					<Status dataStatus={element.baseStats} />
-					<Evolutions dataEvolution={element.evolution} evolutionLine={element.evolutinLine} />
+					<Status baseStatus={data.baseStats} />
+					<Evolutions evolutions={data.evolution} evolutionLine={data.evolutionLine} />
 					<button type="button" onClick={handleRemoveSelected}>
 						<FcPrevious />
 					</button>

@@ -1,27 +1,27 @@
 import styles from './index.module.css';
 
-export function Status(getData) {
+export function Status({baseStatus}) {
 	return (
 		<div className={styles.status_basic}>
 			<h1>Status:</h1>
 			<ul>
 				<li>
-					<span>HP: </span> <span>{getData.dataStatus.HP}</span>
+					<span>HP: </span> <span>{baseStatus.HP}</span>
 				</li>
 				<li>
-					<span>Attack: </span> <span>{getData.dataStatus.Atack}</span>
+					<span>Attack: </span> <span>{baseStatus.Attack}</span>
 				</li>
 				<li>
-					<span>Defense: </span> <span>{getData.dataStatus.Defense}</span>
+					<span>Defense: </span> <span>{baseStatus.Defense}</span>
 				</li>
 				<li>
-					<span>Sp.attack: </span> <span>{getData.dataStatus['Sp.atack']}</span>
+					<span>Sp.attack: </span> <span>{baseStatus['Sp.attack']}</span>
 				</li>
 				<li>
-					<span>Sp.Def: </span> <span>{getData.dataStatus['Sp.Def']}</span>
+					<span>Sp.Def: </span> <span>{baseStatus['Sp.Def']}</span>
 				</li>
 				<li>
-					<span>Speed: </span> <span>{getData.dataStatus.Speed}</span>
+					<span>Speed: </span> <span>{baseStatus.Speed}</span>
 				</li>
 			</ul>
 		</div>
