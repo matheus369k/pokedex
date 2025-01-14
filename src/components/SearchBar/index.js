@@ -1,5 +1,5 @@
 import { Form, Predicted } from './components';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './index.module.css';
 
 export function Search() {

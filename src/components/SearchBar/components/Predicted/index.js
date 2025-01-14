@@ -32,6 +32,7 @@ export function Predicted({ getPredictedData, setPredictedData }) {
 						className={styles.pokemon_image}
 						onLoad={handleFinnishLoading}
 						src={element.images}
+						loading='lazy'
 						alt={`Pokemon: ${element.name}`}
 					/>
 					<div>
