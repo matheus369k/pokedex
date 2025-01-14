@@ -16,7 +16,7 @@
 	}
 }
 
-.Predicted_poke_container {
+.predicted_poke_list {
 	width: 400px;
 	height: max-content;
 	position: absolute;
@@ -26,7 +26,7 @@
 	z-index: 5;
 }
 
-.Predicted_poke_container li {
+.predicted_poke_list li {
 	height: 52px;
 	width: 100%;
 	margin-top: 25px;
@@ -37,32 +37,33 @@
 	display: grid;
 	grid-template-columns: 82px 266px 42px;
 	grid-template-rows: 42px;
+	align-items: center;
 	border-radius: 50px;
 	cursor: pointer;
 }
 
-.Predicted_poke_container li:hover {
+.predicted_poke_list li:hover {
 	transition: all .4s;
 	background-color: rgba(25, 25, 25, 0.479);
 }
 
-.Predicted_poke_container img {
+.predicted_poke_list img {
 	height: 100%;
 	width: auto;
 	object-fit: cover;
 	grid-row: 1;
 }
 
-.Predicted_poke_container .pokemon-image {
+.predicted_poke_list .pokemon_image {
 	grid-column: 1;
 	margin: 0 auto;
 }
 
-.Predicted_poke_container .pokeboll-image {
+.predicted_poke_list .pokeboll_image {
 	grid-column: 3;
 }
 
-.Predicted_poke_container div {
+.predicted_poke_list div {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -70,15 +71,15 @@
 	font-size: 1rem;
 }
 
-.Predicted_poke_container .Predicted_loading img {
+.predicted_poke_list .predicted_loading img {
 	opacity: 0;
 }
 
-.Predicted_poke_container .Predicted_loading div {
+.predicted_poke_list .predicted_loading div {
 	opacity: 0;
 }
 
-.Predicted_poke_container .Predicted_loading::before {
+.predicted_poke_list .predicted_loading::before {
 	content: "";
 	width: 20px;
 	height: 20px;
@@ -92,11 +93,11 @@
 }
 
 @media (max-width: 500px) {
-	.Predicted_poke_container {
+	.predicted_poke_list {
 		width: 325px;
 	}
 
-	.Predicted_poke_container li {
+	.predicted_poke_list li {
 		height: 47px;
 		grid-template-columns: 62px 216px 37px;
 		grid-template-rows: 37px;

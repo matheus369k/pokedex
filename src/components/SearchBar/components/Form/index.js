@@ -2,9 +2,9 @@ import img from '../../../../assets/pokeball.png';
 import { searchOfNumber, searchOfName } from '../../../../function/index';
 import { BiSearch } from 'react-icons/bi';
 import { useForm } from 'react-hook-form';
-import './index.css';
 import { useContext } from 'react';
 import { PokemonDataContext } from '../../../../context/pokemon-datas';
+import styles from  './index.module.css';
 
 export function Form({ setPredictedData }) {
 	const { register, handleSubmit, watch } = useForm();
@@ -39,7 +39,7 @@ export function Form({ setPredictedData }) {
 	};
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} className="form_container">
+		<form onSubmit={handleSubmit(onSubmit)} className={styles.form_container}>
 			<label htmlFor="search">
 				<BiSearch />
 			</label>
