@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import './index.css';
 import pokeboll from '../../../assets/pokeball.png';
 import { finnishLoadCard, searchOfNumber } from '../../../function/index';
-import { get_data } from '../../../service/get-data';
 import { PokemonDataContext } from '../../../context/pokemon-datas';
 
 export function Predicted({ getPredictedData, setPredictedData }) {
@@ -24,7 +23,7 @@ export function Predicted({ getPredictedData, setPredictedData }) {
 
 	function handleOpenPokedex({ pokedex }) {
 		const pokemonNumber = Number(pokedex.split('#')[1]);
-		const getPokeDataForNumber = searchOfNumber(pokemonNumber, get_data(), 1);
+		const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1);
 
 		handleAddSelected(getPokeDataForNumber);
 	}

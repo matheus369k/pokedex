@@ -32,14 +32,14 @@ const handleInitialState = (state) => {
 
 	if (Number(searchPokemon)) {
 		return {
-			selected: pokedexIs === 'open' ? searchOfNumber(searchPokemon, get_data(), 1) : null,
+			selected: pokedexIs === 'open' ? searchOfNumber(searchPokemon, 1) : null,
 			search: false,
-			data: searchOfNumber(Number(searchPokemon), get_data(), 30),
+			data: searchOfNumber(Number(searchPokemon), 30),
 		};
 	}
 
 	if (searchPokemon) {
-		return { ...state, search: true, data: searchOfName(searchPokemon, get_data(), 29) };
+		return { ...state, search: true, data: searchOfName(searchPokemon, 29) };
 	}
 
 	return state;

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './index.css';
 import './responsive.css';
 import G1Img from '../../assets/Kanto-img.png';
@@ -10,7 +10,6 @@ import G6Img from '../../assets/Kalos-img.png';
 import G7Img from '../../assets/Alola-img.png';
 import G8Img from '../../assets/Galar-img.png';
 import { searchOfNumber, finnishLoadCard } from '../../function/index';
-import { get_data } from '../../service/get-data';
 import { TbWorldSearch } from 'react-icons/tb';
 import { PokemonDataContext } from '../../context/pokemon-datas';
 
@@ -19,25 +18,13 @@ export function SearchOfRegions() {
 	const [showModelRegion, setShowModelRegion] = useState(false);
 
 	const handleShowHideSearchModelRegion = () => {
-		setShowModelRegion(state => !state);
+		setShowModelRegion((state) => !state);
 	};
 
-	// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-	useEffect(() => {
-		const searchRegion = document.querySelectorAll('#search-region>li');
-
-		searchRegion.forEach((element) => {
-			element.addEventListener('click', (e) => {
-				const allDataPoke = get_data();
-				const pokedexDatas = element.dataset.pokedex;
-
-				handleUpdateData({ search: false, data: searchOfNumber(pokedexDatas, allDataPoke, 30) });
-				handleRemoveSelected();
-
-				e.stopPropagation();
-			});
-		});
-	}, []);
+	function handleSetRegionFilter(filter) {
+		handleUpdateData({ search: false, data: searchOfNumber(filter, 30, false) });
+		handleRemoveSelected();
+	}
 
 	return (
 		<div
@@ -45,7 +32,10 @@ export function SearchOfRegions() {
 			className={`search-region-container ${showModelRegion ? '' : 'hide'}`}
 		>
 			<ul id="search-region" className="search-region-list">
-				<li className="search-region-0 searchRegion_loading" data-pokedex="0001">
+				<li
+					onClick={() => handleSetRegionFilter(1)}
+					className="search-region-0 searchRegion_loading"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -60,7 +50,10 @@ export function SearchOfRegions() {
 					/>
 					<span>Kanto</span>
 				</li>
-				<li className="search-region-1 searchRegion_loading" data-pokedex="0152">
+				<li
+					onClick={() => handleSetRegionFilter(152)}
+					className="search-region-1 searchRegion_loading"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -75,7 +68,11 @@ export function SearchOfRegions() {
 					/>
 					<span>Johto</span>
 				</li>
-				<li className="search-region-2 searchRegion_loading" data-pokedex="0252">
+				<li
+					onClick={() => handleSetRegionFilter(252)}
+					className="search-region-2 searchRegion_loading"
+					data-pokedex="0252"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -90,7 +87,11 @@ export function SearchOfRegions() {
 					/>
 					<span>Hoenn</span>
 				</li>
-				<li className="search-region-3 searchRegion_loading" data-pokedex="0387">
+				<li
+					onClick={() => handleSetRegionFilter(387)}
+					className="search-region-3 searchRegion_loading"
+					data-pokedex="0387"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -105,7 +106,11 @@ export function SearchOfRegions() {
 					/>
 					<span>Sinnoh</span>
 				</li>
-				<li className="search-region-4 searchRegion_loading" data-pokedex="0495">
+				<li
+					onClick={() => handleSetRegionFilter(495)}
+					className="search-region-4 searchRegion_loading"
+					data-pokedex="0495"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -120,7 +125,11 @@ export function SearchOfRegions() {
 					/>
 					<span>Unova</span>
 				</li>
-				<li className="search-region-5 searchRegion_loading" data-pokedex="0650">
+				<li
+					onClick={() => handleSetRegionFilter(650)}
+					className="search-region-5 searchRegion_loading"
+					data-pokedex="0650"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -135,7 +144,11 @@ export function SearchOfRegions() {
 					/>
 					<span>Kalos</span>
 				</li>
-				<li className="search-region-6 searchRegion_loading" data-pokedex="0722">
+				<li
+					onClick={() => handleSetRegionFilter(722)}
+					className="search-region-6 searchRegion_loading"
+					data-pokedex="0722"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(
@@ -150,7 +163,11 @@ export function SearchOfRegions() {
 					/>
 					<span>Alola</span>
 				</li>
-				<li className="search-region-7 searchRegion_loading" data-pokedex="0810">
+				<li
+					onClick={() => handleSetRegionFilter(810)}
+					className="search-region-7 searchRegion_loading"
+					data-pokedex="0810"
+				>
 					<img
 						onLoad={() =>
 							finnishLoadCard(

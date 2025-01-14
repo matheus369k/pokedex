@@ -29,9 +29,8 @@ export function Header() {
 	function gotToNextPage() {
 		if (state.selected) {
 			const pokemonNumber = currentPage(state.selected) + 1
-			const getPokeData = get_data()
 
-			const getPokeDataForNumber = searchOfNumber(pokemonNumber, getPokeData, 1)
+			const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1)
 			handleAddSelected(getPokeDataForNumber);
 			
 			return;
@@ -39,16 +38,15 @@ export function Header() {
 
 		handleUpdateData({
 			search: false,
-			data: searchOfNumber(currentPage(state.data) + 30, get_data(), 30),
+			data: searchOfNumber(currentPage(state.data) + 30, 30),
 		});
 	}
 
 	function gotToPreviousPage() {
 		if (state.selected) {
 			const pokemonNumber = currentPage(state.selected) - 1
-			const getPokeData = get_data()
 
-			const getPokeDataForNumber = searchOfNumber(pokemonNumber, getPokeData, 1)
+			const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1)
 			handleAddSelected(getPokeDataForNumber);
 			
 			return;
@@ -56,7 +54,7 @@ export function Header() {
 
 		handleUpdateData({
 			search: false,
-			data: searchOfNumber(currentPage(state.data) - 30, get_data(), 30),
+			data: searchOfNumber(currentPage(state.data) - 30, 30),
 		});
 	}
 

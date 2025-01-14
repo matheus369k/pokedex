@@ -21,15 +21,13 @@ export function Form({ setPredictedData }) {
 	});
 
 	const onSubmit = (data) => {
-		const pokemonsAll = get_data();
-
 		setPredictedData([]);
 		handleRemoveSelected();
 
 		if (Number(data.search)) {
 			handleUpdateData({
 				search: false,
-				data: searchOfNumber(data.search, pokemonsAll, 30),
+				data: searchOfNumber(data.search, 30),
 			});
 
 			return;
@@ -37,7 +35,7 @@ export function Form({ setPredictedData }) {
 
 		handleUpdateData({
 			search: data.search !== '',
-			data: searchOfName(data.search, pokemonsAll, 29),
+			data: searchOfName(data.search, 29),
 		});
 	};
 

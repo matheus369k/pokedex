@@ -10,7 +10,7 @@ export function Cards() {
 
 	function handleOpenPokedex({ number }) {
 		const pokemonNumber = Number(number.split('#')[1]);
-		const getPokeDataForNumber = searchOfNumber(pokemonNumber, get_data(), 1)
+		const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1)
 
 		handleAddSelected(getPokeDataForNumber);
 	}
