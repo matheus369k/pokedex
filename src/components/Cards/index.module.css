@@ -1,0 +1,120 @@
+@keyframes loading {
+	0% {
+		border-left-color: rgba(0, 0, 0, 0);
+	}
+	33% {
+		border-top-color: rgba(0, 0, 0, 0);
+	}
+	66% {
+		border-right-color: rgba(0, 0, 0, 0);
+	}
+	100% {
+		border-bottom-color: rgba(0, 0, 0, 0);
+	}
+}
+
+.pokemon_card_list {
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(5, max-content);
+	margin: auto;
+	z-index: 0;
+}
+
+.pokemon_card_list::-webkit-scrollbar {
+	background-color: transparent;
+}
+
+.pokemon_card_list li {
+	width: 202px;
+	height: 264px;
+	margin: 10px;
+	background-image: linear-gradient(
+		360deg,
+		rgba(1, 145, 176) 0%,
+		rgba(1, 145, 176, 0) 40%
+	);
+	border-bottom: 2px solid #1dcd00;
+	padding: 10px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.pokemon_card_list img {
+	transition: all .7s ease-in-out;
+	width: 202px;
+	height: 202px;
+	opacity: 1;
+}
+
+.pokemon_card_list p {
+	opacity: 1;
+	color: rgb(185, 185, 185);
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.144);
+}
+
+.pokemon_card_list span {
+	color: rgb(255, 255, 255);
+	font-weight: bolder;
+}
+
+.pokemon_card_list .card_loading img,
+.pokemon_card_list .card_loading p {
+	opacity: 0;
+}
+
+.pokemon_card_list .card_loading::before {
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 6px solid rgba(1, 145, 176);
+	animation: loading .5s ease infinite;
+}
+
+@media (max-width: 1200px) {
+	.pokemon_card_list {
+		grid-template-columns: repeat(3, max-content);
+	}
+}
+
+@media (max-width: 770px) {
+	.pokemon_card_list li {
+		width: 162px;
+		height: 224px;
+		margin: 1px;
+	}
+
+	.pokemon_card_list img {
+		max-width: 162px;
+		max-height: 162px;
+		object-fit: contain;
+	}
+}
+
+@media (max-width: 500px) {
+	.pokemon_card_list li {
+		width: 120px;
+		height: 184px;
+		padding: 0 0 2px 2px;
+	}
+
+	.pokemon_card_list img {
+		max-width: 120px;
+		max-height: 120px;
+		margin-right: 2px;
+	}
+
+	.pokemon_card_list p,
+	.pokemon_card_list span {
+		font-size: .8rem;
+	}
+}
