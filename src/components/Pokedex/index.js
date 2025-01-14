@@ -2,8 +2,7 @@ import { Evolutions, BasicInfo, Preview, Status } from './components';
 import { PokemonDataContext } from '../../context/pokemon-datas';
 import { useContext, useState } from 'react';
 import { FcPrevious } from 'react-icons/fc';
-import './index.css';
-import './responsive.css';
+import styles from './index.module.css';
 
 export function Pokedex() {
 	const { state, handleRemoveSelected } = useContext(PokemonDataContext);
@@ -17,7 +16,7 @@ export function Pokedex() {
 		<>
 			{state.selected.map((element) => (
 				<div
-					className={`pokedex_container ${loading ? 'pokedex_loading' : ''}`}
+					className={`${styles.pokedex_container} ${loading ? styles.pokedex_loading : ''}`}
 					key={`pokedex${element.name}`}
 				>
 					<BasicInfo
@@ -33,7 +32,7 @@ export function Pokedex() {
 						dataName={element.name}
 					/>
 					<Status dataStatus={element.baseStats} />
-					<Evolutions dataEvolution={element.evolution} evolutinLine={element.evolutinLine} />
+					<Evolutions dataEvolution={element.evolution} evolutionLine={element.evolutinLine} />
 					<button type="button" onClick={handleRemoveSelected}>
 						<FcPrevious />
 					</button>

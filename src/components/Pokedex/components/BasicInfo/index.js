@@ -1,27 +1,26 @@
-import React from 'react';
 import { Types } from '../Type';
-import './index.css';
+import styles from './index.module.css';
 
-export function BasicInfo(getData) {
+export function BasicInfo({ dataName, dataPokedex, datatype, dataDamage, dataDescription }) {
 	return (
-		<div className="basic_infor">
+		<div className={styles.basic_info}>
 			<p>
-				<span>Nome: </span> {getData.dataName}
+				<span>Nome: </span> {dataName}
 			</p>
 			<p>
-				<span>Pokedex: </span> {getData.dataPokedex}
+				<span>Pokedex: </span> {dataPokedex}
 			</p>
 			<div>
 				<span>Tipos: </span>
-				<Types data={getData.datatype} />
+				<Types data={datatype} />
 			</div>
 			<div>
 				<span>Fraquezas: </span>
-				<Types data={getData.dataDamage} />
+				<Types data={dataDamage} />
 			</div>
-			<p className="description_container">
+			<p className={styles.description_container}>
 				<span>Descrição: </span>
-				{getData.dataDescription}
+				{dataDescription}
 			</p>
 		</div>
 	);

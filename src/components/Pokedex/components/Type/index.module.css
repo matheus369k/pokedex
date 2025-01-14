@@ -1,6 +1,6 @@
 @import "./variables.css";
 
-.types-container {
+.types_list {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -8,7 +8,7 @@
 	margin-top: 25px;
 }
 
-.types-container li {
+.types_list li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -26,7 +26,7 @@
 	position: relative;
 }
 
-.types-container li::before {
+.types_list li::before {
 	content: "";
 	height: 100%;
 	width: 100%;
@@ -108,3 +108,19 @@
 .Dragon {
 	background-color: var(--color-type-Dragon);
 }
+
+@media (max-width: 500px) {
+	.types_list li {
+		width: 100px;
+		height: 35px;
+		letter-spacing: 1px;
+		border-radius: 20px 0 20px 0;
+		font-size: 12px;
+	}
+
+	.types_list li::before {
+		border-radius: 20px 0 20px 0;
+		box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.447);
+	}
+}
+

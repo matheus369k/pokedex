@@ -72,3 +72,25 @@
 	animation: loading-pokedex 2s alternate infinite;
 	transition: all 1s ease-in-out;
 }
+
+@media (max-width: 1000px) {
+	.pokedex_container {
+		grid-template-columns: 240px 200px 1fr;
+		grid-template-rows: repeat(4, max-content);
+	}
+
+	.pokedex_container > button {
+		grid-row: 4;
+	}
+}
+
+@media (max-width: 500px) {
+	.pokedex_container {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(5, max-content);
+	}
+
+	.pokedex_container > button {
+		grid-row: 5;
+	}
+}

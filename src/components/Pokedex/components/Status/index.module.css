@@ -7,10 +7,6 @@
 	transition: all .7s ease-in-out;
 }
 
-.pokedex_loading .status_basic {
-	opacity: 0;
-}
-
 .status_basic h1 {
 	font-size: 35px;
 	font-weight: bolder;

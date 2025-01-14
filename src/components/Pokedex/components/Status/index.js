@@ -1,8 +1,8 @@
-import './index.css';
+import styles from './index.module.css';
 
 export function Status(getData) {
 	return (
-		<div className="status_basic">
+		<div className={styles.status_basic}>
 			<h1>Status:</h1>
 			<ul>
 				<li>

@@ -1,12 +1,11 @@
 import React from 'react';
-import './index.css';
-import './responsive.css';
+import styles from './index.module.css';
 
 export function Types(getData) {
 	return (
-		<ul className="types-container">
+		<ul className={styles.types_list}>
 			{getData.data.map((element) => (
-				<li className={`type_container ${element.type}`} key={`tipo-${element.type}`}>
+				<li className={styles[element.type]} key={`type-${element.type}`}>
 					{element.type}
 				</li>
 			))}

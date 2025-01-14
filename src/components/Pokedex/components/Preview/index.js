@@ -1,11 +1,10 @@
-import React from 'react';
-import './index.css';
+import styles from './index.module.css';
 
 export function Preview({ handleFinnishLoading, dataImages, dataName }) {
 	return (
 		<img
 			onLoad={handleFinnishLoading}
-			className="img_container"
+			className={styles.poke_preview}
 			src={dataImages}
 			alt={`Pokedex ${dataName}`}
 		/>
