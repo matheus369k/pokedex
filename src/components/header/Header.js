@@ -64,7 +64,7 @@ export function Header() {
 		if (state.selected) {
 			pokedex = currentPage(state.selected);
 		}
-
+		
 		return countPages(pokedex);
 	}
 

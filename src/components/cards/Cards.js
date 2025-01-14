@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import './index.css';
 import './responsive.css';
 import { finnishLoadCard, searchOfNumber } from '../../function/index';
-import { get_data } from '../../service/get-data';
 import { PokemonDataContext } from '../../context/pokemon-datas';
 
 export function Cards() {
