@@ -12,8 +12,8 @@ export function RootLayout() {
 			const heightScroll = document.body.scrollTop;
 			const iconArrowTop = document.getElementById('scrollTop');
 
-			if (heightScroll > 100) iconArrowTop.classList.remove('hide');
-			if (heightScroll < 100) iconArrowTop.classList.add('hide');
+			if (heightScroll > 100) iconArrowTop.classList.remove('hidden');
+			if (heightScroll < 100) iconArrowTop.classList.add('hidden');
 		});
 	}, []);
 	return (
@@ -22,14 +22,15 @@ export function RootLayout() {
 			<Search />
 			<main>{state.selected ? <Pokedex /> : <Cards />}</main>
 			<SearchOfRegions />
-			<Button
+			<button
 				title="Voltar para o inicio"
 				onClick={() => backScrollTop()}
 				id="scrollTop"
-				className="icon-btn-top hide"
+				type='button'
+				className="button_back_top hidden"
 			>
 				<RxDoubleArrowUp />
-			</Button>
+			</button>
 		</>
 	);
 }
