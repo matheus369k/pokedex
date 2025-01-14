@@ -16,7 +16,7 @@
 	}
 }
 
-.search-region-container {
+.search_region_container {
 	position: fixed;
 	left: 0px;
 	top: 50%;
@@ -27,11 +27,11 @@
 	z-index: 100;
 }
 
-.search-region-container.hide {
+.search_region_container.hidden {
 	left: -201px;
 }
 
-.search-region-list {
+.search_region_list {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -43,16 +43,16 @@
 	background-color: hsl(0, 0%, 0%, 80%);
 }
 
-.search-region-list::-webkit-scrollbar {
+.search_region_list::-webkit-scrollbar {
 	background-color: hsl(0, 0%, 0%);
 	width: 10px;
 }
 
-.search-region-list::-webkit-scrollbar-thumb {
+.search_region_list::-webkit-scrollbar-thumb {
 	background-color: gray;
 }
 
-.search-region-list li {
+.search_region_list li {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -70,26 +70,26 @@
 	row-gap: 25px;
 }
 
-.search-region-list li:hover {
+.search_region_list li:hover {
 	background-color: hsla(0, 0%, 10%, 0.8);
 }
 
-.search-region-list img {
+.search_region_list img {
 	height: 10vh;
 	width: auto;
 	transition: all 1s ease-in-out;
 	object-fit: contain;
 }
 
-.search-region-list li:hover img {
+.search_region_list li:hover img {
 	transform: scale(1.1);
 }
 
-.search-region-list .searchRegion_loading img {
+.search_region_list .search_loading_item img {
 	opacity: 0;
 }
 
-.search-region-list .searchRegion_loading::after {
+.search_region_list .search_loading_item::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -102,13 +102,13 @@
 	animation: loading 1s infinite;
 }
 
-.search-region-list span {
+.search_region_list span {
 	text-transform: capitalize;
 	font-weight: bolder;
 	color: white;
 }
 
-.btn-hide-show-search-region {
+.search_toggle_model {
 	position: absolute;
 	right: -67px;
 	top: 180px;
@@ -127,12 +127,27 @@
 	cursor: pointer;
 }
 
-.btn-hide-show-search-region span {
+.search_toggle_model span {
 	text-transform: capitalize;
 	font-weight: bolder;
 }
 
-.btn-hide-show-search-region svg {
+.search_toggle_model svg {
 	font-size: 1.5rem;
 	fill: transparent;
+}
+
+@media (max-width: 500px) {
+	.search_toggle_model {
+		position: absolute;
+		right: -40px;
+		height: 30px;
+		width: 100px;
+		border-radius: 15px 15px 0 0;
+		gap: 2.5px;
+	}
+
+	.search_toggle_model svg {
+		font-size: 1rem;
+	}
 }
