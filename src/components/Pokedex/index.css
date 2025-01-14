@@ -28,7 +28,12 @@
 	transition: all 1s ease-in-out;
 }
 
-.pokedex_container i {
+.pokedex_container > button {
+	background-color: transparent;
+	box-shadow: none;
+	outline: none;
+	border: none;
+
 	grid-row: 3;
 	width: max-content;
 	height: max-content;
@@ -37,7 +42,7 @@
 	cursor: pointer;
 }
 
-.pokedex_container i:hover {
+.pokedex_container > button:hover {
 	transform: scale(1.1);
 }
 .pokedex_container svg {

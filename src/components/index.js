@@ -1,11 +1,11 @@
-export { Button } from './button/button';
+export { Button } from './Button';
 
-export { Cards } from './cards/Cards';
+export { Cards } from './Cards';
 
-export { Header } from './header/Header';
+export { Header } from './Header';
 
-export { Pokedex } from './pokedex/pokedex';
+export { Pokedex } from './Pokedex';
 
-export { Search } from './search/search';
+export { Search } from './SearchBar';
 
-export { SearchOfRegions } from './searchOfRegions/search-of-region';
+export { SearchOfRegions } from './SearchOfRegions';

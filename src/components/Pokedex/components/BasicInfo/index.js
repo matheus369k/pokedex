@@ -1,8 +1,8 @@
 import React from 'react';
-import { Types } from '../type/Types';
+import { Types } from '../Type';
 import './index.css';
 
-export function BasicInfor(getData) {
+export function BasicInfo(getData) {
 	return (
 		<div className="basic_infor">
 			<p>

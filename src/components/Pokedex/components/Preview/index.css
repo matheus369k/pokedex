@@ -10,7 +10,7 @@
 	transition: all .7s ease-in-out;
 }
 
-.pokedex_loading .img_container {
+.img_container.pokedex_loading {
 	opacity: 0;
 }
 

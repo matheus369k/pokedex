@@ -4,7 +4,7 @@
 		grid-template-rows: repeat(4, max-content);
 	}
 
-	.pokedex_container i {
+	.pokedex_container .button_back {
 		grid-row: 4;
 	}
 }
@@ -15,7 +15,7 @@
 		grid-template-rows: repeat(5, max-content);
 	}
 
-	.pokedex_container i {
+	.pokedex_container .button_back {
 		grid-row: 5;
 	}
 }

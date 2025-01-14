@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { Header, Search, Cards, Pokedex, Button, SearchOfRegions } from '../components/index';
+import { Header, Search, Cards, Pokedex, Button, SearchOfRegions } from '../components';
 import { RxDoubleArrowUp } from 'react-icons/rx';
 import { backScrollTop } from '../function/index';
 import { PokemonDataContext } from '../context/pokemon-datas';

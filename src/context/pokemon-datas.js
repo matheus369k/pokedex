@@ -8,6 +8,7 @@ const reducer = (state, action) => {
 		case 'ADD_SELECTED':
 			return {
 				...state,
+				search: false,
 				selected: action.payload,
 			};
 		case 'REMOVE_SELECTED':

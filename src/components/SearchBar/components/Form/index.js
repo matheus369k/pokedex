@@ -1,23 +1,22 @@
-import img from '../../../assets/pokeball.png';
-import { get_data, predicted_data } from '../../../service/get-data';
-import { searchOfNumber, searchOfName } from '../../../function/index';
+import img from '../../../../assets/pokeball.png';
+import { searchOfNumber, searchOfName } from '../../../../function/index';
 import { BiSearch } from 'react-icons/bi';
 import { useForm } from 'react-hook-form';
 import './index.css';
 import { useContext } from 'react';
-import { PokemonDataContext } from '../../../context/pokemon-datas';
+import { PokemonDataContext } from '../../../../context/pokemon-datas';
 
 export function Form({ setPredictedData }) {
 	const { register, handleSubmit, watch } = useForm();
 	const { handleUpdateData, handleRemoveSelected } = useContext(PokemonDataContext);
 
 	watch((data) => {
-		const pokemonsAllPredicted = predicted_data();
+		if (Number(data.search)) {
+			setPredictedData(searchOfNumber(data.search, 3));
+			return;
+		}
 
-		if (Number(data.search))
-			return setPredictedData(searchOfNumber(data.search, pokemonsAllPredicted, 3));
-
-		return setPredictedData(searchOfName(data.search, pokemonsAllPredicted, 2));
+		setPredictedData(searchOfName(data.search, 2));
 	});
 
 	const onSubmit = (data) => {

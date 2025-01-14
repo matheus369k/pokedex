@@ -283,7 +283,7 @@
 .evolutions_container .evolutin-line-13 li.number-evo-3::before,
 .evolutions_container .evolutin-line-11 li::before,
 .evolutions_container .evolutin-line-111 li::before {
-	background-image: url(../../../assets/arrow-right-svgrepo-com.svg);
+	background-image: url(../../../../assets/arrow-right-svgrepo-com.svg);
 }
 
 .evolutions_container .evolutin-line-121 li.number-evo-2::before,
@@ -292,7 +292,7 @@
 .evolutions_container .evolutin-line-112 li.number-evo-3::before,
 .evolutions_container .evolutin-line-122 li.number-evo-2::before,
 .evolutions_container .evolutin-line-13 li.number-evo-2::before {
-	background-image: url(../../../assets/arrow-right-up-svgrepo-com.svg);
+	background-image: url(../../../../assets/arrow-right-up-svgrepo-com.svg);
 }
 
 .evolutions_container .evolutin-line-121 li.number-evo-3::before,
@@ -301,7 +301,7 @@
 .evolutions_container .evolutin-line-112 li.number-evo-4::before,
 .evolutions_container .evolutin-line-122 li.number-evo-4::before,
 .evolutions_container .evolutin-line-13 li.number-evo-4::before {
-	background-image: url(../../../assets/arrow-right-down-svgrepo-com.svg);
+	background-image: url(../../../../assets/arrow-right-down-svgrepo-com.svg);
 }
 
 .evolutions_container li:nth-child(1)::before {
@@ -312,5 +312,5 @@
 	display: block;
 	left: auto;
 	right: -50px;
-	background-image: url(../../../assets/arrow-right-svgrepo-com.svg);
+	background-image: url(../../../../assets/arrow-right-svgrepo-com.svg);
 }
