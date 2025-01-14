@@ -7,26 +7,27 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/001.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/001.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Snivy',
 				Lv: 1,
-				img: './poke-png-G5/001.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/001.png',
 			},
 			{
 				name: 'Servine',
 				Lv: 17,
-				img: './poke-png-G5/002.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/002.png',
 			},
 			{
 				name: 'Serperior',
 				Lv: 36,
-				img: './poke-png-G5/003.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/003.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -45,9 +46,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 45,
+			Attack: 45,
 			Defense: 55,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 55,
 			Speed: 63,
 		},
@@ -62,26 +63,27 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/002.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/002.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Snivy',
 				Lv: 1,
-				img: './poke-png-G5/001.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/001.png',
 			},
 			{
 				name: 'Servine',
 				Lv: 17,
-				img: './poke-png-G5/002.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/002.png',
 			},
 			{
 				name: 'Serperior',
 				Lv: 36,
-				img: './poke-png-G5/003.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/003.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -100,9 +102,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 60,
+			Attack: 60,
 			Defense: 75,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 75,
 			Speed: 83,
 		},
@@ -117,26 +119,27 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/003.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/003.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Snivy',
 				Lv: 1,
-				img: './poke-png-G5/001.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/001.png',
 			},
 			{
 				name: 'Servine',
 				Lv: 17,
-				img: './poke-png-G5/002.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/002.png',
 			},
 			{
 				name: 'Serperior',
 				Lv: 36,
-				img: './poke-png-G5/003.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/003.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -155,9 +158,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 75,
+			Attack: 75,
 			Defense: 95,
-			'Sp.atack': 75,
+			'Sp.attack': 75,
 			'Sp.Def': 95,
 			Speed: 113,
 		},
@@ -172,26 +175,27 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/004.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/004.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tepig',
 				Lv: 1,
-				img: './poke-png-G5/004.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/004.png',
 			},
 			{
 				name: 'Pignite',
 				Lv: 17,
-				img: './poke-png-G5/005.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/005.png',
 			},
 			{
 				name: 'Emboar',
 				Lv: 36,
-				img: './poke-png-G5/006.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/006.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -204,9 +208,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 63,
+			Attack: 63,
 			Defense: 45,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 45,
 			Speed: 45,
 		},
@@ -224,26 +228,27 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/005.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/005.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tepig',
 				Lv: 1,
-				img: './poke-png-G5/004.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/004.png',
 			},
 			{
 				name: 'Pignite',
 				Lv: 17,
-				img: './poke-png-G5/005.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/005.png',
 			},
 			{
 				name: 'Emboar',
 				Lv: 36,
-				img: './poke-png-G5/006.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/006.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -259,9 +264,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 90,
-			Atack: 93,
+			Attack: 93,
 			Defense: 55,
-			'Sp.atack': 70,
+			'Sp.attack': 70,
 			'Sp.Def': 55,
 			Speed: 55,
 		},
@@ -279,26 +284,27 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/006.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/006.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tepig',
 				Lv: 1,
-				img: './poke-png-G5/004.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/004.png',
 			},
 			{
 				name: 'Pignite',
 				Lv: 17,
-				img: './poke-png-G5/005.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/005.png',
 			},
 			{
 				name: 'Emboar',
 				Lv: 36,
-				img: './poke-png-G5/006.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/006.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -314,9 +320,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 100,
-			Atack: 123,
+			Attack: 123,
 			Defense: 65,
-			'Sp.atack': 100,
+			'Sp.attack': 100,
 			'Sp.Def': 65,
 			Speed: 65,
 		},
@@ -331,26 +337,27 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/007.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/007.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Oshawott',
 				Lv: 1,
-				img: './poke-png-G5/007.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/007.png',
 			},
 			{
 				name: 'Dewott',
 				Lv: 17,
-				img: './poke-png-G5/008.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/008.png',
 			},
 			{
 				name: 'Samurott',
 				Lv: 36,
-				img: './poke-png-G5/009.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/009.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -360,9 +367,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 55,
+			Attack: 55,
 			Defense: 45,
-			'Sp.atack': 63,
+			'Sp.attack': 63,
 			'Sp.Def': 45,
 			Speed: 45,
 		},
@@ -377,26 +384,27 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/008.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/008.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Oshawott',
 				Lv: 1,
-				img: './poke-png-G5/007.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/007.png',
 			},
 			{
 				name: 'Dewott',
 				Lv: 17,
-				img: './poke-png-G5/008.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/008.png',
 			},
 			{
 				name: 'Samurott',
 				Lv: 36,
-				img: './poke-png-G5/009.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/009.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -406,9 +414,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 55,
+			Attack: 55,
 			Defense: 60,
-			'Sp.atack': 83,
+			'Sp.attack': 83,
 			'Sp.Def': 60,
 			Speed: 60,
 		},
@@ -423,26 +431,27 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/009.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/009.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Oshawott',
 				Lv: 1,
-				img: './poke-png-G5/007.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/007.png',
 			},
 			{
 				name: 'Dewott',
 				Lv: 17,
-				img: './poke-png-G5/008.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/008.png',
 			},
 			{
 				name: 'Samurott',
 				Lv: 36,
-				img: './poke-png-G5/009.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/009.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -452,9 +461,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 95,
-			Atack: 100,
+			Attack: 100,
 			Defense: 85,
-			'Sp.atack': 108,
+			'Sp.attack': 108,
 			'Sp.Def': 70,
 			Speed: 70,
 		},
@@ -469,30 +478,31 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/010.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/010.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Patrat',
 				Lv: 1,
-				img: './poke-png-G5/010.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/010.png',
 			},
 			{
 				name: 'Watchog',
 				Lv: 20,
-				img: './poke-png-G5/011.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/011.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 55,
+			Attack: 55,
 			Defense: 39,
-			'Sp.atack': 35,
+			'Sp.attack': 35,
 			'Sp.Def': 39,
 			Speed: 42,
 		},
@@ -507,30 +517,31 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/011.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/011.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Patrat',
 				Lv: 1,
-				img: './poke-png-G5/010.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/010.png',
 			},
 			{
 				name: 'Watchog',
 				Lv: 20,
-				img: './poke-png-G5/011.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/011.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 85,
+			Attack: 85,
 			Defense: 69,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 69,
 			Speed: 77,
 		},
@@ -545,35 +556,36 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/012.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/012.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Lillipup',
 				Lv: 1,
-				img: './poke-png-G5/012.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/012.png',
 			},
 			{
 				name: 'Herdier',
 				Lv: 16,
-				img: './poke-png-G5/013.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/013.png',
 			},
 			{
 				name: 'Stoutland',
 				Lv: 32,
-				img: './poke-png-G5/014.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/014.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 60,
+			Attack: 60,
 			Defense: 45,
-			'Sp.atack': 25,
+			'Sp.attack': 25,
 			'Sp.Def': 45,
 			Speed: 55,
 		},
@@ -588,35 +600,36 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/013.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/013.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Lillipup',
 				Lv: 1,
-				img: './poke-png-G5/012.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/012.png',
 			},
 			{
 				name: 'Herdier',
 				Lv: 16,
-				img: './poke-png-G5/013.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/013.png',
 			},
 			{
 				name: 'Stoutland',
 				Lv: 32,
-				img: './poke-png-G5/014.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/014.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 80,
+			Attack: 80,
 			Defense: 65,
-			'Sp.atack': 35,
+			'Sp.attack': 35,
 			'Sp.Def': 65,
 			Speed: 60,
 		},
@@ -631,35 +644,36 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/014.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/014.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Lillipup',
 				Lv: 1,
-				img: './poke-png-G5/012.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/012.png',
 			},
 			{
 				name: 'Herdier',
 				Lv: 16,
-				img: './poke-png-G5/013.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/013.png',
 			},
 			{
 				name: 'Stoutland',
 				Lv: 32,
-				img: './poke-png-G5/014.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/014.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 85,
-			Atack: 110,
+			Attack: 110,
 			Defense: 90,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 90,
 			Speed: 80,
 		},
@@ -674,21 +688,22 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/015.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/015.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Purrloin',
 				Lv: 1,
-				img: './poke-png-G5/015.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/015.png',
 			},
 			{
 				name: 'Liepard',
 				Lv: 20,
-				img: './poke-png-G5/016.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/016.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -701,9 +716,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 41,
-			Atack: 50,
+			Attack: 50,
 			Defense: 37,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 37,
 			Speed: 66,
 		},
@@ -718,21 +733,22 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/016.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/016.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Purrloin',
 				Lv: 1,
-				img: './poke-png-G5/015.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/015.png',
 			},
 			{
 				name: 'Liepard',
 				Lv: 20,
-				img: './poke-png-G5/016.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/016.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -745,9 +761,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 64,
-			Atack: 88,
+			Attack: 88,
 			Defense: 50,
-			'Sp.atack': 88,
+			'Sp.attack': 88,
 			'Sp.Def': 50,
 			Speed: 106,
 		},
@@ -762,21 +778,22 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/017.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/017.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Pansage',
 				Lv: 1,
-				img: './poke-png-G5/017.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/017.png',
 			},
 			{
 				name: 'Simisage',
 				Lv: 'use Leaf Stone',
-				img: './poke-png-G5/018.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/018.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -795,9 +812,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 53,
+			Attack: 53,
 			Defense: 48,
-			'Sp.atack': 53,
+			'Sp.attack': 53,
 			'Sp.Def': 48,
 			Speed: 64,
 		},
@@ -812,21 +829,22 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/018.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/018.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Pansage',
 				Lv: 1,
-				img: './poke-png-G5/017.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/017.png',
 			},
 			{
 				name: 'Simisage',
 				Lv: 'use Leaf Stone',
-				img: './poke-png-G5/018.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/018.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -845,9 +863,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 98,
+			Attack: 98,
 			Defense: 63,
-			'Sp.atack': 98,
+			'Sp.attack': 98,
 			'Sp.Def': 63,
 			Speed: 101,
 		},
@@ -862,21 +880,22 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/019.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/019.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Pansear',
 				Lv: 1,
-				img: './poke-png-G5/019.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/019.png',
 			},
 			{
 				name: 'Simisear',
 				Lv: 'use Fire Stone',
-				img: './poke-png-G5/020.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/020.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -889,9 +908,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 53,
+			Attack: 53,
 			Defense: 48,
-			'Sp.atack': 53,
+			'Sp.attack': 53,
 			'Sp.Def': 48,
 			Speed: 64,
 		},
@@ -906,21 +925,22 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/020.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/020.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Pansear',
 				Lv: 1,
-				img: './poke-png-G5/019.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/019.png',
 			},
 			{
 				name: 'Simisear',
 				Lv: 'use Fire Stone',
-				img: './poke-png-G5/020.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/020.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -933,9 +953,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 98,
+			Attack: 98,
 			Defense: 63,
-			'Sp.atack': 98,
+			'Sp.attack': 98,
 			'Sp.Def': 63,
 			Speed: 101,
 		},
@@ -950,21 +970,22 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/021.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/021.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Panpour',
 				Lv: 1,
-				img: './poke-png-G5/021.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/021.png',
 			},
 			{
 				name: 'Simipour',
 				Lv: 'use Water Stone',
-				img: './poke-png-G5/022.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/022.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -974,9 +995,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 53,
+			Attack: 53,
 			Defense: 48,
-			'Sp.atack': 53,
+			'Sp.attack': 53,
 			'Sp.Def': 48,
 			Speed: 64,
 		},
@@ -991,21 +1012,22 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/022.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/022.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Panpour',
 				Lv: 1,
-				img: './poke-png-G5/021.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/021.png',
 			},
 			{
 				name: 'Simipour',
 				Lv: 'use Water Stone',
-				img: './poke-png-G5/022.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/022.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1015,9 +1037,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 98,
+			Attack: 98,
 			Defense: 63,
-			'Sp.atack': 98,
+			'Sp.attack': 98,
 			'Sp.Def': 63,
 			Speed: 101,
 		},
@@ -1032,21 +1054,22 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/023.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/023.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Munna',
 				Lv: 1,
-				img: './poke-png-G5/023.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/023.png',
 			},
 			{
 				name: 'Musharna',
 				Lv: 'use Moon Stone',
-				img: './poke-png-G5/024.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/024.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -1059,9 +1082,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 76,
-			Atack: 25,
+			Attack: 25,
 			Defense: 45,
-			'Sp.atack': 67,
+			'Sp.attack': 67,
 			'Sp.Def': 55,
 			Speed: 24,
 		},
@@ -1076,21 +1099,22 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/024.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/024.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Munna',
 				Lv: 1,
-				img: './poke-png-G5/023.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/023.png',
 			},
 			{
 				name: 'Musharna',
 				Lv: 'use Moon Stone',
-				img: './poke-png-G5/024.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/024.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -1103,9 +1127,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 116,
-			Atack: 55,
+			Attack: 55,
 			Defense: 85,
-			'Sp.atack': 107,
+			'Sp.attack': 107,
 			'Sp.Def': 95,
 			Speed: 29,
 		},
@@ -1123,26 +1147,27 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/025.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/025.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Pidove',
 				Lv: 1,
-				img: './poke-png-G5/025.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/025.png',
 			},
 			{
 				name: 'Tranquill',
 				Lv: 21,
-				img: './poke-png-G5/026.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/026.png',
 			},
 			{
 				name: 'Unfezant',
 				Lv: 32,
-				img: './poke-png-G5/027.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/027.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1155,9 +1180,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 55,
+			Attack: 55,
 			Defense: 50,
-			'Sp.atack': 36,
+			'Sp.attack': 36,
 			'Sp.Def': 30,
 			Speed: 43,
 		},
@@ -1175,26 +1200,27 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/026.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/026.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Pidove',
 				Lv: 1,
-				img: './poke-png-G5/025.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/025.png',
 			},
 			{
 				name: 'Tranquill',
 				Lv: 21,
-				img: './poke-png-G5/026.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/026.png',
 			},
 			{
 				name: 'Unfezant',
 				Lv: 32,
-				img: './poke-png-G5/027.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/027.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1207,9 +1233,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 62,
-			Atack: 77,
+			Attack: 77,
 			Defense: 62,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 42,
 			Speed: 65,
 		},
@@ -1227,26 +1253,27 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/027.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/027.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Pidove',
 				Lv: 1,
-				img: './poke-png-G5/025.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/025.png',
 			},
 			{
 				name: 'Tranquill',
 				Lv: 21,
-				img: './poke-png-G5/026.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/026.png',
 			},
 			{
 				name: 'Unfezant',
 				Lv: 32,
-				img: './poke-png-G5/027.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/027.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1259,9 +1286,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 80,
-			Atack: 115,
+			Attack: 115,
 			Defense: 80,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 55,
 			Speed: 93,
 		},
@@ -1276,30 +1303,31 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/028.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/028.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Blitzle',
 				Lv: 1,
-				img: './poke-png-G5/028.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/028.png',
 			},
 			{
 				name: 'Zebstrika',
 				Lv: 27,
-				img: './poke-png-G5/029.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/029.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Terra',
 			},
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 60,
+			Attack: 60,
 			Defense: 32,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 32,
 			Speed: 76,
 		},
@@ -1314,30 +1342,31 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/029.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/029.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Blitzle',
 				Lv: 1,
-				img: './poke-png-G5/028.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/028.png',
 			},
 			{
 				name: 'Zebstrika',
 				Lv: 27,
-				img: './poke-png-G5/029.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/029.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Terra',
 			},
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 100,
+			Attack: 100,
 			Defense: 63,
-			'Sp.atack': 80,
+			'Sp.attack': 80,
 			'Sp.Def': 63,
 			Speed: 116,
 		},
@@ -1352,26 +1381,27 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/030.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/030.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Roggenrola',
 				Lv: 1,
-				img: './poke-png-G5/030.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/030.png',
 			},
 			{
 				name: 'Boldore',
 				Lv: 25,
-				img: './poke-png-G5/031.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/031.png',
 			},
 			{
 				name: 'Gigalith',
 				Lv: 'Trade',
-				img: './poke-png-G5/032.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/032.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -1390,9 +1420,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 75,
+			Attack: 75,
 			Defense: 85,
-			'Sp.atack': 25,
+			'Sp.attack': 25,
 			'Sp.Def': 25,
 			Speed: 15,
 		},
@@ -1407,26 +1437,27 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/031.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/031.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Roggenrola',
 				Lv: 1,
-				img: './poke-png-G5/030.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/030.png',
 			},
 			{
 				name: 'Boldore',
 				Lv: 25,
-				img: './poke-png-G5/031.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/031.png',
 			},
 			{
 				name: 'Gigalith',
 				Lv: 'Trade',
-				img: './poke-png-G5/032.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/032.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -1445,9 +1476,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 105,
+			Attack: 105,
 			Defense: 105,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 40,
 			Speed: 20,
 		},
@@ -1462,26 +1493,27 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/032.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/032.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Roggenrola',
 				Lv: 1,
-				img: './poke-png-G5/030.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/030.png',
 			},
 			{
 				name: 'Boldore',
 				Lv: 25,
-				img: './poke-png-G5/031.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/031.png',
 			},
 			{
 				name: 'Gigalith',
 				Lv: 'Trade',
-				img: './poke-png-G5/032.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/032.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -1500,9 +1532,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 85,
-			Atack: 135,
+			Attack: 135,
 			Defense: 130,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 80,
 			Speed: 25,
 		},
@@ -1520,21 +1552,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/033.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/033.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Woobat',
 				Lv: 1,
-				img: './poke-png-G5/033.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/033.png',
 			},
 			{
 				name: 'Swoobat',
 				Lv: 'high Friendship',
-				img: './poke-png-G5/034.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/034.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1553,9 +1586,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 45,
+			Attack: 45,
 			Defense: 43,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 43,
 			Speed: 72,
 		},
@@ -1573,21 +1606,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/034.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/034.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Woobat',
 				Lv: 1,
-				img: './poke-png-G5/033.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/033.png',
 			},
 			{
 				name: 'Swoobat',
 				Lv: 'high Friendship',
-				img: './poke-png-G5/034.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/034.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1606,9 +1640,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 67,
-			Atack: 57,
+			Attack: 57,
 			Defense: 55,
-			'Sp.atack': 77,
+			'Sp.attack': 77,
 			'Sp.Def': 55,
 			Speed: 114,
 		},
@@ -1623,21 +1657,22 @@ export const pokemon = [
 				type: 'Terra',
 			},
 		],
-		images: './poke-png-G5/035.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/035.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Drilbur',
 				Lv: 1,
-				img: './poke-png-G5/035.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/035.png',
 			},
 			{
 				name: 'Excadrill',
 				Lv: 31,
-				img: './poke-png-G5/036.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/036.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -1650,9 +1685,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 85,
+			Attack: 85,
 			Defense: 40,
-			'Sp.atack': 30,
+			'Sp.attack': 30,
 			'Sp.Def': 45,
 			Speed: 68,
 		},
@@ -1670,21 +1705,22 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/036.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/036.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Drilbur',
 				Lv: 1,
-				img: './poke-png-G5/035.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/035.png',
 			},
 			{
 				name: 'Excadrill',
 				Lv: 31,
-				img: './poke-png-G5/036.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/036.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -1700,9 +1736,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 110,
-			Atack: 135,
+			Attack: 135,
 			Defense: 60,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 65,
 			Speed: 88,
 		},
@@ -1717,25 +1753,26 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/037.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/037.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Audino',
 				Lv: 1,
-				img: './poke-png-G5/037.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/037.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 103,
-			Atack: 60,
+			Attack: 60,
 			Defense: 86,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 86,
 			Speed: 50,
 		},
@@ -1750,26 +1787,27 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/038.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/038.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Timburr',
 				Lv: 1,
-				img: './poke-png-G5/038.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/038.png',
 			},
 			{
 				name: 'Gurdurr',
 				Lv: 25,
-				img: './poke-png-G5/039.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/039.png',
 			},
 			{
 				name: 'Conkeldurr',
 				Lv: 'Trade',
-				img: './poke-png-G5/040.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/040.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -1782,9 +1820,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 80,
+			Attack: 80,
 			Defense: 55,
-			'Sp.atack': 25,
+			'Sp.attack': 25,
 			'Sp.Def': 35,
 			Speed: 35,
 		},
@@ -1799,26 +1837,27 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/039.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/039.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Timburr',
 				Lv: 1,
-				img: './poke-png-G5/038.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/038.png',
 			},
 			{
 				name: 'Gurdurr',
 				Lv: 25,
-				img: './poke-png-G5/039.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/039.png',
 			},
 			{
 				name: 'Conkeldurr',
 				Lv: 'Trade',
-				img: './poke-png-G5/040.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/040.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -1831,9 +1870,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 85,
-			Atack: 105,
+			Attack: 105,
 			Defense: 85,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 50,
 			Speed: 40,
 		},
@@ -1848,26 +1887,27 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/040.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/040.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Timburr',
 				Lv: 1,
-				img: './poke-png-G5/038.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/038.png',
 			},
 			{
 				name: 'Gurdurr',
 				Lv: 25,
-				img: './poke-png-G5/039.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/039.png',
 			},
 			{
 				name: 'Conkeldurr',
 				Lv: 'Trade',
-				img: './poke-png-G5/040.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/040.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -1880,9 +1920,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 105,
-			Atack: 140,
+			Attack: 140,
 			Defense: 95,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 65,
 			Speed: 45,
 		},
@@ -1897,26 +1937,27 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/041.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/041.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tympole',
 				Lv: 1,
-				img: './poke-png-G5/041.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/041.png',
 			},
 			{
 				name: 'Palpitoad',
 				Lv: 25,
-				img: './poke-png-G5/042.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/042.png',
 			},
 			{
 				name: 'Seismitoad',
 				Lv: 36,
-				img: './poke-png-G5/043.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/043.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -1926,9 +1967,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 50,
+			Attack: 50,
 			Defense: 40,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 40,
 			Speed: 64,
 		},
@@ -1946,35 +1987,36 @@ export const pokemon = [
 				type: 'Terra',
 			},
 		],
-		images: './poke-png-G5/042.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/042.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tympole',
 				Lv: 1,
-				img: './poke-png-G5/041.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/041.png',
 			},
 			{
 				name: 'Palpitoad',
 				Lv: 25,
-				img: './poke-png-G5/042.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/042.png',
 			},
 			{
 				name: 'Seismitoad',
 				Lv: 36,
-				img: './poke-png-G5/043.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/043.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Grama',
 			},
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 65,
+			Attack: 65,
 			Defense: 55,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 55,
 			Speed: 69,
 		},
@@ -1992,35 +2034,36 @@ export const pokemon = [
 				type: 'Terra',
 			},
 		],
-		images: './poke-png-G5/043.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/043.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tympole',
 				Lv: 1,
-				img: './poke-png-G5/041.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/041.png',
 			},
 			{
 				name: 'Palpitoad',
 				Lv: 25,
-				img: './poke-png-G5/042.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/042.png',
 			},
 			{
 				name: 'Seismitoad',
 				Lv: 36,
-				img: './poke-png-G5/043.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/043.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Grama',
 			},
 		],
 		baseStats: {
 			HP: 105,
-			Atack: 95,
+			Attack: 95,
 			Defense: 75,
-			'Sp.atack': 85,
+			'Sp.attack': 85,
 			'Sp.Def': 75,
 			Speed: 74,
 		},
@@ -2035,16 +2078,17 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/044.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/044.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Throh',
 				Lv: 1,
-				img: './poke-png-G5/044.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/044.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -2057,9 +2101,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 120,
-			Atack: 100,
+			Attack: 100,
 			Defense: 85,
-			'Sp.atack': 30,
+			'Sp.attack': 30,
 			'Sp.Def': 85,
 			Speed: 45,
 		},
@@ -2074,16 +2118,17 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/045.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/045.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Sawk',
 				Lv: 1,
-				img: './poke-png-G5/045.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/045.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -2096,9 +2141,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 125,
+			Attack: 125,
 			Defense: 75,
-			'Sp.atack': 30,
+			'Sp.attack': 30,
 			'Sp.Def': 75,
 			Speed: 85,
 		},
@@ -2116,26 +2161,27 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/046.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/046.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Sewaddle',
 				Lv: 1,
-				img: './poke-png-G5/046.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/046.png',
 			},
 			{
 				name: 'Swadloon',
 				Lv: 20,
-				img: './poke-png-G5/047.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/047.png',
 			},
 			{
 				name: 'Leavanny',
 				Lv: 'high Friendship',
-				img: './poke-png-G5/048.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/048.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2157,9 +2203,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 53,
+			Attack: 53,
 			Defense: 70,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 60,
 			Speed: 42,
 		},
@@ -2177,26 +2223,27 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/047.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/047.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Sewaddle',
 				Lv: 1,
-				img: './poke-png-G5/046.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/046.png',
 			},
 			{
 				name: 'Swadloon',
 				Lv: 20,
-				img: './poke-png-G5/047.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/047.png',
 			},
 			{
 				name: 'Leavanny',
 				Lv: 'high Friendship',
-				img: './poke-png-G5/048.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/048.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2218,9 +2265,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 63,
+			Attack: 63,
 			Defense: 90,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 80,
 			Speed: 42,
 		},
@@ -2238,26 +2285,27 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/048.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/048.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Sewaddle',
 				Lv: 1,
-				img: './poke-png-G5/046.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/046.png',
 			},
 			{
 				name: 'Swadloon',
 				Lv: 20,
-				img: './poke-png-G5/047.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/047.png',
 			},
 			{
 				name: 'Leavanny',
 				Lv: 'high Friendship',
-				img: './poke-png-G5/048.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/048.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2279,9 +2327,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 103,
+			Attack: 103,
 			Defense: 80,
-			'Sp.atack': 70,
+			'Sp.attack': 70,
 			'Sp.Def': 80,
 			Speed: 92,
 		},
@@ -2299,26 +2347,27 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/049.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/049.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Venipede',
 				Lv: 1,
-				img: './poke-png-G5/049.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/049.png',
 			},
 			{
 				name: 'Whirlipede',
 				Lv: 22,
-				img: './poke-png-G5/050.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/050.png',
 			},
 			{
 				name: 'Scolipede',
 				Lv: 30,
-				img: './poke-png-G5/051.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/051.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2334,9 +2383,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 30,
-			Atack: 45,
+			Attack: 45,
 			Defense: 59,
-			'Sp.atack': 30,
+			'Sp.attack': 30,
 			'Sp.Def': 39,
 			Speed: 57,
 		},
@@ -2354,26 +2403,27 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/050.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/050.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Venipede',
 				Lv: 1,
-				img: './poke-png-G5/049.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/049.png',
 			},
 			{
 				name: 'Whirlipede',
 				Lv: 22,
-				img: './poke-png-G5/050.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/050.png',
 			},
 			{
 				name: 'Scolipede',
 				Lv: 30,
-				img: './poke-png-G5/051.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/051.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2389,9 +2439,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 40,
-			Atack: 55,
+			Attack: 55,
 			Defense: 99,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 79,
 			Speed: 47,
 		},
@@ -2409,26 +2459,27 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/051.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/051.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Venipede',
 				Lv: 1,
-				img: './poke-png-G5/049.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/049.png',
 			},
 			{
 				name: 'Whirlipede',
 				Lv: 22,
-				img: './poke-png-G5/050.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/050.png',
 			},
 			{
 				name: 'Scolipede',
 				Lv: 30,
-				img: './poke-png-G5/051.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/051.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2444,9 +2495,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 100,
+			Attack: 100,
 			Defense: 89,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 69,
 			Speed: 112,
 		},
@@ -2464,21 +2515,22 @@ export const pokemon = [
 				type: 'Fada',
 			},
 		],
-		images: './poke-png-G5/052.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/052.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Cottonee',
 				Lv: 1,
-				img: './poke-png-G5/052.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/052.png',
 			},
 			{
 				name: 'Whimsicott',
 				Lv: 'use Sun Stone',
-				img: './poke-png-G5/053.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/053.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2497,9 +2549,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 40,
-			Atack: 27,
+			Attack: 27,
 			Defense: 60,
-			'Sp.atack': 37,
+			'Sp.attack': 37,
 			'Sp.Def': 50,
 			Speed: 66,
 		},
@@ -2517,21 +2569,22 @@ export const pokemon = [
 				type: 'Fada',
 			},
 		],
-		images: './poke-png-G5/053.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/053.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Cottonee',
 				Lv: 1,
-				img: './poke-png-G5/052.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/052.png',
 			},
 			{
 				name: 'Whimsicott',
 				Lv: 'use Sun Stone',
-				img: './poke-png-G5/053.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/053.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2550,9 +2603,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 67,
+			Attack: 67,
 			Defense: 85,
-			'Sp.atack': 77,
+			'Sp.attack': 77,
 			'Sp.Def': 75,
 			Speed: 116,
 		},
@@ -2567,21 +2620,22 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/054.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/054.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Petilil',
 				Lv: 1,
-				img: './poke-png-G5/054.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/054.png',
 			},
 			{
 				name: 'Lilligant',
 				Lv: 'use Sun Stone',
-				img: './poke-png-G5/055.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/055.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2600,9 +2654,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 35,
+			Attack: 35,
 			Defense: 50,
-			'Sp.atack': 70,
+			'Sp.attack': 70,
 			'Sp.Def': 50,
 			Speed: 30,
 		},
@@ -2617,21 +2671,22 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/055.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/055.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Petilil',
 				Lv: 1,
-				img: './poke-png-G5/054.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/054.png',
 			},
 			{
 				name: 'Lilligant',
 				Lv: 'use Sun Stone',
-				img: './poke-png-G5/055.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/055.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -2650,9 +2705,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 60,
+			Attack: 60,
 			Defense: 75,
-			'Sp.atack': 110,
+			'Sp.attack': 110,
 			'Sp.Def': 75,
 			Speed: 90,
 		},
@@ -2667,21 +2722,22 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/056.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/056.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Basculin',
 				Lv: 1,
-				img: './poke-png-G5/056.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/056.png',
 			},
 			{
 				name: 'Basculegion',
 				Lv: 'receive 294 recoil damage in battle',
-				img: './poke-png-G8/093.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G8/093.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -2691,9 +2747,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 92,
+			Attack: 92,
 			Defense: 65,
-			'Sp.atack': 80,
+			'Sp.attack': 80,
 			'Sp.Def': 55,
 			Speed: 98,
 		},
@@ -2711,26 +2767,27 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/057.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/057.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Sandile',
 				Lv: 1,
-				img: './poke-png-G5/057.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/057.png',
 			},
 			{
 				name: 'Krokorok',
 				Lv: 29,
-				img: './poke-png-G5/058.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/058.png',
 			},
 			{
 				name: 'Krookodile',
 				Lv: 40,
-				img: './poke-png-G5/059.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/059.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -2752,9 +2809,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 72,
+			Attack: 72,
 			Defense: 35,
-			'Sp.atack': 35,
+			'Sp.attack': 35,
 			'Sp.Def': 35,
 			Speed: 65,
 		},
@@ -2772,26 +2829,27 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/058.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/058.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Sandile',
 				Lv: 1,
-				img: './poke-png-G5/057.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/057.png',
 			},
 			{
 				name: 'Krokorok',
 				Lv: 29,
-				img: './poke-png-G5/058.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/058.png',
 			},
 			{
 				name: 'Krookodile',
 				Lv: 40,
-				img: './poke-png-G5/059.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/059.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -2813,9 +2871,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 82,
+			Attack: 82,
 			Defense: 45,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 45,
 			Speed: 74,
 		},
@@ -2833,26 +2891,27 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/059.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/059.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Sandile',
 				Lv: 1,
-				img: './poke-png-G5/057.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/057.png',
 			},
 			{
 				name: 'Krokorok',
 				Lv: 29,
-				img: './poke-png-G5/058.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/058.png',
 			},
 			{
 				name: 'Krookodile',
 				Lv: 40,
-				img: './poke-png-G5/059.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/059.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -2874,9 +2933,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 95,
-			Atack: 117,
+			Attack: 117,
 			Defense: 80,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 70,
 			Speed: 92,
 		},
@@ -2891,21 +2950,22 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/060.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/060.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Darumaka',
 				Lv: 1,
-				img: './poke-png-G5/060.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/060.png',
 			},
 			{
 				name: 'Darmanitan',
 				Lv: 35,
-				img: './poke-png-G5/061.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/061.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -2918,9 +2978,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 90,
+			Attack: 90,
 			Defense: 45,
-			'Sp.atack': 15,
+			'Sp.attack': 15,
 			'Sp.Def': 45,
 			Speed: 50,
 		},
@@ -2935,21 +2995,22 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/061.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/061.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Darumaka',
 				Lv: 1,
-				img: './poke-png-G5/060.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/060.png',
 			},
 			{
 				name: 'Darmanitan',
 				Lv: 35,
-				img: './poke-png-G5/061.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/061.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -2962,9 +3023,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 105,
-			Atack: 140,
+			Attack: 140,
 			Defense: 55,
-			'Sp.atack': 30,
+			'Sp.attack': 30,
 			'Sp.Def': 55,
 			Speed: 95,
 		},
@@ -2979,16 +3040,17 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/062.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/062.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Maractus',
 				Lv: 1,
-				img: './poke-png-G5/062.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/062.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -3007,9 +3069,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 86,
+			Attack: 86,
 			Defense: 67,
-			'Sp.atack': 106,
+			'Sp.attack': 106,
 			'Sp.Def': 67,
 			Speed: 60,
 		},
@@ -3027,21 +3089,22 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/063.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/063.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Dwebble',
 				Lv: 1,
-				img: './poke-png-G5/063.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/063.png',
 			},
 			{
 				name: 'Crustle',
 				Lv: 34,
-				img: './poke-png-G5/064.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/064.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -3054,9 +3117,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 65,
+			Attack: 65,
 			Defense: 85,
-			'Sp.atack': 35,
+			'Sp.attack': 35,
 			'Sp.Def': 35,
 			Speed: 55,
 		},
@@ -3074,21 +3137,22 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/063.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/063.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Dwebble',
 				Lv: 1,
-				img: './poke-png-G5/063.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/063.png',
 			},
 			{
 				name: 'Crustle',
 				Lv: 34,
-				img: './poke-png-G5/064.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/064.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -3101,9 +3165,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 105,
+			Attack: 105,
 			Defense: 125,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 75,
 			Speed: 45,
 		},
@@ -3121,21 +3185,22 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/065.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/065.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Scraggy',
 				Lv: 1,
-				img: './poke-png-G5/065.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/065.png',
 			},
 			{
 				name: 'Scrafty',
 				Lv: 39,
-				img: './poke-png-G5/066.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/066.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -3148,9 +3213,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 75,
+			Attack: 75,
 			Defense: 70,
-			'Sp.atack': 35,
+			'Sp.attack': 35,
 			'Sp.Def': 70,
 			Speed: 48,
 		},
@@ -3168,21 +3233,22 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/066.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/066.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Scraggy',
 				Lv: 1,
-				img: './poke-png-G5/065.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/065.png',
 			},
 			{
 				name: 'Scrafty',
 				Lv: 39,
-				img: './poke-png-G5/066.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/066.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -3195,9 +3261,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 90,
+			Attack: 90,
 			Defense: 115,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 115,
 			Speed: 58,
 		},
@@ -3215,16 +3281,17 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/067.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/067.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Sigilyph',
 				Lv: 1,
-				img: './poke-png-G5/067.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/067.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -3243,9 +3310,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 72,
-			Atack: 58,
+			Attack: 58,
 			Defense: 80,
-			'Sp.atack': 103,
+			'Sp.attack': 103,
 			'Sp.Def': 80,
 			Speed: 97,
 		},
@@ -3260,26 +3327,27 @@ export const pokemon = [
 				type: 'Fantasma',
 			},
 		],
-		images: './poke-png-G5/068.png',
-		evolutinLine: 12,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/068.png',
+		evolutionLine: 12,
 		evolution: [
 			{
 				name: 'Sigilyph',
 				Lv: 1,
-				img: './poke-png-G5/068.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/068.png',
 			},
 			{
 				name: 'Cofagrigus',
 				Lv: 34,
-				img: './poke-png-G5/069.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/069.png',
 			},
 			{
 				name: 'Runerigus',
 				Lv: 'near Dusty Bowl',
-				img: './poke-png-G8/058.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G8/058.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fantasma',
 			},
@@ -3289,9 +3357,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 38,
-			Atack: 30,
+			Attack: 30,
 			Defense: 85,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 65,
 			Speed: 30,
 		},
@@ -3306,26 +3374,27 @@ export const pokemon = [
 				type: 'Fantasma',
 			},
 		],
-		images: './poke-png-G5/069.png',
-		evolutinLine: 12,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/069.png',
+		evolutionLine: 12,
 		evolution: [
 			{
 				name: 'Sigilyph',
 				Lv: 1,
-				img: './poke-png-G5/068.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/068.png',
 			},
 			{
 				name: 'Cofagrigus',
 				Lv: 34,
-				img: './poke-png-G5/069.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/069.png',
 			},
 			{
 				name: 'Runerigus',
 				Lv: 'near Dusty Bowl',
-				img: './poke-png-G8/058.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G8/058.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fantasma',
 			},
@@ -3335,9 +3404,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 58,
-			Atack: 50,
+			Attack: 50,
 			Defense: 145,
-			'Sp.atack': 95,
+			'Sp.attack': 95,
 			'Sp.Def': 105,
 			Speed: 30,
 		},
@@ -3355,21 +3424,22 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/070.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/070.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Tirtouga',
 				Lv: 1,
-				img: './poke-png-G5/070.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/070.png',
 			},
 			{
 				name: 'Carracosta',
 				Lv: 37,
-				img: './poke-png-G5/071.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/071.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -3385,9 +3455,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 54,
-			Atack: 78,
+			Attack: 78,
 			Defense: 103,
-			'Sp.atack': 53,
+			'Sp.attack': 53,
 			'Sp.Def': 45,
 			Speed: 22,
 		},
@@ -3405,21 +3475,22 @@ export const pokemon = [
 				type: 'Rocha',
 			},
 		],
-		images: './poke-png-G5/071.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/071.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Tirtouga',
 				Lv: 1,
-				img: './poke-png-G5/070.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/070.png',
 			},
 			{
 				name: 'Carracosta',
 				Lv: 37,
-				img: './poke-png-G5/071.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/071.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -3435,9 +3506,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 74,
-			Atack: 108,
+			Attack: 108,
 			Defense: 133,
-			'Sp.atack': 83,
+			'Sp.attack': 83,
 			'Sp.Def': 65,
 			Speed: 32,
 		},
@@ -3455,21 +3526,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/072.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/072.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Archen',
 				Lv: 1,
-				img: './poke-png-G5/072.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/072.png',
 			},
 			{
 				name: 'Archeops',
 				Lv: 37,
-				img: './poke-png-G5/073.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/073.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -3488,9 +3560,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 112,
+			Attack: 112,
 			Defense: 45,
-			'Sp.atack': 74,
+			'Sp.attack': 74,
 			'Sp.Def': 45,
 			Speed: 70,
 		},
@@ -3508,21 +3580,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/073.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/073.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Archen',
 				Lv: 1,
-				img: './poke-png-G5/072.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/072.png',
 			},
 			{
 				name: 'Archeops',
 				Lv: 37,
-				img: './poke-png-G5/073.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/073.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -3541,9 +3614,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 140,
+			Attack: 140,
 			Defense: 65,
-			'Sp.atack': 112,
+			'Sp.attack': 112,
 			'Sp.Def': 65,
 			Speed: 110,
 		},
@@ -3558,21 +3631,22 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/074.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/074.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Trubbish',
 				Lv: 1,
-				img: './poke-png-G5/074.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/074.png',
 			},
 			{
 				name: 'Garbodor',
 				Lv: 36,
-				img: './poke-png-G5/075.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/075.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Terra',
 			},
@@ -3582,9 +3656,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 50,
+			Attack: 50,
 			Defense: 62,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 62,
 			Speed: 65,
 		},
@@ -3599,21 +3673,22 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/075.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/075.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Trubbish',
 				Lv: 1,
-				img: './poke-png-G5/074.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/074.png',
 			},
 			{
 				name: 'Garbodor',
 				Lv: 36,
-				img: './poke-png-G5/075.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/075.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Terra',
 			},
@@ -3623,9 +3698,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 80,
-			Atack: 95,
+			Attack: 95,
 			Defense: 82,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 82,
 			Speed: 75,
 		},
@@ -3640,21 +3715,22 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/076.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/076.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Zorua',
 				Lv: 1,
-				img: './poke-png-G5/076.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/076.png',
 			},
 			{
 				name: 'Zoroark',
 				Lv: 30,
-				img: './poke-png-G5/077.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/077.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -3667,9 +3743,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 40,
-			Atack: 65,
+			Attack: 65,
 			Defense: 40,
-			'Sp.atack': 80,
+			'Sp.attack': 80,
 			'Sp.Def': 40,
 			Speed: 65,
 		},
@@ -3684,21 +3760,22 @@ export const pokemon = [
 				type: 'Obscuro',
 			},
 		],
-		images: './poke-png-G5/077.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/077.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Zorua',
 				Lv: 1,
-				img: './poke-png-G5/076.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/076.png',
 			},
 			{
 				name: 'Zoroark',
 				Lv: 30,
-				img: './poke-png-G5/077.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/077.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -3711,9 +3788,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 105,
+			Attack: 105,
 			Defense: 60,
-			'Sp.atack': 120,
+			'Sp.attack': 120,
 			'Sp.Def': 60,
 			Speed: 105,
 		},
@@ -3728,30 +3805,31 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/078.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/078.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Minccino',
 				Lv: 1,
-				img: './poke-png-G5/078.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/078.png',
 			},
 			{
 				name: 'Cinccino',
 				Lv: 'use Shiny Stone',
-				img: './poke-png-G5/079.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/079.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 50,
+			Attack: 50,
 			Defense: 40,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 40,
 			Speed: 75,
 		},
@@ -3766,30 +3844,31 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/079.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/079.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Minccino',
 				Lv: 1,
-				img: './poke-png-G5/078.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/078.png',
 			},
 			{
 				name: 'Cinccino',
 				Lv: 'use Shiny Stone',
-				img: './poke-png-G5/079.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/079.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 95,
+			Attack: 95,
 			Defense: 60,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 60,
 			Speed: 115,
 		},
@@ -3804,26 +3883,27 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/080.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/080.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Gothita',
 				Lv: 1,
-				img: './poke-png-G5/080.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/080.png',
 			},
 			{
 				name: 'Gothorita',
 				Lv: 32,
-				img: './poke-png-G5/081.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/081.png',
 			},
 			{
 				name: 'Gothitelle',
 				Lv: 41,
-				img: './poke-png-G5/082.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/082.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -3836,9 +3916,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 30,
+			Attack: 30,
 			Defense: 50,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 65,
 			Speed: 45,
 		},
@@ -3853,26 +3933,27 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/081.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/081.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Gothita',
 				Lv: 1,
-				img: './poke-png-G5/080.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/080.png',
 			},
 			{
 				name: 'Gothorita',
 				Lv: 32,
-				img: './poke-png-G5/081.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/081.png',
 			},
 			{
 				name: 'Gothitelle',
 				Lv: 41,
-				img: './poke-png-G5/082.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/082.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -3885,9 +3966,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 45,
+			Attack: 45,
 			Defense: 70,
-			'Sp.atack': 75,
+			'Sp.attack': 75,
 			'Sp.Def': 85,
 			Speed: 55,
 		},
@@ -3902,26 +3983,27 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/082.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/082.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Gothita',
 				Lv: 1,
-				img: './poke-png-G5/080.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/080.png',
 			},
 			{
 				name: 'Gothorita',
 				Lv: 32,
-				img: './poke-png-G5/081.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/081.png',
 			},
 			{
 				name: 'Gothitelle',
 				Lv: 41,
-				img: './poke-png-G5/082.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/082.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -3934,9 +4016,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 55,
+			Attack: 55,
 			Defense: 95,
-			'Sp.atack': 95,
+			'Sp.attack': 95,
 			'Sp.Def': 110,
 			Speed: 65,
 		},
@@ -3951,26 +4033,27 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/083.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/083.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Solosis',
 				Lv: 1,
-				img: './poke-png-G5/083.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/083.png',
 			},
 			{
 				name: 'Duosion',
 				Lv: 32,
-				img: './poke-png-G5/084.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/084.png',
 			},
 			{
 				name: 'Reuniclus',
 				Lv: 41,
-				img: './poke-png-G5/085.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/085.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -3983,9 +4066,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 30,
+			Attack: 30,
 			Defense: 40,
-			'Sp.atack': 105,
+			'Sp.attack': 105,
 			'Sp.Def': 50,
 			Speed: 20,
 		},
@@ -4000,26 +4083,27 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/084.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/084.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Solosis',
 				Lv: 1,
-				img: './poke-png-G5/083.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/083.png',
 			},
 			{
 				name: 'Duosion',
 				Lv: 32,
-				img: './poke-png-G5/084.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/084.png',
 			},
 			{
 				name: 'Reuniclus',
 				Lv: 41,
-				img: './poke-png-G5/085.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/085.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -4032,9 +4116,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 40,
+			Attack: 40,
 			Defense: 50,
-			'Sp.atack': 125,
+			'Sp.attack': 125,
 			'Sp.Def': 60,
 			Speed: 30,
 		},
@@ -4049,26 +4133,27 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/085.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/085.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Solosis',
 				Lv: 1,
-				img: './poke-png-G5/083.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/083.png',
 			},
 			{
 				name: 'Duosion',
 				Lv: 32,
-				img: './poke-png-G5/084.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/084.png',
 			},
 			{
 				name: 'Reuniclus',
 				Lv: 41,
-				img: './poke-png-G5/085.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/085.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -4081,9 +4166,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 110,
-			Atack: 65,
+			Attack: 65,
 			Defense: 75,
-			'Sp.atack': 125,
+			'Sp.attack': 125,
 			'Sp.Def': 85,
 			Speed: 30,
 		},
@@ -4101,21 +4186,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/086.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/086.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Ducklett',
 				Lv: 1,
-				img: './poke-png-G5/086.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/086.png',
 			},
 			{
 				name: 'Swanna',
 				Lv: 35,
-				img: './poke-png-G5/087.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/087.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -4125,9 +4211,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 62,
-			Atack: 44,
+			Attack: 44,
 			Defense: 50,
-			'Sp.atack': 44,
+			'Sp.attack': 44,
 			'Sp.Def': 50,
 			Speed: 55,
 		},
@@ -4145,21 +4231,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/087.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/087.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Ducklett',
 				Lv: 1,
-				img: './poke-png-G5/086.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/086.png',
 			},
 			{
 				name: 'Swanna',
 				Lv: 35,
-				img: './poke-png-G5/087.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/087.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -4169,9 +4256,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 87,
+			Attack: 87,
 			Defense: 63,
-			'Sp.atack': 87,
+			'Sp.attack': 87,
 			'Sp.Def': 63,
 			Speed: 98,
 		},
@@ -4185,26 +4272,27 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/088.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/088.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Vanillite',
 				Lv: 1,
-				img: './poke-png-G5/088.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/088.png',
 			},
 			{
 				name: 'Vanillish',
 				Lv: 35,
-				img: './poke-png-G5/089.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/089.png',
 			},
 			{
 				name: 'Vanilluxe',
 				Lv: 47,
-				img: './poke-png-G5/090.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/090.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4220,9 +4308,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 36,
-			Atack: 50,
+			Attack: 50,
 			Defense: 50,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 60,
 			Speed: 44,
 		},
@@ -4237,26 +4325,27 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/089.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/089.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Vanillite',
 				Lv: 1,
-				img: './poke-png-G5/088.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/088.png',
 			},
 			{
 				name: 'Vanillish',
 				Lv: 35,
-				img: './poke-png-G5/089.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/089.png',
 			},
 			{
 				name: 'Vanilluxe',
 				Lv: 47,
-				img: './poke-png-G5/090.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/090.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4272,9 +4361,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 51,
-			Atack: 65,
+			Attack: 65,
 			Defense: 65,
-			'Sp.atack': 80,
+			'Sp.attack': 80,
 			'Sp.Def': 75,
 			Speed: 59,
 		},
@@ -4289,26 +4378,27 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/090.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/090.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Vanillite',
 				Lv: 1,
-				img: './poke-png-G5/088.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/088.png',
 			},
 			{
 				name: 'Vanillish',
 				Lv: 35,
-				img: './poke-png-G5/089.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/089.png',
 			},
 			{
 				name: 'Vanilluxe',
 				Lv: 47,
-				img: './poke-png-G5/090.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/090.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4324,9 +4414,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 71,
-			Atack: 95,
+			Attack: 95,
 			Defense: 85,
-			'Sp.atack': 110,
+			'Sp.attack': 110,
 			'Sp.Def': 95,
 			Speed: 79,
 		},
@@ -4344,21 +4434,22 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/091.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/091.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Deerling',
 				Lv: 1,
-				img: './poke-png-G5/091.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/091.png',
 			},
 			{
 				name: 'Sawsbuck',
 				Lv: 34,
-				img: './poke-png-G5/092.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/092.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4380,9 +4471,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 60,
+			Attack: 60,
 			Defense: 50,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 50,
 			Speed: 75,
 		},
@@ -4400,21 +4491,22 @@ export const pokemon = [
 				type: 'Grama',
 			},
 		],
-		images: './poke-png-G5/092.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/092.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Deerling',
 				Lv: 1,
-				img: './poke-png-G5/091.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/091.png',
 			},
 			{
 				name: 'Sawsbuck',
 				Lv: 34,
-				img: './poke-png-G5/092.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/092.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4436,9 +4528,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 80,
-			Atack: 100,
+			Attack: 100,
 			Defense: 70,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 70,
 			Speed: 95,
 		},
@@ -4456,16 +4548,17 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/093.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/093.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Emolga',
 				Lv: 1,
-				img: './poke-png-G5/093.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/093.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -4475,9 +4568,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 75,
+			Attack: 75,
 			Defense: 60,
-			'Sp.atack': 75,
+			'Sp.attack': 75,
 			'Sp.Def': 60,
 			Speed: 103,
 		},
@@ -4492,21 +4585,22 @@ export const pokemon = [
 				type: 'Inseto',
 			},
 		],
-		images: './poke-png-G5/094.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/094.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Karrablast',
 				Lv: 1,
-				img: './poke-png-G5/094.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/094.png',
 			},
 			{
 				name: 'Escavalier',
 				Lv: 'Trade with Shelmet',
-				img: './poke-png-G5/095.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/095.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4519,9 +4613,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 75,
+			Attack: 75,
 			Defense: 45,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 45,
 			Speed: 60,
 		},
@@ -4539,30 +4633,31 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/095.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/095.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Karrablast',
 				Lv: 1,
-				img: './poke-png-G5/094.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/094.png',
 			},
 			{
 				name: 'Escavalier',
 				Lv: 'Trade with Shelmet',
-				img: './poke-png-G5/095.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/095.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 135,
+			Attack: 135,
 			Defense: 105,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 105,
 			Speed: 20,
 		},
@@ -4580,21 +4675,22 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/096.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/096.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Foongus',
 				Lv: 1,
-				img: './poke-png-G5/096.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/096.png',
 			},
 			{
 				name: 'Amoonguss',
 				Lv: 39,
-				img: './poke-png-G5/097.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/097.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4610,9 +4706,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 69,
-			Atack: 55,
+			Attack: 55,
 			Defense: 45,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 55,
 			Speed: 15,
 		},
@@ -4630,21 +4726,22 @@ export const pokemon = [
 				type: 'Veneno',
 			},
 		],
-		images: './poke-png-G5/097.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/097.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Foongus',
 				Lv: 1,
-				img: './poke-png-G5/096.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/096.png',
 			},
 			{
 				name: 'Amoonguss',
 				Lv: 39,
-				img: './poke-png-G5/097.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/097.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4660,9 +4757,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 114,
-			Atack: 85,
+			Attack: 85,
 			Defense: 70,
-			'Sp.atack': 85,
+			'Sp.attack': 85,
 			'Sp.Def': 80,
 			Speed: 30,
 		},
@@ -4680,21 +4777,22 @@ export const pokemon = [
 				type: 'Fantasma',
 			},
 		],
-		images: './poke-png-G5/098.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/098.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Frillish',
 				Lv: 1,
-				img: './poke-png-G5/098.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/098.png',
 			},
 			{
 				name: 'Jellicent',
 				Lv: 40,
-				img: './poke-png-G5/099.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/099.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -4710,9 +4808,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 40,
+			Attack: 40,
 			Defense: 50,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 85,
 			Speed: 40,
 		},
@@ -4730,21 +4828,22 @@ export const pokemon = [
 				type: 'Fantasma',
 			},
 		],
-		images: './poke-png-G5/099.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/099.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Frillish',
 				Lv: 1,
-				img: './poke-png-G5/098.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/098.png',
 			},
 			{
 				name: 'Jellicent',
 				Lv: 40,
-				img: './poke-png-G5/099.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/099.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -4760,9 +4859,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 100,
-			Atack: 60,
+			Attack: 60,
 			Defense: 70,
-			'Sp.atack': 85,
+			'Sp.attack': 85,
 			'Sp.Def': 105,
 			Speed: 60,
 		},
@@ -4777,16 +4876,17 @@ export const pokemon = [
 				type: 'Agua',
 			},
 		],
-		images: './poke-png-G5/100.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/100.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Alomomola',
 				Lv: 1,
-				img: './poke-png-G5/100.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/100.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -4796,9 +4896,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 165,
-			Atack: 75,
+			Attack: 75,
 			Defense: 80,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 45,
 			Speed: 65,
 		},
@@ -4816,21 +4916,22 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/101.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/101.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Joltik',
 				Lv: 1,
-				img: './poke-png-G5/101.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/101.png',
 			},
 			{
 				name: 'Galvantula',
 				Lv: 36,
-				img: './poke-png-G5/102.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/102.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4840,9 +4941,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 47,
+			Attack: 47,
 			Defense: 50,
-			'Sp.atack': 57,
+			'Sp.attack': 57,
 			'Sp.Def': 50,
 			Speed: 65,
 		},
@@ -4860,21 +4961,22 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/102.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/102.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Joltik',
 				Lv: 1,
-				img: './poke-png-G5/101.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/101.png',
 			},
 			{
 				name: 'Galvantula',
 				Lv: 36,
-				img: './poke-png-G5/102.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/102.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4884,9 +4986,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 77,
+			Attack: 77,
 			Defense: 60,
-			'Sp.atack': 97,
+			'Sp.attack': 97,
 			'Sp.Def': 60,
 			Speed: 108,
 		},
@@ -4904,21 +5006,22 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/103.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/103.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Ferroseed',
 				Lv: 1,
-				img: './poke-png-G5/103.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/103.png',
 			},
 			{
 				name: 'Ferrothorn',
 				Lv: 40,
-				img: './poke-png-G5/104.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/104.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4928,9 +5031,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 44,
-			Atack: 50,
+			Attack: 50,
 			Defense: 91,
-			'Sp.atack': 24,
+			'Sp.attack': 24,
 			'Sp.Def': 86,
 			Speed: 10,
 		},
@@ -4948,21 +5051,22 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/104.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/104.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Ferroseed',
 				Lv: 1,
-				img: './poke-png-G5/103.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/103.png',
 			},
 			{
 				name: 'Ferrothorn',
 				Lv: 40,
-				img: './poke-png-G5/104.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/104.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -4972,9 +5076,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 74,
-			Atack: 94,
+			Attack: 94,
 			Defense: 131,
-			'Sp.atack': 54,
+			'Sp.attack': 54,
 			'Sp.Def': 116,
 			Speed: 20,
 		},
@@ -4989,26 +5093,27 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/105.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/105.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Klink',
 				Lv: 1,
-				img: './poke-png-G5/105.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/105.png',
 			},
 			{
 				name: 'Klang',
 				Lv: 38,
-				img: './poke-png-G5/106.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/106.png',
 			},
 			{
 				name: 'Klinklang',
 				Lv: 49,
-				img: './poke-png-G5/107.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/107.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5021,9 +5126,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 40,
-			Atack: 55,
+			Attack: 55,
 			Defense: 70,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 60,
 			Speed: 30,
 		},
@@ -5038,26 +5143,27 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/106.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/106.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Klink',
 				Lv: 1,
-				img: './poke-png-G5/105.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/105.png',
 			},
 			{
 				name: 'Klang',
 				Lv: 38,
-				img: './poke-png-G5/106.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/106.png',
 			},
 			{
 				name: 'Klinklang',
 				Lv: 49,
-				img: './poke-png-G5/107.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/107.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5070,9 +5176,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 80,
+			Attack: 80,
 			Defense: 95,
-			'Sp.atack': 70,
+			'Sp.attack': 70,
 			'Sp.Def': 85,
 			Speed: 50,
 		},
@@ -5087,26 +5193,27 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/107.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/107.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Klink',
 				Lv: 1,
-				img: './poke-png-G5/105.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/105.png',
 			},
 			{
 				name: 'Klang',
 				Lv: 38,
-				img: './poke-png-G5/106.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/106.png',
 			},
 			{
 				name: 'Klinklang',
 				Lv: 49,
-				img: './poke-png-G5/107.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/107.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5119,9 +5226,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 100,
+			Attack: 100,
 			Defense: 115,
-			'Sp.atack': 70,
+			'Sp.attack': 70,
 			'Sp.Def': 85,
 			Speed: 90,
 		},
@@ -5136,31 +5243,32 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/108.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/108.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tynamo',
 				Lv: 1,
-				img: './poke-png-G5/108.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/108.png',
 			},
 			{
 				name: 'Eelektrik',
 				Lv: 39,
-				img: './poke-png-G5/109.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/109.png',
 			},
 			{
 				name: 'Eelektross',
 				Lv: 'use Thunder Stone',
-				img: './poke-png-G5/110.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/110.png',
 			},
 		],
-		superdamange: [],
+		superDamage: [],
 		baseStats: {
 			HP: 35,
-			Atack: 55,
+			Attack: 55,
 			Defense: 40,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 40,
 			Speed: 60,
 		},
@@ -5175,31 +5283,32 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/109.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/109.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tynamo',
 				Lv: 1,
-				img: './poke-png-G5/108.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/108.png',
 			},
 			{
 				name: 'Eelektrik',
 				Lv: 39,
-				img: './poke-png-G5/109.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/109.png',
 			},
 			{
 				name: 'Eelektross',
 				Lv: 'use Thunder Stone',
-				img: './poke-png-G5/110.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/110.png',
 			},
 		],
-		superdamange: [],
+		superDamage: [],
 		baseStats: {
 			HP: 65,
-			Atack: 85,
+			Attack: 85,
 			Defense: 70,
-			'Sp.atack': 75,
+			'Sp.attack': 75,
 			'Sp.Def': 70,
 			Speed: 40,
 		},
@@ -5214,31 +5323,32 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/110.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/110.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Tynamo',
 				Lv: 1,
-				img: './poke-png-G5/108.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/108.png',
 			},
 			{
 				name: 'Eelektrik',
 				Lv: 39,
-				img: './poke-png-G5/109.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/109.png',
 			},
 			{
 				name: 'Eelektross',
 				Lv: 'use Thunder Stone',
-				img: './poke-png-G5/110.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/110.png',
 			},
 		],
-		superdamange: [],
+		superDamage: [],
 		baseStats: {
 			HP: 85,
-			Atack: 115,
+			Attack: 115,
 			Defense: 80,
-			'Sp.atack': 105,
+			'Sp.attack': 105,
 			'Sp.Def': 80,
 			Speed: 50,
 		},
@@ -5253,21 +5363,22 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/111.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/111.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Elgyem',
 				Lv: 1,
-				img: './poke-png-G5/111.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/111.png',
 			},
 			{
 				name: 'Beheeyem',
 				Lv: 42,
-				img: './poke-png-G5/112.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/112.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -5280,9 +5391,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 55,
+			Attack: 55,
 			Defense: 55,
-			'Sp.atack': 85,
+			'Sp.attack': 85,
 			'Sp.Def': 55,
 			Speed: 30,
 		},
@@ -5297,21 +5408,22 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/112.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/112.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Elgyem',
 				Lv: 1,
-				img: './poke-png-G5/111.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/111.png',
 			},
 			{
 				name: 'Beheeyem',
 				Lv: 42,
-				img: './poke-png-G5/112.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/112.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -5324,9 +5436,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 75,
-			Atack: 75,
+			Attack: 75,
 			Defense: 75,
-			'Sp.atack': 125,
+			'Sp.attack': 125,
 			'Sp.Def': 95,
 			Speed: 40,
 		},
@@ -5344,26 +5456,27 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/113.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/113.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Litwick',
 				Lv: 1,
-				img: './poke-png-G5/113.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/113.png',
 			},
 			{
 				name: 'Lampent',
 				Lv: 41,
-				img: './poke-png-G5/114.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/114.png',
 			},
 			{
 				name: 'Chandelure',
 				Lv: 'use Dusk Stone',
-				img: './poke-png-G5/115.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/115.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -5382,9 +5495,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 30,
+			Attack: 30,
 			Defense: 55,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 55,
 			Speed: 20,
 		},
@@ -5402,26 +5515,27 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/114.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/114.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Litwick',
 				Lv: 1,
-				img: './poke-png-G5/113.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/113.png',
 			},
 			{
 				name: 'Lampent',
 				Lv: 41,
-				img: './poke-png-G5/114.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/114.png',
 			},
 			{
 				name: 'Chandelure',
 				Lv: 'use Dusk Stone',
-				img: './poke-png-G5/115.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/115.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -5440,9 +5554,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 40,
+			Attack: 40,
 			Defense: 60,
-			'Sp.atack': 95,
+			'Sp.attack': 95,
 			'Sp.Def': 60,
 			Speed: 55,
 		},
@@ -5460,26 +5574,27 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/115.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/115.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Litwick',
 				Lv: 1,
-				img: './poke-png-G5/113.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/113.png',
 			},
 			{
 				name: 'Lampent',
 				Lv: 41,
-				img: './poke-png-G5/114.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/114.png',
 			},
 			{
 				name: 'Chandelure',
 				Lv: 'use Dusk Stone',
-				img: './poke-png-G5/115.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/115.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -5498,9 +5613,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 60,
-			Atack: 55,
+			Attack: 55,
 			Defense: 90,
-			'Sp.atack': 145,
+			'Sp.attack': 145,
 			'Sp.Def': 90,
 			Speed: 80,
 		},
@@ -5515,26 +5630,27 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/116.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/116.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Axew',
 				Lv: 1,
-				img: './poke-png-G5/116.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/116.png',
 			},
 			{
 				name: 'Fraxure',
 				Lv: 38,
-				img: './poke-png-G5/117.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/117.png',
 			},
 			{
 				name: 'Haxorus',
 				Lv: 48,
-				img: './poke-png-G5/118.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/118.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -5547,9 +5663,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 46,
-			Atack: 87,
+			Attack: 87,
 			Defense: 60,
-			'Sp.atack': 30,
+			'Sp.attack': 30,
 			'Sp.Def': 40,
 			Speed: 57,
 		},
@@ -5564,26 +5680,27 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/117.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/117.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Axew',
 				Lv: 1,
-				img: './poke-png-G5/116.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/116.png',
 			},
 			{
 				name: 'Fraxure',
 				Lv: 38,
-				img: './poke-png-G5/117.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/117.png',
 			},
 			{
 				name: 'Haxorus',
 				Lv: 48,
-				img: './poke-png-G5/118.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/118.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -5596,9 +5713,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 66,
-			Atack: 117,
+			Attack: 117,
 			Defense: 70,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 50,
 			Speed: 67,
 		},
@@ -5613,26 +5730,27 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/118.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/118.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Axew',
 				Lv: 1,
-				img: './poke-png-G5/116.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/116.png',
 			},
 			{
 				name: 'Fraxure',
 				Lv: 38,
-				img: './poke-png-G5/117.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/117.png',
 			},
 			{
 				name: 'Haxorus',
 				Lv: 48,
-				img: './poke-png-G5/118.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/118.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -5645,9 +5763,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 76,
-			Atack: 147,
+			Attack: 147,
 			Defense: 90,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 70,
 			Speed: 97,
 		},
@@ -5662,21 +5780,22 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/119.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/119.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Cubchoo',
 				Lv: 1,
-				img: './poke-png-G5/119.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/119.png',
 			},
 			{
 				name: 'Beartic',
 				Lv: 37,
-				img: './poke-png-G5/120.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/120.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5692,9 +5811,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 70,
+			Attack: 70,
 			Defense: 40,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 40,
 			Speed: 40,
 		},
@@ -5709,21 +5828,22 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/120.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/120.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Cubchoo',
 				Lv: 1,
-				img: './poke-png-G5/119.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/119.png',
 			},
 			{
 				name: 'Beartic',
 				Lv: 37,
-				img: './poke-png-G5/120.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/120.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5739,9 +5859,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 95,
-			Atack: 130,
+			Attack: 130,
 			Defense: 80,
-			'Sp.atack': 70,
+			'Sp.attack': 70,
 			'Sp.Def': 80,
 			Speed: 50,
 		},
@@ -5756,16 +5876,17 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/121.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/121.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Cryogonal',
 				Lv: 1,
-				img: './poke-png-G5/121.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/121.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5781,9 +5902,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 80,
-			Atack: 50,
+			Attack: 50,
 			Defense: 50,
-			'Sp.atack': 95,
+			'Sp.attack': 95,
 			'Sp.Def': 135,
 			Speed: 105,
 		},
@@ -5798,21 +5919,22 @@ export const pokemon = [
 				type: 'Inseto',
 			},
 		],
-		images: './poke-png-G5/122.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/122.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Shelmet',
 				Lv: 1,
-				img: './poke-png-G5/122.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/122.png',
 			},
 			{
 				name: 'Accelgor',
 				Lv: 'Trade with Karrablast',
-				img: './poke-png-G5/123.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/123.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5825,9 +5947,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 50,
-			Atack: 40,
+			Attack: 40,
 			Defense: 85,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 65,
 			Speed: 25,
 		},
@@ -5842,21 +5964,22 @@ export const pokemon = [
 				type: 'Inseto',
 			},
 		],
-		images: './poke-png-G5/123.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/123.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Shelmet',
 				Lv: 1,
-				img: './poke-png-G5/122.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/122.png',
 			},
 			{
 				name: 'Accelgor',
 				Lv: 'Trade with Karrablast',
-				img: './poke-png-G5/123.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/123.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5869,9 +5992,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 80,
-			Atack: 70,
+			Attack: 70,
 			Defense: 40,
-			'Sp.atack': 100,
+			'Sp.attack': 100,
 			'Sp.Def': 60,
 			Speed: 145,
 		},
@@ -5889,16 +6012,17 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/124.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/124.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Stunfisk',
 				Lv: 1,
-				img: './poke-png-G5/124.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/124.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -5914,9 +6038,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 109,
-			Atack: 66,
+			Attack: 66,
 			Defense: 84,
-			'Sp.atack': 81,
+			'Sp.attack': 81,
 			'Sp.Def': 99,
 			Speed: 32,
 		},
@@ -5931,21 +6055,22 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/125.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/125.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Mienfoo',
 				Lv: 1,
-				img: './poke-png-G5/125.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/125.png',
 			},
 			{
 				name: 'Mienshao',
 				Lv: 50,
-				img: './poke-png-G5/126.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/126.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -5958,9 +6083,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 85,
+			Attack: 85,
 			Defense: 50,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 50,
 			Speed: 65,
 		},
@@ -5975,21 +6100,22 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/126.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/126.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Mienfoo',
 				Lv: 1,
-				img: './poke-png-G5/125.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/125.png',
 			},
 			{
 				name: 'Mienshao',
 				Lv: 50,
-				img: './poke-png-G5/126.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/126.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Voador',
 			},
@@ -6002,9 +6128,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 125,
+			Attack: 125,
 			Defense: 60,
-			'Sp.atack': 95,
+			'Sp.attack': 95,
 			'Sp.Def': 60,
 			Speed: 105,
 		},
@@ -6019,16 +6145,17 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/127.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/127.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Druddigon',
 				Lv: 1,
-				img: './poke-png-G5/127.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/127.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -6041,9 +6168,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 77,
-			Atack: 120,
+			Attack: 120,
 			Defense: 90,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 90,
 			Speed: 48,
 		},
@@ -6061,21 +6188,22 @@ export const pokemon = [
 				type: 'Fantasma',
 			},
 		],
-		images: './poke-png-G5/128.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/128.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Golett',
 				Lv: 1,
-				img: './poke-png-G5/128.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/128.png',
 			},
 			{
 				name: 'Golurk',
 				Lv: 43,
-				img: './poke-png-G5/129.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/129.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -6094,9 +6222,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 59,
-			Atack: 74,
+			Attack: 74,
 			Defense: 50,
-			'Sp.atack': 35,
+			'Sp.attack': 35,
 			'Sp.Def': 50,
 			Speed: 35,
 		},
@@ -6114,21 +6242,22 @@ export const pokemon = [
 				type: 'Fantasma',
 			},
 		],
-		images: './poke-png-G5/129.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/129.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Golett',
 				Lv: 1,
-				img: './poke-png-G5/128.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/128.png',
 			},
 			{
 				name: 'Golurk',
 				Lv: 43,
-				img: './poke-png-G5/129.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/129.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -6147,9 +6276,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 89,
-			Atack: 124,
+			Attack: 124,
 			Defense: 80,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 80,
 			Speed: 55,
 		},
@@ -6167,21 +6296,22 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/130.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/130.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Pawniard',
 				Lv: 1,
-				img: './poke-png-G5/130.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/130.png',
 			},
 			{
 				name: 'Bisharp',
 				Lv: 52,
-				img: './poke-png-G5/131.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/131.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -6194,9 +6324,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 45,
-			Atack: 85,
+			Attack: 85,
 			Defense: 70,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 40,
 			Speed: 60,
 		},
@@ -6214,21 +6344,22 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/131.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/131.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Pawniard',
 				Lv: 1,
-				img: './poke-png-G5/130.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/130.png',
 			},
 			{
 				name: 'Bisharp',
 				Lv: 52,
-				img: './poke-png-G5/131.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/131.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -6241,9 +6372,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 65,
-			Atack: 125,
+			Attack: 125,
 			Defense: 100,
-			'Sp.atack': 60,
+			'Sp.attack': 60,
 			'Sp.Def': 70,
 			Speed: 70,
 		},
@@ -6258,25 +6389,26 @@ export const pokemon = [
 				type: 'Normal',
 			},
 		],
-		images: './poke-png-G5/132.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/132.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Bouffalant',
 				Lv: 1,
-				img: './poke-png-G5/132.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/132.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
 		],
 		baseStats: {
 			HP: 95,
-			Atack: 110,
+			Attack: 110,
 			Defense: 95,
-			'Sp.atack': 40,
+			'Sp.attack': 40,
 			'Sp.Def': 95,
 			Speed: 55,
 		},
@@ -6294,21 +6426,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/133.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/133.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Rufflet',
 				Lv: 1,
-				img: './poke-png-G5/133.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/133.png',
 			},
 			{
 				name: 'Braviary',
 				Lv: 54,
-				img: './poke-png-G5/134.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/134.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -6321,9 +6454,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 83,
+			Attack: 83,
 			Defense: 50,
-			'Sp.atack': 37,
+			'Sp.attack': 37,
 			'Sp.Def': 50,
 			Speed: 60,
 		},
@@ -6341,21 +6474,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/134.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/134.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Rufflet',
 				Lv: 1,
-				img: './poke-png-G5/133.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/133.png',
 			},
 			{
 				name: 'Braviary',
 				Lv: 54,
-				img: './poke-png-G5/134.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/134.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -6368,9 +6502,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 100,
-			Atack: 123,
+			Attack: 123,
 			Defense: 75,
-			'Sp.atack': 57,
+			'Sp.attack': 57,
 			'Sp.Def': 75,
 			Speed: 80,
 		},
@@ -6388,21 +6522,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/135.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/135.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Vullaby',
 				Lv: 1,
-				img: './poke-png-G5/135.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/135.png',
 			},
 			{
 				name: 'Mandibuzz',
 				Lv: 54,
-				img: './poke-png-G5/136.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/136.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -6418,9 +6553,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 70,
-			Atack: 55,
+			Attack: 55,
 			Defense: 75,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 65,
 			Speed: 60,
 		},
@@ -6438,21 +6573,22 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/136.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/136.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Vullaby',
 				Lv: 1,
-				img: './poke-png-G5/135.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/135.png',
 			},
 			{
 				name: 'Mandibuzz',
 				Lv: 54,
-				img: './poke-png-G5/136.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/136.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -6468,9 +6604,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 110,
-			Atack: 65,
+			Attack: 65,
 			Defense: 105,
-			'Sp.atack': 55,
+			'Sp.attack': 55,
 			'Sp.Def': 95,
 			Speed: 80,
 		},
@@ -6485,16 +6621,17 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/137.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/137.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Heatmor',
 				Lv: 1,
-				img: './poke-png-G5/137.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/137.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -6507,9 +6644,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 85,
-			Atack: 97,
+			Attack: 97,
 			Defense: 66,
-			'Sp.atack': 105,
+			'Sp.attack': 105,
 			'Sp.Def': 66,
 			Speed: 65,
 		},
@@ -6527,25 +6664,26 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/138.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/138.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Durant',
 				Lv: 1,
-				img: './poke-png-G5/138.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/138.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
 		],
 		baseStats: {
 			HP: 58,
-			Atack: 109,
+			Attack: 109,
 			Defense: 112,
-			'Sp.atack': 48,
+			'Sp.attack': 48,
 			'Sp.Def': 48,
 			Speed: 109,
 		},
@@ -6563,26 +6701,27 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/139.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/139.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Deino',
 				Lv: 1,
-				img: './poke-png-G5/139.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/139.png',
 			},
 			{
 				name: 'Zweilous',
 				Lv: 50,
-				img: './poke-png-G5/140.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/140.png',
 			},
 			{
 				name: 'Hydreigon',
 				Lv: 64,
-				img: './poke-png-G5/141.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/141.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -6601,9 +6740,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 52,
-			Atack: 65,
+			Attack: 65,
 			Defense: 50,
-			'Sp.atack': 45,
+			'Sp.attack': 45,
 			'Sp.Def': 50,
 			Speed: 38,
 		},
@@ -6621,26 +6760,27 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/140.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/140.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Deino',
 				Lv: 1,
-				img: './poke-png-G5/139.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/139.png',
 			},
 			{
 				name: 'Zweilous',
 				Lv: 50,
-				img: './poke-png-G5/140.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/140.png',
 			},
 			{
 				name: 'Hydreigon',
 				Lv: 64,
-				img: './poke-png-G5/141.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/141.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -6659,9 +6799,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 72,
-			Atack: 85,
+			Attack: 85,
 			Defense: 70,
-			'Sp.atack': 65,
+			'Sp.attack': 65,
 			'Sp.Def': 70,
 			Speed: 58,
 		},
@@ -6679,26 +6819,27 @@ export const pokemon = [
 				type: 'Dragão',
 			},
 		],
-		images: './poke-png-G5/141.png',
-		evolutinLine: 111,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/141.png',
+		evolutionLine: 111,
 		evolution: [
 			{
 				name: 'Deino',
 				Lv: 1,
-				img: './poke-png-G5/139.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/139.png',
 			},
 			{
 				name: 'Zweilous',
 				Lv: 50,
-				img: './poke-png-G5/140.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/140.png',
 			},
 			{
 				name: 'Hydreigon',
 				Lv: 64,
-				img: './poke-png-G5/141.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/141.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -6717,9 +6858,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 92,
-			Atack: 105,
+			Attack: 105,
 			Defense: 90,
-			'Sp.atack': 125,
+			'Sp.attack': 125,
 			'Sp.Def': 90,
 			Speed: 98,
 		},
@@ -6737,21 +6878,22 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/142.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/142.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Larvesta',
 				Lv: 1,
-				img: './poke-png-G5/142.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/142.png',
 			},
 			{
 				name: 'Volcarona',
 				Lv: 59,
-				img: './poke-png-G5/143.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/143.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -6764,9 +6906,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 55,
-			Atack: 85,
+			Attack: 85,
 			Defense: 55,
-			'Sp.atack': 50,
+			'Sp.attack': 50,
 			'Sp.Def': 55,
 			Speed: 60,
 		},
@@ -6784,21 +6926,22 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/143.png',
-		evolutinLine: 11,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/143.png',
+		evolutionLine: 11,
 		evolution: [
 			{
 				name: 'Larvesta',
 				Lv: 1,
-				img: './poke-png-G5/142.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/142.png',
 			},
 			{
 				name: 'Volcarona',
 				Lv: 59,
-				img: './poke-png-G5/143.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/143.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -6811,9 +6954,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 85,
-			Atack: 60,
+			Attack: 60,
 			Defense: 65,
-			'Sp.atack': 135,
+			'Sp.attack': 135,
 			'Sp.Def': 105,
 			Speed: 100,
 		},
@@ -6831,16 +6974,17 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/144.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/144.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Cobalion',
 				Lv: 1,
-				img: './poke-png-G5/144.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/144.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -6853,9 +6997,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 91,
-			Atack: 90,
+			Attack: 90,
 			Defense: 129,
-			'Sp.atack': 90,
+			'Sp.attack': 90,
 			'Sp.Def': 72,
 			Speed: 108,
 		},
@@ -6873,16 +7017,17 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/145.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/145.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Terrakion',
 				Lv: 1,
-				img: './poke-png-G5/145.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/145.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -6907,9 +7052,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 91,
-			Atack: 129,
+			Attack: 129,
 			Defense: 90,
-			'Sp.atack': 72,
+			'Sp.attack': 72,
 			'Sp.Def': 90,
 			Speed: 108,
 		},
@@ -6927,16 +7072,17 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/146.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/146.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Virizion',
 				Lv: 1,
-				img: './poke-png-G5/146.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/146.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
@@ -6958,9 +7104,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 91,
-			Atack: 90,
+			Attack: 90,
 			Defense: 72,
-			'Sp.atack': 90,
+			'Sp.attack': 90,
 			'Sp.Def': 129,
 			Speed: 108,
 		},
@@ -6975,16 +7121,17 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/147.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/147.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Tornadus',
 				Lv: 1,
-				img: './poke-png-G5/147.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/147.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -6997,9 +7144,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 79,
-			Atack: 115,
+			Attack: 115,
 			Defense: 70,
-			'Sp.atack': 125,
+			'Sp.attack': 125,
 			'Sp.Def': 80,
 			Speed: 111,
 		},
@@ -7017,16 +7164,17 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/148.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/148.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Thundurus',
 				Lv: 1,
-				img: './poke-png-G5/148.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/148.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -7036,9 +7184,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 79,
-			Atack: 115,
+			Attack: 115,
 			Defense: 70,
-			'Sp.atack': 125,
+			'Sp.attack': 125,
 			'Sp.Def': 80,
 			Speed: 111,
 		},
@@ -7056,16 +7204,17 @@ export const pokemon = [
 				type: 'Fogo',
 			},
 		],
-		images: './poke-png-G5/149.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/149.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Reshiram',
 				Lv: 1,
-				img: './poke-png-G5/149.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/149.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Terra',
 			},
@@ -7078,9 +7227,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 100,
-			Atack: 120,
+			Attack: 120,
 			Defense: 100,
-			'Sp.atack': 150,
+			'Sp.attack': 150,
 			'Sp.Def': 120,
 			Speed: 90,
 		},
@@ -7098,16 +7247,17 @@ export const pokemon = [
 				type: 'Eletrico',
 			},
 		],
-		images: './poke-png-G5/150.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/150.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Zekrom',
 				Lv: 1,
-				img: './poke-png-G5/150.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/150.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Gelo',
 			},
@@ -7123,9 +7273,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 100,
-			Atack: 150,
+			Attack: 150,
 			Defense: 120,
-			'Sp.atack': 120,
+			'Sp.attack': 120,
 			'Sp.Def': 100,
 			Speed: 90,
 		},
@@ -7143,16 +7293,17 @@ export const pokemon = [
 				type: 'Voador',
 			},
 		],
-		images: './poke-png-G5/151.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/151.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Landorus',
 				Lv: 1,
-				img: './poke-png-G5/151.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/151.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Agua',
 			},
@@ -7162,9 +7313,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 89,
-			Atack: 125,
+			Attack: 125,
 			Defense: 90,
-			'Sp.atack': 115,
+			'Sp.attack': 115,
 			'Sp.Def': 80,
 			Speed: 101,
 		},
@@ -7182,16 +7333,17 @@ export const pokemon = [
 				type: 'Gelo',
 			},
 		],
-		images: './poke-png-G5/152.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/152.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Kyurem',
 				Lv: 1,
-				img: './poke-png-G5/152.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/152.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Lutador',
 			},
@@ -7210,9 +7362,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 125,
-			Atack: 130,
+			Attack: 130,
 			Defense: 90,
-			'Sp.atack': 130,
+			'Sp.attack': 130,
 			'Sp.Def': 90,
 			Speed: 95,
 		},
@@ -7230,16 +7382,17 @@ export const pokemon = [
 				type: 'Lutador',
 			},
 		],
-		images: './poke-png-G5/153.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/153.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Keldeo',
 				Lv: 1,
-				img: './poke-png-G5/153.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/153.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Eletrico',
 			},
@@ -7258,9 +7411,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 91,
-			Atack: 72,
+			Attack: 72,
 			Defense: 90,
-			'Sp.atack': 129,
+			'Sp.attack': 129,
 			'Sp.Def': 90,
 			Speed: 108,
 		},
@@ -7278,16 +7431,17 @@ export const pokemon = [
 				type: 'Pisquico',
 			},
 		],
-		images: './poke-png-G5/154.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/154.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Meloetta',
 				Lv: 1,
-				img: './poke-png-G5/154.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/154.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Inseto',
 			},
@@ -7297,9 +7451,9 @@ export const pokemon = [
 		],
 		baseStats: {
 			HP: 100,
-			Atack: 77,
+			Attack: 77,
 			Defense: 77,
-			'Sp.atack': 128,
+			'Sp.attack': 128,
 			'Sp.Def': 128,
 			Speed: 90,
 		},
@@ -7317,25 +7471,26 @@ export const pokemon = [
 				type: 'Metal',
 			},
 		],
-		images: './poke-png-G5/155.png',
-		evolutinLine: 1,
+		images:
+			'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/155.png',
+		evolutionLine: 1,
 		evolution: [
 			{
 				name: 'Genesect',
 				Lv: 1,
-				img: './poke-png-G5/155.png',
+				img: 'https://raw.githubusercontent.com/matheus369k/matheus369k.github.io/refs/heads/main/pokemon-images/poke-png-G5/155.png',
 			},
 		],
-		superdamange: [
+		superDamage: [
 			{
 				type: 'Fogo',
 			},
 		],
 		baseStats: {
 			HP: 71,
-			Atack: 120,
+			Attack: 120,
 			Defense: 95,
-			'Sp.atack': 120,
+			'Sp.attack': 120,
 			'Sp.Def': 95,
 			Speed: 99,
 		},
