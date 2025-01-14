@@ -13,12 +13,17 @@ export function SearchItem({ regionFilter, image, RegionName }) {
 	}
 
 	function handleFinishLoading() {
-		setLoading(false)
+		setLoading(false);
 	}
 
 	return (
 		<li onClick={handleSetRegionFilter} {...(loading && { className: styles.search_loading_item })}>
-			<img onLoad={handleFinishLoading} src={image} alt={`Região de ${RegionName}`} />
+			<img
+				onLoad={handleFinishLoading}
+				loading="lazy"
+				src={image}
+				alt={`Região de ${RegionName}`}
+			/>
 			<span>{RegionName}</span>
 		</li>
 	);

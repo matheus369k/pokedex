@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import G1Img from '../../assets/Kanto-img.png';
 import G2Img from '../../assets/Johto-img.png';
 import G3Img from '../../assets/Hoenn-img.png';
