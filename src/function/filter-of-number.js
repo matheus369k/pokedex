@@ -1,8 +1,8 @@
-import { get_data } from '../service/get-data';
+import { get_data, predicted_data } from '../service/get-data';
 import { setUrlState } from './index';
 
 export const searchOfNumber = (search, max, isNotRegionFilter=true) => {
-	const pokeAllData = get_data();
+	const pokeAllData =  max > 1 && max < 5 ? predicted_data() : get_data();
 	let currentPoke = Number(search) - 1;
 	
 	if (isNotRegionFilter && max > 1) {
@@ -15,9 +15,7 @@ export const searchOfNumber = (search, max, isNotRegionFilter=true) => {
 
 	const pokemonFilter = [];
 	for (let index = 0; index < max; index++) {
-		if (pokeAllData[currentPoke + index] === undefined) {
-			return pokemonFilter;
-		}
+		if (pokeAllData[currentPoke + index] === undefined) break
 
 		pokemonFilter.push(pokeAllData[currentPoke + index]);
 	}

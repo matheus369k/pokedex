@@ -1,7 +1,8 @@
+import { get_data, predicted_data } from '../service/get-data';
 import { setUrlState } from './index';
 
 export const searchOfName = (search, max) => {
-	const pokeAllData = get_data();
+	const pokeAllData =  max > 1 && max < 5 ? predicted_data() : get_data();
 	const pokemonFilter = [];
 
 	setUrlState('id', search);
