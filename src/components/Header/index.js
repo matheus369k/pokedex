@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { FcNext } from 'react-icons/fc';
 import { FcPrevious } from 'react-icons/fc';
 import logo from '../../assets/poke-titulo.png';
-import './index.css';
 import { get_data } from '../../service/get-data';
 import { searchOfNumber } from '../../function/index';
-import { Button } from '../index';
 import { PokemonDataContext } from '../../context/pokemon-datas';
+import styles from './index.module.css';
 
 export function Header() {
 	const { state, handleUpdateData, handleAddSelected } = useContext(PokemonDataContext);
@@ -28,11 +27,11 @@ export function Header() {
 
 	function gotToNextPage() {
 		if (state.selected) {
-			const pokemonNumber = currentPage(state.selected) + 1
+			const pokemonNumber = currentPage(state.selected) + 1;
 
-			const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1)
+			const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1);
 			handleAddSelected(getPokeDataForNumber);
-			
+
 			return;
 		}
 
@@ -44,11 +43,11 @@ export function Header() {
 
 	function gotToPreviousPage() {
 		if (state.selected) {
-			const pokemonNumber = currentPage(state.selected) - 1
+			const pokemonNumber = currentPage(state.selected) - 1;
 
-			const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1)
+			const getPokeDataForNumber = searchOfNumber(pokemonNumber, 1);
 			handleAddSelected(getPokeDataForNumber);
-			
+
 			return;
 		}
 
@@ -64,33 +63,33 @@ export function Header() {
 		if (state.selected) {
 			pokedex = currentPage(state.selected);
 		}
-		
+
 		return countPages(pokedex);
 	}
 
 	return (
-		<header className="header-container">
+		<header className={styles.header_container}>
 			<img src={logo} alt="Logo do site" />
 			<div>
-				<Button
-					id="btn-prevent"
-					title="Prevent"
+				<button
+					title="Voltar"
+					type="button"
 					disabled={verificationStateOfPages() === 1}
 					onClick={gotToPreviousPage}
 				>
 					<FcPrevious />
-				</Button>
+				</button>
 				<p>
 					<span>{verificationStateOfPages()}</span>/<span>{countPages(totalPokemon)}</span>
 				</p>
-				<Button
-					id="btn-next"
-					title="Next"
+				<button
+					title="Avançar"
+					type="button"
 					disabled={verificationStateOfPages() === countPages(totalPokemon)}
 					onClick={gotToNextPage}
 				>
 					<FcNext />
-				</Button>
+				</button>
 			</div>
 		</header>
 	);
