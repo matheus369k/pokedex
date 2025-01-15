@@ -1,54 +1,54 @@
-# 💻Projeto Pokedex
+<h1 align='center' >
+  💻Pokedex
+</h1>
+<div align='center'>
 
-## __📌Descrição__
+  [Descrição](#descrição)
+  |
+  [Instalando](#instalando)
+  |
+  [Executando](#executando)
+  |
+  [Licença](#licença)
+
+</div>
+
+<div align='center'>
+  <img src='https://img.shields.io/github/license/matheus369k/my-portfolio.svg'/>
+  <img src='https://img.shields.io/github/watchers/matheus369k/my-portfolio.svg' />
+</div>
+
+## Descrição
 O projeto é uma página que tem como objetivo apresentar as informações referentes aos Pokémons que foram lançados da 1ª à 8ª geração, sendo ao todo 905 monstros contidos no site.
 
+As principais funções são:
 
-![pokedex responsive preview](./public/pokedex-responsive-preview.png)
+- Pesquisa pelo numero da pokedex ou o nome
+- Podendo selecionar em qual região quer iniciar
+- Ao clicar em um dos cards, é possivel ver mais detalhes do pokemon
+- Opção de avançar tanto na parte dos cards quanto na parte de mais detalhes do pokemon
+- Ao pequisar pelos mostros, recebe-se previas de prossiveis resultados podendo clicar em qualquer um deles para ver mais detalhes
+- Quando acessar mais detalhes de um mostro ficara, salvo na url para faciltar o compartilhamento entre os amigos.
 
-## 🛠️Ferramentas
+Por ser um grande fan do universo Pokémon, resolvi criar esse projeto que, mistura a tecnologia com o universo Pokémon.
 
-<img
-  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
-  alt="HTML"
-  height="40"
-/>
-<img
-  src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
-  alt="CSS"
-  height="40"
-/>
-<img
-  src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
-  alt="JavaScript"
-  height="40"
-/>
-<img
-  src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
-  alt="React"
-  height="40"
-/>
-<img
-  src="https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white"
-  alt="Jest"
-  height="40"
-/>
-<img
-  src="https://img.shields.io/badge/testing%20library-323330?style=for-the-badge&logo=testing-library&logoColor=red"
-  alt="Testing Library"
-  height="40"
-/>
-  
+![pokedex responsive preview](./public/pokedex-preview.jpg)
 
-## __📽️Previa__
+## Instalando
 
-<img
-  src="./public/pokedex-preview.gif"
-/>
+É necessário ter o [Node.js](https://nodejs.org/en/download) instalado na sua máquina.
 
-## __🏆Conclusão__
-O aprimoramento desse projeto ajudou-me a aprimorar minhas técnicas no uso do Jest, que é uma biblioteca de testes unitários.
+Para instalar o projeto, basta clonar o repositório e instalar as dependências.
 
-O objetivo do Jest é testar se o código está se comportando como o esperado. Além disso, foi possível aplicar minha habilidade mais recente, que é o gerenciamento de estado pela URL, esse recurso permite o salvamento de informações na URL do navegador, possibilitando restaurar o estado da página ao acessá-la em outro dispositivo ou no mesmo dispositivo pela mesma URL. 
-
-Essas foram as principais habilidades colocadas em prática no aprimoramento desse projeto.
+```bash
+git clone https://github.com/matheus369k/pokedex.git
+cd pokedex
+npm install
+```
+## Executando
+Para executar o projeto, basta executar o seguinte comando:
+```bash
+npm start
+```
+## Licença
+Este projeto está licenciado sob a licença [MIT](./LICENSE).
