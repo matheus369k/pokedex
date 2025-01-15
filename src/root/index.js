@@ -3,19 +3,12 @@ import { Header, Search, Cards, Pokedex, Button, SearchOfRegions } from '../comp
 import { RxDoubleArrowUp } from 'react-icons/rx';
 import { backScrollTop } from '../function/index';
 import { PokemonDataContext } from '../context/pokemon-datas';
+import { useScroll } from '../hooks/use-scroll';
 
 export function RootLayout() {
 	const { state } = useContext(PokemonDataContext);
+	const { isInitialScroll, handleBackScrollToInitialPosition } = useScroll();
 
-	useEffect(() => {
-		document.body.addEventListener('scroll', () => {
-			const heightScroll = document.body.scrollTop;
-			const iconArrowTop = document.getElementById('scrollTop');
-
-			if (heightScroll > 100) iconArrowTop.classList.remove('hidden');
-			if (heightScroll < 100) iconArrowTop.classList.add('hidden');
-		});
-	}, []);
 	return (
 		<>
 			<Header />
@@ -24,10 +17,9 @@ export function RootLayout() {
 			<SearchOfRegions />
 			<button
 				title="Voltar para o inicio"
-				onClick={() => backScrollTop()}
-				id="scrollTop"
-				type='button'
-				className="button_back_top hidden"
+				onClick={handleBackScrollToInitialPosition}
+				type="button"
+				className={`button_back_top ${isInitialScroll ? 'hidden' : ''}`}
 			>
 				<RxDoubleArrowUp />
 			</button>

@@ -2,6 +2,7 @@ import { createContext, useReducer } from 'react';
 import { get_data } from '../service/get-data';
 import { backScrollTop, getUrlState, searchOfName, searchOfNumber, setUrlState } from '../function';
 import { generation_1 } from '../data';
+import { useScroll } from '../hooks/use-scroll';
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -49,6 +50,7 @@ const handleInitialState = (state) => {
 export const PokemonDataContext = createContext({});
 
 export function PokemonDataProvider({ children }) {
+	const {handleBackScrollToInitialPosition} = useScroll();
 	const [state, dispatch] = useReducer(
 		reducer,
 		{
@@ -59,21 +61,23 @@ export function PokemonDataProvider({ children }) {
 		handleInitialState,
 	);
 
+	function handleUpdateStateOfPage({key, value}) {
+		handleBackScrollToInitialPosition();
+		setUrlState(key, value);
+	}
+
 	function handleAddSelected(payload) {
-		backScrollTop();
-		setUrlState('pokedex', 'open');
+		handleUpdateStateOfPage({key: 'pokedex', value: 'open'});
 		dispatch({ type: 'ADD_SELECTED', payload });
 	}
 
 	function handleRemoveSelected() {
-		backScrollTop();
-		setUrlState('pokedex', 'closed');
+		handleUpdateStateOfPage({key: 'pokedex', value: 'closed'});
 		dispatch({ type: 'REMOVE_SELECTED' });
 	}
 
 	function handleUpdateData(payload) {
-		backScrollTop();
-		setUrlState('pokedex', 'closed');
+		handleUpdateStateOfPage({key: 'pokedex', value: 'closed'});
 		dispatch({ type: 'UPDATE_DATA', payload });
 	}
 
