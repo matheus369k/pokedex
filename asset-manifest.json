@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pokedex/static/css/main.61d78f1f.css",
-    "main.js": "/pokedex/static/js/main.bc40bd56.js",
+    "main.css": "/pokedex/static/css/main.5ba0d9c4.css",
+    "main.js": "/pokedex/static/js/main.91045eeb.js",
     "static/media/Kanto-img.png": "/pokedex/static/media/Kanto-img.e9d90d38bc6212f89bd4.png",
     "static/media/Kalos-img.png": "/pokedex/static/media/Kalos-img.1a04db8b6123b1eb4d62.png",
     "static/media/Unova-img.png": "/pokedex/static/media/Unova-img.f924d94a56af89264d45.png",
@@ -14,17 +14,17 @@
     "static/media/poke-titulo.png": "/pokedex/static/media/poke-titulo.93389c761f353f0db018.png",
     "static/media/pokeball.png": "/pokedex/static/media/pokeball.a5002c7f0459fd4ee803.png",
     "index.html": "/pokedex/index.html",
-    "static/media/arrow-down-svgrepo-com.svg": "/pokedex/static/media/arrow-down-svgrepo-com.60373864b3d516db4c0b.svg",
-    "static/media/arrow-up-svgrepo-com.svg": "/pokedex/static/media/arrow-up-svgrepo-com.3265c56f41c4d920779b.svg",
-    "static/media/arrow-right-down-svgrepo-com.svg": "/pokedex/static/media/arrow-right-down-svgrepo-com.2813c0eab6858cb547d5.svg",
-    "static/media/arrow-right-svgrepo-com.svg": "/pokedex/static/media/arrow-right-svgrepo-com.576d3f961f678d2c94f3.svg",
-    "static/media/arrow-left-down-svgrepo-com.svg": "/pokedex/static/media/arrow-left-down-svgrepo-com.37a5f833282b1c756d7b.svg",
-    "static/media/arrow-right-up-svgrepo-com.svg": "/pokedex/static/media/arrow-right-up-svgrepo-com.574977f415c8b0462f00.svg",
-    "main.61d78f1f.css.map": "/pokedex/static/css/main.61d78f1f.css.map",
-    "main.bc40bd56.js.map": "/pokedex/static/js/main.bc40bd56.js.map"
+    "static/media/arrow-down-svgrepo-com.svg": "/pokedex/static/media/arrow-down-svgrepo-com.efbbbd80589e66137d44.svg",
+    "static/media/arrow-up-svgrepo-com.svg": "/pokedex/static/media/arrow-up-svgrepo-com.7855552f2e7055decf07.svg",
+    "static/media/arrow-right-down-svgrepo-com.svg": "/pokedex/static/media/arrow-right-down-svgrepo-com.1157cd7101ff20b228f4.svg",
+    "static/media/arrow-right-svgrepo-com.svg": "/pokedex/static/media/arrow-right-svgrepo-com.167ecc4ff86498cb585b.svg",
+    "static/media/arrow-left-down-svgrepo-com.svg": "/pokedex/static/media/arrow-left-down-svgrepo-com.0919011d4e2d7695ce5f.svg",
+    "static/media/arrow-right-up-svgrepo-com.svg": "/pokedex/static/media/arrow-right-up-svgrepo-com.6130c2e084a2de68936c.svg",
+    "main.5ba0d9c4.css.map": "/pokedex/static/css/main.5ba0d9c4.css.map",
+    "main.91045eeb.js.map": "/pokedex/static/js/main.91045eeb.js.map"
   },
   "entrypoints": [
-    "static/css/main.61d78f1f.css",
-    "static/js/main.bc40bd56.js"
+    "static/css/main.5ba0d9c4.css",
+    "static/js/main.91045eeb.js"
   ]
 }
