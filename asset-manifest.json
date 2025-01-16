@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pokedex/static/css/main.5ba0d9c4.css",
-    "main.js": "/pokedex/static/js/main.91045eeb.js",
+    "main.js": "/pokedex/static/js/main.069aa0d3.js",
     "static/media/Kanto-img.png": "/pokedex/static/media/Kanto-img.e9d90d38bc6212f89bd4.png",
     "static/media/Kalos-img.png": "/pokedex/static/media/Kalos-img.1a04db8b6123b1eb4d62.png",
     "static/media/Unova-img.png": "/pokedex/static/media/Unova-img.f924d94a56af89264d45.png",
@@ -21,10 +21,10 @@
     "static/media/arrow-left-down-svgrepo-com.svg": "/pokedex/static/media/arrow-left-down-svgrepo-com.0919011d4e2d7695ce5f.svg",
     "static/media/arrow-right-up-svgrepo-com.svg": "/pokedex/static/media/arrow-right-up-svgrepo-com.6130c2e084a2de68936c.svg",
     "main.5ba0d9c4.css.map": "/pokedex/static/css/main.5ba0d9c4.css.map",
-    "main.91045eeb.js.map": "/pokedex/static/js/main.91045eeb.js.map"
+    "main.069aa0d3.js.map": "/pokedex/static/js/main.069aa0d3.js.map"
   },
   "entrypoints": [
     "static/css/main.5ba0d9c4.css",
-    "static/js/main.91045eeb.js"
+    "static/js/main.069aa0d3.js"
   ]
 }
