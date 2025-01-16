@@ -3,6 +3,7 @@ import { get_data } from '../service/get-data';
 import { backScrollTop, getUrlState, searchOfName, searchOfNumber, setUrlState } from '../function';
 import { generation_1 } from '../data';
 import { useScroll } from '../hooks/use-scroll';
+import { removeUrlState } from '../function/url-state';
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -15,6 +16,7 @@ const reducer = (state, action) => {
 		case 'REMOVE_SELECTED':
 			return {
 				...state,
+				search: action.payload.search,
 				selected: null,
 			};
 		case 'UPDATE_DATA':
@@ -29,28 +31,42 @@ const reducer = (state, action) => {
 };
 
 const handleInitialState = (state) => {
-	const searchPokemon = getUrlState('id');
-	const pokedexIs = getUrlState('pokedex');
+	const searchPokemon = getUrlState('search');
+	const searchPokedex = getUrlState('selected');
+	let contextData = {};
 
 	if (Number(searchPokemon)) {
-		return {
-			selected: pokedexIs === 'open' ? searchOfNumber(searchPokemon, 1) : null,
-			search: false,
+		contextData = {
+			search: true,
 			data: searchOfNumber(Number(searchPokemon), 30),
 		};
 	}
 
-	if (searchPokemon) {
-		return { ...state, search: true, data: searchOfName(searchPokemon, 29) };
+	if (!Number(searchPokemon) && searchPokemon !== null) {
+		contextData = {
+			search: true,
+			data: searchOfName(searchPokemon, 29),
+		};
 	}
 
-	return state;
+	if (searchPokedex) {
+		contextData = {
+			...contextData,
+			search: false,
+			selected: searchOfNumber(searchPokedex, 1),
+		};
+	}
+
+	return {
+		...state,
+		...contextData,
+	};
 };
 
 export const PokemonDataContext = createContext({});
 
 export function PokemonDataProvider({ children }) {
-	const {handleBackScrollToInitialPosition} = useScroll();
+	const { handleBackScrollToInitialPosition } = useScroll();
 	const [state, dispatch] = useReducer(
 		reducer,
 		{
@@ -61,24 +77,27 @@ export function PokemonDataProvider({ children }) {
 		handleInitialState,
 	);
 
-	function handleUpdateStateOfPage({key, value}) {
-		handleBackScrollToInitialPosition();
-		setUrlState(key, value);
-	}
-
 	function handleAddSelected(payload) {
-		handleUpdateStateOfPage({key: 'pokedex', value: 'open'});
+		setUrlState('selected', payload[0].number.split('#')[1]);
 		dispatch({ type: 'ADD_SELECTED', payload });
+		handleBackScrollToInitialPosition();
 	}
 
 	function handleRemoveSelected() {
-		handleUpdateStateOfPage({key: 'pokedex', value: 'closed'});
-		dispatch({ type: 'REMOVE_SELECTED' });
+		const hasSearchPoke = !!getUrlState('search');
+		dispatch({ type: 'REMOVE_SELECTED', payload: {
+			search: hasSearchPoke,
+		} });
+
+		handleBackScrollToInitialPosition();
+		removeUrlState('selected');
 	}
 
 	function handleUpdateData(payload) {
-		handleUpdateStateOfPage({key: 'pokedex', value: 'closed'});
 		dispatch({ type: 'UPDATE_DATA', payload });
+
+		handleBackScrollToInitialPosition();
+		removeUrlState('selected');
 	}
 
 	return (

@@ -11,8 +11,6 @@ export const searchOfNumber = (search, max, isNotRegionFilter=true) => {
 		currentPoke = currentPoke.filter((data) => data + max >= Number(search))[0];
 	}
 
-	setUrlState('id', search);
-
 	const pokemonFilter = [];
 	for (let index = 0; index < max; index++) {
 		if (pokeAllData[currentPoke + index] === undefined) break

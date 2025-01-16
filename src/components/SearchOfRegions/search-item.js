@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { searchOfNumber } from '../../function';
 import { PokemonDataContext } from '../../context/pokemon-datas';
 import styles from './index.module.css';
+import { removeUrlState } from '../../function/url-state';
 
 export function SearchItem({ regionFilter, image, RegionName }) {
 	const { handleUpdateData, handleRemoveSelected } = useContext(PokemonDataContext);
@@ -9,6 +10,7 @@ export function SearchItem({ regionFilter, image, RegionName }) {
 
 	function handleSetRegionFilter() {
 		handleUpdateData({ search: false, data: searchOfNumber(regionFilter, 30, false) });
+		removeUrlState('search');
 		handleRemoveSelected();
 	}
 

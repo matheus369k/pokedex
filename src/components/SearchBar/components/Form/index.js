@@ -1,27 +1,18 @@
 import img from '../../../../assets/pokeball.png';
-import { searchOfNumber, searchOfName } from '../../../../function/index';
+import { searchOfNumber, searchOfName, setUrlState } from '../../../../function/index';
 import { BiSearch } from 'react-icons/bi';
-import { useForm } from 'react-hook-form';
+import { useFormContext } from 'react-hook-form';
 import { useContext } from 'react';
 import { PokemonDataContext } from '../../../../context/pokemon-datas';
-import styles from  './index.module.css';
+import styles from './index.module.css';
 
-export function Form({ setPredictedData }) {
-	const { register, handleSubmit, watch } = useForm();
+export function Form() {
 	const { handleUpdateData, handleRemoveSelected } = useContext(PokemonDataContext);
+	const { register, handleSubmit, reset } = useFormContext();
 
-	watch((data) => {
-		if (Number(data.search)) {
-			setPredictedData(searchOfNumber(data.search, 3));
-			return;
-		}
-
-		setPredictedData(searchOfName(data.search, 2));
-	});
-
-	const onSubmit = (data) => {
-		setPredictedData([]);
+	function handleSearchPokemon(data) {
 		handleRemoveSelected();
+		setUrlState('search', data.search);
 
 		if (Number(data.search)) {
 			handleUpdateData({
@@ -29,6 +20,7 @@ export function Form({ setPredictedData }) {
 				data: searchOfNumber(data.search, 30),
 			});
 
+			reset();
 			return;
 		}
 
@@ -36,10 +28,11 @@ export function Form({ setPredictedData }) {
 			search: data.search !== '',
 			data: searchOfName(data.search, 29),
 		});
-	};
+		reset();
+	}
 
 	return (
-		<form onSubmit={handleSubmit(onSubmit)} className={styles.form_container}>
+		<form onSubmit={handleSubmit(handleSearchPokemon)} className={styles.form_container}>
 			<label htmlFor="search">
 				<BiSearch />
 			</label>

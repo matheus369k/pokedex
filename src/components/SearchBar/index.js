@@ -1,14 +1,21 @@
+import { FormProvider, useForm } from 'react-hook-form';
 import { Form, Predicted } from './components';
-import { useState } from 'react';
 import styles from './index.module.css';
+import { getUrlState } from '../../function';
 
 export function Search() {
-	const [getPredictedData, setPredictedData] = useState([]);
+	const hookForm = useForm({
+		defaultValues: {
+			search: '',
+		},
+	});
 
 	return (
 		<div className={styles.search_bar_container}>
-			<Form setPredictedData={setPredictedData} />
-			<Predicted getPredictedData={getPredictedData} setPredictedData={setPredictedData} />
+			<FormProvider {...hookForm}>
+				<Form />
+				<Predicted />
+			</FormProvider>
 		</div>
 	);
 }
